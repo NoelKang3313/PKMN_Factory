@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Magcargo
+  m_EditorClassIdentifier: 
+  Name: "\uB9C8\uADF8\uCE74\uB974\uACE0"
+  PokedexNumber: 219
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 114931a99aa9a4dfe82b0d5e0c4b8b4a, type: 3}
+  Regular_Back: {fileID: 21300000, guid: a9bead28af79348b2b65694d21705ead, type: 3}
+  Icon_Regular: {fileID: 609766484, guid: 5d3a922bc68e34c2591288c30bed36ec, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: "\uBC14\uC704"
+  Nature: 
+  Abilitys:
+  - "\uB9C8\uADF8\uB9C8\uC758\uBB34\uC7A5"
+  - "\uBD88\uAF43\uBAB8"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: e35572141b8394e53b724a7e05a07161, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 324
+  Attack: 218
+  Defense: 372
+  SAttack: 306
+  SDefense: 284
+  Speed: 174
+  MoveName:
+  - "\uD558\uD488"
+  - "\uC2A4\uD1A4\uC0E4\uC6CC"
+  - "\uB204\uB974\uAE30"
+  - "\uD654\uC5FC\uBC29\uC0AC"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uBC14\uC704"
+  - "\uB178\uB9D0"
+  - "\uBD88\uAF43"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 000000004b000000550000005a000000
+  MoveAccuracy: 640000005a0000006400000064000000
+  CurrentMovePP: 0a0000000a0000000f0000000f000000
+  FullMovePP: 0a0000000a0000000f0000000f000000

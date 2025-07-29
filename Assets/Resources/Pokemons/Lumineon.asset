@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Lumineon
+  m_EditorClassIdentifier: 
+  Name: "\uB124\uC624\uB77C\uC774\uD2B8"
+  PokedexNumber: 457
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: fdf28e43d89a5425da2811bf93d34832, type: 3}
+  Regular_Back: {fileID: 21300000, guid: b5e793699ec2d4710b64a89a3b18eaf3, type: 3}
+  Icon_Regular: {fileID: -2106357306, guid: 8dc0ea4d4c7494ae9b63e3ff5180256c, type: 3}
+  Type1: "\uBB3C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC4F1\uC4F1"
+  - "\uB9C8\uC911\uBB3C"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 1ec456193ee6c4a7c99841fb23977610, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 342
+  Attack: 260
+  Defense: 276
+  SAttack: 260
+  SDefense: 298
+  Speed: 309
+  MoveName:
+  - "\uBB3C\uC758\uD30C\uB3D9"
+  - "\uC544\uCFE0\uC544\uB9C1"
+  - "\uC720\uD134"
+  - "\uB6F0\uC5B4\uC624\uB974\uAE30"
+  MoveType:
+  - "\uBB3C"
+  - "\uBB3C"
+  - "\uBC8C\uB808"
+  - "\uBE44\uD589"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 3c000000000000004600000055000000
+  MoveAccuracy: 64000000640000006400000055000000
+  CurrentMovePP: 14000000140000001400000005000000
+  FullMovePP: 14000000140000001400000005000000

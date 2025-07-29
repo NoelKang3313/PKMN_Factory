@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Heracross
+  m_EditorClassIdentifier: 
+  Name: "\uD5E4\uB77C\uD06C\uB85C\uC2A4"
+  PokedexNumber: 214
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 4d40549fb6bee492dbd6a977f6f0f8a9, type: 3}
+  Regular_Back: {fileID: 21300000, guid: b9f931928bfca4731aaacfddf1e0e8eb, type: 3}
+  Icon_Regular: {fileID: -1946555242, guid: eac37eb60bdb74ca9859640d4ff1629e, type: 3}
+  Type1: "\uBC8C\uB808"
+  Type2: "\uACA9\uD22C"
+  Nature: 
+  Abilitys:
+  - "\uBC8C\uB808\uC758\uC54C\uB9BC"
+  - "\uADFC\uC131"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: b42943ead111547fcbb56a651b9e769a, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 77a27394ab50c487fb7e31adf54e2377, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 068f9da19eecc480999f2800798da0ff, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: -1445199966, guid: 9e3396da48521428ab707c4ded6964a5, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uC2A4\uD0AC\uB9C1\uD06C"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: d7c1f83929a774ce8b51a9e2d16d117b, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 364
+  Attack: 383
+  Defense: 273
+  SAttack: 196
+  SDefense: 317
+  Speed: 295
+  MoveName:
+  - "\uC81C\uBE44\uBC18\uD658"
+  - "\uCE7C\uCDA4"
+  - "\uBA54\uAC00\uD63C"
+  - "\uC778\uD30C\uC774\uD2B8"
+  MoveType:
+  - "\uBE44\uD589"
+  - "\uB178\uB9D0"
+  - "\uBC8C\uB808"
+  - "\uACA9\uD22C"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 3c000000000000007800000078000000
+  MoveAccuracy: 64000000640000005500000064000000
+  CurrentMovePP: 14000000140000000a00000005000000
+  FullMovePP: 14000000140000000a00000005000000

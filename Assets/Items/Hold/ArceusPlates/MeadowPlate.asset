@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b653fac90802e4e3284a51d0e4599ffd, type: 3}
+  m_Name: MeadowPlate
+  m_EditorClassIdentifier: 
+  ItemName: "\uCD08\uB85D\uD50C\uB808\uC774\uD2B8"
+  ItemSprite: {fileID: 21300000, guid: 253f1a670667e48fe87e5edbc6939410, type: 3}
+  ItemType: "\uB3C4\uAD6C"
+  ItemAmount: 0
+  ItemDescription: "\uD480\uD0C0\uC785\uC758 \uC11D\uD310. \uC9C0\uB2C8\uAC8C \uD558\uBA74
+    \uD480\uD0C0\uC785 \uAE30\uC220\uC758 \uC704\uB825\uC774 \uAC15\uD574\uC9C4\uB2E4.
+    \"\uD0DC\uC5B4\uB0A0 \uD3EC\uCF13\uBAAC \uD50C\uB808\uC774\uD2B8\uC758 \uD798\uC744
+    \uB098\uB204\uC5B4 \uAC00\uC9C0\uB9AC.\""

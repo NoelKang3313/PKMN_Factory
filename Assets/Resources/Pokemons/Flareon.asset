@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Flareon
+  m_EditorClassIdentifier: 
+  Name: "\uBD80\uC2A4\uD130"
+  PokedexNumber: 136
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 74d2d14a96cf347519347a8b79dda6c6, type: 3}
+  Regular_Back: {fileID: 21300000, guid: f14738fd17cb94407ad950c112ff6560, type: 3}
+  Icon_Regular: {fileID: 1306435112, guid: 6365ffdb360284dbab34ec7fc6311df7, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD0C0\uC624\uB974\uB294\uBD88\uAF43"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 297ee39934e0d48b08ad8d54ae558372, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 334
+  Attack: 394
+  Defense: 240
+  SAttack: 317
+  SDefense: 350
+  Speed: 251
+  MoveName:
+  - "\uC804\uAD11\uC11D\uD654"
+  - "\uCD08\uB871\uCD08\uB871\uB208\uB3D9\uC790"
+  - "\uBD88\uAF43\uC5C4\uB2C8"
+  - "\uBD84\uC5F0"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uD398\uC5B4\uB9AC"
+  - "\uBD88\uAF43"
+  - "\uBD88\uAF43"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 28000000000000004100000050000000
+  MoveAccuracy: 64000000640000005f00000064000000
+  CurrentMovePP: 1e0000001e0000000f0000000f000000
+  FullMovePP: 1e0000001e0000000f0000000f000000

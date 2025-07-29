@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Sableye
+  m_EditorClassIdentifier: 
+  Name: "\uAE5C\uAE4C\uBBF8"
+  PokedexNumber: 302
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 0e0b1ea584f864e7ebcd9cf7d9aac68b, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 5bbb82df026f14e698013cbf5f19ca71, type: 3}
+  Icon_Regular: {fileID: -1987643288, guid: 41d0daa6d4a0348ec8bdf34ec5410f46, type: 3}
+  Type1: "\uC545"
+  Type2: "\uACE0\uC2A4\uD2B8"
+  Nature: 
+  Abilitys:
+  - "\uB0A0\uCE74\uB85C\uC6B4\uB208"
+  - "\uC2DC\uAC04\uBC8C\uAE30"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 6a6e99bb75648471daa86b7fcbe2e369, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: e09cd784748d24980b6b3049534e7e13, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: e12136d8c0f8d4235ae61aa401c46c93, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 1027585527, guid: 9ad1f89d320ce4ed1bf62d6760108b5e, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uB9E4\uC9C1\uBBF8\uB7EC"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: 413b0c8c46e9646d49a1645af01a7acc, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 304
+  Attack: 273
+  Defense: 273
+  SAttack: 251
+  SDefense: 251
+  Speed: 218
+  MoveName:
+  - "\uD310\uBCC4"
+  - "\uD30C\uC6CC\uC7BC"
+  - "\uC100\uB3C4\uBCFC"
+  - "\uC18D\uC784\uC218"
+  MoveType:
+  - "\uACA9\uD22C"
+  - "\uBC14\uC704"
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uC545"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  MovePower: 0000000050000000500000005f000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 05000000140000000f0000000f000000
+  FullMovePP: 05000000140000000f0000000f000000

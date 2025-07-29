@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Butterfree
+  m_EditorClassIdentifier: 
+  Name: "\uBC84\uD130\uD50C"
+  PokedexNumber: 12
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: add249f4bc73441eeaed5f6d2ed9d0f2, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 5087e89b0ae1c414aa1cd95cf9fa2408, type: 3}
+  Icon_Regular: {fileID: 1580278403, guid: 0bdb1defc62634a65b5d049dc39dd0a9, type: 3}
+  Type1: "\uBC8C\uB808"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uBCF5\uC548"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 933b04525af4b44f4b2f57c161e5f00b, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon: {fileID: 0}
+  NewAbility: 
+  NewPokemonCry: {fileID: 0}
+  HP: 324
+  Attack: 207
+  Defense: 218
+  SAttack: 306
+  SDefense: 284
+  Speed: 262
+  MoveName:
+  - "\uCD08\uC74C\uD30C"
+  - "\uD658\uC0C1\uBE54"
+  - "\uC5D0\uC5B4\uC2AC\uB798\uC2DC"
+  - "\uBC8C\uB808\uC758\uC57C\uB2E8\uBC95\uC11D"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uBE44\uD589"
+  - "\uBC8C\uB808"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 00000000410000004b0000005a000000
+  MoveAccuracy: 37000000640000005f00000064000000
+  CurrentMovePP: 14000000140000000f0000000a000000
+  FullMovePP: 14000000140000000f0000000a000000

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b653fac90802e4e3284a51d0e4599ffd, type: 3}
+  m_Name: MythicalPechaBerry
+  m_EditorClassIdentifier: 
+  ItemName: "\uD658\uC0C1\uBCF5\uC22D"
+  ItemSprite: {fileID: 21300000, guid: de84e63972c4347db87b69f2daaf7b4c, type: 3}
+  ItemType: "\uC911\uC694"
+  ItemAmount: 0
+  ItemDescription: "\uC7A5\uC778\uC774 \uC18C\uC911\uD558\uAC8C \uD0A4\uC6B4 \uBCF5\uC29D\uB098\uBB34\uC5D0\uC11C
+    \uC218\uB144\uC5D0 \uB2E8 \uD558\uB098\uB9CC \uC5F4\uB9B0\uB2E4\uACE0 \uC804\uD574
+    \uB0B4\uB824\uC624\uB294 \uCD5C\uC0C1\uAE09 \uBCF5\uC29D\uC5F4\uB9E4. \uBE5B\uAE54\uBD80\uD130
+    \uB0A8\uB2E4\uB974\uB2E4."

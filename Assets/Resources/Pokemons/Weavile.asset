@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Weavile
+  m_EditorClassIdentifier: 
+  Name: "\uD3EC\uD478\uB2C8\uB77C"
+  PokedexNumber: 461
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 7e351b7e4eb0d4aa683818f3cc132ca6, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 1f8d35a80da3443bfbee6aa37381fef5, type: 3}
+  Icon_Regular: {fileID: 1209566835, guid: 7f00dd555b81444509bfb9eb4e70c580, type: 3}
+  Type1: "\uC545"
+  Type2: "\uC5BC\uC74C"
+  Nature: 
+  Abilitys:
+  - "\uD504\uB808\uC154"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 667eff121435b43af970e10861820d16, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 344
+  Attack: 372
+  Defense: 251
+  SAttack: 207
+  SDefense: 295
+  Speed: 383
+  MoveName:
+  - "\uBA54\uD0C8\uD074\uB85C"
+  - "\uC5BC\uC5B4\uBD99\uC740\uBC14\uB78C"
+  - "\uAE5C\uC9DD\uBCA0\uAE30"
+  - "\uC545\uC758\uD30C\uB3D9"
+  MoveType:
+  - "\uAC15\uCCA0"
+  - "\uC5BC\uC74C"
+  - "\uC545"
+  - "\uC545"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 32000000370000004600000050000000
+  MoveAccuracy: 5f0000005f0000006400000064000000
+  CurrentMovePP: 230000000f0000000f0000000f000000
+  FullMovePP: 230000000f0000000f0000000f000000

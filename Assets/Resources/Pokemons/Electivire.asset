@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Electivire
+  m_EditorClassIdentifier: 
+  Name: "\uC5D0\uB808\uD0A4\uBE14"
+  PokedexNumber: 466
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 4a84c58d5b3624899bf92a0f7864e006, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 38ae045854856454eb08b1561a72e7bd, type: 3}
+  Icon_Regular: {fileID: -922934525, guid: 88335b4d468654992823545e7aee9e3b, type: 3}
+  Type1: "\uC804\uAE30"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC804\uAE30\uC5D4\uC9C4"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 3a4a186676d41446eb064eb3200585dc, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 354
+  Attack: 379
+  Defense: 256
+  SAttack: 317
+  SDefense: 295
+  Speed: 317
+  MoveName:
+  - "\uC804\uAE30\uC790\uC11D\uD30C"
+  - "\uBC88\uAC1C\uD380\uCE58"
+  - "\uC548\uB2E4\uB9AC\uAC78\uAE30"
+  - "\uBC88\uAC1C"
+  MoveType:
+  - "\uC804\uAE30"
+  - "\uC804\uAE30"
+  - "\uACA9\uD22C"
+  - "\uC804\uAE30"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 000000004b000000000000006e000000
+  MoveAccuracy: 5a000000640000006400000046000000
+  CurrentMovePP: 140000000f000000140000000a000000
+  FullMovePP: 140000000f000000140000000a000000

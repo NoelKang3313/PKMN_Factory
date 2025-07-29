@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Druddigon
+  m_EditorClassIdentifier: 
+  Name: "\uD06C\uB9AC\uB9CC"
+  PokedexNumber: 621
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 570b8b86c0e5a437caccaf60c69007c6, type: 3}
+  Regular_Back: {fileID: 21300000, guid: af5c0c9dc84f74f84b55716452d336e0, type: 3}
+  Icon_Regular: {fileID: -66843913, guid: e83608c807322421f8838539c3f11a02, type: 3}
+  Type1: "\uB4DC\uB798\uACE4"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uAE4C\uCE60\uD55C\uD53C\uBD80"
+  - "\uC6B0\uACA9\uB2E4\uC9D0"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 42418cebaccfb49038e3d9ee979fd8a8, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 358
+  Attack: 372
+  Defense: 306
+  SAttack: 240
+  SDefense: 306
+  Speed: 214
+  MoveName:
+  - "\uAC81\uB098\uB294\uC5BC\uAD74"
+  - "\uBCA0\uC5B4\uAC00\uB974\uAE30"
+  - "\uB4DC\uB798\uACE4\uD06C\uB8E8"
+  - "\uAE68\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uB178\uB9D0"
+  - "\uB4DC\uB798\uACE4"
+  - "\uC545"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 00000000460000005000000050000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0a000000140000000f0000000f000000
+  FullMovePP: 0a000000140000000f0000000f000000

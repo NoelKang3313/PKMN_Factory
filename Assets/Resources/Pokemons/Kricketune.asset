@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Kricketune
+  m_EditorClassIdentifier: 
+  Name: "\uADC0\uB6A4\uD1A1\uD06C"
+  PokedexNumber: 402
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: a7a8fd308a8d34a5ca9b80f9e6039707, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 751ad4030beab4287b76b75127e1bb3c, type: 3}
+  Icon_Regular: {fileID: -1677576872, guid: ceed65377da204dff8d45ba005177509, type: 3}
+  Type1: "\uBC8C\uB808"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uBC8C\uB808\uC758\uC54C\uB9BC"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 7ada41d22b671475fa54d0b3ebc8e2a6, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 358
+  Attack: 295
+  Defense: 221
+  SAttack: 229
+  SDefense: 221
+  Speed: 251
+  MoveName:
+  - "\uBCA0\uC5B4\uAC00\uB974\uAE30"
+  - "\uC2DC\uC800\uD06C\uB85C\uC2A4"
+  - "\uAE5C\uC9DD\uBCA0\uAE30"
+  - "\uBA78\uB9DD\uC758\uB178\uB798"
+  MoveType:
+  - "\uB178\uBC00"
+  - "\uBC8C\uB808"
+  - "\uC545"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  MovePower: 46000000500000004600000000000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000000f0000000f00000005000000
+  FullMovePP: 140000000f0000000f00000005000000

@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Carracosta
+  m_EditorClassIdentifier: 
+  Name: "\uB291\uACE8\uB77C"
+  PokedexNumber: 565
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 414ef983e0ccb44c4b2811a28a468194, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 16c45418fd3a44a8bab02fefc591f8b2, type: 3}
+  Icon_Regular: {fileID: 873169113, guid: 01b3d5ba76a6a42c9865616a5fba40b4, type: 3}
+  Type1: "\uBB3C"
+  Type2: "\uBC14\uC704"
+  Nature: 
+  Abilitys:
+  - "\uC639\uACE8\uCC38"
+  - "\uB3CC\uBA38\uB9AC"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: ce15bf3caf8834e7b80e81627d369400, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 352
+  Attack: 346
+  Defense: 401
+  SAttack: 291
+  SDefense: 251
+  Speed: 179
+  MoveName:
+  - "\uBC29\uC5B4"
+  - "\uC2A4\uD1A4\uC0E4\uC6CC"
+  - "\uAE68\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  - "\uC544\uCFE0\uC544\uD14C\uC77C"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uBC14\uC704"
+  - "\uC545"
+  - "\uBB3C"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 000000004b000000500000005a000000
+  MoveAccuracy: 640000005a000000640000005a000000
+  CurrentMovePP: 0a0000000a0000000f0000000a000000
+  FullMovePP: 0a0000000a0000000f0000000a000000

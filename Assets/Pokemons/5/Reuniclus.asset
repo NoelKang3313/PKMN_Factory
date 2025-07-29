@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Reuniclus
+  m_EditorClassIdentifier: 
+  Name: "\uB780\uCFE8\uB8E8\uC2A4"
+  PokedexNumber: 579
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 25962f16fc09744da8475579a1f8a704, type: 3}
+  Regular_Back: {fileID: 21300000, guid: af871552c39cc4f83abaf4b2b1f8369f, type: 3}
+  Icon_Regular: {fileID: -1679721492, guid: fa91af4e97ee64acd818e39c3899488a, type: 3}
+  Type1: "\uC5D0\uC2A4\uD37C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uBC29\uC9C4"
+  - "\uB9E4\uC9C1\uAC00\uB4DC"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 43a0aab8a079849ac80177499c6638cc, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Keldeo
+  m_EditorClassIdentifier: 
+  Name: "\uCF00\uB974\uB514\uC624"
+  PokedexNumber: 647
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 78663fdd9c59640e5ba437e609391dfe, type: 3}
+  Regular_Back: {fileID: 21300000, guid: a1db98d6ab9ad440c9589e634df8f41c, type: 3}
+  Icon_Regular: {fileID: -257105112, guid: e4464e54ab33a425eae62baf77fe6970, type: 3}
+  Type1: "\uBB3C"
+  Type2: "\uACA9\uD22C"
+  Nature: 
+  Abilitys:
+  - "\uC815\uC758\uC758\uB9C8\uC74C"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: fa600408b763f4493b896f23f6e96fcc, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: b2d27d4bc166545eea2996a7cc889207, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 0b8ba74a453ae4b4da7268663af4bdb8, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 1822737335, guid: 6da11c204439d4ecfb6ba03432ce941c, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uC815\uC758\uC758\uB9C8\uC74C"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: fa600408b763f4493b896f23f6e96fcc, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

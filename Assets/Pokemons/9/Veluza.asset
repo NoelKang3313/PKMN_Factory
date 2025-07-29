@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Veluza
+  m_EditorClassIdentifier: 
+  Name: "\uAC00\uBE44\uB8E8\uC0AC"
+  PokedexNumber: 976
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 622355443c387479da2392273ccd9935, type: 3}
+  Regular_Back: {fileID: 21300000, guid: ced85cf60590a4cb4bbdca1215132e70, type: 3}
+  Icon_Regular: {fileID: -1997970975, guid: ec7da8fcc13bd429aa9a7e4af9f110ef, type: 3}
+  Type1: "\uBB3C"
+  Type2: "\uC5D0\uC2A4\uD37C"
+  Nature: 
+  Abilitys:
+  - "\uD2C0\uAE68\uAE30"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 94389d5c3310d4a8c93df9dfa1b24a3d, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

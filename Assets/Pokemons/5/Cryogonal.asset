@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Cryogonal
+  m_EditorClassIdentifier: 
+  Name: "\uD504\uB9AC\uC9C0\uC624"
+  PokedexNumber: 615
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: b709de00e58744ed0943b829a14f98fb, type: 3}
+  Regular_Back: {fileID: 21300000, guid: d44821fffbe314dc1ab23ebba702d296, type: 3}
+  Icon_Regular: {fileID: -1179354967, guid: 7cd9cb8d7ab2a427e845570a6a3b9f1f, type: 3}
+  Type1: "\uC5BC\uC74C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uBD80\uC720"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 5a829d5bc81274d13972bd0a96a7bd40, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 364
+  Attack: 218
+  Defense: 218
+  SAttack: 317
+  SDefense: 405
+  Speed: 339
+  MoveName:
+  - "\uC774\uC0C1\uD55C\uBE5B"
+  - "\uC6D0\uC2DC\uC758\uD798"
+  - "\uAE5C\uC9DD\uBCA0\uAE30"
+  - "\uB0C9\uB3D9\uBE54"
+  MoveType:
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uBC14\uC704"
+  - "\uC545"
+  - "\uC5BC\uC74C"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 000000003c000000460000005a000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0a000000050000000f0000000a000000
+  FullMovePP: 0a000000050000000f0000000a000000

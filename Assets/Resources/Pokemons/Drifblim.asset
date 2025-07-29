@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Drifblim
+  m_EditorClassIdentifier: 
+  Name: "\uB465\uC2E4\uB77C\uC774\uB4DC"
+  PokedexNumber: 426
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: d3adf155915e84cd29109c991eb5da25, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 2f894ce4b4a0d4b4fa2905f689590629, type: 3}
+  Icon_Regular: {fileID: -105608314, guid: 0530bba74589a44989ed4a16c57b65b2, type: 3}
+  Type1: "\uACE0\uC2A4\uD2B8"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uACE1\uC608"
+  - "\uC720\uD3ED"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 97edff7e0412e4cd4a84d486b2786fd9, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 504
+  Attack: 284
+  Defense: 205
+  SAttack: 306
+  SDefense: 227
+  Speed: 284
+  MoveName:
+  - "\uBC14\uB78C\uC77C\uC73C\uD0A4\uAE30"
+  - "\uACE0\uC2A4\uD2B8\uB2E4\uC774\uBE0C"
+  - "\uC100\uB3C4\uBCFC"
+  - "\uAE38\uB3D9\uBB34"
+  MoveType:
+  - "\uBE44\uD589"
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uACE0\uC2A4\uD2B8"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  MovePower: 280000005a0000005000000000000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 230000000a0000000f00000005000000
+  FullMovePP: 230000000a0000000f00000005000000

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Perrserker
+  m_EditorClassIdentifier: 
+  Name: "\uB098\uC774\uD0B9"
+  PokedexNumber: 863
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 25c11b2c9647048988680af47d9b7d8a, type: 3}
+  Regular_Back: {fileID: 21300000, guid: f4ea7424897cc42529c208da203df924, type: 3}
+  Icon_Regular: {fileID: 283290129, guid: 0fa7c03c666ec4ecbaae9dc9dc5151de, type: 3}
+  Type1: "\uAC15\uCCA0"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uB2E8\uB2E8\uD55C\uBC1C\uD1B1"
+  - "\uC804\uD22C\uBB34\uC7A5"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 4566d634e3b7845da843bfed2695ad2f, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

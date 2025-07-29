@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Oranguru
+  m_EditorClassIdentifier: 
+  Name: "\uD558\uB791\uC6B0\uD0C4"
+  PokedexNumber: 765
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 2f949830ed9d5404196581c2b286fbdc, type: 3}
+  Regular_Back: {fileID: 21300000, guid: d8b83f23a67c7488fbb757a8d0a36913, type: 3}
+  Icon_Regular: {fileID: -115487012, guid: 6f79f16eba2da4471b023eb1353a7afd, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: "\uC5D0\uC2A4\uD37C"
+  Nature: 
+  Abilitys:
+  - "\uC815\uC2E0\uB825"
+  - "\uD154\uB808\uD30C\uC2DC"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: e48fb8196a15e4872ac6d24e74401df1, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

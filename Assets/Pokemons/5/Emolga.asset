@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Emolga
+  m_EditorClassIdentifier: 
+  Name: "\uC5D0\uBABD\uAC00"
+  PokedexNumber: 587
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 8f36eb5ce61a949f2b31b7567a260eeb, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 92c217ba0534344998b8d7bdbe21cb5f, type: 3}
+  Icon_Regular: {fileID: -876228489, guid: ec3b9eaf3062f41009bd41c4952f1246, type: 3}
+  Type1: "\uC804\uAE30"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uC815\uC804\uAE30"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: ae5c228f65f284ed890432e591f2f28d, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 314
+  Attack: 273
+  Defense: 240
+  SAttack: 273
+  SDefense: 240
+  Speed: 335
+  MoveName:
+  - "\uBCFC\uBD80\uBE44\uBD80\uBE44"
+  - "\uAF2C\uB9AC\uD754\uB4E4\uAE30"
+  - "\uC560\uD06C\uB7EC\uBC43"
+  - "\uBCFC\uD2B8\uCCB4\uC778\uC9C0"
+  MoveType:
+  - "\uC804\uAE30"
+  - "\uB178\uB9D0"
+  - "\uBE44\uD589"
+  - "\uC804\uAE30"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 14000000000000003700000046000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000001e0000000f00000014000000
+  FullMovePP: 140000001e0000000f00000014000000

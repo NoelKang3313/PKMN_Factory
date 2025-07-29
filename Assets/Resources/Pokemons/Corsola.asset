@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Corsola
+  m_EditorClassIdentifier: 
+  Name: "\uCF54\uC0B0\uD638"
+  PokedexNumber: 222
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 3b902457885a34900bf08f5b92d0c4b1, type: 3}
+  Regular_Back: {fileID: 21300000, guid: a6a68f2ca09194dedb5ccf8268916462, type: 3}
+  Icon_Regular: {fileID: 265290147, guid: ea243de7030d64e7c9e42af8d889afc5, type: 3}
+  Type1: "\uBB3C"
+  Type2: "\uBC14\uC704"
+  Nature: 
+  Abilitys:
+  - "\uC790\uC5F0\uD68C\uBCF5"
+  - "\uC758\uC695"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 107468f6e03294f58bb091e34fe2d9d1, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 334
+  Attack: 229
+  Defense: 317
+  SAttack: 251
+  SDefense: 317
+  Speed: 185
+  MoveName:
+  - "\uC544\uCFE0\uC544\uB9C1"
+  - "\uAC70\uD488\uAD11\uC120"
+  - "\uD30C\uC6CC\uC7BC"
+  - "\uB300\uC9C0\uC758\uD798"
+  MoveType:
+  - "\uBB3C"
+  - "\uBB3C"
+  - "\uBC14\uC704"
+  - "\uB545"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 0000000041000000500000005a000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 1400000014000000140000000a000000
+  FullMovePP: 1400000014000000140000000a000000

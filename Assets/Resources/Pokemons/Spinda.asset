@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Spinda
+  m_EditorClassIdentifier: 
+  Name: "\uC5BC\uB8E8\uAE30"
+  PokedexNumber: 327
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 0ce7f62ce8ec0448e8eaad504159722a, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 35ee3c59997ca405ca5cf354af1a0be0, type: 3}
+  Icon_Regular: {fileID: -1321790131, guid: 292456f39eeab473ba5ba85e59aa3fdc, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uB9C8\uC774\uD398\uC774\uC2A4"
+  - "\uAC08\uC9C0\uC790\uAC78\uC74C"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 3fe1bab6910674e5d8cafbb14eb1f16d, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 324
+  Attack: 240
+  Defense: 240
+  SAttack: 240
+  SDefense: 240
+  Speed: 240
+  MoveName:
+  - "\uD754\uB4E4\uD754\uB4E4\uB304\uC2A4"
+  - "\uD658\uC0C1\uBE54"
+  - "\uB204\uB974\uAE30"
+  - "\uC18C\uB780\uD53C\uAE30"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uB178\uB9D0"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 0000000041000000550000005a000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 14000000140000000f0000000a000000
+  FullMovePP: 14000000140000000f0000000a000000

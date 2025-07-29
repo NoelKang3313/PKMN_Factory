@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Gengar
+  m_EditorClassIdentifier: 
+  Name: "\uD32C\uD140"
+  PokedexNumber: 94
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 2eba435e667d94ffc960ca76ccb31477, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 6917081f51f044651adc7f0a9973a6e1, type: 3}
+  Icon_Regular: {fileID: 1153818122, guid: fb96db8a329614a6592198d8fc5d0199, type: 3}
+  Type1: "\uACE0\uC2A4\uD2B8"
+  Type2: "\uB3C5"
+  Nature: 
+  Abilitys:
+  - "\uC800\uC8FC\uBC1B\uC740\uBC14\uB514"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: c1406597d1b274e46b08129a460ada34, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 10a9f9e75cfbf4aa2a3585a1832b5db3, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 6917081f51f044651adc7f0a9973a6e1, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 191253409, guid: 5428c963ac7904f2a911a9575d40be33, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uADF8\uB9BC\uC790\uBC1D\uAE30"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: 9c3a7e96bd9904c158544f6c2b9c1f4a, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 324
+  Attack: 251
+  Defense: 240
+  SAttack: 394
+  SDefense: 273
+  Speed: 350
+  MoveName:
+  - "\uC100\uB3C4\uD380\uCE58"
+  - "\uC774\uC0C1\uD55C\uBE5B"
+  - "\uC545\uC758\uD30C\uB3D9"
+  - "\uC100\uB3C4\uBCFC"
+  MoveType:
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uC545"
+  - "\uACE0\uC2A4\uD2B8"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 3c000000000000005000000050000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000000a0000000f0000000f000000
+  FullMovePP: 140000000a0000000f0000000f000000

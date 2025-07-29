@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Latias
+  m_EditorClassIdentifier: 
+  Name: "\uB77C\uD2F0\uC544\uC2A4"
+  PokedexNumber: 380
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: a5df8618c1b554aa2aa7f865eea6045a, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 441e947b89e524aaeb0770ea2e97a9f7, type: 3}
+  Icon_Regular: {fileID: -1144797132, guid: 5ca1b240b80814775b580ad6853928ba, type: 3}
+  Type1: "\uB4DC\uB798\uACE4"
+  Type2: "\uC5D0\uC2A4\uD37C"
+  Nature: 
+  Abilitys:
+  - "\uBD80\uC720"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 6c97fe1da9e934874a01cf3895a333c2, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 1137593b55c76447b965c557f5f45273, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 424a2cc0ce7164f0eba5d30f4f8c8f0e, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 798178063, guid: 4bd6b7a73b91c4edbba0257e16affaca, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uBD80\uC720"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: 3969e492115134d9d918b9877e4952e5, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 364
+  Attack: 284
+  Defense: 306
+  SAttack: 350
+  SDefense: 394
+  Speed: 350
+  MoveName:
+  - "HP\uD68C\uBCF5"
+  - "\uBBF8\uC2A4\uD2B8\uBCFC"
+  - "\uC6A9\uC758\uD30C\uB3D9"
+  - "\uC0AC\uC774\uCF54\uD0A4\uB124\uC2DC\uC2A4"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uB4DC\uB798\uACE4"
+  - "\uC5D0\uC2A4\uD37C"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 000000005f000000550000005a000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 05000000050000000a0000000a000000
+  FullMovePP: 05000000050000000a0000000a000000

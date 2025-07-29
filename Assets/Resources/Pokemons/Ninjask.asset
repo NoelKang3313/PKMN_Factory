@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Ninjask
+  m_EditorClassIdentifier: 
+  Name: "\uC544\uC774\uC2A4\uD06C"
+  PokedexNumber: 291
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: d89bcb2173b0f42f992fd930415ad54d, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 63802b808f5e84b90b3b48bfdcd1cdcb, type: 3}
+  Icon_Regular: {fileID: -1209688745, guid: c6f7fb0cbdb474ff099c237fa5b068c1, type: 3}
+  Type1: "\uBC8C\uB808"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uAC00\uC18D"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 8181b7320c0e6413397148cfc3e059f9, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 326
+  Attack: 206
+  Defense: 207
+  SAttack: 218
+  SDefense: 218
+  Speed: 460
+  MoveName:
+  - "\uC81C\uBE44\uBC18\uD658"
+  - "\uACE0\uC18D\uC774\uB3D9"
+  - "\uBCA0\uC5B4\uAC00\uB974\uAE30"
+  - "\uC2DC\uC800\uD06C\uB85C\uC2A4"
+  MoveType:
+  - "\uBE44\uD589"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uB178\uB9D0"
+  - "\uBC8C\uB808"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 3c000000000000004600000050000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000001e000000140000000f000000
+  FullMovePP: 140000001e000000140000000f000000

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Lapras
+  m_EditorClassIdentifier: 
+  Name: "\uB77C\uD504\uB77C\uC2A4"
+  PokedexNumber: 131
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 181a87cf64ae54bc5ae15adc4f3d16cf, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 4e1b07cd2da734e72afec03f6d3b7ea4, type: 3}
+  Icon_Regular: {fileID: 117120704, guid: 1896408a6f23a46b4ad825b654e2d220, type: 3}
+  Type1: "\uBB3C"
+  Type2: "\uC5BC\uC74C"
+  Nature: 
+  Abilitys:
+  - "\uC800\uC218"
+  - "\uC870\uAC00\uBE44\uAC11\uC637"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: a4791e45fb4f746caaa584c1bb017a84, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 464
+  Attack: 295
+  Defense: 284
+  SAttack: 295
+  SDefense: 317
+  Speed: 240
+  MoveName:
+  - "\uBB3C\uC758\uD30C\uB3D9"
+  - "\uB0C9\uB3D9\uBE54"
+  - "\uBE44\uBC14\uB77C\uAE30"
+  - "\uBA78\uB9DD\uC758\uB178\uB798"
+  MoveType:
+  - "\uBB3C"
+  - "\uC5BC\uC74C"
+  - "\uBB3C"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uBCC0\uD654"
+  MovePower: 3c0000005a0000000000000000000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000000a0000000500000005000000
+  FullMovePP: 140000000a0000000500000005000000

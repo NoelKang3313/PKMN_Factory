@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Tyranitar
+  m_EditorClassIdentifier: 
+  Name: "\uB9C8\uAE30\uB77C\uC2A4"
+  PokedexNumber: 248
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 4fa810316e8fa455088219bc70ca69e4, type: 3}
+  Regular_Back: {fileID: 21300000, guid: e252ca8c17d004d90963f0e8891f00f5, type: 3}
+  Icon_Regular: {fileID: -1372363522, guid: 098a7eb94c7b14629b8da9557a3b1e8f, type: 3}
+  Type1: "\uBC14\uC704"
+  Type2: "\uC545"
+  Nature: 
+  Abilitys:
+  - "\uBAA8\uB798\uB0A0\uB9BC"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 3fc591ea3dd6948c7b1f56cac061a53c, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 2849b7241b6cc484298661fbdb8465c4, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 4bc11c53eac904794b239f7f960824c3, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 2024687290, guid: 4ec8107be0f204d61815631d785424e9, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uBAA8\uB798\uB0A0\uB9BC"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: b881714f265ac4078a65cf2e2446d7d2, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 404
+  Attack: 403
+  Defense: 350
+  SAttack: 317
+  SDefense: 328
+  Speed: 243
+  MoveName:
+  - "\uC545\uC758\uD30C\uB3D9"
+  - "\uC2A4\uD1A4\uC0E4\uC6CC"
+  - "\uAE68\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  - "\uC9C0\uC9C4"
+  MoveType:
+  - "\uC545"
+  - "\uBC14\uC704"
+  - "\uC545"
+  - "\uB545"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 500000004b0000005000000064000000
+  MoveAccuracy: 640000005a0000006400000064000000
+  CurrentMovePP: 0f0000000a0000000f0000000a000000
+  FullMovePP: 0f0000000a0000000f0000000a000000

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Muk(Alolan)
+  m_EditorClassIdentifier: 
+  Name: "\uC9C8\uBED0\uAE30"
+  PokedexNumber: 89
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 752982dbc6ed64df89da7c3d17e8db00, type: 3}
+  Regular_Back: {fileID: 21300000, guid: cc50587811f3243d698319a3fd3fd8cd, type: 3}
+  Icon_Regular: {fileID: 1563181661, guid: b844be4a6f6474533a4f90953d81b8c9, type: 3}
+  Type1: "\uB3C5"
+  Type2: "\uC545"
+  Nature: 
+  Abilitys:
+  - "\uB3C5\uC218"
+  - "\uBA39\uBCF4"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 7d5f76b66b59843578459b05d227ef28, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 414
+  Attack: 339
+  Defense: 273
+  SAttack: 251
+  SDefense: 328
+  Speed: 218
+  MoveName:
+  - "\uC560\uC2DC\uB4DC\uBD04"
+  - "\uB9F9\uB3C5\uC5C4\uB2C8"
+  - "\uC791\uC544\uC9C0\uAE30"
+  - "\uAE68\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  MoveType:
+  - "\uB3C5"
+  - "\uB3C5"
+  - "\uB178\uB9D0"
+  - "\uC545"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  MovePower: 28000000320000000000000050000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000000f0000000a0000000f000000
+  FullMovePP: 140000000f0000000a0000000f000000

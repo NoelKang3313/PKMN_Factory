@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Marowak(Alolan)
+  m_EditorClassIdentifier: 
+  Name: "\uD145\uAD6C\uB9AC"
+  PokedexNumber: 105
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 09a9517c510fd4bfaa687f9549a3d4e0, type: 3}
+  Regular_Back: {fileID: 21300000, guid: c419754e7c00b4cc29b88d806e2ce18d, type: 3}
+  Icon_Regular: {fileID: -1530084948, guid: 4bb9b832fe4da40a7bc9baaeb91dadb7, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: "\uACE0\uC2A4\uD2B8"
+  Nature: 
+  Abilitys:
+  - "\uD53C\uB8B0\uCE68"
+  - "\uC800\uC8FC\uBC1B\uC740\uBC14\uB514"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 75e5fda2efd854d6682ee786a5eedd1c, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 324
+  Attack: 284
+  Defense: 350
+  SAttack: 218
+  SDefense: 284
+  Speed: 207
+  MoveName:
+  - "\uC100\uB3C4\uBCF8"
+  - "\uB3C4\uAE68\uBE44\uBD88"
+  - "\uBCF8\uB7EC\uC26C"
+  - "\uBF08\uB2E4\uADC0\uBD80\uBA54\uB791"
+  MoveType:
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uBD88\uAF43"
+  - "\uB545"
+  - "\uB545"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 55000000000000001900000032000000
+  MoveAccuracy: 64000000550000005a0000005a000000
+  CurrentMovePP: 0a0000000f0000000a0000000a000000
+  FullMovePP: 0a0000000f0000000a0000000a000000

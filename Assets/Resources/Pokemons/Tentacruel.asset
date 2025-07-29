@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Tentacruel
+  m_EditorClassIdentifier: 
+  Name: "\uB3C5\uD30C\uB9AC"
+  PokedexNumber: 73
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 0ce9b8395c03e4137b3fcc5ab0884b9f, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 2f0a6a0be08584ccdb5d9de65059734e, type: 3}
+  Icon_Regular: {fileID: -16669487, guid: 16dbe1178d7cf4fb3a73bdf1331908dd, type: 3}
+  Type1: "\uBB3C"
+  Type2: "\uB3C5"
+  Nature: 
+  Abilitys:
+  - "\uD074\uB9AC\uC5B4\uBC14\uB514"
+  - "\uD574\uAC10\uC561"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: d43445e271643469f9c8d9fce752854c, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 364
+  Attack: 262
+  Defense: 251
+  SAttack: 284
+  SDefense: 372
+  Speed: 328
+  MoveName:
+  - "\uAE40\uBC25\uB9D0\uC774"
+  - "\uCD08\uC74C\uD30C"
+  - "\uD30C\uB3C4\uD0C0\uAE30"
+  - "\uC624\uBB3C\uC6E8\uC774\uBE0C"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uB178\uB9D0"
+  - "\uBB3C"
+  - "\uB3C5"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 0f000000000000005a0000005f000000
+  MoveAccuracy: 5a000000370000006400000064000000
+  CurrentMovePP: 14000000140000000f0000000a000000
+  FullMovePP: 14000000140000000f0000000a000000

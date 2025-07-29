@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Skuntank
+  m_EditorClassIdentifier: 
+  Name: "\uC2A4\uCEF9\uD0F1\uD06C"
+  PokedexNumber: 435
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 8c964cb01af144b5ea4da07e02dbc944, type: 3}
+  Regular_Back: {fileID: 21300000, guid: af04980bc6b8e4e48818192b57862dbe, type: 3}
+  Icon_Regular: {fileID: -1528037331, guid: 816e001de15ce4b5686783a801787c34, type: 3}
+  Type1: "\uB3C5"
+  Type2: "\uC545"
+  Nature: 
+  Abilitys:
+  - "\uC545\uCDE8"
+  - "\uC720\uD3ED"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 13a4651b269264a178f224579b0298de, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 410
+  Attack: 313
+  Defense: 256
+  SAttack: 265
+  SDefense: 243
+  Speed: 293
+  MoveName:
+  - "\uD654\uC5FC\uBC29\uC0AC"
+  - "\uBCA0\uB188\uC1FC\uD06C"
+  - "\uC2EB\uC740\uC18C\uB9AC"
+  - "\uAE5C\uC9DD\uBCA0\uAE30"
+  MoveType:
+  - "\uBD88\uAF43"
+  - "\uB3C5"
+  - "\uB178\uB9D0"
+  - "\uC545"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  MovePower: 5a000000410000000000000046000000
+  MoveAccuracy: 64000000640000005500000064000000
+  CurrentMovePP: 0f0000000a000000280000000f000000
+  FullMovePP: 0f0000000a000000280000000f000000

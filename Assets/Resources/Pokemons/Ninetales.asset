@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Ninetales
+  m_EditorClassIdentifier: 
+  Name: "\uB098\uC778\uD14C\uC77C"
+  PokedexNumber: 38
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 9e54039e3d69b4305ab1f9d58d414331, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 04a777b39c74c43348be06b4fe9ee9d2, type: 3}
+  Icon_Regular: {fileID: 1947791095, guid: 303476ff8e50d49a78c5e62e98cdfc24, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD0C0\uC624\uB974\uB294\uBD88\uAF43"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 5e4a985bd07fe4deeba0734d4d6fc863, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 350
+  Attack: 276
+  Defense: 273
+  SAttack: 287
+  SDefense: 328
+  Speed: 328
+  MoveName:
+  - "\uC804\uAD11\uC11D\uD654"
+  - "\uD654\uC5FC\uBC29\uC0AC"
+  - "\uB3C4\uAE68\uBE44\uBD88"
+  - "\uC2E0\uD1B5\uB825"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uBD88\uAF43"
+  - "\uBD88\uAF43"
+  - "\uC5D0\uC2A4\uD37C"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  MovePower: 280000005a0000000000000050000000
+  MoveAccuracy: 64000000640000005500000064000000
+  CurrentMovePP: 1e0000000f0000000f00000014000000
+  FullMovePP: 1e0000000f0000000f00000014000000

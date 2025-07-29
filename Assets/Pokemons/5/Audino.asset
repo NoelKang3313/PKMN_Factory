@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Audino
+  m_EditorClassIdentifier: 
+  Name: "\uB2E4\uBD80\uB2C8"
+  PokedexNumber: 531
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 1afe201eca688403b9dd602cb5cf8fee, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 4a3b0618f1e6f447ca3c6cc660cd1a05, type: 3}
+  Icon_Regular: {fileID: -877765788, guid: b7b49cd91dab24b61aad6f41e40c2688, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uCE58\uC720\uC758\uB9C8\uC74C"
+  - "\uC7AC\uC0DD\uB825"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: d5c41f886681c4a8fb31d09fe4016f09, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: ec2a75ae4216049b3a8826294c91cec5, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: c48b3621f7b844a07a915093d87a5c42, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 939288687, guid: f0fe70250d28c4872908b2f060ad7b1d, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: "\uCE58\uC720\uC758\uB9C8\uC74C"
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 8300000, guid: 6fc160ef015324d6f996d84f1cfdee72, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 410
+  Attack: 240
+  Defense: 298
+  SAttack: 240
+  SDefense: 298
+  Speed: 218
+  MoveName:
+  - "\uCC28\uBC0D\uBCF4\uC774\uC2A4"
+  - "\uC0AC\uB150\uC758\uBC15\uCE58\uAE30"
+  - "\uD558\uC774\uD37C\uBCF4\uC774\uC2A4"
+  - "\uCE58\uC720\uD30C\uB3D9"
+  MoveType:
+  - "\uD398\uC5B4\uB9AC"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uB178\uB9D0"
+  - "\uC5D0\uC2A4\uD37C"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  MovePower: 28000000500000005a00000000000000
+  MoveAccuracy: 640000005a0000006400000064000000
+  CurrentMovePP: 0f0000000f0000000a0000000a000000
+  FullMovePP: 0f0000000f0000000a0000000a000000

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Claydol
+  m_EditorClassIdentifier: 
+  Name: "\uC810\uD1A0\uB3C4\uB9AC"
+  PokedexNumber: 344
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 7804e4f50f2ac408aa05af1dbcc76034, type: 3}
+  Regular_Back: {fileID: 21300000, guid: b2bc4c34d25b04856847c9b1cdbeb4c6, type: 3}
+  Icon_Regular: {fileID: 472900329, guid: a818b355a96964d4a8e579bdd9971303, type: 3}
+  Type1: "\uB545"
+  Type2: "\uC5D0\uC2A4\uD37C"
+  Nature: 
+  Abilitys:
+  - "\uBD80\uC720"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 90b7b11c0782646208f28b6acdb3e720, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 324
+  Attack: 262
+  Defense: 339
+  SAttack: 262
+  SDefense: 372
+  Speed: 273
+  MoveName:
+  - "\uACE0\uC18D\uC2A4\uD540"
+  - "\uC554\uC11D\uBD09\uC778"
+  - "\uC2E0\uD1B5\uB825"
+  - "\uB300\uC9C0\uC758\uD798"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uBC14\uC704"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uB545"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 320000003c000000500000005a000000
+  MoveAccuracy: 640000005f0000006400000064000000
+  CurrentMovePP: 280000000f000000140000000a000000
+  FullMovePP: 280000000f000000140000000a000000

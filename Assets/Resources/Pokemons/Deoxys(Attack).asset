@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Deoxys(Attack)
+  m_EditorClassIdentifier: 
+  Name: "\uB370\uC624\uD0A4\uC2A4"
+  PokedexNumber: 386
+  Gender: 
+  Genderless: 1
+  Regular: {fileID: 21300000, guid: c1e9642b4d0524cf7938123f93896294, type: 3}
+  Regular_Back: {fileID: 21300000, guid: dc527473370e148dcb35558d47e909b8, type: 3}
+  Icon_Regular: {fileID: -2010072325, guid: 74c8ec12edf9c4a139acaba8d1270195, type: 3}
+  Type1: "\uC5D0\uC2A4\uD37C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD504\uB808\uC154"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 76df3edc4987c468c872433c68d0aed0, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 304
+  Attack: 504
+  Defense: 152
+  SAttack: 504
+  SDefense: 152
+  Speed: 438
+  MoveName:
+  - "\uC0AC\uC774\uCF54\uD0A4\uB124\uC2DC\uC2A4"
+  - "\uC5C4\uCCAD\uB09C\uD798"
+  - "\uC804\uC790\uD3EC"
+  - "\uC0AC\uC774\uCF54\uBD80\uC2A4\uD2B8"
+  MoveType:
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uACA9\uD22C"
+  - "\uC804\uAE30"
+  - "\uC5D0\uC2A4\uD37C"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 5a00000078000000780000008c000000
+  MoveAccuracy: 6400000064000000320000005a000000
+  CurrentMovePP: 0a000000050000000500000005000000
+  FullMovePP: 0a000000050000000500000005000000

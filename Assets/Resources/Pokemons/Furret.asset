@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Furret
+  m_EditorClassIdentifier: 
+  Name: "\uB2E4\uAF2C\uB9AC"
+  PokedexNumber: 162
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: b1484e4b389574d42b10eaf9fe51d73d, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 074a5098e645948e9840a97a05ccb732, type: 3}
+  Icon_Regular: {fileID: -879604083, guid: eecb42acb24fb4d5084340814cbd198d, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uB3C4\uC8FC"
+  - "\uB0A0\uCE74\uB85C\uC6B4\uB208"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 7adbaa72fbff4416d9e362fe8dcfa9ee, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 374
+  Attack: 276
+  Defense: 249
+  SAttack: 207
+  SDefense: 229
+  Speed: 306
+  MoveName:
+  - "\uC804\uAD11\uC11D\uD654"
+  - "\uD798\uAECF\uCE58\uAE30"
+  - "\uB9DD\uAC01\uC220"
+  - "\uD558\uC774\uD37C\uBCF4\uC774\uC2A4"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uB178\uB9D0"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  MovePower: 2800000050000000000000005a000000
+  MoveAccuracy: 640000004b0000006400000064000000
+  CurrentMovePP: 1e00000014000000140000000a000000
+  FullMovePP: 1e00000014000000140000000a000000

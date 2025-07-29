@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Feraligatr
+  m_EditorClassIdentifier: 
+  Name: "\uC7A5\uD06C\uB85C\uB2E4\uC77C"
+  PokedexNumber: 160
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 1bc825f6fe671419e86899024196a1d0, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 15282bbbf58164a1bbdbb7c776520cad, type: 3}
+  Icon_Regular: {fileID: -1117242479, guid: 8a5f23e968d1f45459f09c2bd051895b, type: 3}
+  Type1: "\uBB3C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uAE09\uB958"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 3d66e5295326847c1bd4b06d966509cd, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 374
+  Attack: 339
+  Defense: 328
+  SAttack: 282
+  SDefense: 291
+  Speed: 280
+  MoveName:
+  - "\uAC81\uB098\uB294\uC5BC\uAD74"
+  - "\uC5BC\uC74C\uC5C4\uB2C8"
+  - "\uAE68\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  - "\uC544\uCFE0\uC544\uD14C\uC77C"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uC5BC\uC74C"
+  - "\uC545"
+  - "\uBB3C"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 0000000041000000500000005a000000
+  MoveAccuracy: 640000005f000000640000005a000000
+  CurrentMovePP: 0a0000000f0000000f0000000a000000
+  FullMovePP: 0a0000000f0000000f0000000a000000

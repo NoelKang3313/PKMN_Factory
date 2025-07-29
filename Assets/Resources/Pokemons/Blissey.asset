@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Blissey
+  m_EditorClassIdentifier: 
+  Name: "\uD574\uD53C\uB108\uC2A4"
+  PokedexNumber: 242
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 2d2bb7d14dd964bdf97592b519652d6c, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 2cc7815e683604bcc9ba82039ee35e01, type: 3}
+  Icon_Regular: {fileID: 1664162250, guid: c935765e4c2ca4696b9e479bf0412374, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC790\uC5F0\uD68C\uBCF5"
+  - "\uD558\uB298\uC758\uC740\uCD1D"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 588983d7c98ce4267bb25ef76dadd9a9, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon: {fileID: 0}
+  NewAbility: 
+  NewPokemonCry: {fileID: 0}
+  HP: 714
+  Attack: 130
+  Defense: 130
+  SAttack: 273
+  SDefense: 405
+  Speed: 229
+  MoveName:
+  - "\uCC28\uBC0D\uBCF4\uC774\uC2A4"
+  - "\uB9C9\uCE58\uAE30"
+  - "\uB3CC\uC9C4"
+  - "\uC54C\uB0B3\uAE30"
+  MoveType:
+  - "\uD398\uC5B4\uB9AC"
+  - "\uB178\uB9D0"
+  - "\uB178\uB9D0"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  MovePower: 28000000280000005a00000000000000
+  MoveAccuracy: 64000000640000005500000064000000
+  CurrentMovePP: 0f000000230000001400000005000000
+  FullMovePP: 0f000000230000001400000005000000

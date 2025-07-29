@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Zarude
+  m_EditorClassIdentifier: 
+  Name: "\uC790\uB8E8\uB3C4"
+  PokedexNumber: 893
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: c486d32b29b744f51bba75f474c547c4, type: 3}
+  Regular_Back: {fileID: 21300000, guid: df9d0d9108cbe4c38a7b867db20df3f4, type: 3}
+  Icon_Regular: {fileID: 1816192389, guid: 6023fdbfdd7824d429e6fe9097af66e9, type: 3}
+  Type1: "\uC545"
+  Type2: "\uD480"
+  Nature: 
+  Abilitys:
+  - "\uB9AC\uD504\uAC00\uB4DC"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: cdcce051060eb4495b0951f5bc23ff0d, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

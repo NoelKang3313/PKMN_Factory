@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Tornadus
+  m_EditorClassIdentifier: 
+  Name: "\uD1A0\uB124\uB85C\uC2A4"
+  PokedexNumber: 641
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 65f795c3a5c2346ed8c58756c0f3a46e, type: 3}
+  Regular_Back: {fileID: 21300000, guid: f62bf9ba1a00e478583ca9046ee73adc, type: 3}
+  Icon_Regular: {fileID: -1519458649, guid: 7abc47d6bd4fd424a84fc0f3f3944f16, type: 3}
+  Type1: "\uBE44\uD589"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC9D3\uAD83\uC740\uB9C8\uC74C"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 3b9ad8b8b0f554ef4bf7d423bebffe15, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 98501194dcdac4ace995da77bfb29951, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 0a67062d544dc4ede800e51316b1dc24, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: -1034130481, guid: ddac2599c099d4044bd31309163c02b3, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uC7AC\uC0DD\uB825"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 8300000, guid: 0050a40c6c5014c25884283876d62607, type: 3}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

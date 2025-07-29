@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Gallade
+  m_EditorClassIdentifier: 
+  Name: "\uC5D8\uB808\uC774\uB4DC"
+  PokedexNumber: 475
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 0b9e0290dd81b4caf8a71f482d06700e, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 949cf796c73a74877b0f7a9c96328484, type: 3}
+  Icon_Regular: {fileID: -1749912125, guid: 7c659003859e94e3e9550a6f1763d624, type: 3}
+  Type1: "\uC5D0\uC2A4\uD37C"
+  Type2: "\uACA9\uD22C"
+  Nature: 
+  Abilitys:
+  - "\uBD88\uAD74\uC758\uB9C8\uC74C"
+  - "\uC608\uB9AC\uD568"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: d03c71619bc7340adbf9c55593f87959, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 353cf4ec5c4284ae1b2a6ade360f2089, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 3fe57eade3b224e9d964e430b4cb684b, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 363266255, guid: c3a62f61d7fd5408c8d5dd8b2d304c2e, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: "\uC815\uC2E0\uB825"
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 8300000, guid: c021c59d599f548628541720159243b6, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 340
+  Attack: 383
+  Defense: 251
+  SAttack: 251
+  SDefense: 361
+  Speed: 284
+  MoveName:
+  - "\uB9AC\uD504\uBE14\uB808\uC774\uB4DC"
+  - "\uCE7C\uCDA4"
+  - "\uC0AC\uC774\uCF54\uCEE4\uD130"
+  - "\uC778\uD30C\uC774\uD2B8"
+  MoveType:
+  - "\uD480"
+  - "\uB178\uB9D0"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uACA9\uD22C"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 5a000000000000004600000078000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0f000000140000001400000005000000
+  FullMovePP: 0f000000140000001400000005000000

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Swampert
+  m_EditorClassIdentifier: 
+  Name: "\uB300\uC9F1\uC774"
+  PokedexNumber: 260
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 6435e68ac9f0c41bb8767b18914ef203, type: 3}
+  Regular_Back: {fileID: 21300000, guid: c52e9696417e546f2a57d9b759197fde, type: 3}
+  Icon_Regular: {fileID: -1371065301, guid: 2d7ce3824548c47ee9401c3ee20dde43, type: 3}
+  Type1: "\uBB3C"
+  Type2: "\uB545"
+  Nature: 
+  Abilitys:
+  - "\uAE09\uB958"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 58d22184d4c6442df8b76d568886aaa5, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: b81a5aa0b7b604046ac0dd608497327d, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 54809505407d44725a58433128800b20, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 275876445, guid: 3d3c29f3906ac4e72985a6244e751a03, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uC4F1\uC4F1"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: dd69ac3d7247c4a1f838dabab6cbebb5, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 404
+  Attack: 350
+  Defense: 306
+  SAttack: 295
+  SDefense: 306
+  Speed: 240
+  MoveName:
+  - "\uC554\uD574\uBA38"
+  - "\uC9C0\uC9C4"
+  - "\uC2A4\uD1A4\uC0E4\uC6CC"
+  - "\uD0C1\uB958"
+  MoveType:
+  - "\uACA9\uD22C"
+  - "\uB545"
+  - "\uBC14\uC704"
+  - "\uBB3C"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 64000000640000004b0000005a000000
+  MoveAccuracy: 5a000000640000005a00000055000000
+  CurrentMovePP: 0a0000000a0000000a0000000a000000
+  FullMovePP: 0a0000000a0000000a0000000a000000

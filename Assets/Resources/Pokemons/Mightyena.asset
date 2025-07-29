@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Mightyena
+  m_EditorClassIdentifier: 
+  Name: "\uADF8\uB77C\uC5D0\uB098"
+  PokedexNumber: 262
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 590776d55384a4e9894c337cae06f2fd, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 48332c3ed1060451d82476a0800504c0, type: 3}
+  Icon_Regular: {fileID: -2016037587, guid: 827f578a87f4f4673a85cdc466fb9709, type: 3}
+  Type1: "\uC545"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC18D\uBCF4"
+  - "\uC704\uD611"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 9e68a5279573a4df5b1bc1e75edc2a77, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 344
+  Attack: 306
+  Defense: 262
+  SAttack: 240
+  SDefense: 240
+  Speed: 262
+  MoveName:
+  - "\uBD88\uAF43\uC5C4\uB2C8"
+  - "\uAE68\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  - "\uBC14\uD2B8\uC544\uC6C3"
+  - "\uAC81\uB098\uB294\uC5BC\uAD74"
+  MoveType:
+  - "\uBD88\uAF43"
+  - "\uC545"
+  - "\uC545"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  MovePower: 41000000500000003700000000000000
+  MoveAccuracy: 5f000000640000005f00000064000000
+  CurrentMovePP: 0f0000000f0000000f0000000a000000
+  FullMovePP: 0f0000000f0000000f0000000a000000

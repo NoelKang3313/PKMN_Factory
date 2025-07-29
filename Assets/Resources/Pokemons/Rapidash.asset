@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Rapidash
+  m_EditorClassIdentifier: 
+  Name: "\uB0A0\uC329\uB9C8"
+  PokedexNumber: 78
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: c941ab37ae73441abb24ee96e1cda06d, type: 3}
+  Regular_Back: {fileID: 21300000, guid: e242be49baae0472ab28eec9bd1aeee7, type: 3}
+  Icon_Regular: {fileID: -2057638347, guid: 3cb781759aa214cef95e31ff0bf06205, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uB3C4\uC8FC"
+  - "\uD0C0\uC624\uB974\uB294\uBD88\uAF43"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: e54e1887863d94a15aed6f2cd39f3168, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 334
+  Attack: 328
+  Defense: 262
+  SAttack: 284
+  SDefense: 284
+  Speed: 339
+  MoveName:
+  - "\uB2C8\uD2B8\uB85C\uCC28\uC9C0"
+  - "\uACE0\uC18D\uC774\uB3D9"
+  - "\uC9D3\uBC1F\uAE30"
+  - "\uD50C\uB808\uC5B4\uB4DC\uB77C\uC774\uBE0C"
+  MoveType:
+  - "\uBD88\uAF43"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uB178\uB9D0"
+  - "\uBD88\uAF43"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 32000000000000004100000078000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000001e000000140000000f000000
+  FullMovePP: 140000001e000000140000000f000000

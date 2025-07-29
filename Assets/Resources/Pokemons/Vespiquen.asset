@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Vespiquen
+  m_EditorClassIdentifier: 
+  Name: "\uBE44\uD038"
+  PokedexNumber: 416
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 7cd27106f8c8a4571bb0e0773ac4a1f6, type: 3}
+  Regular_Back: {fileID: 21300000, guid: f879f57d0fe804be5a10b1a4777f7818, type: 3}
+  Icon_Regular: {fileID: 135427587, guid: 8b9832908a11c49ec85027c22c52b6a2, type: 3}
+  Type1: "\uBC8C\uB808"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uD504\uB808\uC154"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 6b6ba61c68e3a4ae6ae52623ca51e423, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 344
+  Attack: 284
+  Defense: 333
+  SAttack: 284
+  SDefense: 333
+  Speed: 196
+  MoveName:
+  - "\uC5D0\uC5B4\uC2AC\uB798\uC2DC"
+  - "\uD30C\uC6CC\uC7BC"
+  - "\uACF5\uACA9\uC9C0\uB839"
+  - "\uBC29\uC5B4\uC9C0\uB839"
+  MoveType:
+  - "\uBE44\uD589"
+  - "\uBC14\uC704"
+  - "\uBC8C\uB808"
+  - "\uBC8C\uB808"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  MovePower: 4b000000500000005a00000000000000
+  MoveAccuracy: 5f000000640000006400000064000000
+  CurrentMovePP: 0f000000140000000f0000000a000000
+  FullMovePP: 0f000000140000000f0000000a000000

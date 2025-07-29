@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b653fac90802e4e3284a51d0e4599ffd, type: 3}
+  m_Name: Alakazite
+  m_EditorClassIdentifier: 
+  ItemName: "\uD6C4\uB514\uB098\uC774\uD2B8"
+  ItemSprite: {fileID: 21300000, guid: ee8fb297fb72147ea83120fdb67599a5, type: 3}
+  ItemType: "\uB3C4\uAD6C"
+  ItemAmount: 0
+  ItemDescription: "\uD6C4\uB518\uC5D0\uAC8C \uC9C0\uB2C8\uAC8C\uD558\uBA74 \uBC30\uD2C0\uD560
+    \uB54C \uBA54\uAC00\uC9C4\uD654\uD560 \uC218 \uC788\uB294 \uC2E0\uBE44\uD55C
+    \uBA54\uAC00\uC2A4\uD1A4\uC758 \uC77C\uC885."

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Dedenne
+  m_EditorClassIdentifier: 
+  Name: "\uB370\uB374\uB124"
+  PokedexNumber: 702
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 879959100353f4271b531e4aebd02a1f, type: 3}
+  Regular_Back: {fileID: 21300000, guid: c460f555fe5654247b5c1e79d7c3d758, type: 3}
+  Icon_Regular: {fileID: -1705045770, guid: 0ab725482b70a46fc85695630c239654, type: 3}
+  Type1: "\uC804\uAE30"
+  Type2: "\uD398\uC5B4\uB9AC"
+  Nature: 
+  Abilitys:
+  - "\uBCFC\uC8FC\uBA38\uB2C8"
+  - "\uD53D\uC5C5"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: cf9cbb769357a43a7864bbbfcf66aa27, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

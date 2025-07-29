@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Exeggutor(Alolan)
+  m_EditorClassIdentifier: 
+  Name: "\uB098\uC2DC"
+  PokedexNumber: 103
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 0c1e2b69ca09d4ce8b717762fe31ea3f, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 803d4a30f17fa42139b86f926781146a, type: 3}
+  Icon_Regular: {fileID: -1792690362, guid: 13e77ad8a02da48bca2919b47adc14c8, type: 3}
+  Type1: "\uD480"
+  Type2: "\uB4DC\uB798\uACE4"
+  Nature: 
+  Abilitys:
+  - "\uD1B5\uCC30"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 691cbed6222e24cf5ad76379eff0a928, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 394
+  Attack: 339
+  Defense: 295
+  SAttack: 383
+  SDefense: 273
+  Speed: 207
+  MoveName:
+  - "\uC2E0\uD1B5\uB825"
+  - "\uAE30\uAC00\uB4DC\uB808\uC778"
+  - "\uC528\uBFCC\uB9AC\uAE30"
+  - "\uB4DC\uB798\uACE4\uD574\uBA38"
+  MoveType:
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uD480"
+  - "\uD480"
+  - "\uB4DC\uB798\uACE4"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  MovePower: 500000004b000000000000005a000000
+  MoveAccuracy: 64000000640000005a00000064000000
+  CurrentMovePP: 140000000a0000000a0000000f000000
+  FullMovePP: 140000000a0000000a0000000f000000

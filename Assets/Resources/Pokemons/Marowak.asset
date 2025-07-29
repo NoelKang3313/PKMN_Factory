@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Marowak
+  m_EditorClassIdentifier: 
+  Name: "\uD145\uAD6C\uB9AC"
+  PokedexNumber: 105
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 111bb5844c81a4d21a7b79d74878acea, type: 3}
+  Regular_Back: {fileID: 21300000, guid: f607caea81b5d4f69a1d2c777f55ab62, type: 3}
+  Icon_Regular: {fileID: -495809295, guid: e0ce1e1075a0d4ca3a2ca8fb7b4dca88, type: 3}
+  Type1: "\uB545"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD53C\uB8B0\uCE68"
+  - "\uB3CC\uBA38\uB9AC"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 75e5fda2efd854d6682ee786a5eedd1c, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 324
+  Attack: 284
+  Defense: 350
+  SAttack: 218
+  SDefense: 284
+  Speed: 207
+  MoveName:
+  - "\uCE7C\uB4F1\uCE58\uAE30"
+  - "\uBC15\uCE58\uAE30"
+  - "\uBCF8\uB7EC\uC26C"
+  - "\uBF08\uB2E4\uADC0\uBD80\uBA54\uB791"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uB178\uB9D0"
+  - "\uB545"
+  - "\uB545"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 28000000460000001900000032000000
+  MoveAccuracy: 64000000640000005a0000005a000000
+  CurrentMovePP: 280000000f0000000a0000000a000000
+  FullMovePP: 280000000f0000000a0000000a000000

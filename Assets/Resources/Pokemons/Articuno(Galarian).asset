@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Articuno(Galarian)
+  m_EditorClassIdentifier: 
+  Name: "\uD504\uB9AC\uC838"
+  PokedexNumber: 144
+  Gender: 
+  Genderless: 1
+  Regular: {fileID: 21300000, guid: f84dcd53a427d49199324c6d1b1f5770, type: 3}
+  Regular_Back: {fileID: 21300000, guid: ab63dbf91fcc2452e8efe760cbb3c348, type: 3}
+  Icon_Regular: {fileID: -942944901, guid: 2040a6ae836c940e69a46574a5c55097, type: 3}
+  Type1: "\uC5D0\uC2A4\uD37C"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uC2B9\uAE30"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 54cc0168c578847c19a2b19a12b7c504, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon: {fileID: 0}
+  NewAbility: 
+  NewPokemonCry: {fileID: 0}
+  HP: 384
+  Attack: 295
+  Defense: 295
+  SAttack: 383
+  SDefense: 328
+  Speed: 317
+  MoveName:
+  - "\uB9AC\uD50C\uB809\uD130"
+  - "\uC5BC\uC5B4\uBD99\uB294\uC2DC\uC120"
+  - "\uD3ED\uD48D"
+  - "\uBBF8\uB798\uC608\uC9C0"
+  MoveType:
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uBE44\uD589"
+  - "\uC5D0\uC2A4\uD37C"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 000000005a0000006e00000078000000
+  MoveAccuracy: 00000000640000004600000064000000
+  CurrentMovePP: 140000000a0000000a0000000a000000
+  FullMovePP: 140000000a0000000a0000000a000000

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Banette
+  m_EditorClassIdentifier: 
+  Name: "\uB2E4\uD06C\uD3AB"
+  PokedexNumber: 354
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 09171178bef7d4ec8bef7e17eae71d15, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 59aadf28a25db4c88be71c56635ef798, type: 3}
+  Icon_Regular: {fileID: 1369772565, guid: 07220b6f37c5d4124976d13f9d54bf82, type: 3}
+  Type1: "\uACE0\uC2A4\uD2B8"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uBD88\uBA74"
+  - "\uD1B5\uCC30"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 63057d39a608341ce8ba2dc633b631c8, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 6286879cf66b047658c826d9e945b74a, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: e22bc2be2fbce4f2190fcd60dbc050f9, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 130058650, guid: dfe179ca70ea74c119e2c3bf61d4b195, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uC9D3\uAD83\uC740\uB9C8\uC74C"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: aea1a65c14fa54ba3bc36fd9e37fb830, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 332
+  Attack: 361
+  Defense: 251
+  SAttack: 291
+  SDefense: 247
+  Speed: 251
+  MoveName:
+  - "\uD0C1\uCCD0\uC11C\uB5A8\uAD6C\uAE30"
+  - "\uB3C4\uAE68\uBE44\uBD88"
+  - "\uC100\uB3C4\uBCFC"
+  - "\uACE0\uC2A4\uD2B8\uB2E4\uC774\uBE0C"
+  MoveType:
+  - "\uC545"
+  - "\uBD88\uAF43"
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uACE0\uC2A4\uD2B8"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  MovePower: 4100000000000000500000005a000000
+  MoveAccuracy: 64000000550000006400000064000000
+  CurrentMovePP: 140000000f0000000f0000000a000000
+  FullMovePP: 140000000f0000000f0000000a000000

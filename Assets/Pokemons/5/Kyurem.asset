@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Kyurem
+  m_EditorClassIdentifier: 
+  Name: "\uD050\uB808\uBB34"
+  PokedexNumber: 646
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: a41f6599be6e845128b18a37da78fa77, type: 3}
+  Regular_Back: {fileID: 21300000, guid: e57ac92dd1a564b438cae942826fea0d, type: 3}
+  Icon_Regular: {fileID: 1694196213, guid: 7c06454cdbf3449429d0d0b6d699437d, type: 3}
+  Type1: "\uB4DC\uB798\uACE4"
+  Type2: "\uC5BC\uC74C"
+  Nature: 
+  Abilitys:
+  - "\uD504\uB808\uC154"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: cfffd3855dcc14e4387f27c8d2a59b7d, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 145162341db304296859d577b2fc01ce, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: c08cc0b55023f4743a3d98eaa63c1585, type: 3}
+  NewForm2: {fileID: 21300000, guid: aff533eaf2ec247acb5346d4809cb58a, type: 3}
+  NewForm2_Back: {fileID: 21300000, guid: 6c004553040cc45dba924966ac040e83, type: 3}
+  NewForm_Icon1: {fileID: -105454790, guid: c96f873e1c0974d7fa9975ba8839ed99, type: 3}
+  NewForm_Icon2: {fileID: -1103734363, guid: bb720e95cc85d44ab9c464fa729bfa10, type: 3}
+  NewAbility1: "\uD14C\uB77C\uBCFC\uD2F0\uC9C0"
+  NewAbility2: "\uD130\uBCF4\uBE14\uB808\uC774\uC988"
+  NewPokemonCry1: {fileID: 8300000, guid: c80912bb9cab64ff99272a4e19537302, type: 3}
+  NewPokemonCry2: {fileID: 8300000, guid: 0a5be7defa9e3475c8d1b1145ffe3bd2, type: 3}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

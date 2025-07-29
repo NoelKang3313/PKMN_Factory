@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Cobalion
+  m_EditorClassIdentifier: 
+  Name: "\uCF54\uBC14\uB974\uC628"
+  PokedexNumber: 638
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 750734b511f974652b840ec85bfc421b, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 64847281b1936454fb2d7205fe06e549, type: 3}
+  Icon_Regular: {fileID: -887263129, guid: f959a1cde26bf42a698c70dde29dfbb6, type: 3}
+  Type1: "\uAC15\uCCA0"
+  Type2: "\uACA9\uD22C"
+  Nature: 
+  Abilitys:
+  - "\uC815\uC758\uC758\uB9C8\uC74C"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: aaee1de0af30b439ca4b007793fca0de, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 386
+  Attack: 306
+  Defense: 392
+  SAttack: 306
+  SDefense: 267
+  Speed: 346
+  MoveName:
+  - "\uBA54\uD0C8\uD074\uB85C"
+  - "\uB450\uBC88\uCC28\uAE30"
+  - "\uC131\uC2A4\uB7EC\uC6B4\uCE7C"
+  - "\uC544\uC774\uC5B8\uD5E4\uB4DC"
+  MoveType:
+  - "\uAC15\uCCA0"
+  - "\uACA9\uD22C"
+  - "\uACA9\uD22C"
+  - "\uAC15\uCCA0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 320000001e0000005a00000050000000
+  MoveAccuracy: 5f000000640000006400000064000000
+  CurrentMovePP: 230000001e0000000f0000000f000000
+  FullMovePP: 230000001e0000000f0000000f000000

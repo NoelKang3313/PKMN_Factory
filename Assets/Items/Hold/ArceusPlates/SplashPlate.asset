@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b653fac90802e4e3284a51d0e4599ffd, type: 3}
+  m_Name: SplashPlate
+  m_EditorClassIdentifier: 
+  ItemName: "\uBB3C\uBC29\uC6B8\uD50C\uB808\uC774\uD2B8"
+  ItemSprite: {fileID: 21300000, guid: 0cf16798352284fe4838aa58e79d73b4, type: 3}
+  ItemType: "\uB3C4\uAD6C"
+  ItemAmount: 0
+  ItemDescription: "\uBB3C\uD0C0\uC785\uC758 \uC11D\uD310. \uC9C0\uB2C8\uAC8C \uD558\uBA74
+    \uBB3C\uD0C0\uC785 \uAE30\uC220\uC758 \uC704\uB825\uC774 \uAC15\uD574\uC9C4\uB2E4.
+    \"\uD50C\uB808\uC774\uD2B8\uB97C \uC190\uC5D0 \uB123\uC740 \uC874\uC7AC \uC790\uC720\uC790\uC7AC\uB85C
+    \uBCC0\uD558\uC5EC \uD798\uC744 \uBC1C\uD718\uD558\uB9AC\uB77C.\""

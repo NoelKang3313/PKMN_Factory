@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Togekiss
+  m_EditorClassIdentifier: 
+  Name: "\uD1A0\uAC8C\uD0A4\uC2A4"
+  PokedexNumber: 468
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 0f0bdc8b65f5846c28c4f9b63c21e8d2, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 79e625751f25a4cc0af7ef13a921b7ba, type: 3}
+  Icon_Regular: {fileID: 87890977, guid: b4b4025acabab42d6b47d5c3f6dafae0, type: 3}
+  Type1: "\uD398\uC5B4\uB9AC"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uC758\uC695"
+  - "\uD558\uB298\uC758\uC740\uCD1D"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: ad9e4871831c3418d8ef1bff9ceafde7, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 374
+  Attack: 218
+  Defense: 317
+  SAttack: 372
+  SDefense: 361
+  Speed: 284
+  MoveName:
+  - "\uC5D0\uC5B4\uC2AC\uB798\uC2DC"
+  - "\uC694\uC815\uC758\uBC14\uB78C"
+  - "\uD30C\uB3D9\uD0C4"
+  - "\uCC9C\uC0AC\uC758\uD0A4\uC2A4"
+  MoveType:
+  - "\uBE44\uD589"
+  - "\uD398\uC5B4\uB9AC"
+  - "\uACA9\uD22C"
+  - "\uD398\uC5B4\uB9AC"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  MovePower: 4b000000280000005000000000000000
+  MoveAccuracy: 5f00000064000000640000004b000000
+  CurrentMovePP: 0f0000001e000000140000000a000000
+  FullMovePP: 0f0000001e000000140000000a000000

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Hoopa
+  m_EditorClassIdentifier: 
+  Name: "\uD6C4\uD30C"
+  PokedexNumber: 720
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 8f50f98126a084bc6b10899816adfcaa, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 05418461cfc9248f28c59b1bf2254fee, type: 3}
+  Icon_Regular: {fileID: 696428278, guid: 02678abe039f043dea859de38e581c88, type: 3}
+  Type1: "\uC5D0\uC2A4\uD37C"
+  Type2: "\uACE0\uC2A4\uD2B8"
+  Nature: 
+  Abilitys:
+  - "\uB9E4\uC9C0\uC158"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 67b29fa6d896d44e0ba7886680a6e22c, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 7b4193df1aa7c42deb89c7265a2cffe5, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 86d8659a52aa745fb9920597c02a19da, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: -1078992683, guid: bf85d4cc8083641e58fe4940c9779fa7, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uB9E4\uC9C0\uC158"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: 779a14b7367eb41f18be2995a831da6f, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

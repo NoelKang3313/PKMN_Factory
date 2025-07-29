@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Jynx
+  m_EditorClassIdentifier: 
+  Name: "\uB8E8\uC8FC\uB77C"
+  PokedexNumber: 124
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 40d9f4865a32441afbed48a578c8c9d9, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 275fe96b3f2d14bd6bf9baf8b90ebe57, type: 3}
+  Icon_Regular: {fileID: -790126615, guid: 250818e8ebeef4d519c055326cbdf190, type: 3}
+  Type1: "\uC5BC\uC74C"
+  Type2: "\uC5D0\uC2A4\uD37C"
+  Nature: 
+  Abilitys:
+  - "\uB454\uAC10"
+  - "\uC608\uC9C0\uBABD"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: dd2066fab9b2f4923813e7da606be7ce, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 334
+  Attack: 218
+  Defense: 185
+  SAttack: 361
+  SDefense: 317
+  Speed: 317
+  MoveName:
+  - "\uCC9C\uC0AC\uC758\uD0A4\uC2A4"
+  - "\uB0C9\uB3D9\uD380\uCE58"
+  - "\uC0AC\uC774\uCF54\uD0A4\uB124\uC2DC\uC2A4"
+  - "\uC545\uB9C8\uC758\uD0A4\uC2A4"
+  MoveType:
+  - "\uD398\uC5B4\uB9AC"
+  - "\uC5BC\uC74C"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  MovePower: 000000004b0000005a00000000000000
+  MoveAccuracy: 4b00000064000000640000004b000000
+  CurrentMovePP: 0a0000000f0000000a0000000a000000
+  FullMovePP: 0a0000000f0000000a0000000a000000

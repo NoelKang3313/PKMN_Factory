@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Hitmontop
+  m_EditorClassIdentifier: 
+  Name: "\uCE74\uD3EC\uC5D0\uB77C"
+  PokedexNumber: 237
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 5ee33da53aac841298857e92d45010a0, type: 3}
+  Regular_Back: {fileID: 21300000, guid: cc57d779f75c74039b1285f768170d10, type: 3}
+  Icon_Regular: {fileID: 713613286, guid: 17fe641ebc5954f42ba6e3121e99cf5f, type: 3}
+  Type1: "\uACA9\uD22C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC704\uD611"
+  - "\uD14C\uD06C\uB2C8\uC158"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 6c540ae5919084927891943272d15e97, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 304
+  Attack: 317
+  Defense: 317
+  SAttack: 185
+  SDefense: 350
+  Speed: 262
+  MoveName:
+  - "\uD2B8\uB9AC\uD50C\uD0A5"
+  - "\uD310\uBCC4"
+  - "\uAD6C\uB9DD\uD30C\uAE30"
+  - "\uC778\uD30C\uC774\uD2B8"
+  MoveType:
+  - "\uACA9\uD22C"
+  - "\uACA9\uD22C"
+  - "\uB545"
+  - "\uACA9\uD22C"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 0a000000000000005000000078000000
+  MoveAccuracy: 5a000000640000006400000064000000
+  CurrentMovePP: 0a000000050000000a00000005000000
+  FullMovePP: 0a000000050000000a00000005000000

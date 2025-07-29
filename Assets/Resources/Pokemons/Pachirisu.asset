@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Pachirisu
+  m_EditorClassIdentifier: 
+  Name: "\uD30C\uCE58\uB9AC\uC2A4"
+  PokedexNumber: 417
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 87f6437a1ac694cf183fae489e587988, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 6618af075a3174c2e909700cc788df39, type: 3}
+  Icon_Regular: {fileID: 1444450213, guid: d3243d70d1e63415097dcaf67ba2b36d, type: 3}
+  Type1: "\uC804\uAE30"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uB3C4\uC8FC"
+  - "\uD53D\uC5C5"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 24cf5a32117f44eb091c8b6febe4ded6, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 324
+  Attack: 207
+  Defense: 262
+  SAttack: 207
+  SDefense: 306
+  Speed: 317
+  MoveName:
+  - "\uBCFC\uBD80\uBE44\uBD80\uBE44"
+  - "\uCC9C\uC0AC\uC758\uD0A4\uC2A4"
+  - "\uBD84\uB178\uC758\uC55E\uB2C8"
+  - "\uBC29\uC804"
+  MoveType:
+  - "\uC804\uAE30"
+  - "\uD398\uC5B4\uB9AC"
+  - "\uB178\uB9D0"
+  - "\uC804\uAE30"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 14000000000000000000000050000000
+  MoveAccuracy: 640000004b0000005a00000064000000
+  CurrentMovePP: 140000000a0000000a0000000f000000
+  FullMovePP: 140000000a0000000a0000000f000000

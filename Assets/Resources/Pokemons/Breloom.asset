@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Breloom
+  m_EditorClassIdentifier: 
+  Name: "\uBC84\uC12F\uBAA8"
+  PokedexNumber: 286
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 8f0f56f3409074b09a6469b83bbe7f44, type: 3}
+  Regular_Back: {fileID: 21300000, guid: afe814e63be3045f7a72d993164b7cc3, type: 3}
+  Icon_Regular: {fileID: 1225919527, guid: 0508cc3fb57904edeabd0a719c91fff9, type: 3}
+  Type1: "\uD480"
+  Type2: "\uACA9\uD22C"
+  Nature: 
+  Abilitys:
+  - "\uD3EC\uC790"
+  - "\uD3EC\uC774\uC98C\uD790"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 03af715ee76c24b7fb59e9eaf6ec7ad5, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon: {fileID: 0}
+  NewAbility: 
+  NewPokemonCry: {fileID: 0}
+  HP: 324
+  Attack: 394
+  Defense: 284
+  SAttack: 240
+  SDefense: 240
+  Speed: 262
+  MoveName:
+  - "\uB9C8\uD558\uD380\uCE58"
+  - "\uBA54\uAC00\uB4DC\uB808\uC778"
+  - "\uAE68\uD2B8\uB9AC\uAE30"
+  - "\uC528\uD3ED\uD0C4"
+  MoveType:
+  - "\uACA9\uD22C"
+  - "\uD480"
+  - "\uACA9\uD22C"
+  - "\uD480"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 28000000280000004b00000050000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 1e0000000f0000000f0000000f000000
+  FullMovePP: 1e0000000f0000000f0000000f000000

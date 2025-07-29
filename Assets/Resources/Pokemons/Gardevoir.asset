@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Gardevoir
+  m_EditorClassIdentifier: 
+  Name: "\uAC00\uB514\uC548"
+  PokedexNumber: 282
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 566fe4bc226134b83bd17e30defb7f72, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 31348cde93e934fb682ef32e1c5827ef, type: 3}
+  Icon_Regular: {fileID: -1462625127, guid: ef473ae72cd4f49d18c5cd01d3d07117, type: 3}
+  Type1: "\uC5D0\uC2A4\uD37C"
+  Type2: "\uD398\uC5B4\uB9AC"
+  Nature: 
+  Abilitys:
+  - "\uC2F1\uD06C\uB85C"
+  - "\uD2B8\uB808\uC774\uC2A4"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: c1e95172a978149f98b5ae292f28b7fa, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 8c20d2d5af2f44f3eb85968efa85dcdb, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 9cf39086913c24957a96da7db7309336, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 2146752097, guid: 363ec887ea966444180673b99495f007, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uD398\uC5B4\uB9AC\uC2A4\uD0A8"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: 2027367fe33134b1d92b56c11ac713c1, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 340
+  Attack: 251
+  Defense: 251
+  SAttack: 383
+  SDefense: 361
+  Speed: 284
+  MoveName:
+  - "\uB9E4\uC9C0\uCEEC\uD50C\uB808\uC784"
+  - "\uC0DD\uBA85\uC758\uBB3C\uBC29\uC6B8"
+  - "\uC0AC\uC774\uCF54\uD0A4\uB124\uC2DC\uC2A4"
+  - "\uBB38\uD3EC\uC2A4"
+  MoveType:
+  - "\uBD88\uAF43"
+  - "\uBB3C"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uD398\uC5B4\uB9AC"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 4b000000000000005a0000005f000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0a0000000a0000000a0000000f000000
+  FullMovePP: 0a0000000a0000000a0000000f000000

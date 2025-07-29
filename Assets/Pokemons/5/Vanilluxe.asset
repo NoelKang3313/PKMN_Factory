@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Vanilluxe
+  m_EditorClassIdentifier: 
+  Name: "\uBC30\uBC14\uB2D0\uB77C"
+  PokedexNumber: 584
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 6c5f0e8879f934ecaa839bbe50221fd7, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 03c483d3517804c03a0700362ea7808a, type: 3}
+  Icon_Regular: {fileID: -1390562119, guid: 6ed916e3a48c841cb84ae0e5426b1ebb, type: 3}
+  Type1: "\uC5BC\uC74C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC544\uC774\uC2A4\uBC14\uB514"
+  - "\uB208\uD37C\uB728\uB9AC\uAE30"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: d558cd913d57c40bc9ffe81f6f96b01b, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

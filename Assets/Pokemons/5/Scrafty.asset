@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Scrafty
+  m_EditorClassIdentifier: 
+  Name: "\uACE4\uC728\uAC70\uB2C8"
+  PokedexNumber: 560
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: f45f0a1b903c140a69c9506d0b0d5f01, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 4dfe63c7a2be0496397b2f52c5782f7b, type: 3}
+  Icon_Regular: {fileID: 79076792, guid: a9e9407474d6d476dbd565d1e422842d, type: 3}
+  Type1: "\uC545"
+  Type2: "\uACA9\uD22C"
+  Nature: 
+  Abilitys:
+  - "\uD0C8\uD53C"
+  - "\uC790\uAE30\uACFC\uC2E0"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 2600438f13c9a4fb79f6a7aff8d210ed, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

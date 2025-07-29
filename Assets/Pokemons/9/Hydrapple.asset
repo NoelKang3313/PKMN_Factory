@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Hydrapple
+  m_EditorClassIdentifier: 
+  Name: "\uACFC\uBBF8\uB4DC\uB77C"
+  PokedexNumber: 1019
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 9531040a025bc45feb8ff06960a66ca0, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 0381aad7c9cbc442b9808b9030d3973c, type: 3}
+  Icon_Regular: {fileID: 532078647, guid: 14aead81780c045f9af26e2d066308eb, type: 3}
+  Type1: "\uD480"
+  Type2: "\uB4DC\uB798\uACE4"
+  Nature: 
+  Abilitys:
+  - "\uAC10\uBBF8\uB85C\uC6B4\uAFC0"
+  - "\uC7AC\uC0DD\uB825"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 544b9eabc3ad148a384d531b2a64df49, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

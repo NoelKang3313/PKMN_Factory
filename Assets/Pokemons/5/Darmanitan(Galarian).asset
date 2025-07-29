@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Darmanitan(Galarian)
+  m_EditorClassIdentifier: 
+  Name: "\uBD88\uBE44\uB2EC\uB9C8"
+  PokedexNumber: 555
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 8a1c1a510d9204e56a6518353594259b, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 147c7d63a333e4ada99e4c8a5f07a4cd, type: 3}
+  Icon_Regular: {fileID: -845691241, guid: 9c9075bd839724078a5b03729c949dc8, type: 3}
+  Type1: "\uC5BC\uC74C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uBB34\uC544\uC9C0\uACBD"
+  - "\uB2EC\uB9C8\uBAA8\uB4DC"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: c9adceb4670f04488b0f231539f30365, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: d1bdb027efc8f48358fc7f52e2cbf59f, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 49b79903636ae410897b4de49a28e7b6, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 191204435, guid: bd6dd2eb2efbc4d9f81f793b86550f63, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: "\uC758\uC695"
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 8300000, guid: c9adceb4670f04488b0f231539f30365, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 414
+  Attack: 416
+  Defense: 229
+  SAttack: 174
+  SDefense: 229
+  Speed: 317
+  MoveName:
+  - "\uB3C4\uBC1C"
+  - "\uC5BC\uC74C\uC5C4\uB2C8"
+  - "\uB0C9\uB3D9\uD380\uCE58"
+  - "\uC18C\uB780\uD53C\uAE30"
+  MoveType:
+  - "\uC545"
+  - "\uC5BC\uC74C"
+  - "\uC5BC\uC74C"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 00000000410000004b0000005a000000
+  MoveAccuracy: 640000005f0000006400000064000000
+  CurrentMovePP: 140000000f0000000f0000000a000000
+  FullMovePP: 140000000f0000000f0000000a000000

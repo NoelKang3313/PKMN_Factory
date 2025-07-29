@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Torkoal
+  m_EditorClassIdentifier: 
+  Name: "\uCF54\uD130\uC2A4"
+  PokedexNumber: 324
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 68f6e555f5043437ab7adf09fc8b7b39, type: 3}
+  Regular_Back: {fileID: 21300000, guid: da05249b072774e0ca7bbb4ec74b1da6, type: 3}
+  Icon_Regular: {fileID: 652809731, guid: 3080842a116a04e9aa1f0e6db0dab977, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD558\uC580\uC5F0\uAE30"
+  - "\uAC00\uBB44"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: bb18a01b841464c85be186c46f1b89fb, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 344
+  Attack: 295
+  Defense: 416
+  SAttack: 295
+  SDefense: 262
+  Speed: 152
+  MoveName:
+  - "\uC2A4\uBAA8\uADF8"
+  - "\uBD84\uC5F0"
+  - "\uB204\uB974\uAE30"
+  - "\uD654\uC5FC\uBC29\uC0AC"
+  MoveType:
+  - "\uB3C5"
+  - "\uBD88\uAF43"
+  - "\uB178\uB9D0"
+  - "\uBD88\uAF43"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 1e00000050000000550000005a000000
+  MoveAccuracy: 46000000640000006400000064000000
+  CurrentMovePP: 140000000f0000000f0000000f000000
+  FullMovePP: 140000000f0000000f0000000f000000

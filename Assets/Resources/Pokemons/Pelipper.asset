@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Pelipper
+  m_EditorClassIdentifier: 
+  Name: "\uD328\uB9AC\uD37C"
+  PokedexNumber: 279
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 0c34920d8cb3447cb8b579307fc5e343, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 0948b5f6a5a3b4b9899d1d4f57aa24f9, type: 3}
+  Icon_Regular: {fileID: 1459298037, guid: 5e2cbdefdf4f94a31a568e0102bdfa5d, type: 3}
+  Type1: "\uBB3C"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uB0A0\uCE74\uB85C\uC6B4\uB208"
+  - "\uC794\uBE44"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 40cbf9022828f4ed8985e7e6909cb77e, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 324
+  Attack: 218
+  Defense: 328
+  SAttack: 317
+  SDefense: 262
+  Speed: 251
+  MoveName:
+  - "\uBC29\uC5B4"
+  - "\uC5D0\uC5B4\uC2AC\uB798\uC2DC"
+  - "\uBB3C\uC758\uD30C\uB3D9"
+  - "\uD558\uC774\uB4DC\uB85C\uD38C\uD504"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uBE44\uD589"
+  - "\uBB3C"
+  - "\uBB3C"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 000000004b0000003c0000006e000000
+  MoveAccuracy: 640000005f0000006400000050000000
+  CurrentMovePP: 0a0000000f0000001400000005000000
+  FullMovePP: 0a0000000f0000001400000005000000

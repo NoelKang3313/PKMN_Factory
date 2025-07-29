@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b653fac90802e4e3284a51d0e4599ffd, type: 3}
+  m_Name: IndigoDisk
+  m_EditorClassIdentifier: 
+  ItemName: "\uB0A8\uCCAD\uC758\uB514\uC2A4\uD06C"
+  ItemSprite: {fileID: 21300000, guid: c494461b3fb8a4ab09ba741f8bf632d5, type: 3}
+  ItemType: "\uC911\uC694"
+  ItemAmount: 0
+  ItemDescription: "\uCE58\uD504 \uCC54\uD53C\uC5B8\uC5D0\uAC8C\uC11C \uBC1B\uC740
+    \uD478\uB978\uBE5B\uC73C\uB85C \uBE5B\uB098\uB294 \uC218\uC218\uAED8\uB07C\uC758
+    \uB514\uC2A4\uD06C. \uC5D0\uB9AC\uC5B4 \uC81C\uB85C\uC640 \uC5F0\uAD00\uC774
+    \uC788\uB294 \uAC83 \uAC19\uB2E4."

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b653fac90802e4e3284a51d0e4599ffd, type: 3}
+  m_Name: XSpAtk
+  m_EditorClassIdentifier: 
+  ItemName: "\uC2A4\uD398\uC15C\uC5C5"
+  ItemSprite: {fileID: 21300000, guid: 2ae34e05a62714977b48c79d19bffb65, type: 3}
+  ItemType: "\uBC30\uD2C0"
+  ItemAmount: 0
+  ItemDescription: "\uBC30\uD2C0 \uC911\uC778 \uD3EC\uCF13\uBAAC\uC758 \uD2B9\uC218\uACF5\uACA9\uC744
+    \uD06C\uAC8C \uC62C\uB9AC\uB294 \uB3C4\uAD6C. \uD3EC\uCF13\uBAAC\uC744 \uBCFC\uC5D0
+    \uB123\uC5B4\uBC84\uB9AC\uBA74 \uC6D0\uB798\uB300\uB85C \uB418\uB3CC\uC544\uAC04\uB2E4."

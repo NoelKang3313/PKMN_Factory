@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Dodrio
+  m_EditorClassIdentifier: 
+  Name: "\uB450\uD2B8\uB9AC\uC624"
+  PokedexNumber: 85
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 61deecac5caec4669a2590389fccdd09, type: 3}
+  Regular_Back: {fileID: 21300000, guid: f953b6571adb84d259255e6bc36c7cd4, type: 3}
+  Icon_Regular: {fileID: 1077543131, guid: 2a5fc7027e6a343ecbca8ed76f19d258, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uB3C4\uC8FC"
+  - "\uC77C\uCC0D\uAE30\uC0C1"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: f5e6bd69dc68349e489881b57f927c06, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 324
+  Attack: 350
+  Defense: 262
+  SAttack: 240
+  SDefense: 240
+  Speed: 350
+  MoveName:
+  - "\uD2B8\uB77C\uC774\uC5B4\uD0DD"
+  - "\uACE0\uC18D\uC774\uB3D9"
+  - "\uCABC\uC544\uB300\uAE30"
+  - "\uD68C\uC804\uBD80\uB9AC"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uBE44\uD589"
+  - "\uBE44\uD589"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 50000000000000003c00000050000000
+  MoveAccuracy: 64000000000000006400000064000000
+  CurrentMovePP: 0a0000001e0000001400000014000000
+  FullMovePP: 0a0000001e0000001400000014000000

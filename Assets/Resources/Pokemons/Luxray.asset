@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Luxray
+  m_EditorClassIdentifier: 
+  Name: "\uB80C\uD2B8\uB77C"
+  PokedexNumber: 405
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 8e67164dcbc7f489b90061d2a76c3443, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 3781f4f1a89624c0581aa9481af4b8f3, type: 3}
+  Icon_Regular: {fileID: 1687971751, guid: 6e632e1a1d2db4ff782e9fc819f15c4d, type: 3}
+  Type1: "\uC804\uAE30"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD22C\uC7C1\uC2EC"
+  - "\uC704\uD611"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 9f99b1c005ae84558aba9332e4df5f71, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 364
+  Attack: 372
+  Defense: 282
+  SAttack: 317
+  SDefense: 282
+  Speed: 262
+  MoveName:
+  - "\uBCFC\uD2B8\uCCB4\uC778\uC9C0"
+  - "\uC804\uAE30\uC790\uC11D\uD30C"
+  - "\uAE68\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  - "\uBC29\uC804"
+  MoveType:
+  - "\uC804\uAE30"
+  - "\uC804\uAE30"
+  - "\uC545"
+  - "\uC804\uAE30"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 46000000000000005000000050000000
+  MoveAccuracy: 640000005a0000006400000064000000
+  CurrentMovePP: 14000000140000000f0000000f000000
+  FullMovePP: 14000000140000000f0000000f000000

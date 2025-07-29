@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Delcatty
+  m_EditorClassIdentifier: 
+  Name: "\uB378\uCF00\uD2F0"
+  PokedexNumber: 301
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: ccf1c19c2cf444def84fa7a7410e3a9a, type: 3}
+  Regular_Back: {fileID: 21300000, guid: fcbd36a42f07b4d4585cbe72a1278ff3, type: 3}
+  Icon_Regular: {fileID: -1962568021, guid: a20cdbc3a238b442dbe838c08726f5de, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD5E4\uB871\uD5E4\uB871\uBC14\uB514"
+  - "\uC2A4\uD0A8"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 368ebe3539f1648158df6dee1eda9673, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 344
+  Attack: 251
+  Defense: 251
+  SAttack: 229
+  SDefense: 229
+  Speed: 306
+  MoveName:
+  - "\uB178\uB798\uD558\uAE30"
+  - "\uB9C8\uAD6C\uD560\uD034\uAE30"
+  - "\uAC1D\uAE30"
+  - "\uCE58\uADFC\uAC70\uB9AC\uAE30"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uB178\uB9D0"
+  - "\uB178\uB9D0"
+  - "\uD398\uC5B4\uB9AC"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 0000000012000000460000005a000000
+  MoveAccuracy: 6400000050000000640000005a000000
+  CurrentMovePP: 0f0000000f000000140000000a000000
+  FullMovePP: 0f0000000f000000140000000a000000

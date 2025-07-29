@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Darmanitan
+  m_EditorClassIdentifier: 
+  Name: "\uBD88\uBE44\uB2EC\uB9C8"
+  PokedexNumber: 555
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: f896b8208be51443a9c6a996feaf1906, type: 3}
+  Regular_Back: {fileID: 21300000, guid: c20009ed37692456689b35bd00129c6b, type: 3}
+  Icon_Regular: {fileID: -389065119, guid: 49e85af43039a4f1d94772ed0374ed0f, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC6B0\uACA9\uB2E4\uC9D0"
+  - "\uB2EC\uB9C8\uBAA8\uB4DC"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: c9adceb4670f04488b0f231539f30365, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: c4511901e5ede4d6a95afc36e627a3b6, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 2b7cf65b4f4674e979262381b54f08f4, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: -316840368, guid: 32c4082f8144446b5adff179e997be73, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: "\uC758\uC695"
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 8300000, guid: c9adceb4670f04488b0f231539f30365, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 414
+  Attack: 416
+  Defense: 229
+  SAttack: 174
+  SDefense: 229
+  Speed: 317
+  MoveName:
+  - "\uB3C4\uBC1C"
+  - "\uBD88\uAF43\uC5C4\uB2C8"
+  - "\uBD88\uAF43\uD380\uCE58"
+  - "\uC18C\uB780\uD53C\uAE30"
+  MoveType:
+  - "\uC545"
+  - "\uBD88\uAF43"
+  - "\uBD88\uAF43"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 00000000410000004b0000005a000000
+  MoveAccuracy: 640000005f0000006400000064000000
+  CurrentMovePP: 140000000f0000000f0000000a000000
+  FullMovePP: 140000000f0000000f0000000a000000

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Slowking(Galarian)
+  m_EditorClassIdentifier: 
+  Name: "\uC57C\uB3C4\uD0B9"
+  PokedexNumber: 199
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 1513492d8bcb54066baa72006a193ee7, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 96d45ffecde0e414ca21c934e0ccdb45, type: 3}
+  Icon_Regular: {fileID: 1975129733, guid: 52f6f5df038884fcd8a661774652c285, type: 3}
+  Type1: "\uB3C5"
+  Type2: "\uC5D0\uC2A4\uD37C"
+  Nature: 
+  Abilitys:
+  - "\uB9C8\uC774\uD398\uC774\uC2A4"
+  - "\uAE30\uBB18\uD55C\uC57D"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: a5343fa595be0414396fad8923a75816, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 394
+  Attack: 251
+  Defense: 284
+  SAttack: 350
+  SDefense: 350
+  Speed: 174
+  MoveName:
+  - "\uB9F9\uB3C5"
+  - "\uD558\uD488"
+  - "\uD30C\uB3C4\uD0C0\uAE30"
+  - "\uC0AC\uC774\uCF54\uD0A4\uB124\uC2DC\uC2A4"
+  MoveType:
+  - "\uB3C5"
+  - "\uB178\uB9D0"
+  - "\uBB3C"
+  - "\uC5D0\uC2A4\uD37C"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 00000000000000005a0000005a000000
+  MoveAccuracy: 5a000000640000006400000064000000
+  CurrentMovePP: 0a0000000a0000000f0000000a000000
+  FullMovePP: 0a0000000a0000000f0000000a000000

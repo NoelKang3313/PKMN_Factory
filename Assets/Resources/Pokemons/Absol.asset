@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Absol
+  m_EditorClassIdentifier: 
+  Name: "\uC571\uC194"
+  PokedexNumber: 359
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: b1c8b189ad9724ea7920e5cf20ec5f33, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 76e2acd7b599c46d8b7d9ccbe445400e, type: 3}
+  Icon_Regular: {fileID: 292658934, guid: 0c13b93f350624e2092feee29f18477c, type: 3}
+  Type1: "\uC545"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD504\uB808\uC154"
+  - "\uB300\uC6B4"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 20df19fa72bf64fd3b6d65abfab4576f, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 65dcd3c5e9dbd4a999f974f7590abb09, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 95e449489cb6e4a40993442e07493c10, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 10667719, guid: 40be43924c26d436caa35e600123e15a, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uB9E4\uC9C1\uBBF8\uB7EC"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: 6786fe5dcee9c4c5e8af14038592fee9, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 334
+  Attack: 394
+  Defense: 240
+  SAttack: 273
+  SDefense: 240
+  Speed: 273
+  MoveName:
+  - "\uC804\uAD11\uC11D\uD654"
+  - "\uAE5C\uC9DD\uBCA0\uAE30"
+  - "\uAE30\uC2B5"
+  - "\uCE7C\uCDA4"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uC545"
+  - "\uC545"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  MovePower: 28000000460000004600000000000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 1e0000000f0000000500000014000000
+  FullMovePP: 1e0000000f0000000500000014000000

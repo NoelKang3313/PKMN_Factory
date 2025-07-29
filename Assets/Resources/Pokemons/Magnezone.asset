@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Magnezone
+  m_EditorClassIdentifier: 
+  Name: "\uC790\uD3EC\uCF54\uC77C"
+  PokedexNumber: 462
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 24d266226ed814502bdce4b1cd78711c, type: 3}
+  Regular_Back: {fileID: 21300000, guid: e42e4d61ff3ae4687b49b50e635b2c73, type: 3}
+  Icon_Regular: {fileID: -877967504, guid: df8f3ef82850f416cad334de13632a5c, type: 3}
+  Type1: "\uC804\uAE30"
+  Type2: "\uAC15\uCCA0"
+  Nature: 
+  Abilitys:
+  - "\uC639\uACE8\uCC38"
+  - "\uC790\uB825"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 847b65a9389624da3b08ca270536e2a9, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 344
+  Attack: 262
+  Defense: 361
+  SAttack: 394
+  SDefense: 306
+  Speed: 240
+  MoveName:
+  - "\uC2A4\uD30C\uD06C"
+  - "\uB7EC\uC2A4\uD130\uCE90\uB17C"
+  - "\uBC29\uC804"
+  - "\uAE08\uC18D\uC74C"
+  MoveType:
+  - "\uC804\uAE30"
+  - "\uAC15\uCCA0"
+  - "\uC804\uAE30"
+  - "\uAC15\uCCA0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  MovePower: 41000000500000005000000000000000
+  MoveAccuracy: 64000000640000006400000055000000
+  CurrentMovePP: 140000000a0000000f00000028000000
+  FullMovePP: 140000000a0000000f00000028000000

@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Palafin
+  m_EditorClassIdentifier: 
+  Name: "\uB3CC\uD540\uB9E8"
+  PokedexNumber: 964
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: e356d884d83a848d9bc597d688c910b3, type: 3}
+  Regular_Back: {fileID: 21300000, guid: dd337492049644130a9db9e21b95a905, type: 3}
+  Icon_Regular: {fileID: 1870785756, guid: cf0cb8faba0ec4eb29c0aaa9d9c51867, type: 3}
+  Type1: "\uBB3C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uB9C8\uC774\uD2F0\uCCB4\uC778\uC9C0"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: ceaeb08a2c53d4b0b9c0f566b7c903b9, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 233b1605273bb4b68b5c765c67dec1b1, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 8679b778bfa234db0882036cc1b48e7e, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: -250365567, guid: fdfbe3a1711f144659f5e7cdbdb9fa98, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: "\uB9C8\uC774\uD2F0\uCCB4\uC778\uC9C0"
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 8300000, guid: 90ae6a0b8dc644556ab4f579ce57cef6, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

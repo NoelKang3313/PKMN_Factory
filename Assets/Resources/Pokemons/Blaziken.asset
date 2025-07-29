@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Blaziken
+  m_EditorClassIdentifier: 
+  Name: "\uBC88\uCE58\uCF54"
+  PokedexNumber: 257
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: fa9272cc0e2dc459f8eded63610a27d8, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 4134d1651fb13445cbf726cb06b06eb8, type: 3}
+  Icon_Regular: {fileID: -1280041044, guid: b01f22573fb0d4b4cbe8a9b54ebe50ad, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: "\uACA9\uD22C"
+  Nature: 
+  Abilitys:
+  - "\uB9F9\uD654"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 90c7f786057ff45eabb9234af3b7c369, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 222036824fe3242d8ac9adfed40b25b4, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 386d5d2ea7bb84bd8bc5caa759475017, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 939327147, guid: 32890bb5d51aa464cbc137fe49d02512, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uAC00\uC18D"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: f055fd087475449ca80551a3f7599e52, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 364
+  Attack: 372
+  Defense: 262
+  SAttack: 350
+  SDefense: 262
+  Speed: 284
+  MoveName:
+  - "\uC804\uAD11\uC11D\uD654"
+  - "\uD654\uC5FC\uBC29\uC0AC"
+  - "\uBE14\uB808\uC774\uC988\uD0A5"
+  - "\uC81C\uBE44\uBC18\uD658"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uBD88\uAF43"
+  - "\uBD88\uAF43"
+  - "\uBE44\uD589"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 280000005a000000550000003c000000
+  MoveAccuracy: 64000000640000005a00000064000000
+  CurrentMovePP: 1e0000000f0000000a00000014000000
+  FullMovePP: 1e0000000f0000000a00000014000000

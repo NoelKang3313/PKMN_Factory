@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Tangrowth
+  m_EditorClassIdentifier: 
+  Name: "\uB369\uCFE0\uB9BC\uBCF4"
+  PokedexNumber: 465
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 81ec1e5f25ca84d0a9dd99dc8eadab2e, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 89491a6d2dc6545f18d1c68b5932b83e, type: 3}
+  Icon_Regular: {fileID: -157264805, guid: 76173c626aa1542e4a08178584a43be7, type: 3}
+  Type1: "\uD480"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC5FD\uB85D\uC18C"
+  - "\uB9AC\uD504\uAC00\uB4DC"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 9d8bedf6678434952ba8f3da574c802a, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 404
+  Attack: 328
+  Defense: 383
+  SAttack: 350
+  SDefense: 218
+  Speed: 218
+  MoveName:
+  - "\uC6D0\uC2DC\uC758\uD798"
+  - "\uAE30\uAC00\uB4DC\uB808\uC778"
+  - "\uD30C\uC6CC\uD729"
+  - "\uBFCC\uB9AC\uBC15\uAE30"
+  MoveType:
+  - "\uBC14\uC704"
+  - "\uD480"
+  - "\uD480"
+  - "\uD480"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  MovePower: 3c0000004b0000007800000000000000
+  MoveAccuracy: 64000000640000005500000064000000
+  CurrentMovePP: 050000000a0000000a00000014000000
+  FullMovePP: 050000000a0000000a00000014000000

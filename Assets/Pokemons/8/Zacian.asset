@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Zacian
+  m_EditorClassIdentifier: 
+  Name: "\uC790\uC2DC\uC548"
+  PokedexNumber: 888
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: fdd661ddb872840b6a982a6ed82a7af2, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 84f57b7be2d574927a00b475bf864c9f, type: 3}
+  Icon_Regular: {fileID: -171965745, guid: 65d6681e82e224526bdfb77539da4b24, type: 3}
+  Type1: "\uAC15\uCCA0"
+  Type2: "\uD398\uC5B4\uB9AC"
+  Nature: 
+  Abilitys:
+  - "\uBD88\uC694\uC758\uAC80"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: e0739484d91b6492e97ad72cc21a77b6, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 8e945cfe06a83496ba6c57aa8307821b, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 9db857be8782f41d3a131e38140f5476, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: -1600086721, guid: 91be87471cbc7496cba129dd14639f12, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uBD88\uC694\uC758\uAC80"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: b4fb1e846fc6d408ebbedeb701558316, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Rayquaza
+  m_EditorClassIdentifier: 
+  Name: "\uB808\uCFE0\uC7C8"
+  PokedexNumber: 384
+  Gender: 
+  Genderless: 1
+  Regular: {fileID: 21300000, guid: b4e8172a39dcf4e3fbe2bf7b66290f58, type: 3}
+  Regular_Back: {fileID: 21300000, guid: e42c32930bb1c411ebd6f28faa2e976b, type: 3}
+  Icon_Regular: {fileID: -777083578, guid: 47e4f5b13807b401bbf797fe35171e24, type: 3}
+  Type1: "\uB4DC\uB798\uACE4"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uC5D0\uC5B4\uB85D"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 5ece8848b65a0420db3dbc1b30ef73e9, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 51ed39b4512f14d8689172ef8583b8a8, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 1d8a5e85a53a74b328016d029ccded1c, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: -255553597, guid: ce52ddf5c5b354c74846c723001fe769, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uB378\uD0C0\uC2A4\uD2B8\uB9BC"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: 6581003c7375043c2869511e259065e4, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 414
+  Attack: 438
+  Defense: 306
+  SAttack: 438
+  SDefense: 306
+  Speed: 317
+  MoveName:
+  - "\uC6A9\uC758\uCDA4"
+  - "\uC2E0\uC18D"
+  - "\uC6A9\uC758\uD30C\uB3D9"
+  - "\uD3ED\uD48D"
+  MoveType:
+  - "\uB4DC\uB798\uACE4"
+  - "\uB178\uB9D0"
+  - "\uB4DC\uB798\uACE4"
+  - "\uBE44\uD589"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 0000000050000000550000006e000000
+  MoveAccuracy: 64000000640000006400000046000000
+  CurrentMovePP: 14000000050000000a0000000a000000
+  FullMovePP: 14000000050000000a0000000a000000

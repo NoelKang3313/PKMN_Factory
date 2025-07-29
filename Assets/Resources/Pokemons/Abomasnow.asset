@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Abomasnow
+  m_EditorClassIdentifier: 
+  Name: "\uB208\uC124\uC655"
+  PokedexNumber: 460
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 1617daea3e693478db9447c04067ef42, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 6c51edc13a126467e97901e952358642, type: 3}
+  Icon_Regular: {fileID: -66697791, guid: 0d2b90a1f6790474d85a146804f6eb98, type: 3}
+  Type1: "\uD480"
+  Type2: "\uC5BC\uC74C"
+  Nature: 
+  Abilitys:
+  - "\uB208\uD37C\uB728\uB9AC\uAE30"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: bec25a2fde8144cbdbaa9b7fbae3b02d, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 6ffe0e23dbce5453ea0b389efc5a6a0b, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 076373f373306453291f32449becae38, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 180325478, guid: a83d08db64af446269e62ab76dd29026, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: "\uB208\uD37C\uB728\uB9AC\uAE30"
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 8300000, guid: c5864afec614248e6b7c7bf062410347, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 384
+  Attack: 311
+  Defense: 273
+  SAttack: 311
+  SDefense: 295
+  Speed: 240
+  MoveName:
+  - "\uB0C9\uB3D9\uD380\uCE58"
+  - "\uC5BC\uC5B4\uBD99\uC740\uBC14\uB78C"
+  - "\uBFCC\uB9AC\uBC15\uAE30"
+  - "\uC6B0\uB4DC\uD574\uBA38"
+  MoveType:
+  - "\uC5BC\uC74C"
+  - "\uC5BC\uC74C"
+  - "\uD480"
+  - "\uD480"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  MovePower: 4b000000370000000000000078000000
+  MoveAccuracy: 640000005f0000006400000064000000
+  CurrentMovePP: 0f0000000f000000140000000f000000
+  FullMovePP: 0f0000000f000000140000000f000000

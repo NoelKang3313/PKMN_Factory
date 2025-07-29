@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Typhlosion(Hisuian)
+  m_EditorClassIdentifier: 
+  Name: "\uBE14\uB808\uC774\uBC94"
+  PokedexNumber: 157
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 04e013e9846b8491da63b5f5345d9106, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 99d86ded6ff9347ca98c6ca36c7e5622, type: 3}
+  Icon_Regular: {fileID: -1359809811, guid: 23b13b24d3d5c4fb8a229b989928fe4c, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: "\uACE0\uC2A4\uD2B8"
+  Nature: 
+  Abilitys:
+  - "\uB9F9\uD654"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 101080ddd96a049d4a74f52042eb2df5, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 360
+  Attack: 293
+  Defense: 280
+  SAttack: 348
+  SDefense: 295
+  Speed: 328
+  MoveName:
+  - "\uBD84\uD654"
+  - "\uBC31\uADC0\uC57C\uD589"
+  - "\uC804\uAD11\uC11D\uD654"
+  - "\uD654\uC5FC\uBC29\uC0AC"
+  MoveType:
+  - "\uBD88\uAF43"
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uB178\uB9D0"
+  - "\uBD88\uAF43"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 960000003c000000280000005a000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 050000000f0000001e0000000f000000
+  FullMovePP: 050000000f0000001e0000000f000000

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Dachsbun
+  m_EditorClassIdentifier: 
+  Name: "\uBC14\uC6B0\uCCBC"
+  PokedexNumber: 927
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: bc28fb3f8c5e4409d90acdd8e4e3241e, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 8be0e4518036846e0aa29684a430409e, type: 3}
+  Icon_Regular: {fileID: 1195586328, guid: c9d0f8d617a234b2f9bb0dc1e99aac6b, type: 3}
+  Type1: "\uD398\uC5B4\uB9AC"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uB178\uB987\uB178\uB987\uBC14\uB514"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 9eb0c68aadfca47829098621421e4dff, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

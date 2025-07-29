@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Azumarill
+  m_EditorClassIdentifier: 
+  Name: "\uB9C8\uB9B4\uB9AC"
+  PokedexNumber: 184
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 38b9a0f30b15e4090927492a5eed3b86, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 0fc6aff375e6b48f8b3eb83d67575d37, type: 3}
+  Icon_Regular: {fileID: 2022804291, guid: 7f47457fd158144eda557a3f1a6f1223, type: 3}
+  Type1: "\uBB3C"
+  Type2: "\uD398\uC5B4\uB9AC"
+  Nature: 
+  Abilitys:
+  - "\uCC9C\uD558\uC7A5\uC0AC"
+  - "\uB450\uAEBC\uC6B4\uC9C0\uBC29"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 533380ac3a2ca4624adbe673c3438080, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon: {fileID: 0}
+  NewAbility: 
+  NewPokemonCry: {fileID: 0}
+  HP: 404
+  Attack: 218
+  Defense: 284
+  SAttack: 240
+  SDefense: 284
+  Speed: 218
+  MoveName:
+  - "\uC560\uAD50\uBD80\uB9AC\uAE30"
+  - "\uC544\uCFE0\uC544\uD14C\uC77C"
+  - "\uCE58\uADFC\uAC70\uB9AC\uAE30"
+  - "\uD558\uC774\uB4DC\uB85C\uD38C\uD504"
+  MoveType:
+  - "\uD398\uC5B4\uB9AC"
+  - "\uBB3C"
+  - "\uD398\uC5B4\uB9AC"
+  - "\uBB3C"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 000000005a0000005a0000006e000000
+  MoveAccuracy: 640000005a0000005a00000050000000
+  CurrentMovePP: 140000000a0000000a00000005000000
+  FullMovePP: 140000000a0000000a00000005000000

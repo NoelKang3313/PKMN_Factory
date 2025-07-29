@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Magmortar
+  m_EditorClassIdentifier: 
+  Name: "\uB9C8\uADF8\uB9C8\uBC88"
+  PokedexNumber: 467
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 8212e004b91564a7a8053bd505583fcd, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 52e23329a56f146dc877b710b06430a7, type: 3}
+  Icon_Regular: {fileID: -999315419, guid: a13d441b2697d4ff2a6c52ee6d281ec1, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uBD88\uAF43\uBAB8"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 5f9333299aded4bb9bd9cc5eaa07f3f8, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 354
+  Attack: 317
+  Defense: 256
+  SAttack: 383
+  SDefense: 317
+  Speed: 291
+  MoveName:
+  - "\uC774\uC0C1\uD55C\uBE5B"
+  - "\uBD88\uAF43\uD380\uCE58"
+  - "\uC548\uB2E4\uB9AC\uAC78\uAE30"
+  - "\uD654\uC5FC\uBC29\uC0AC"
+  MoveType:
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uBD88\uAF43"
+  - "\uACA9\uD22C"
+  - "\uBD88\uAF43"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 000000004b000000000000005a000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0a0000000f000000140000000f000000
+  FullMovePP: 0a0000000f000000140000000f000000

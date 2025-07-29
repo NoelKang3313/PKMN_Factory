@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Swellow
+  m_EditorClassIdentifier: 
+  Name: "\uC2A4\uC648\uB85C"
+  PokedexNumber: 277
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 3062cac513c07460b9ce6b7c2a452659, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 70998266f83734a598cf2be9b61f609e, type: 3}
+  Icon_Regular: {fileID: -769973805, guid: 71fc4875d18c0429d800863c5258bb6c, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uADFC\uC131"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: bccfacec06c3b4b07962b51822c2b8a7, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 324
+  Attack: 295
+  Defense: 240
+  SAttack: 273
+  SDefense: 218
+  Speed: 383
+  MoveName:
+  - "\uC804\uAD11\uC11D\uD654"
+  - "\uACE0\uC18D\uC774\uB3D9"
+  - "\uC5D0\uC5B4\uC2AC\uB798\uC2DC"
+  - "\uBE0C\uB808\uC774\uBE0C\uBC84\uB4DC"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uBE44\uD589"
+  - "\uBE44\uD589"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  MovePower: 28000000000000004b00000078000000
+  MoveAccuracy: 64000000640000005f00000064000000
+  CurrentMovePP: 1e0000001e0000000f0000000f000000
+  FullMovePP: 1e0000001e0000000f0000000f000000

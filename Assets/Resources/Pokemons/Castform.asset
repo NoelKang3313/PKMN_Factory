@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Castform
+  m_EditorClassIdentifier: 
+  Name: "\uCE90\uC2A4\uD401"
+  PokedexNumber: 351
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: e7dbd4dd76ee94845b3815ceeb3cf13f, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 4a64b0b35862e41af8cea29908d97068, type: 3}
+  Icon_Regular: {fileID: 1890262332, guid: 1e916803df96b4ff8b389b59db960db0, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uAE30\uBD84\uD30C"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 0d4212ee3825d459891d3a71bc81d44d, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon: {fileID: 0}
+  NewAbility: 
+  NewPokemonCry: {fileID: 0}
+  HP: 344
+  Attack: 262
+  Defense: 262
+  SAttack: 262
+  SDefense: 262
+  Speed: 262
+  MoveName:
+  - "\uC6E8\uB354\uBCFC"
+  - "\uBD88\uB300\uBB38\uC790"
+  - "\uD558\uC774\uB4DC\uB85C\uD38C\uD504"
+  - "\uB208\uBCF4\uB77C"
+  MoveType:
+  - "\uBB3C"
+  - "\uBD88\uAF43"
+  - "\uBB3C"
+  - "\uC5BC\uC74C"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 320000006e0000006e0000006e000000
+  MoveAccuracy: 64000000550000005a00000046000000
+  CurrentMovePP: 0a000000050000000500000005000000
+  FullMovePP: 0a000000050000000500000005000000

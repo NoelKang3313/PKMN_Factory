@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b653fac90802e4e3284a51d0e4599ffd, type: 3}
+  m_Name: ShellBell
+  m_EditorClassIdentifier: 
+  ItemName: "\uC870\uAC1C\uAECD\uC9C8\uBC29\uC6B8"
+  ItemSprite: {fileID: 21300000, guid: aaaf2af0c849d486cae5565d15d05e7d, type: 3}
+  ItemType: "\uB3C4\uAD6C"
+  ItemAmount: 0
+  ItemDescription: "\uC9C0\uB2C8\uAC8C \uD55C \uD3EC\uCF13\uBAAC\uC774 \uACF5\uACA9\uD558\uC5EC
+    \uC0C1\uB300\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C \uC92C\uC744 \uB54C HP\uB97C
+    \uC870\uAE08 \uD68C\uBCF5\uD560 \uC218 \uC788\uB2E4."

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Moltres
+  m_EditorClassIdentifier: 
+  Name: "\uD30C\uC774\uC5B4"
+  PokedexNumber: 146
+  Gender: 
+  Genderless: 1
+  Regular: {fileID: 21300000, guid: d270e48bbe4974d578ca32203344280f, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 986c72043a7244743a652fa3ebcbf6f4, type: 3}
+  Icon_Regular: {fileID: -1649480233, guid: 70e823a9a6a7c4a448147e773ec4d267, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uD504\uB808\uC154"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: df337ce7306b94e1796e97a3a6748f8f, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 384
+  Attack: 328
+  Defense: 306
+  SAttack: 383
+  SDefense: 295
+  Speed: 306
+  MoveName:
+  - "\uC5D0\uC5B4\uC2AC\uB798\uC2DC"
+  - "\uACE0\uC18D\uC774\uB3D9"
+  - "\uC5F4\uD48D"
+  - "\uBD88\uC0C8"
+  MoveType:
+  - "\uBE44\uD589"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uBD88\uAF43"
+  - "\uBE44\uD589"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  MovePower: 4b000000000000005f0000008c000000
+  MoveAccuracy: 5f000000640000005a0000005a000000
+  CurrentMovePP: 0f0000001e0000000a00000005000000
+  FullMovePP: 0f0000001e0000000a00000005000000

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Golem
+  m_EditorClassIdentifier: 
+  Name: "\uB531\uAD6C\uB9AC"
+  PokedexNumber: 76
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: ed2d6d64fca4544cb98ace104321a66c, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 52e973b4dcf16451bb65a325827048b0, type: 3}
+  Icon_Regular: {fileID: 656139428, guid: 39ac455281bdb4e1c954c9cf50b97321, type: 3}
+  Type1: "\uBC14\uC704"
+  Type2: "\uB545"
+  Nature: 
+  Abilitys:
+  - "\uC639\uACE8\uCC38"
+  - "\uB3CC\uBA38\uB9AC"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 6c7103a91bccd42988c09defa56b58f9, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 364
+  Attack: 372
+  Defense: 394
+  SAttack: 229
+  SDefense: 251
+  Speed: 207
+  MoveName:
+  - "\uB85D\uCEE4\uD2B8"
+  - "\uB85D\uBE14\uB77C\uC2A4\uD2B8"
+  - "\uC9C0\uC9C4"
+  - "\uC2A4\uD1A4\uC5D0\uC9C0"
+  MoveType:
+  - "\uBC14\uC704"
+  - "\uBC14\uC704"
+  - "\uB545"
+  - "\uBC14\uC704"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 00000000190000006400000064000000
+  MoveAccuracy: 640000005a0000006400000050000000
+  CurrentMovePP: 140000000a0000000a00000005000000
+  FullMovePP: 140000000a0000000a00000005000000

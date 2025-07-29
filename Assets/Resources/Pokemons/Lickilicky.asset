@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Lickilicky
+  m_EditorClassIdentifier: 
+  Name: "\uB0B4\uB8F8\uBCA8\uD2B8"
+  PokedexNumber: 463
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 0e0fde90e8f6b44349cfc7e2eb0df02d, type: 3}
+  Regular_Back: {fileID: 21300000, guid: b404cd682db41421d87ee779666f1640, type: 3}
+  Icon_Regular: {fileID: -225926765, guid: 8b5b72f5d968542c196ec3dc8d85c93c, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uB9C8\uC774\uD398\uC774\uC2A4"
+  - "\uB454\uAC10"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: b4c10b4d15c9944c19d9d584403f5d69, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 424
+  Attack: 295
+  Defense: 317
+  SAttack: 284
+  SDefense: 317
+  Speed: 218
+  MoveName:
+  - "\uD565\uAE30"
+  - "\uC9D3\uBC1D\uAE30"
+  - "\uC2EB\uC740\uC18C\uB9AC"
+  - "\uD798\uAECF\uCE58\uAE30"
+  MoveType:
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uB178\uB9D0"
+  - "\uB178\uB9D0"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  MovePower: 1e000000410000000000000050000000
+  MoveAccuracy: 6400000064000000550000004b000000
+  CurrentMovePP: 1e000000140000002800000014000000
+  FullMovePP: 1e000000140000002800000014000000

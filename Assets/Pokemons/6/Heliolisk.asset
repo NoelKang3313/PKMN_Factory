@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Heliolisk
+  m_EditorClassIdentifier: 
+  Name: "\uC77C\uB808\uB3C4\uB9AC\uC790\uB4DC"
+  PokedexNumber: 695
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 0968102419bb24b5c80406966d4ca80e, type: 3}
+  Regular_Back: {fileID: 21300000, guid: e07da9ff297ec4aa3975d90decf7a74b, type: 3}
+  Icon_Regular: {fileID: 1274059761, guid: 6efd64ab78ce647a29584d3eebfdb165, type: 3}
+  Type1: "\uC804\uAE30"
+  Type2: "\uB178\uB9D0"
+  Nature: 
+  Abilitys:
+  - "\uAC74\uC870\uD53C\uBD80"
+  - "\uBAA8\uB798\uC228\uAE30"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 59ba4e3e9bf314c94a5a8d2f0ca28699, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

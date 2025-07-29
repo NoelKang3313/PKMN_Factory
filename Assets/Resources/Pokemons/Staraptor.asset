@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Staraptor
+  m_EditorClassIdentifier: 
+  Name: "\uCC0C\uB974\uD638\uD06C"
+  PokedexNumber: 398
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: bb5c36d4cb20740899d852055c45b374, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 63c594fb9f23a4388a38dd44666dbff9, type: 3}
+  Icon_Regular: {fileID: -630456057, guid: 6e96559c0f10a452cba09e39c6a68387, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uC704\uD611"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 9ea958ae5be6049aaa1d6a3f2a889039, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 374
+  Attack: 372
+  Defense: 262
+  SAttack: 218
+  SDefense: 240
+  Speed: 328
+  MoveName:
+  - "\uC778\uD30C\uC774\uD2B8"
+  - "\uC81C\uBE44\uBC18\uD658"
+  - "\uACE0\uC18D\uC774\uB3D9"
+  - "\uBE0C\uB808\uC774\uBE0C\uBC84\uB4DC"
+  MoveType:
+  - "\uACA9\uD22C"
+  - "\uBE44\uD589"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uBE44\uD589"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  MovePower: 780000003c0000000000000078000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 05000000140000001e0000000f000000
+  FullMovePP: 05000000140000001e0000000f000000

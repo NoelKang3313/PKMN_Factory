@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Raichu(Alolan)
+  m_EditorClassIdentifier: 
+  Name: "\uB77C\uC774\uCE04"
+  PokedexNumber: 26
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 56577b11b36154c109809a176d9aa22c, type: 3}
+  Regular_Back: {fileID: 21300000, guid: fe7a020f11e8e47e7a8e23529a892da2, type: 3}
+  Icon_Regular: {fileID: -1127796215, guid: 9764b19f408004cb7ad8068070b6bb94, type: 3}
+  Type1: "\uC804\uAE30"
+  Type2: "\uC5D0\uC2A4\uD37C"
+  Nature: 
+  Abilitys:
+  - "\uC11C\uD551\uD14C\uC77C"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 5dfcf55714aa74b09892d370567d85b0, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 324
+  Attack: 306
+  Defense: 229
+  SAttack: 306
+  SDefense: 284
+  Speed: 350
+  MoveName:
+  - "\uC2A4\uD30C\uD06C"
+  - "\uACE0\uC18D\uC774\uB3D9"
+  - "\uC0AC\uC774\uCF54\uD0A4\uB124\uC2DC\uC2A4"
+  - "10\uB9CC\uBCFC\uD2B8"
+  MoveType:
+  - "\uC804\uAE30"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uC804\uAE30"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 41000000000000005a0000005a000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000001e0000000a0000000f000000
+  FullMovePP: 140000001e0000000a0000000f000000

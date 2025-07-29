@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Clefable
+  m_EditorClassIdentifier: 
+  Name: "\uD53D\uC2DC"
+  PokedexNumber: 36
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: a07c56cc1f4424e8ebdeb5a2e0a1d725, type: 3}
+  Regular_Back: {fileID: 21300000, guid: b326b3bdb017241bdb79e162676fa68e, type: 3}
+  Icon_Regular: {fileID: 230862438, guid: 3e26f1ea1074b4644933f300019ef68d, type: 3}
+  Type1: "\uD398\uC5B4\uB9AC"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD5E4\uB871\uD5E4\uB871\uBC14\uB514"
+  - "\uB9E4\uC9C1\uAC00\uB4DC"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: d55cc065679984e3c822bd113bd6b898, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 394
+  Attack: 262
+  Defense: 269
+  SAttack: 317
+  SDefense: 306
+  Speed: 240
+  MoveName:
+  - "\uBB38\uD3EC\uC2A4"
+  - "\uB178\uB798\uD558\uAE30"
+  - "\uCC9C\uC0AC\uC758\uD0A4\uC2A4"
+  - "\uCF54\uBA67\uD380\uCE58"
+  MoveType:
+  - "\uD398\uC5B4\uB9AC"
+  - "\uB178\uB9D0"
+  - "\uD398\uC5B4\uB9AC"
+  - "\uAC15\uCCA0"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  MovePower: 5f00000000000000000000005a000000
+  MoveAccuracy: 64000000370000004b0000005a000000
+  CurrentMovePP: 0f0000000f0000000a0000000a000000
+  FullMovePP: 0f0000000f0000000a0000000a000000

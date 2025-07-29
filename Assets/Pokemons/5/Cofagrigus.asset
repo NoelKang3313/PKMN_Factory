@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Cofagrigus
+  m_EditorClassIdentifier: 
+  Name: "\uB370\uC2A4\uB2C8\uCE78"
+  PokedexNumber: 563
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 21f322ca2b7194ff08dd7aea56f09965, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 2af03bcc61f41453baae520e2efbcc7b, type: 3}
+  Icon_Regular: {fileID: -142139240, guid: 9d9233809b3d941a89c6897627bc75a6, type: 3}
+  Type1: "\uACE0\uC2A4\uD2B8"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uBBF8\uB77C"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: e387315d47d80470b81f7bf08168c939, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 320
+  Attack: 218
+  Defense: 427
+  SAttack: 317
+  SDefense: 339
+  Speed: 174
+  MoveName:
+  - "\uBCD1\uC0C1\uCCA8\uBCD1"
+  - "\uC100\uB3C4\uBCFC"
+  - "\uC545\uC758\uD30C\uB3D9"
+  - "\uAE38\uB3D9\uBB34"
+  MoveType:
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uC545"
+  - "\uACE0\uC2A4\uD2B8"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  MovePower: 41000000500000005000000000000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0a0000000f0000000f00000005000000
+  FullMovePP: 0a0000000f0000000f00000005000000

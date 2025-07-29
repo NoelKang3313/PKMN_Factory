@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Lopunny
+  m_EditorClassIdentifier: 
+  Name: "\uC774\uC5B4\uB86D"
+  PokedexNumber: 428
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 05885360c423242a79a431de0ff8dce5, type: 3}
+  Regular_Back: {fileID: 21300000, guid: bbc9a77b791b24f3b9d229bd7b42064c, type: 3}
+  Icon_Regular: {fileID: -1462637996, guid: 6a67704364362438dac2279c9a156211, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC11C\uD22C\uB984"
+  - "\uD5E4\uB871\uD5E4\uB871\uBC14\uB514"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 2c961d066ced24945a4fe68780728cee, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 2342cd03c3a73454d99961d696905fe3, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 36a8dc23158f44e89a55826c3195df82, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 148242199, guid: 29d42af15fb19412e8d0e2a6dc63d54b, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: "\uBC30\uC9F1"
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 8300000, guid: 31f6b8b9c9dea42799e5e8d6cab1faae, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 334
+  Attack: 276
+  Defense: 293
+  SAttack: 227
+  SDefense: 320
+  Speed: 339
+  MoveName:
+  - "\uB450\uBC88\uCE58\uAE30"
+  - "\uC560\uAD50\uBD80\uB9AC\uAE30"
+  - "\uB6F0\uC5B4\uC624\uB974\uB2E4"
+  - "\uBB34\uB98E\uCC28\uAE30"
+  MoveType:
+  - "\uACA9\uD22C"
+  - "\uD398\uC5B4\uB9AC"
+  - "\uBE44\uD589"
+  - "\uACA9\uD22C"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 1e000000000000005500000082000000
+  MoveAccuracy: 6400000064000000550000005a000000
+  CurrentMovePP: 1e00000014000000050000000a000000
+  FullMovePP: 1e00000014000000050000000a000000

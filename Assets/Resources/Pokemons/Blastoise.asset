@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Blastoise
+  m_EditorClassIdentifier: 
+  Name: "\uAC70\uBD81\uC655"
+  PokedexNumber: 9
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: ce9870dcfe63943498249668d877070a, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 3903016b184f84596bd9ee53cb5f3081, type: 3}
+  Icon_Regular: {fileID: 307873390, guid: c0b82363189f94f7ea1ea83074f0a0e7, type: 3}
+  Type1: "\uBB3C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uAE09\uB958"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: cf238fe75481f43a6b59433cc0eea555, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 0fd58a56b0dc64807941e055bc2f4e78, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: ef9e5800d40e4446b8afa9f4a8f180ef, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 1771889621, guid: 1ce61154db7a74913bc894edd430952b, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uBA54\uAC00\uB7F0\uCC98"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: ccca967f1ffeb441ba48828a64560202, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 362
+  Attack: 291
+  Defense: 328
+  SAttack: 295
+  SDefense: 339
+  Speed: 280
+  MoveName:
+  - "\uBE44\uBC14\uB77C\uAE30"
+  - "\uBC29\uC5B4"
+  - "\uBB3C\uC758\uD30C\uB3D9"
+  - "\uD558\uC774\uB4DC\uB85C\uD38C\uD504"
+  MoveType:
+  - "\uBB3C"
+  - "\uB178\uB9D0"
+  - "\uBB3C"
+  - "\uBB3C"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 00000000000000003c0000006e000000
+  MoveAccuracy: 00000000000000006400000050000000
+  CurrentMovePP: 050000000a0000001400000005000000
+  FullMovePP: 050000000a0000001400000005000000

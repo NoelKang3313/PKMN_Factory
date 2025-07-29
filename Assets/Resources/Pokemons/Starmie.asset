@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Starmie
+  m_EditorClassIdentifier: 
+  Name: "\uC544\uCFE0\uC2A4\uD0C0"
+  PokedexNumber: 121
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: cb8dab99c0c7c45ab90b1b6e6b74f091, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 44b891b31153441fd84f8c366c961cdd, type: 3}
+  Icon_Regular: {fileID: -331934248, guid: d0d08f9d406354b03b14ed39b6e1554f, type: 3}
+  Type1: "\uBB3C"
+  Type2: "\uC5D0\uC2A4\uD37C"
+  Nature: 
+  Abilitys:
+  - "\uBC1C\uAD11"
+  - "\uC790\uC5F0\uD68C\uBCF5"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 33007aaa0ff004359a4f0ddb13e470e4, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 324
+  Attack: 273
+  Defense: 295
+  SAttack: 328
+  SDefense: 295
+  Speed: 361
+  MoveName:
+  - "\uC2A4\uD53C\uB4DC\uC2A4\uD0C0"
+  - "\uC0AC\uC774\uCF54\uD0A4\uB124\uC2DC\uC2A4"
+  - "\uD30C\uB3C4\uD0C0\uAE30"
+  - "\uC774\uC0C1\uD55C\uBE5B"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uBB3C"
+  - "\uACE0\uC2A4\uD2B8"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  MovePower: 3c0000005a0000005a00000000000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000000a0000000f0000000a000000
+  FullMovePP: 140000000a0000000f0000000a000000

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Steelix
+  m_EditorClassIdentifier: 
+  Name: "\uAC15\uCCA0\uD1A4"
+  PokedexNumber: 208
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 0838044730d4d4e8ea8c5109e0e6ccc7, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 52a0158fd936d4c019c89fd8956918b1, type: 3}
+  Icon_Regular: {fileID: -1360280397, guid: fda998d091eea4d80881ebb73e9c113f, type: 3}
+  Type1: "\uAC15\uCCA0"
+  Type2: "\uB545"
+  Nature: 
+  Abilitys:
+  - "\uC639\uACE8\uCC38"
+  - "\uB3CC\uBA38\uB9AC"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 7bd9db52930a84de4a21f3dce8e1ab14, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 56f34fc313c98401dbf380a4f8d51f2f, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 6afc409c614e7466097b55be4cf95752, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: -1666612881, guid: 017706d994f3b43658a99a6c9e892761, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uBAA8\uB798\uC758\uD798"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: 32fdf7274673049fea4a0878db12fd65, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 354
+  Attack: 295
+  Defense: 548
+  SAttack: 229
+  SDefense: 251
+  Speed: 174
+  MoveName:
+  - "\uAE68\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  - "\uB85D\uCEE4\uD2B8"
+  - "\uAD6C\uBA4D\uD30C\uAE30"
+  - "\uC544\uC774\uC5B8\uD14C\uC77C"
+  MoveType:
+  - "\uC545"
+  - "\uBC14\uC704"
+  - "\uB545"
+  - "\uAC15\uCCA0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 50000000000000005000000064000000
+  MoveAccuracy: 6400000064000000640000004b000000
+  CurrentMovePP: 0f000000140000000a0000000f000000
+  FullMovePP: 0f000000140000000a0000000f000000

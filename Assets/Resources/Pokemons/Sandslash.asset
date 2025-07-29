@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Sandslash
+  m_EditorClassIdentifier: 
+  Name: "\uACE0\uC9C0"
+  PokedexNumber: 28
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 523dbeb7093ea4ffea65654c4c8813ea, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 480012c01acb3403dbd23dd748cdabb4, type: 3}
+  Icon_Regular: {fileID: -855393352, guid: 4e4332394c5c049308c22fd44a6185de, type: 3}
+  Type1: "\uB545"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uBAA8\uB798\uC228\uAE30"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 0ad525e44c94c422c92f641b7d92f3ff, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 354
+  Attack: 328
+  Defense: 350
+  SAttack: 207
+  SDefense: 229
+  Speed: 251
+  MoveName:
+  - "\uBCA0\uC5B4\uAC00\uB974\uAE30"
+  - "\uAD6C\uBA4D\uD30C\uAE30"
+  - "\uCE7C\uCDA4"
+  - "\uC9C0\uC9C4"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uB545"
+  - "\uB178\uB9D0"
+  - "\uB545"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  MovePower: 46000000500000000000000064000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000000a000000140000000a000000
+  FullMovePP: 140000000a000000140000000a000000

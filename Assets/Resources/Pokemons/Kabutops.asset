@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Kabutops
+  m_EditorClassIdentifier: 
+  Name: "\uD22C\uAD6C\uD478\uC2A4"
+  PokedexNumber: 141
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 58b9f81a0f53742c0851b55e56d14028, type: 3}
+  Regular_Back: {fileID: 21300000, guid: f7ffe0473f2cf49e5a4e9b69d15774e5, type: 3}
+  Icon_Regular: {fileID: -981149629, guid: 83da24e1fb324474c96c6ec4564376fe, type: 3}
+  Type1: "\uBC14\uC704"
+  Type2: "\uBB3C"
+  Nature: 
+  Abilitys:
+  - "\uC4F1\uC4F1"
+  - "\uC804\uD22C\uBB34\uC7A5"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: a5d03fa9112ce49a483bc5c8e8defc71, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 324
+  Attack: 361
+  Defense: 339
+  SAttack: 251
+  SDefense: 262
+  Speed: 284
+  MoveName:
+  - "\uBCA0\uC5B4\uAC00\uB974\uAE30"
+  - "\uAE5C\uC9DD\uBCA0\uAE30"
+  - "\uC544\uCFE0\uC544\uC81C\uD2B8"
+  - "\uC6D0\uC2DC\uC758\uD798"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uC545"
+  - "\uBB3C"
+  - "\uBC14\uC704"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 4600000046000000280000003c000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000000f0000001400000005000000
+  FullMovePP: 140000000f0000001400000005000000

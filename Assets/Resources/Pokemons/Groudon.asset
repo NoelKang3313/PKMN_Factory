@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Groudon
+  m_EditorClassIdentifier: 
+  Name: "\uADF8\uB780\uB3C8"
+  PokedexNumber: 383
+  Gender: 
+  Genderless: 1
+  Regular: {fileID: 21300000, guid: a544deaa49da443048bb298a7dda8075, type: 3}
+  Regular_Back: {fileID: 21300000, guid: be57fff50f97a4db2a60461080fa0d16, type: 3}
+  Icon_Regular: {fileID: -736187383, guid: df406ab5dbee1487d8545b97559028e1, type: 3}
+  Type1: "\uB545"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uAC00\uBB44"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 31b5c10e9069a47dea327d568b273e67, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 7f1e61628454d41c58c564d6b3e2aec0, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: a411339dc55ec4341b24b27e3aea59c1, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 110481546, guid: 4556fba993cc84e7da817f913794f5a0, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uB05D\uC758\uB300\uC9C0"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: 4dc51867cd3f54884a83679403436791, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 404
+  Attack: 438
+  Defense: 416
+  SAttack: 328
+  SDefense: 306
+  Speed: 306
+  MoveName:
+  - "\uB2E8\uC560\uC758\uCE7C"
+  - "\uBD84\uC5F0"
+  - "\uC9C0\uC9C4"
+  - "\uBD88\uB300\uBB38\uC790"
+  MoveType:
+  - "\uB545"
+  - "\uBD88\uAF43"
+  - "\uB545"
+  - "\uBD88\uAF43"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 7800000050000000640000006e000000
+  MoveAccuracy: 55000000640000006400000055000000
+  CurrentMovePP: 0a0000000f0000000a00000005000000
+  FullMovePP: 0a0000000f0000000a00000005000000

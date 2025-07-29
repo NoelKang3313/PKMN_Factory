@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Roserade
+  m_EditorClassIdentifier: 
+  Name: "\uB85C\uC988\uB808\uC774\uB4DC"
+  PokedexNumber: 407
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: f3f0fdc4474e0436ab60f4eecbf16c5c, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 07542580e28554d3da6bdbe04bc3ac47, type: 3}
+  Icon_Regular: {fileID: -1257800929, guid: cbbdc64be018740b2a62021748651f4d, type: 3}
+  Type1: "\uD480"
+  Type2: "\uB3C5"
+  Nature: 
+  Abilitys:
+  - "\uC790\uC5F0\uD68C\uBCF5"
+  - "\uB3C5\uAC00\uC2DC"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: ed469bc34adec4cbea30b5f72688d6f0, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 324
+  Attack: 262
+  Defense: 251
+  SAttack: 383
+  SDefense: 339
+  Speed: 306
+  MoveName:
+  - "\uB3C5\uCE68"
+  - "\uC528\uBFCC\uB9AC\uAE30"
+  - "\uAE30\uAC00\uB4DC\uB808\uC778"
+  - "\uAF43\uC78E\uB304\uC2A4"
+  MoveType:
+  - "\uB3C5"
+  - "\uD480"
+  - "\uD480"
+  - "\uD480"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 0f000000000000004b00000078000000
+  MoveAccuracy: 640000005a0000006400000064000000
+  CurrentMovePP: 230000000a0000000a0000000a000000
+  FullMovePP: 230000000a0000000a0000000a000000

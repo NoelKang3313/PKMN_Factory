@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Sirfetchd
+  m_EditorClassIdentifier: 
+  Name: "\uCC3D\uD30C\uB098\uC774\uD2B8"
+  PokedexNumber: 865
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 8169e1b906dad4626b2203ef96a41e57, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 6620ae67052fc4605989eb5dc327a409, type: 3}
+  Icon_Regular: {fileID: 7180895, guid: 3c8705e045de7476889496d99544f817, type: 3}
+  Type1: "\uACA9\uD22C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uBD88\uAD74\uC758\uB9C8\uC74C"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: a25a0d9f6874d42509c8bbb209f20b12, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 0
+  Attack: 0
+  Defense: 0
+  SAttack: 0
+  SDefense: 0
+  Speed: 0
+  MoveName:
+  - 
+  - 
+  - 
+  - 
+  MoveType:
+  - 
+  - 
+  - 
+  - 
+  MoveCategory:
+  - 
+  - 
+  - 
+  - 
+  MovePower: 00000000000000000000000000000000
+  MoveAccuracy: 00000000000000000000000000000000
+  CurrentMovePP: 00000000000000000000000000000000
+  FullMovePP: 00000000000000000000000000000000

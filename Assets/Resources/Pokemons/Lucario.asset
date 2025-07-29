@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Lucario
+  m_EditorClassIdentifier: 
+  Name: "\uB8E8\uCE74\uB9AC\uC624"
+  PokedexNumber: 448
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 2c339efd44dd14b3fbe7f1700e9a3c6b, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 81181b142afdd448c88a091cedc69584, type: 3}
+  Icon_Regular: {fileID: 716434230, guid: 840bccc1d841445978893ed0e9acdc86, type: 3}
+  Type1: "\uACA9\uD22C"
+  Type2: "\uAC15\uCCA0"
+  Nature: 
+  Abilitys:
+  - "\uBD88\uAD74\uC758\uB9C8\uC74C"
+  - "\uC815\uC2E0\uB825"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 253483219f2f84c678783e4043d3ded6, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: acef32503417b4598bd45912c393c557, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: e282a944336154ae0a6f1d272f214c5d, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: -1471528533, guid: 08c415882d17a4cbabc2a9f062a43fe4, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: "\uC801\uC751\uB825"
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 8300000, guid: a8791514007be470d956fca9d2724fba, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 344
+  Attack: 350
+  Defense: 262
+  SAttack: 361
+  SDefense: 262
+  Speed: 306
+  MoveName:
+  - "\uD30C\uB3D9\uD0C4"
+  - "\uCE7C\uCDA4"
+  - "\uCF54\uBA67\uD380\uCE58"
+  - "\uC2E0\uC18D"
+  MoveType:
+  - "\uACA9\uD22C"
+  - "\uB178\uB9D0"
+  - "\uAC15\uCCA0"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 50000000000000005a00000050000000
+  MoveAccuracy: 64000000640000005a00000064000000
+  CurrentMovePP: 14000000140000000a00000005000000
+  FullMovePP: 14000000140000000a00000005000000

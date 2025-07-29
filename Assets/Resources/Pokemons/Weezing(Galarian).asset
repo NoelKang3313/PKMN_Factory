@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Weezing(Galarian)
+  m_EditorClassIdentifier: 
+  Name: "\uB610\uB3C4\uAC00\uC2A4"
+  PokedexNumber: 110
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 5645a48814b3e4928867bb94d449e595, type: 3}
+  Regular_Back: {fileID: 21300000, guid: b4e7ebb288bfb404c9ce5c778c04b890, type: 3}
+  Icon_Regular: {fileID: 1001133223, guid: 4dbde8c6deff343e18b2746a11d8f854, type: 3}
+  Type1: "\uB3C5"
+  Type2: "\uD398\uC5B4\uB9AC"
+  Nature: 
+  Abilitys:
+  - "\uBD80\uC720"
+  - "\uD654\uD559\uBCC0\uD654\uAC00\uC2A4"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 9c700e971924c4489927a367936503e3, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 334
+  Attack: 306
+  Defense: 372
+  SAttack: 295
+  SDefense: 262
+  Speed: 240
+  MoveName:
+  - "\uC6D0\uB354\uC2A4\uD300"
+  - "\uBAB8\uD1B5\uBC15\uCE58\uAE30"
+  - "\uC790\uD3ED"
+  - "\uC624\uBB3C\uD3ED\uD0C4"
+  MoveType:
+  - "\uD398\uC5B4\uB9AC"
+  - "\uB178\uB9D0"
+  - "\uB178\uB9D0"
+  - "\uB3C5"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 5a00000028000000c80000005a000000
+  MoveAccuracy: 5f000000640000006400000064000000
+  CurrentMovePP: 0a00000023000000050000000a000000
+  FullMovePP: 0a00000023000000050000000a000000

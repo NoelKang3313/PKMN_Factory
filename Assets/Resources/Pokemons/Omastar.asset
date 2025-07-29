@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Omastar
+  m_EditorClassIdentifier: 
+  Name: "\uC554\uC2A4\uD0C0"
+  PokedexNumber: 139
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 29e7f76128884490984b396dbaa60760, type: 3}
+  Regular_Back: {fileID: 21300000, guid: a6fffcc7b5869432fa57b7564f0d0da2, type: 3}
+  Icon_Regular: {fileID: -1749032376, guid: ba9355a808e5c44819dca8eb045938f2, type: 3}
+  Type1: "\uBC14\uC704"
+  Type2: "\uBB3C"
+  Nature: 
+  Abilitys:
+  - "\uC4F1\uC4F1"
+  - "\uC870\uAC00\uBE44\uAC11\uC637"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 4ac1c93968e0e4a86b1ad066d665653d, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  HP: 344
+  Attack: 240
+  Defense: 383
+  SAttack: 361
+  SDefense: 262
+  Speed: 229
+  MoveName:
+  - "\uBA38\uB4DC\uC20F"
+  - "\uBC29\uC5B4"
+  - "\uB77D\uBE14\uB808\uC2A4\uD2B8"
+  - "\uD30C\uB3C4\uD0C0\uAE30"
+  MoveType:
+  - "\uB545"
+  - "\uB178\uB9D0"
+  - "\uBC14\uC704"
+  - "\uBB3C"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 3700000000000000190000005a000000
+  MoveAccuracy: 5f000000640000005a00000064000000
+  CurrentMovePP: 0f0000000a0000000a0000000f000000
+  FullMovePP: 0f0000000a0000000a0000000f000000

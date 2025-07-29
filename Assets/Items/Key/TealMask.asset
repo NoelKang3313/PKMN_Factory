@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b653fac90802e4e3284a51d0e4599ffd, type: 3}
+  m_Name: TealMask
+  m_EditorClassIdentifier: 
+  ItemName: "\uBCBD\uB85D\uC758\uAC00\uBA74"
+  ItemSprite: {fileID: 21300000, guid: 09d4d833c08ac4859a6d6e839f1d9918, type: 3}
+  ItemType: "\uC911\uC694"
+  ItemAmount: 0
+  ItemDescription: "\uB3C4\uAE68\uBE44\uC758 \uC5BC\uAD74\uC744 \uBCF8\uB72C \uCD08\uB85D\uC0C9
+    \uAC00\uBA74. \uAC00\uBA74 \uCD95\uC81C\uC5D0\uC11C \uB9CC\uB09C \uC544\uC774\uAC00
+    \uACC4\uB2E8\uC5D0\uC11C \uB5A8\uC5B4\uB728\uB9B0 \uAC83\uC744 \uC8FC\uC6E0\uB2E4."

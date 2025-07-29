@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Arbok
+  m_EditorClassIdentifier: 
+  Name: "\uC544\uBCF4\uD06C"
+  PokedexNumber: 24
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: a50b1cdb9f07f4c85a32adb81d1a7570, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 658ce2a7cd1b64641926b69aa2e64807, type: 3}
+  Icon_Regular: {fileID: 1912168020, guid: 15e875e9b21f64acebab86c0afc4f821, type: 3}
+  Type1: "\uB3C5"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC704\uD611"
+  - "\uD0C8\uD53C"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: d9c73aa17dc664b599e08aeb900dc455, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon: {fileID: 0}
+  NewAbility: 
+  NewPokemonCry: {fileID: 0}
+  HP: 324
+  Attack: 317
+  Defense: 260
+  SAttack: 251
+  SDefense: 282
+  Speed: 284
+  MoveName:
+  - "\uC624\uBB3C\uD3ED\uD0C4"
+  - "\uBC40\uB208\uCD08\uB9AC"
+  - "\uC5BC\uC74C\uC5C4\uB2C8"
+  - "\uAE68\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  MoveType:
+  - "\uB3C5"
+  - "\uB178\uB9D0"
+  - "\uC5BC\uC74C"
+  - "\uC545"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 5a000000000000004100000050000000
+  MoveAccuracy: 64000000000000005f00000064000000
+  CurrentMovePP: 0a0000001e0000000f0000000f000000
+  FullMovePP: 0a0000001e0000000f0000000f000000

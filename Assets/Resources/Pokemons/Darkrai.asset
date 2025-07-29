@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Darkrai
+  m_EditorClassIdentifier: 
+  Name: "\uB2E4\uD06C\uB77C\uC774"
+  PokedexNumber: 491
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 7d5280d655c6c46b884961505964b3d7, type: 3}
+  Regular_Back: {fileID: 21300000, guid: a0d84a9de555440649041fe7dc399bd0, type: 3}
+  Icon_Regular: {fileID: -873632075, guid: bd7073b9bb07245daa6b1e7907c8c520, type: 3}
+  Type1: "\uC545"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uB098\uC774\uD2B8\uBA54\uC5B4"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 45f210ecd03bb4442bf8402a2f6a8332, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 344
+  Attack: 306
+  Defense: 306
+  SAttack: 405
+  SDefense: 306
+  Speed: 383
+  MoveName:
+  - "\uB098\uC774\uD2B8\uD5E4\uB4DC"
+  - "\uB2E4\uD06C\uD640"
+  - "\uAFC8\uBA39\uAE30"
+  - "\uC545\uC758\uD30C\uB3D9"
+  MoveType:
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uC545"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uC545"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 00000000000000006400000050000000
+  MoveAccuracy: 64000000320000006400000064000000
+  CurrentMovePP: 0f0000000a0000000f0000000f000000
+  FullMovePP: 0f0000000a0000000f0000000f000000

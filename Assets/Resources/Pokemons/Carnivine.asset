@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Carnivine
+  m_EditorClassIdentifier: 
+  Name: "\uBB34\uC2A4\uD2C8\uB2C8"
+  PokedexNumber: 455
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 890256122ace846d89c15b07d0ebc318, type: 3}
+  Regular_Back: {fileID: 21300000, guid: e02e5634dc3b1460d84c375c2996d7a3, type: 3}
+  Icon_Regular: {fileID: -1039150913, guid: 26878222b1c6d4809b6dc9fdb7d5ce80, type: 3}
+  Type1: "\uD480"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uBD80\uC720"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 03e969510da8d45539c5401b7f6a63e5, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 352
+  Attack: 328
+  Defense: 267
+  SAttack: 306
+  SDefense: 267
+  Speed: 210
+  MoveName:
+  - "\uBFCC\uB9AC\uBC15\uAE30"
+  - "\uAE68\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  - "\uC528\uD3ED\uD0C4"
+  - "\uD30C\uC6CC\uD729"
+  MoveType:
+  - "\uD480"
+  - "\uC545"
+  - "\uD480"
+  - "\uD480"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 00000000500000005000000078000000
+  MoveAccuracy: 64000000640000006400000055000000
+  CurrentMovePP: 140000000f0000000f0000000a000000
+  FullMovePP: 140000000f0000000f0000000a000000

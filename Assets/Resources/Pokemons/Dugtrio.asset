@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Dugtrio
+  m_EditorClassIdentifier: 
+  Name: "\uB2E5\uD2B8\uB9AC\uC624"
+  PokedexNumber: 51
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 78b9e2ace673f4ad5a649e17beb21438, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 9f513c1bc0893495e99ee7839c6bea12, type: 3}
+  Icon_Regular: {fileID: -1983023937, guid: da2e1da0975bb4492a1ae94b15399dd3, type: 3}
+  Type1: "\uB545"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uBAA8\uB798\uC228\uAE30"
+  - "\uAC1C\uBBF8\uC9C0\uC625"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 9fc7c729d9a7d4c5684e26effdf90bb1, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 274
+  Attack: 328
+  Defense: 218
+  SAttack: 218
+  SDefense: 262
+  Speed: 372
+  MoveName:
+  - "\uAE5C\uC9DD\uBCA0\uAE30"
+  - "\uBCA0\uC5B4\uAC00\uB974\uAE30"
+  - "\uAD6C\uBA4D\uD30C\uAE30"
+  - "\uC9C0\uC9C4"
+  MoveType:
+  - "\uC545"
+  - "\uB178\uB9D0"
+  - "\uB545"
+  - "\uB545"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 46000000460000005000000064000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0f000000140000000a0000000a000000
+  FullMovePP: 0f000000140000000a0000000a000000

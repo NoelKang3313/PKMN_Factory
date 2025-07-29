@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Cherrim
+  m_EditorClassIdentifier: 
+  Name: "\uCCB4\uB9AC\uAF2C"
+  PokedexNumber: 421
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: c5de4cbebe1ca46539e7d5081d1c6942, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 6958ef1e2358a40aa96bb82bd84d0c78, type: 3}
+  Icon_Regular: {fileID: 519241027, guid: ba4909f3d7f124d8d8c38b2f8c1d9993, type: 3}
+  Type1: "\uD480"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD50C\uB77C\uC6CC\uAE30\uD504\uD2B8"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 0f862bb4e1c0243838c55520d090e921, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 24551e102eb7f408b9abb6a58e533b00, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 6cb5d8b1d435b4776985a08f712ac26d, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: -422402065, guid: e4e6771c6cf524445bbb43f5d622e934, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: "\uD50C\uB77C\uC6CC\uAE30\uD504\uD2B8"
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 8300000, guid: 0f862bb4e1c0243838c55520d090e921, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 344
+  Attack: 240
+  Defense: 262
+  SAttack: 300
+  SDefense: 280
+  Speed: 295
+  MoveName:
+  - "\uCF8C\uCCAD"
+  - "\uB9E4\uC9C0\uCEEC\uB9AC\uD504"
+  - "\uC528\uBFCC\uB9AC\uAE30"
+  - "\uC194\uB77C\uBE54"
+  MoveType:
+  - "\uBD88\uAF43"
+  - "\uD480"
+  - "\uD480"
+  - "\uD480"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  MovePower: 000000003c0000000000000078000000
+  MoveAccuracy: 64000000640000005a00000064000000
+  CurrentMovePP: 05000000140000000a0000000a000000
+  FullMovePP: 05000000140000000a0000000a000000

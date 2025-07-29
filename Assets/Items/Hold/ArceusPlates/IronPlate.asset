@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b653fac90802e4e3284a51d0e4599ffd, type: 3}
+  m_Name: IronPlate
+  m_EditorClassIdentifier: 
+  ItemName: "\uAC15\uCCA0\uD50C\uB808\uC774\uD2B8"
+  ItemSprite: {fileID: 21300000, guid: 4733474283ed9419e9201049870ec768, type: 3}
+  ItemType: "\uB3C4\uAD6C"
+  ItemAmount: 0
+  ItemDescription: "\uAC15\uCCA0\uD0C0\uC785\uC758 \uC11D\uD310. \uC9C0\uB2C8\uAC8C
+    \uD558\uBA74 \uAC15\uCCA0\uD0C0\uC785 \uAE30\uC220\uC758 \uC704\uB825\uC774 \uAC15\uD574\uC9C4\uB2E4.
+    \"\uC138\uC0C1\uC758 \uC774\uBA74\uC5D0 \uAC00\uB4DD\uD55C \uAC83\uB4E4\uC740
+    \uC228 \uC26C\uB294 \uAC83\uB4E4\uC758 \uBAA8\uC2B5\uC744 \uBC14\uAFB8\uC5C8\uB2E4.\""

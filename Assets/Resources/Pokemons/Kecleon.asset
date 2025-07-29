@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Kecleon
+  m_EditorClassIdentifier: 
+  Name: "\uCF08\uB9AC\uBAAC"
+  PokedexNumber: 352
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: f9dd5f07522ef4a87bb7deb0ba2f5eea, type: 3}
+  Regular_Back: {fileID: 21300000, guid: ce890b9106431442c93459ccbc659d69, type: 3}
+  Icon_Regular: {fileID: 1448718796, guid: edf6667b66f80406ab625c9f11c5b9e2, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uBCC0\uC0C9"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 08f1a58bdeb73485eb36a454e7f2b827, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewPokemonCry: {fileID: 0}
+  HP: 324
+  Attack: 306
+  Defense: 262
+  SAttack: 240
+  SDefense: 372
+  Speed: 196
+  MoveName:
+  - "\uD658\uC0C1\uBE54"
+  - "\uBCA0\uC5B4\uAC00\uB974\uAE30"
+  - "\uC100\uB3C4\uD06C\uB8E8"
+  - "\uAE30\uC2B5"
+  MoveType:
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uB178\uB9D0"
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uC545"
+  MoveCategory:
+  - "\uD2B9\uC218 "
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 41000000460000004600000046000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 14000000140000000f00000005000000
+  FullMovePP: 14000000140000000f00000005000000

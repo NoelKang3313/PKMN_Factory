@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Gyarados
+  m_EditorClassIdentifier: 
+  Name: "\uAC38\uB77C\uB3C4\uC2A4"
+  PokedexNumber: 130
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: c9a98cbacef5e4693ba936e8a26bcb5e, type: 3}
+  Regular_Back: {fileID: 21300000, guid: ef9bb0cb8fa35405199ac7672ecceee6, type: 3}
+  Icon_Regular: {fileID: -1727988122, guid: 3de45bfe26fc64f6da977b69285f7db6, type: 3}
+  Type1: "\uBB3C"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uC704\uD611"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: cde9daafae41241a7a6b1aeb2cd85953, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 7bb7281a7b2da4988886572d3b336c45, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: db934eef6ce2a4aa599515046c774f93, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 1894259214, guid: aa5f90c452b68459aa9577642552e74f, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewAbility1: "\uD2C0\uAE68\uAE30"
+  NewAbility2: 
+  NewPokemonCry1: {fileID: 8300000, guid: bb428bbd493684655b7ff5e23bd05f85, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  HP: 394
+  Attack: 383
+  Defense: 282
+  SAttack: 240
+  SDefense: 328
+  Speed: 287
+  MoveName:
+  - "\uAEA0\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  - "\uC544\uCFE0\uC544\uD14C\uC77C"
+  - "\uD558\uC774\uB4DC\uB85C\uD38C\uD504"
+  - "\uC6A9\uC758\uCDA4"
+  MoveType:
+  - "\uC545"
+  - "\uBB3C"
+  - "\uBB3C"
+  - "\uB4DC\uB798\uACE4"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  MovePower: 500000005a0000006e00000000000000
+  MoveAccuracy: 640000005a0000005000000064000000
+  CurrentMovePP: 0f0000000a0000000500000014000000
+  FullMovePP: 0f0000000a0000000500000014000000

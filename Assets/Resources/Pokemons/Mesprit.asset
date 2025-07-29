@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Mesprit
+  m_EditorClassIdentifier: 
+  Name: "\uC5E0\uB77C\uC774\uD2B8"
+  PokedexNumber: 481
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: d75e22dbfcae04647b65828e64758fa0, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 4e18c4fe902c041c0a666e9e6afc3e02, type: 3}
+  Icon_Regular: {fileID: -969462130, guid: b89fbb276ef544570941b8ac0d6fad0f, type: 3}
+  Type1: "\uC5D0\uC2A4\uD37C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uBD80\uC720"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: c6e2b2832a24240d59062781bbcfaa84, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 364
+  Attack: 339
+  Defense: 339
+  SAttack: 399
+  SDefense: 399
+  Speed: 284
+  MoveName:
+  - "\uC2A4\uD53C\uB4DC\uC2A4\uD0C0"
+  - "\uC560\uAD50\uBD80\uB9AC\uAE30"
+  - "\uBBF8\uB798\uC608\uC9C0"
+  - "\uC2E0\uBE44\uC758\uD798"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uD398\uC5B4\uB9AC"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uC5D0\uC2A4\uD37C"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 3c000000000000007800000046000000
+  MoveAccuracy: 6400000064000000640000005a000000
+  CurrentMovePP: 14000000140000000a0000000a000000
+  FullMovePP: 14000000140000000a0000000a000000

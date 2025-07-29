@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Arcanine
+  m_EditorClassIdentifier: 
+  Name: "\uC708\uB514"
+  PokedexNumber: 59
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 6103cdd340af74a6a85b75033deb0dd8, type: 3}
+  Regular_Back: {fileID: 21300000, guid: c5d0161798d8940cea60342e1eb51774, type: 3}
+  Icon_Regular: {fileID: -1305216521, guid: 046a3f3b4f4354e52ba2c9f87127ab46, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD0C0\uC624\uB974\uB294\uBD88\uAF43"
+  - "\uC704\uD611"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 35cc8b93bf00c436e9478e10fafda651, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon: {fileID: 0}
+  NewAbility: 
+  NewPokemonCry: {fileID: 0}
+  HP: 384
+  Attack: 350
+  Defense: 284
+  SAttack: 328
+  SDefense: 284
+  Speed: 317
+  MoveName:
+  - "\uD654\uC5FC\uBC29\uC0AC"
+  - "\uCE58\uADFC\uAC70\uB9AC\uAE30"
+  - "\uD50C\uB808\uC5B4\uB4DC\uB77C\uC774\uBE0C"
+  - "\uC2E0\uC18D"
+  MoveType:
+  - "\uBD88\uAF43"
+  - "\uD398\uC5B4\uB9AC"
+  - "\uBD88\uAF43"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 5a0000005a0000007800000050000000
+  MoveAccuracy: 640000005a0000006400000064000000
+  CurrentMovePP: 0f0000000a0000000f00000005000000
+  FullMovePP: 0f0000000a0000000f00000005000000

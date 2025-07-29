@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Infernape
+  m_EditorClassIdentifier: 
+  Name: "\uCD08\uC5FC\uBABD"
+  PokedexNumber: 392
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: eaafa7a7c5b524e07baaca29c0b52c0d, type: 3}
+  Regular_Back: {fileID: 21300000, guid: ad65c72932c5a4a49a7ca86f65644beb, type: 3}
+  Icon_Regular: {fileID: -705585022, guid: b1cf2eba94d6d434bbd12e0cb46a8fb0, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: "\uACA9\uD22C"
+  Nature: 
+  Abilitys:
+  - "\uB9F9\uD654"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: c417e9546d62b494c9dcf0a33bba66f1, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 356
+  Attack: 337
+  Defense: 265
+  SAttack: 337
+  SDefense: 265
+  Speed: 346
+  MoveName:
+  - "\uB9C8\uD558\uD380\uCE58"
+  - "\uC778\uD30C\uC774\uD2B8"
+  - "\uD654\uC5FC\uBC14\uD034"
+  - "\uC560\uD06C\uB7EC\uBC43"
+  MoveType:
+  - "\uACA9\uD22C"
+  - "\uACA9\uD22C"
+  - "\uBD88\uAF43"
+  - "\uBE44\uD589"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 28000000780000003c00000037000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 1e00000005000000190000000f000000
+  FullMovePP: 1e00000005000000190000000f000000

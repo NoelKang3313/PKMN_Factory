@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Celebi
+  m_EditorClassIdentifier: 
+  Name: "\uC138\uB808\uBE44"
+  PokedexNumber: 251
+  Gender: 
+  Genderless: 1
+  Regular: {fileID: 21300000, guid: 0c9e206f0d7a14aa69d11c6760cd3ba8, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 8a47b2b5ca1e547b0983e7ab228bd8c3, type: 3}
+  Icon_Regular: {fileID: 1478601157, guid: 75f79887c12be4a9da6d9b868bef600d, type: 3}
+  Type1: "\uC5D0\uC2A4\uD37C"
+  Type2: "\uD480"
+  Nature: 
+  Abilitys:
+  - "\uC790\uC5F0\uD68C\uBCF5"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 047163df04719401092d964e0bf907aa, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm_Icon: {fileID: 0}
+  NewAbility: 
+  NewPokemonCry: {fileID: 0}
+  HP: 404
+  Attack: 328
+  Defense: 328
+  SAttack: 328
+  SDefense: 328
+  Speed: 328
+  MoveName:
+  - "\uC5FC\uB3D9\uB825"
+  - "\uB9E4\uC9C0\uCEEC\uB9AC\uD504"
+  - "\uC528\uBFCC\uB9AC\uAE30"
+  - "\uBBF8\uB798\uC608\uC9C0"
+  MoveType:
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uD480"
+  - "\uD480"
+  - "\uC5D0\uC2A4\uD37C"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  MovePower: 320000003c0000000000000078000000
+  MoveAccuracy: 64000000640000005a00000064000000
+  CurrentMovePP: 19000000140000000a0000000a000000
+  FullMovePP: 19000000140000000a0000000a000000
