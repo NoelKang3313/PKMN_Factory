@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Stunfisk(Galarian)
+  m_EditorClassIdentifier: 
+  Name: "\uBA54\uB354"
+  PokedexNumber: 618
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 581e87006ceaf4f229004353a75985dd, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 6f210b42a90df48f7ae16ae1a2301380, type: 3}
+  Icon_Regular: {fileID: -1169124451, guid: c31fcd38dde2941108ae686e1aef5afe, type: 3}
+  Type1: "\uB545"
+  Type2: "\uAC15\uCCA0"
+  Nature: 
+  Abilitys:
+  - "\uC758\uD0DC"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 20c3b8bc934b2475292c84d4ca284ee8, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 422
+  Attack: 287
+  Defense: 326
+  SAttack: 254
+  SDefense: 293
+  Speed: 179
+  MoveName:
+  - "\uBA54\uD0C8\uD06C\uB85C\uC6B0"
+  - "\uBA38\uB4DC\uC20F"
+  - "\uB6F0\uC5B4\uC624\uB974\uB2E4"
+  - "\uD0C1\uB958"
+  MoveType:
+  - "\uAC15\uCCA0"
+  - "\uB545"
+  - "\uBE44\uD589"
+  - "\uBB3C"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 3200000037000000550000005a000000
+  MoveAccuracy: 5f0000005f0000005500000055000000
+  CurrentMovePP: 230000000f000000050000000a000000
+  FullMovePP: 230000000f000000050000000a000000

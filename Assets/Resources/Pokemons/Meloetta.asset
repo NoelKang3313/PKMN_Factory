@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Meloetta
+  m_EditorClassIdentifier: 
+  Name: "\uBA54\uB85C\uC5E3\uD0C0"
+  PokedexNumber: 648
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: d1f0f320323974d349bca7e32f0d68a4, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 5881706dc87c94f2d9e0bfbe84ff37f0, type: 3}
+  Icon_Regular: {fileID: -974433500, guid: bfa90d75984594d3f8618a66451d5601, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: "\uC5D0\uC2A4\uD37C"
+  Nature: 
+  Abilitys:
+  - "\uD558\uB298\uC758\uC740\uCD1D"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: c0dc9cf16fed042ea9d23dee094ef598, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 1ef73e27b764c4e5481f8f2fa6de20b1, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 5fd409b6682164f9d9442281851d9bd7, type: 3}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: -138563607, guid: c4f7bc2af14fb4f05853281443ef97c9, type: 3}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: "\uD558\uB298\uC758\uC740\uCD1D"
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 8300000, guid: c0dc9cf16fed042ea9d23dee094ef598, type: 3}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 404
+  Attack: 278
+  Defense: 278
+  SAttack: 390
+  SDefense: 390
+  Speed: 306
+  MoveName:
+  - "\uC560\uD06C\uB7EC\uBC43"
+  - "\uC61B\uB178\uB798"
+  - "\uC0AC\uC774\uCF54\uD0A4\uB124\uC2DC\uC2A4"
+  - "\uD558\uC774\uD37C\uBCF4\uC774\uC2A4"
+  MoveType:
+  - "\uBE44\uD589"
+  - "\uB178\uB9D0"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 370000004b0000005a0000005a000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0f0000000a0000000a0000000a000000
+  FullMovePP: 0f0000000a0000000a0000000a000000

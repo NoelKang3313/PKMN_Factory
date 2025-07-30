@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Talonflame
+  m_EditorClassIdentifier: 
+  Name: "\uD30C\uC774\uC5B4\uB85C"
+  PokedexNumber: 663
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: b7a5365da5c9f4db99932f552f7b6ff6, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 0181c2b9de7ee4af38b5c05339aa333b, type: 3}
+  Icon_Regular: {fileID: 1539974910, guid: e94aae2ca201f4a7191d73f54ea6761f, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uBD88\uAF43\uBAB8"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 05e683f93b61a4960bb7a061edf19965, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 360
+  Attack: 287
+  Defense: 265
+  SAttack: 271
+  SDefense: 260
+  Speed: 386
+  MoveName:
+  - "\uB2C8\uD2B8\uB85C\uCC28\uC9C0"
+  - "\uD50C\uB808\uC5B4\uB4DC\uB77C\uC774\uBE0C"
+  - "\uC81C\uBE44\uBC18\uD658"
+  - "\uBE0C\uB808\uC774\uBE0C\uBC84\uB4DC"
+  MoveType:
+  - "\uBD88\uAF43"
+  - "\uBD88\uAF43"
+  - "\uBE44\uD589"
+  - "\uBE44\uD589"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 32000000780000003c00000078000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000000f000000140000000f000000
+  FullMovePP: 140000000f000000140000000f000000

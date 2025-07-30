@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Gogoat
+  m_EditorClassIdentifier: 
+  Name: "\uACE0\uACE0\uD2B8"
+  PokedexNumber: 673
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: ca405b2249569417eafea7dee6cbd33b, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 3086d2ad2b40b4b7bba6fe26c70fce4b, type: 3}
+  Icon_Regular: {fileID: 271207585, guid: 95f073577b9c24533a6d7a5c8d583672, type: 3}
+  Type1: "\uD480"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uCD08\uC2DD"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 99e36716967da4a2d92243be95ab0287, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 450
+  Attack: 328
+  Defense: 245
+  SAttack: 322
+  SDefense: 287
+  Speed: 258
+  MoveName:
+  - "\uC528\uD3ED\uD0C4"
+  - "\uBC8C\uD06C\uC5C5"
+  - "\uC544\uD310\uC0AC\uD310\uD0DC\uD074"
+  - "\uC6B0\uB4DC\uD63C"
+  MoveType:
+  - "\uD480"
+  - "\uACA9\uD22C"
+  - "\uB178\uB9D0"
+  - "\uD480"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 5000000000000000780000004b000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0f000000140000000f0000000a000000
+  FullMovePP: 0f000000140000000f0000000a000000

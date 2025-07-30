@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Golurk
+  m_EditorClassIdentifier: 
+  Name: "\uACE8\uB8E8\uADF8"
+  PokedexNumber: 623
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 35d4feb4953204b2e8633b0a6b68e2b2, type: 3}
+  Regular_Back: {fileID: 21300000, guid: b3190ea4573fb478784b48cddc44dc50, type: 3}
+  Icon_Regular: {fileID: -1903718003, guid: 1c3ff584b1c464dc2aa47232f3c846bf, type: 3}
+  Type1: "\uB545"
+  Type2: "\uACE0\uC2A4\uD2B8"
+  Nature: 
+  Abilitys:
+  - "\uCCA0\uC8FC\uBA39"
+  - "\uC11C\uD22C\uB984"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 80ff3b49dbd464ee8ae7818612080758, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 382
+  Attack: 381
+  Defense: 284
+  SAttack: 229
+  SDefense: 284
+  Speed: 229
+  MoveName:
+  - "\uC100\uB3C4\uD380\uCE58"
+  - "\uCCA0\uBCBD"
+  - "\uC100\uB3C4\uBCFC"
+  - "\uC554\uD574\uBA38"
+  MoveType:
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uAC15\uCCA0"
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uACA9\uD22C"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  MovePower: 3c000000000000005000000064000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000000f0000000f0000000a000000
+  FullMovePP: 140000000f0000000f0000000a000000

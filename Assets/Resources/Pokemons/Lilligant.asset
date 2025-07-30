@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Lilligant
+  m_EditorClassIdentifier: 
+  Name: "\uB4DC\uB808\uB514\uC5B4"
+  PokedexNumber: 549
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 743546253991f44af9a23d6f1d3627b3, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 578c8148048e345f49dd54961b6d2be3, type: 3}
+  Icon_Regular: {fileID: 645120803, guid: 8f55b84a73641476183ef455d1900973, type: 3}
+  Type1: "\uD480"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC5FD\uB85D\uC18C"
+  - "\uB9C8\uC774\uD398\uC774\uC2A4"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 5fa7881ead8474eadb4f4a6319a22b33, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 344
+  Attack: 240
+  Defense: 273
+  SAttack: 350
+  SDefense: 273
+  Speed: 306
+  MoveName:
+  - "\uAE30\uAC00\uB4DC\uB808\uC778"
+  - "\uC528\uBFCC\uB9AC\uAE30"
+  - "\uAF43\uC78E\uB304\uC2A4"
+  - "\uB9E4\uC9C0\uCEEC\uB9AC\uD504"
+  MoveType:
+  - "\uD480"
+  - "\uD480"
+  - "\uD480"
+  - "\uD480"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 4b000000000000000c0000003c000000
+  MoveAccuracy: 640000005a0000006400000064000000
+  CurrentMovePP: 0a0000000a0000000a00000014000000
+  FullMovePP: 0a0000000a0000000a00000014000000

@@ -32,34 +32,39 @@ MonoBehaviour:
   NewForm1_Back: {fileID: 0}
   NewForm2: {fileID: 0}
   NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
   NewForm_Icon1: {fileID: 0}
   NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
   NewAbility1: 
   NewAbility2: 
+  NewAbility3: 
   NewPokemonCry1: {fileID: 0}
   NewPokemonCry2: {fileID: 0}
-  HP: 0
-  Attack: 0
-  Defense: 0
-  SAttack: 0
-  SDefense: 0
-  Speed: 0
+  NewPokemonCry3: {fileID: 0}
+  HP: 354
+  Attack: 350
+  Defense: 383
+  SAttack: 328
+  SDefense: 339
+  Speed: 295
   MoveName:
-  - 
-  - 
-  - 
-  - 
+  - "\uC2A4\uCF00\uC77C\uB178\uC774\uC988"
+  - "\uB4DC\uB798\uACE4\uD074\uB85C"
+  - "\uC6A9\uC758\uCDA4"
+  - "\uD3ED\uC74C\uD30C"
   MoveType:
-  - 
-  - 
-  - 
-  - 
+  - "\uB4DC\uB798\uACE4"
+  - "\uB4DC\uB798\uACE4"
+  - "\uB4DC\uB798\uACE4"
+  - "\uB178\uB9D0"
   MoveCategory:
-  - 
-  - 
-  - 
-  - 
-  MovePower: 00000000000000000000000000000000
-  MoveAccuracy: 00000000000000000000000000000000
-  CurrentMovePP: 00000000000000000000000000000000
-  FullMovePP: 00000000000000000000000000000000
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  MovePower: 6e00000050000000000000008c000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 050000000f000000140000000a000000
+  FullMovePP: 050000000f000000140000000a000000

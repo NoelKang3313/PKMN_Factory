@@ -22,40 +22,49 @@ MonoBehaviour:
   Type1: "\uBC8C\uB808"
   Type2: "\uBB3C"
   Nature: 
+  Abilitys:
+  - 
+  - 
   Ability: 
   PokemonCry: {fileID: 8300000, guid: 34a8173b73cd54b778a5d5c5748d434c, type: 3}
-  canMegaEvolve: 0
-  MegaRegular1: {fileID: 0}
-  MegaRegular1_Back: {fileID: 0}
-  MegaShiny1: {fileID: 0}
-  MegaShiny1_Back: {fileID: 0}
-  MegaRegular2: {fileID: 0}
-  MegaRegular2_Back: {fileID: 0}
-  MegaShiny2: {fileID: 0}
-  MegaShiny2_Back: {fileID: 0}
-  NewAbility: 
-  HP: 0
-  Attack: 0
-  Defense: 0
-  SAttack: 0
-  SDefense: 0
-  Speed: 0
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 354
+  Attack: 383
+  Defense: 416
+  SAttack: 240
+  SDefense: 306
+  Speed: 196
   MoveName:
-  - 
-  - 
-  - 
-  - 
+  - "\uC178\uBE14\uB808\uC774\uB4DC"
+  - "\uBC14\uB298\uBBF8\uC0AC\uC77C"
+  - "\uCE7C\uCDA4"
+  - "\uC544\uCFE0\uC544\uBE0C\uB808\uC774\uD06C"
   MoveType:
-  - 
-  - 
-  - 
-  - 
+  - "\uBB3C"
+  - "\uBC8C\uB808"
+  - "\uB178\uB9D0"
+  - "\uBB3C"
   MoveCategory:
-  - 
-  - 
-  - 
-  - 
-  MovePower: 00000000000000000000000000000000
-  MoveAccuracy: 00000000000000000000000000000000
-  CurrentMovePP: 00000000000000000000000000000000
-  FullMovePP: 00000000000000000000000000000000
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  MovePower: 4b000000190000000000000055000000
+  MoveAccuracy: 5f0000005f0000006400000064000000
+  CurrentMovePP: 0a00000014000000140000000a000000
+  FullMovePP: 0a00000014000000140000000a000000

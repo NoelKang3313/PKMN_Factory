@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Hawlucha
+  m_EditorClassIdentifier: 
+  Name: "\uB8E8\uCC28\uBD88"
+  PokedexNumber: 701
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 658983aa8ab974b4bbefd52441441832, type: 3}
+  Regular_Back: {fileID: 21300000, guid: cb562b6b54ae6424eb0cc213b299344e, type: 3}
+  Icon_Regular: {fileID: 989903066, guid: 55f764222366a4079a8f2ca98b82e515, type: 3}
+  Type1: "\uACA9\uD22C"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uC720\uC5F0"
+  - "\uACE1\uC608"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 56f696ac3a0934ba79f1c85a6a16e20e, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 360
+  Attack: 311
+  Defense: 273
+  SAttack: 271
+  SDefense: 247
+  Speed: 368
+  MoveName:
+  - "\uC81C\uBE44\uBC18\uD658"
+  - "\uAE68\uD2B8\uB9AC\uAE30"
+  - "\uCE7C\uCDA4"
+  - "\uD50C\uB77C\uC789\uD504\uB808\uC2A4"
+  MoveType:
+  - "\uBE44\uD589"
+  - "\uACA9\uD22C"
+  - "\uB178\uB9D0"
+  - "\uACA9\uD22C"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  MovePower: 3c0000004b0000000000000064000000
+  MoveAccuracy: 6400000064000000640000005f000000
+  CurrentMovePP: 140000000f000000140000000a000000
+  FullMovePP: 140000000f000000140000000a000000

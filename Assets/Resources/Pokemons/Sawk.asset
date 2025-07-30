@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Sawk
+  m_EditorClassIdentifier: 
+  Name: "\uD0C0\uACA9\uADC0"
+  PokedexNumber: 539
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 6ddf8c4ac24f24e5fbe3f5a1e1200bab, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 724944a4419d54793a5c325365cc9933, type: 3}
+  Icon_Regular: {fileID: -960545500, guid: 68e7c00fddb9c4ffe8669f989f5d2c73, type: 3}
+  Type1: "\uACA9\uD22C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC639\uACE8\uCC38"
+  - "\uC815\uC2E0\uB825"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 790d0048ef1874527b965fe888dc187d, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 354
+  Attack: 383
+  Defense: 273
+  SAttack: 174
+  SDefense: 273
+  Speed: 295
+  MoveName:
+  - "\uB85C\uD0A5"
+  - "\uAE68\uD2B8\uB9AC\uB2E4"
+  - "\uCE74\uC6B4\uD130"
+  - "\uC778\uD30C\uC774\uD2B8"
+  MoveType:
+  - "\uACA9\uD22C"
+  - "\uACA9\uD22C"
+  - "\uACA9\uD22C"
+  - "\uACA9\uD22C"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 410000004b0000000000000078000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000000f0000001400000005000000
+  FullMovePP: 140000000f0000001400000005000000

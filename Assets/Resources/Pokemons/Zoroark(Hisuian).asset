@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Zoroark(Hisuian)
+  m_EditorClassIdentifier: 
+  Name: "\uC870\uB85C\uC544\uD06C"
+  PokedexNumber: 571
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 274ef67ff7f7a4c3c869e0cb95e309fe, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 4620d46f1aa0e45bcbf8438b0ea1601a, type: 3}
+  Icon_Regular: {fileID: 1732899418, guid: 6f940e21b78824ebba6f58b9a9bad2dc, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: "\uACE0\uC2A4\uD2B8"
+  Nature: 
+  Abilitys:
+  - "\uC77C\uB8E8\uC804"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 0e025ff136c904ee1941de49f641d560, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 314
+  Attack: 328
+  Defense: 240
+  SAttack: 383
+  SDefense: 240
+  Speed: 350
+  MoveName:
+  - "\uC100\uB3C4\uD074\uB85C"
+  - "\uC100\uB3C4\uBCFC"
+  - "\uB098\uC05C\uC74C\uBAA8"
+  - "\uC18D\uC784\uC218"
+  MoveType:
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uC545"
+  - "\uC545"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  MovePower: 4600000050000000000000005f000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0f0000000f000000140000000f000000
+  FullMovePP: 0f0000000f000000140000000f000000

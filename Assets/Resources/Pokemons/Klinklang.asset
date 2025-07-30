@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Klinklang
+  m_EditorClassIdentifier: 
+  Name: "\uAE30\uAE30\uAE30\uC5B4\uB974"
+  PokedexNumber: 601
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 61cdb77087a7f47818e9a393e01fc12e, type: 3}
+  Regular_Back: {fileID: 21300000, guid: f211d1daa9cd2429c87739ffe8746519, type: 3}
+  Icon_Regular: {fileID: -214975535, guid: c7510abf052404f77a017d9a62e0e49e, type: 3}
+  Type1: "\uAC15\uCCA0"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD50C\uB7EC\uC2A4"
+  - "\uB9C8\uC774\uB108\uC2A4"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 44a53b4954984445c83ab84e2a998d4e, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 324
+  Attack: 328
+  Defense: 361
+  SAttack: 262
+  SDefense: 295
+  Speed: 306
+  MoveName:
+  - "\uCC1D\uAE30"
+  - "\uBC29\uC804"
+  - "\uAE30\uC5B4\uC18C\uC11C"
+  - "\uAE30\uC5B4\uCCB4\uC778\uC9C0"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uC804\uAE30"
+  - "\uAC15\uCCA0"
+  - "\uAC15\uCCA0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  MovePower: 37000000500000003200000000000000
+  MoveAccuracy: 64000000640000005500000064000000
+  CurrentMovePP: 1e0000000f0000000f0000000a000000
+  FullMovePP: 1e0000000f0000000f0000000a000000

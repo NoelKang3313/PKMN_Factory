@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Virizion
+  m_EditorClassIdentifier: 
+  Name: "\uBE44\uB9AC\uB514\uC628"
+  PokedexNumber: 640
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: ad2ff4c37131140838d859d170abff5d, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 30126fdfb4b484c9ab9ad6113a3b5be3, type: 3}
+  Icon_Regular: {fileID: 1895930134, guid: 0686f7d1c82d94c818d21d266e4e79dd, type: 3}
+  Type1: "\uD480"
+  Type2: "\uACA9\uD22C"
+  Nature: 
+  Abilitys:
+  - "\uC815\uC758\uC758\uB9C8\uC74C"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 3e6b645b4846241e3bfe7bf230a50be8, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 386
+  Attack: 306
+  Defense: 267
+  SAttack: 306
+  SDefense: 392
+  Speed: 346
+  MoveName:
+  - "\uB450\uBC88\uCC28\uAE30"
+  - "\uAE30\uAC00\uB4DC\uB808\uC778"
+  - "\uC131\uC2A4\uB7EC\uC6B4\uCE7C"
+  - "\uCE7C\uCDA4"
+  MoveType:
+  - "\uACA9\uD22C"
+  - "\uD480"
+  - "\uACA9\uD22C"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  MovePower: 1e0000004b0000005a00000000000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 1e0000000a0000000f00000014000000
+  FullMovePP: 1e0000000a0000000f00000014000000

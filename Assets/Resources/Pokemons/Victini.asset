@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Victini
+  m_EditorClassIdentifier: 
+  Name: "\uBE44\uD06C\uD2F0\uB2C8"
+  PokedexNumber: 494
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 79ca48649a63f417b9fc866bf6b9ce46, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 3ba8f957fa489412daf6a965cd07d5ec, type: 3}
+  Icon_Regular: {fileID: 249914860, guid: 1662bffbd125d4bf59836799f83aa6cd, type: 3}
+  Type1: "\uC5D0\uC2A4\uD37C"
+  Type2: "\uBD88\uAF43"
+  Nature: 
+  Abilitys:
+  - "\uC2B9\uB9AC\uC758\uBCC4"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: dfcbf7aa8f0a34e949432e33e7083575, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 404
+  Attack: 328
+  Defense: 328
+  SAttack: 328
+  SDefense: 328
+  Speed: 328
+  MoveName:
+  - "V\uC81C\uB108\uB808\uC774\uD2B8"
+  - "\uC5FC\uB3D9\uB825"
+  - "\uC0AC\uB150\uC758\uBC15\uCE58\uAE30"
+  - "\uD654\uC5FC\uD0C4"
+  MoveType:
+  - "\uBD88\uAF43"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uBD88\uAF43"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: b4000000320000005000000064000000
+  MoveAccuracy: 5f000000640000005a00000064000000
+  CurrentMovePP: 05000000190000000f00000005000000
+  FullMovePP: 05000000190000000f00000005000000

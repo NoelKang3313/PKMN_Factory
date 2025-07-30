@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Aurorus
+  m_EditorClassIdentifier: 
+  Name: "\uC544\uB9C8\uB8E8\uB974\uAC00"
+  PokedexNumber: 699
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 286a5911b91624a9681db6e0c74bea44, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 3dc720a7c1a934fa6b8c311c3239086a, type: 3}
+  Icon_Regular: {fileID: 1997181028, guid: 0e3d8d2a55d5d41a4962d0ddb3cf7ac1, type: 3}
+  Type1: "\uBC14\uC704"
+  Type2: "\uC5BC\uC74C"
+  Nature: 
+  Abilitys:
+  - "\uD504\uB9AC\uC988\uC2A4\uD0A8"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: ceb75582e85574f058ea03ffd465685e, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 450
+  Attack: 278
+  Defense: 267
+  SAttack: 326
+  SDefense: 311
+  Speed: 236
+  MoveName:
+  - "\uC6D0\uC2DC\uC758\uD798"
+  - "\uD504\uB9AC\uC988\uB4DC\uB77C\uC774"
+  - "\uB0C9\uB3D9\uBE54"
+  - "\uBE5B\uC758\uC7A5\uB9C9"
+  MoveType:
+  - "\uBC14\uC704"
+  - "\uC5BC\uC74C"
+  - "\uC5BC\uC74C"
+  - "\uC5D0\uC2A4\uD37C"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  MovePower: 3c000000460000005a00000000000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 05000000140000000a0000001e000000
+  FullMovePP: 05000000140000000a0000001e000000

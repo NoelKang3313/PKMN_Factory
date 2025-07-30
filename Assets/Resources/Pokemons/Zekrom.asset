@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Zekrom
+  m_EditorClassIdentifier: 
+  Name: "\uC81C\uD06C\uB85C\uBB34"
+  PokedexNumber: 644
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 0d6b8f03518744e56900b24d91ea04d0, type: 3}
+  Regular_Back: {fileID: 21300000, guid: a625f22079f01499a8bbab2a172275f6, type: 3}
+  Icon_Regular: {fileID: -2008247974, guid: 1417f4d8dfbcd414e94c37b099b5f2e2, type: 3}
+  Type1: "\uB4DC\uB798\uACE4"
+  Type2: "\uC804\uAE30"
+  Nature: 
+  Abilitys:
+  - "\uD14C\uB77C\uBCFC\uD2F0\uC9C0"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: e8dc830f3b90e4f259b6aa34ccb21110, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 404
+  Attack: 438
+  Defense: 372
+  SAttack: 372
+  SDefense: 328
+  Speed: 306
+  MoveName:
+  - "\uAE68\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  - "\uB4DC\uB798\uACE4\uD074\uB85C"
+  - "10\uB9CC\uBCFC\uD2B8"
+  - "\uD06C\uB85C\uC2A4\uC36C\uB354"
+  MoveType:
+  - "\uC545"
+  - "\uB4DC\uB798\uACE4"
+  - "\uC804\uAE30"
+  - "\uC804\uAE30"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  MovePower: 50000000500000005a00000064000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0f0000000f0000000f00000005000000
+  FullMovePP: 0f0000000f0000000f00000005000000
