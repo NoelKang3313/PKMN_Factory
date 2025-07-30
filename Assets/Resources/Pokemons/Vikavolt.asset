@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Vikavolt
+  m_EditorClassIdentifier: 
+  Name: "\uD22C\uAD6C\uBFCC\uB17C"
+  PokedexNumber: 738
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 8e4199528cf7e4772acfa8a39c464e07, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 65b38adb1fb234430b215273ae25fa15, type: 3}
+  Icon_Regular: {fileID: 1340401960, guid: 4d3d9ebb4875843b5a4fdeed5cd06687, type: 3}
+  Type1: "\uBC8C\uB808"
+  Type2: "\uC804\uAE30"
+  Nature: 
+  Abilitys:
+  - "\uBD80\uC720"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 3a1a39381ce584c8fb187a89cf7a13bc, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 358
+  Attack: 262
+  Defense: 306
+  SAttack: 427
+  SDefense: 273
+  Speed: 203
+  MoveName:
+  - "\uAE68\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  - "\uC2DC\uC800\uD06C\uB85C\uC2A4"
+  - "10\uB9CC\uBCFC\uD2B8"
+  - "\uACE0\uC18D\uC774\uB3D9"
+  MoveType:
+  - "\uC545"
+  - "\uBC8C\uB808"
+  - "\uC804\uAE30"
+  - "\uC5D0\uC2A4\uD37C"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  MovePower: 50000000500000005a00000000000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0f0000000f0000000f0000001e000000
+  FullMovePP: 0f0000000f0000000f0000001e000000

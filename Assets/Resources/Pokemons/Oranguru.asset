@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Oranguru
+  m_EditorClassIdentifier: 
+  Name: "\uD558\uB791\uC6B0\uD0C4"
+  PokedexNumber: 765
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 2f949830ed9d5404196581c2b286fbdc, type: 3}
+  Regular_Back: {fileID: 21300000, guid: d8b83f23a67c7488fbb757a8d0a36913, type: 3}
+  Icon_Regular: {fileID: -115487012, guid: 6f79f16eba2da4471b023eb1353a7afd, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: "\uC5D0\uC2A4\uD37C"
+  Nature: 
+  Abilitys:
+  - "\uC815\uC2E0\uB825"
+  - "\uD154\uB808\uD30C\uC2DC"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: e48fb8196a15e4872ac6d24e74401df1, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 384
+  Attack: 240
+  Defense: 284
+  SAttack: 306
+  SDefense: 350
+  Speed: 240
+  MoveName:
+  - "\uB098\uC05C\uC74C\uBAA8"
+  - "\uC0AC\uC774\uCF54\uD0A4\uB124\uC2DC\uC2A4"
+  - "\uC18D\uC784\uC218"
+  - "\uBBF8\uB798\uC608\uC9C0"
+  MoveType:
+  - "\uC545"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uC545"
+  - "\uC5D0\uC2A4\uD37C"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 000000005a0000005f00000078000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000000a0000000f0000000a000000
+  FullMovePP: 140000000a0000000f0000000a000000

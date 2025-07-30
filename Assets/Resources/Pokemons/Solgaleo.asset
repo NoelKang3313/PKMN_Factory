@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Solgaleo
+  m_EditorClassIdentifier: 
+  Name: "\uC194\uAC00\uB808\uC624"
+  PokedexNumber: 791
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: a4b060ac778224ad4a84edba659f96ae, type: 3}
+  Regular_Back: {fileID: 21300000, guid: da57d89803fc54af6abc6351302cc1fe, type: 3}
+  Icon_Regular: {fileID: -1138179776, guid: 7dd7f858e5b6a432bb8912112872c356, type: 3}
+  Type1: "\uC5D0\uC2A4\uD37C"
+  Type2: "\uAC15\uCCA0"
+  Nature: 
+  Abilitys:
+  - "\uBA54\uD0C8\uD504\uB85C\uD14D\uD2B8"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 26f7effed7cb043e4bb93cab94c38016, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 478
+  Attack: 410
+  Defense: 344
+  SAttack: 357
+  SDefense: 304
+  Speed: 322
+  MoveName:
+  - "\uBA54\uD14C\uC624\uB4DC\uB77C\uC774\uBE0C"
+  - "\uC544\uC774\uC5B8\uD5E4\uB4DC"
+  - "\uC0AC\uB150\uC758\uBC15\uCE58\uAE30"
+  - "\uAE68\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  MoveType:
+  - "\uAC15\uCCA0"
+  - "\uAC15\uCCA0"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uC545"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 64000000500000005000000050000000
+  MoveAccuracy: 64000000640000005a00000064000000
+  CurrentMovePP: 050000000f0000000f0000000f000000
+  FullMovePP: 050000000f0000000f0000000f000000

@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: TapuLele
+  m_EditorClassIdentifier: 
+  Name: "\uCE74\uD478\uB098\uBE44\uB098"
+  PokedexNumber: 786
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 72f49cca34d8946cbac2e4e8d4022480, type: 3}
+  Regular_Back: {fileID: 21300000, guid: bf5b69b6b30a742b1b3e4a164957024f, type: 3}
+  Icon_Regular: {fileID: -1096638178, guid: 12c0683972cf7409eb1660b4a2898923, type: 3}
+  Type1: "\uC5D0\uC2A4\uD37C"
+  Type2: "\uD398\uC5B4\uB9AC"
+  Nature: 
+  Abilitys:
+  - "\uC0AC\uC774\uCF54\uBA54\uC774\uCEE4"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 31b4feab9139f477aad081b326681a65, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 344
+  Attack: 295
+  Defense: 273
+  SAttack: 394
+  SDefense: 361
+  Speed: 317
+  MoveName:
+  - "\uC2E0\uD1B5\uB825"
+  - "\uC0AC\uC774\uCF54\uC1FC\uD06C"
+  - "\uC790\uC5F0\uC758\uBD84\uB178"
+  - "\uBB38\uD3EC\uC2A4"
+  MoveType:
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uD398\uC5B4\uB9AC"
+  - "\uD398\uC5B4\uB9AC"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 5000000050000000000000005f000000
+  MoveAccuracy: 64000000640000005a00000064000000
+  CurrentMovePP: 140000000a0000000a0000000f000000
+  FullMovePP: 140000000a0000000a0000000f000000

@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Nihilego
+  m_EditorClassIdentifier: 
+  Name: "\uD145\uBE44\uB4DC"
+  PokedexNumber: 793
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 8a33a1238f36c4d68b606e88a934ff2f, type: 3}
+  Regular_Back: {fileID: 21300000, guid: c9c3b88ea6ff04abb9918246631618b8, type: 3}
+  Icon_Regular: {fileID: 121873472, guid: 4b1adae553a5b40079d28553b78fb9ab, type: 3}
+  Type1: "\uBC14\uC704"
+  Type2: "\uB3C5"
+  Nature: 
+  Abilitys:
+  - "\uBE44\uC2A4\uD2B8\uBD80\uC2A4\uD2B8"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: c3df19f86efac4b95abbef8622176704, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 422
+  Attack: 225
+  Defense: 212
+  SAttack: 388
+  SDefense: 397
+  Speed: 335
+  MoveName:
+  - "\uC560\uC2DC\uB4DC\uBD04"
+  - "\uBCA0\uB188\uC1FC\uD06C"
+  - "\uD30C\uC6CC\uC82C"
+  - "\uC2A4\uD154\uC2A4\uB85D"
+  MoveType:
+  - "\uB3C5"
+  - "\uB3C5"
+  - "\uBC14\uC704"
+  - "\uBC14\uC704"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  MovePower: 28000000410000005000000000000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000000a0000001400000014000000
+  FullMovePP: 140000000a0000001400000014000000

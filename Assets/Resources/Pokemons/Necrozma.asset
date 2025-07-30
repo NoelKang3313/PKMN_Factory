@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Necrozma
+  m_EditorClassIdentifier: 
+  Name: "\uB124\uD06C\uB85C\uC988\uB9C8"
+  PokedexNumber: 800
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: cb4e3b99a140a4cd58ecdb2c69945df0, type: 3}
+  Regular_Back: {fileID: 21300000, guid: cc1ca8d8c035c4412b2b9a62de83b8c5, type: 3}
+  Icon_Regular: {fileID: -1114405647, guid: d8024b537d30941c5ac1e74328288202, type: 3}
+  Type1: "\uC5D0\uC2A4\uD37C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD504\uB9AC\uC998\uC544\uBA38"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 2e6de7d08aa9345a3a7de95f99519962, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 57899b8f945b94e09ae19f439f56d3f7, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 7fc090acf4a374b88ba04d1a2e62d9d6, type: 3}
+  NewForm2: {fileID: 21300000, guid: d34a0c7bbdc14467fa2318eeb0b0bc21, type: 3}
+  NewForm2_Back: {fileID: 21300000, guid: fd8749eab2a2e4b6c9cc5a41c3f5e004, type: 3}
+  NewForm3: {fileID: 21300000, guid: b4e50d25855dd493599fcb8c1d1146f8, type: 3}
+  NewForm3_Back: {fileID: 21300000, guid: 6af6071a644984c3ba38e65f653a8317, type: 3}
+  NewForm_Icon1: {fileID: 1187563387, guid: c10b7b32b5f5444f3bffdf8b3261acab, type: 3}
+  NewForm_Icon2: {fileID: 444247260, guid: e4d4391c2e2b144f38b6af61dfecf163, type: 3}
+  NewForm_Icon3: {fileID: -1653331883, guid: 812a701dc9ce5411a87a5ab136dd1981, type: 3}
+  NewAbility1: "\uD504\uB9AC\uC998\uC544\uBA38"
+  NewAbility2: "\uD504\uB9AC\uC998\uC544\uBA38"
+  NewAbility3: "\uBE0C\uB808\uC778\uD3EC\uC2A4"
+  NewPokemonCry1: {fileID: 8300000, guid: e38ed5f2093ba40d7a00636bc2e1b02b, type: 3}
+  NewPokemonCry2: {fileID: 8300000, guid: e38ed5f2093ba40d7a00636bc2e1b02b, type: 3}
+  NewPokemonCry3: {fileID: 8300000, guid: b2bc057292ca1487496a07ded44aa2f4, type: 3}
+  HP: 398
+  Attack: 344
+  Defense: 331
+  SAttack: 388
+  SDefense: 304
+  Speed: 282
+  MoveName:
+  - "\uAE5C\uC9DD\uBCA0\uAE30"
+  - "\uB85D\uBE14\uB77C\uC2A4\uD2B8"
+  - "\uD3EC\uD1A4\uAC00\uC774\uC800"
+  - "\uD504\uB9AC\uC998\uB808\uC774\uC800"
+  MoveType:
+  - "\uC545"
+  - "\uBC14\uC704"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uC5D0\uC2A4\uD37C"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 460000001900000064000000a0000000
+  MoveAccuracy: 640000005a0000006400000064000000
+  CurrentMovePP: 0f0000000a000000050000000a000000
+  FullMovePP: 0f0000000a000000050000000a000000

@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Xurkitree
+  m_EditorClassIdentifier: 
+  Name: "\uC804\uC218\uBAA9"
+  PokedexNumber: 796
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 333ab90e1bc2b43ea97265d97cef9b53, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 9f02c26580b7e44e4b08ce5f633a6795, type: 3}
+  Icon_Regular: {fileID: 169503891, guid: 18f9615a66cee4c01ab88f5fa9f3fc34, type: 3}
+  Type1: "\uC804\uAE30"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uBE44\uC2A4\uD2B8\uBD80\uC2A4\uD2B8"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 95665990df4674b5b90229c766a5b103, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 370
+  Attack: 304
+  Defense: 265
+  SAttack: 489
+  SDefense: 265
+  Speed: 291
+  MoveName:
+  - "\uC804\uAE30\uC790\uC11D\uD30C"
+  - "\uBC88\uAC1C\uD380\uCE58"
+  - "10\uB9CC\uBCFC\uD2B8"
+  - "\uD30C\uC6CC\uD729"
+  MoveType:
+  - "\uC804\uAE30"
+  - "\uC804\uAE30"
+  - "\uC804\uAE30"
+  - "\uD480"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  MovePower: 000000004b0000005a00000078000000
+  MoveAccuracy: 5a000000640000006400000055000000
+  CurrentMovePP: 140000000f0000000f0000000a000000
+  FullMovePP: 140000000f0000000f0000000a000000
