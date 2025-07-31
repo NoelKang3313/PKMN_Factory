@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Cinderace
+  m_EditorClassIdentifier: 
+  Name: "\uC5D0\uC774\uC2A4\uBC88"
+  PokedexNumber: 815
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: e153edd430cbf4c4c8254d71c03c0861, type: 3}
+  Regular_Back: {fileID: 21300000, guid: b65e3166d1ae24115b4d9eaa41081d5c, type: 3}
+  Icon_Regular: {fileID: -1844730580, guid: e924148d496f74e46862ace234850202, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uB9F9\uD654"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 802077c9b79ee4e61bf652cf79c39cf4, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 364
+  Attack: 364
+  Defense: 273
+  SAttack: 251
+  SDefense: 273
+  Speed: 370
+  MoveName:
+  - "\uD654\uC5FC\uBCFC"
+  - "\uB450\uBC88\uCC28\uAE30"
+  - "\uB2C8\uD2B8\uB85C\uCC28\uC9C0"
+  - "\uACE0\uC18D\uC774\uB3D9"
+  MoveType:
+  - "\uBD88\uAF43"
+  - "\uACA9\uD22C"
+  - "\uBD88\uAF43"
+  - "\uC5D0\uC2A4\uD37C"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  MovePower: 780000001e0000003200000000000000
+  MoveAccuracy: 5a000000640000006400000064000000
+  CurrentMovePP: 050000001e000000140000001e000000
+  FullMovePP: 050000001e000000140000001e000000

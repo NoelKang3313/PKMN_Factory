@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Inteleon
+  m_EditorClassIdentifier: 
+  Name: "\uC778\uD154\uB9AC\uB808\uC628"
+  PokedexNumber: 818
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 3d65fb5159f944cd9853003bd96112db, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 23fc584669fb14bf69340bcbb9ffb938, type: 3}
+  Icon_Regular: {fileID: 1247819750, guid: 5fd594040bd9d4aa0911695940a058ae, type: 3}
+  Type1: "\uBB3C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uAE09\uB958"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: bfb80c54a92a447a4af8089088ac84e5, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 344
+  Attack: 295
+  Defense: 251
+  SAttack: 383
+  SDefense: 251
+  Speed: 372
+  MoveName:
+  - "\uC560\uD06C\uB7EC\uBC43"
+  - "\uB178\uB824\uB9DE\uD788\uAE30"
+  - "\uAE30\uC2B5"
+  - "\uC720\uD134"
+  MoveType:
+  - "\uBE44\uD589"
+  - "\uBB3C"
+  - "\uC545"
+  - "\uBC8C\uB808"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 37000000500000004600000046000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0f0000000f0000000500000014000000
+  FullMovePP: 0f0000000f0000000500000014000000

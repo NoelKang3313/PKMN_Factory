@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Flapple
+  m_EditorClassIdentifier: 
+  Name: "\uC560\uD504\uB8E1"
+  PokedexNumber: 841
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 8afaa0cc7b2564987b1677851b2c6650, type: 3}
+  Regular_Back: {fileID: 21300000, guid: ff69099a852e84640834f2edd0187bb2, type: 3}
+  Icon_Regular: {fileID: -1979547487, guid: 7f0003e9d0032413586aae19920e748a, type: 3}
+  Type1: "\uD480"
+  Type2: "\uB4DC\uB798\uACE4"
+  Nature: 
+  Abilitys:
+  - "\uC219\uC131"
+  - "\uBA39\uBCF4"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 943038743428b4413992a2252d04271b, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 344
+  Attack: 350
+  Defense: 284
+  SAttack: 317
+  SDefense: 240
+  Speed: 262
+  MoveName:
+  - "\uC560\uD06C\uB7EC\uBC43"
+  - "\uC6A9\uC758\uCDA4"
+  - "\uC6A9\uC758\uD30C\uB3D9"
+  - "G\uC758\uD798"
+  MoveType:
+  - "\uBE44\uD589"
+  - "\uB4DC\uB798\uACE4"
+  - "\uB4DC\uB798\uACE4"
+  - "\uD480"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  MovePower: 37000000000000005500000050000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0f000000140000000a0000000a000000
+  FullMovePP: 0f000000140000000a0000000a000000

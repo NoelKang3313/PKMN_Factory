@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Spectrier
+  m_EditorClassIdentifier: 
+  Name: "\uB808\uC774\uC2A4\uD3EC\uC2A4"
+  PokedexNumber: 897
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 5e0cae709c9d942a2987c591e1272c01, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 414fde1f0c1844f3ab655252a863465b, type: 3}
+  Icon_Regular: {fileID: -1135128977, guid: eafc95b46549b423ba3a7532e1a79d7e, type: 3}
+  Type1: "\uACE0\uC2A4\uD2B8"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD751\uC758\uC6B8\uC74C"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 1fa130ae74a1a4c289a977d0a2e47c8f, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 404
+  Attack: 251
+  Defense: 240
+  SAttack: 427
+  SDefense: 284
+  Speed: 394
+  MoveName:
+  - "\uB450\uBC88\uCC28\uAE30"
+  - "\uBCD1\uC0C1\uCCA8\uBCD1"
+  - "\uC100\uB3C4\uBCFC"
+  - "\uB3CC\uC9C4"
+  MoveType:
+  - "\uACA9\uD22C"
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  MovePower: 1e00000041000000500000005a000000
+  MoveAccuracy: 64000000640000006400000055000000
+  CurrentMovePP: 1e0000000a0000000f00000014000000
+  FullMovePP: 1e0000000a0000000f00000014000000

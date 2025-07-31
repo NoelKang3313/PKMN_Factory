@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Frosmoth
+  m_EditorClassIdentifier: 
+  Name: "\uBAA8\uC2A4\uB178\uC6B0"
+  PokedexNumber: 873
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 96e6e7df5721240c4881ba4141541732, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 8501a43a5b2924936b4b60bc4ecd3d3c, type: 3}
+  Icon_Regular: {fileID: -1541700678, guid: 9d1c85986915c4e6c9f39df72f91128e, type: 3}
+  Type1: "\uC5BC\uC74C"
+  Type2: "\uBC8C\uB808"
+  Nature: 
+  Abilitys:
+  - "\uC778\uBD84"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 283ebd6c1d6b649b0a74a51ecdc261a2, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 344
+  Attack: 251
+  Defense: 240
+  SAttack: 383
+  SDefense: 306
+  Speed: 251
+  MoveName:
+  - "\uC5BC\uC5B4\uBD99\uC740\uBC14\uB78C"
+  - "\uC624\uB85C\uB77C\uBE54"
+  - "\uBC8C\uB808\uC758\uC57C\uB2E8\uBC95\uC11D"
+  - "\uB098\uBE44\uCDA4"
+  MoveType:
+  - "\uC5BC\uC74C"
+  - "\uC5BC\uC74C"
+  - "\uBC8C\uB808"
+  - "\uBC8C\uB808"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  MovePower: 37000000410000005a00000000000000
+  MoveAccuracy: 5f000000640000006400000064000000
+  CurrentMovePP: 0f000000140000000a00000014000000
+  FullMovePP: 0f000000140000000a00000014000000

@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Wyrdeer
+  m_EditorClassIdentifier: 
+  Name: "\uC2E0\uBE44\uB85D"
+  PokedexNumber: 899
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 51c97ec8865a040e6ad16394c28961cb, type: 3}
+  Regular_Back: {fileID: 21300000, guid: c361654b1ca4a4ae1a00e085548862c7, type: 3}
+  Icon_Regular: {fileID: -841828532, guid: a1bef390e2fd34907b64051b5e956e0c, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: "\uC5D0\uC2A4\uD37C"
+  Nature: 
+  Abilitys:
+  - "\uC704\uD611"
+  - "\uD1B5\uCC30"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 5ed0a558b280a4ca186ac42963548ef6, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 410
+  Attack: 339
+  Defense: 267
+  SAttack: 339
+  SDefense: 273
+  Speed: 251
+  MoveName:
+  - "\uBC30\uB9AC\uC5B4\uB7EC\uC2DC"
+  - "\uC774\uC0C1\uD55C\uBE5B"
+  - "\uC0AC\uB150\uC758\uBC15\uCE58\uAE30"
+  - "\uBA54\uAC00\uD63C"
+  MoveType:
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uBC8C\uB808"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 46000000000000005000000078000000
+  MoveAccuracy: 5a000000640000005a00000055000000
+  CurrentMovePP: 0a0000000a0000000f0000000a000000
+  FullMovePP: 0a0000000a0000000f0000000a000000

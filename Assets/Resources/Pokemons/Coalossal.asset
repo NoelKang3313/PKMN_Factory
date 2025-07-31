@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Coalossal
+  m_EditorClassIdentifier: 
+  Name: "\uC11D\uD0C4\uC0B0"
+  PokedexNumber: 839
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 71f720844d4c24a98810e182eb3a8cce, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 8fb9f723acad1457b91d10929ae4c3ef, type: 3}
+  Icon_Regular: {fileID: 1990408561, guid: 88aaf578391b146a59e09ac08ccfc607, type: 3}
+  Type1: "\uBC14\uC704"
+  Type2: "\uBD88\uAF43"
+  Nature: 
+  Abilitys:
+  - "\uC99D\uAE30\uAE30\uAD00"
+  - "\uBD88\uAF43\uBAB8"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 310de5285a84d4e0985352a72bb0f708, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 424
+  Attack: 284
+  Defense: 372
+  SAttack: 284
+  SDefense: 306
+  Speed: 174
+  MoveName:
+  - "\uD0C0\uB974\uC0F7"
+  - "\uC6D0\uC2DC\uC758\uD798"
+  - "\uBD88\uD0DC\uC6B0\uAE30"
+  - "\uC2A4\uD1A4\uC5D0\uC9C0"
+  MoveType:
+  - "\uBC14\uC704"
+  - "\uBC14\uC704"
+  - "\uBD88\uAF43"
+  - "\uBC14\uC704"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  MovePower: 000000003c0000003c00000064000000
+  MoveAccuracy: 64000000640000006400000050000000
+  CurrentMovePP: 0f000000050000000f00000005000000
+  FullMovePP: 0f000000050000000f00000005000000

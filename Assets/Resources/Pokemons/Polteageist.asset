@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Polteageist
+  m_EditorClassIdentifier: 
+  Name: "\uD3EC\uD2B8\uB370\uC2A4"
+  PokedexNumber: 855
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 9673309c87966490abb2c9acfec1f5c2, type: 3}
+  Regular_Back: {fileID: 21300000, guid: f2aefec2f6a5241e8a4bdb7d22803128, type: 3}
+  Icon_Regular: {fileID: 629077384, guid: 44060084f7e9d43ab8b963dd8f74146f, type: 3}
+  Type1: "\uACE0\uC2A4\uD2B8"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uAE68\uC5B4\uC9C4\uAC11\uC637"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: fa0f4595a0f464c8695f118eca4156e0, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 324
+  Attack: 251
+  Defense: 251
+  SAttack: 403
+  SDefense: 359
+  Speed: 262
+  MoveName:
+  - "\uB180\uB798\uD0A4\uAE30"
+  - "\uAE30\uAC00\uB4DC\uB808\uC778"
+  - "\uB098\uC05C\uC74C\uBAA8"
+  - "\uC100\uB3C4\uBCFC"
+  MoveType:
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uD480"
+  - "\uC545"
+  - "\uACE0\uC2A4\uD2B8"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  MovePower: 1e0000004b0000000000000050000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0f0000000a000000140000000f000000
+  FullMovePP: 0f0000000a000000140000000f000000

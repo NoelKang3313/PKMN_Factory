@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Eldegoss
+  m_EditorClassIdentifier: 
+  Name: "\uBC31\uC19C\uBAA8\uCE74"
+  PokedexNumber: 830
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 7223a2312373949569b64f2e72fcd43c, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 8e56d726ea3304b0a8495c447cccc62c, type: 3}
+  Icon_Regular: {fileID: -2020167841, guid: f831f9755a35a4cb2a9e67386b6f4756, type: 3}
+  Type1: "\uD480"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC19C\uD138"
+  - "\uC7AC\uC0DD\uB825"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 8a04b3796a5e54efb8d79889e5f44135, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 324
+  Attack: 218
+  Defense: 306
+  SAttack: 284
+  SDefense: 372
+  Speed: 240
+  MoveName:
+  - "\uBAA9\uD654\uD3EC\uC790"
+  - "\uADF8\uB798\uC2A4\uBBF9\uC11C"
+  - "\uD558\uC774\uD37C\uBCF4\uC774\uC2A4"
+  - "\uB9AC\uD504\uC2A4\uD1B0"
+  MoveType:
+  - "\uD480"
+  - "\uD480"
+  - "\uB178\uB9D0"
+  - "\uD480"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 00000000410000005a00000082000000
+  MoveAccuracy: 640000005a000000640000005a000000
+  CurrentMovePP: 280000000a0000000a00000005000000
+  FullMovePP: 280000000a0000000a00000005000000

@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Calyrex
+  m_EditorClassIdentifier: 
+  Name: "\uBC84\uB4DC\uB809\uC2A4"
+  PokedexNumber: 898
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: d7e913b15df4742efacf12f702e9e7ca, type: 3}
+  Regular_Back: {fileID: 21300000, guid: cdde28d7265d646dba47f87d2faf773a, type: 3}
+  Icon_Regular: {fileID: 21993048, guid: 07a5096c09c764c2bbc6470dacb7f97e, type: 3}
+  Type1: "\uC5D0\uC2A4\uD37C"
+  Type2: "\uD480"
+  Nature: 
+  Abilitys:
+  - "\uAE34\uC7A5\uAC10"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: d60abbf08c9744b34b84eaba71899c80, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: fb4e04ecfacc74ffcb61e52d20513305, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: 84769621eea4845f5aabe138f67f136d, type: 3}
+  NewForm2: {fileID: 21300000, guid: 92ce810dce7d54dc0bacdb4a0782c709, type: 3}
+  NewForm2_Back: {fileID: 21300000, guid: dedbb5cd8b082466085dbb93117bf495, type: 3}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: -330396316, guid: 6ae7336b4651b4f7c854939211c8bb8d, type: 3}
+  NewForm_Icon2: {fileID: -2108010974, guid: 4493f7811ad394b5ab534c304de2ab4b, type: 3}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: "\uD63C\uC5F0\uC77C\uCCB4"
+  NewAbility2: "\uD63C\uC5F0\uC77C\uCCB4"
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 8300000, guid: 44608621848774e6db2978713f23f3ee, type: 3}
+  NewPokemonCry2: {fileID: 8300000, guid: 8c6e7b81b683448c5baf59ba208f8d97, type: 3}
+  NewPokemonCry3: {fileID: 0}
+  HP: 404
+  Attack: 284
+  Defense: 284
+  SAttack: 284
+  SDefense: 284
+  Speed: 284
+  MoveName:
+  - "\uAE30\uAC00\uB4DC\uB808\uC778"
+  - "\uC0AC\uC774\uCF54\uC1FC\uD06C"
+  - "\uC5D0\uB108\uC9C0\uBCFC"
+  - "\uC0AC\uC774\uCF54\uD0A4\uB124\uC2DC\uC2A4"
+  MoveType:
+  - "\uD480"
+  - "\uC5D0\uC2A4\uD37C"
+  - "\uD480"
+  - "\uC5D0\uC2A4\uD37C"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 4b000000500000005a0000005a000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 0a0000000a0000000a0000000a000000
+  FullMovePP: 0a0000000a0000000a0000000a000000

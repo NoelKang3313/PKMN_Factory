@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Copperajah
+  m_EditorClassIdentifier: 
+  Name: "\uB300\uC655\uB07C\uB9AC\uB3D9"
+  PokedexNumber: 879
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 2122501b647314daab70b836c31a839d, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 64704d1e2a05644b9b14b32c948f0633, type: 3}
+  Icon_Regular: {fileID: 253964852, guid: 88f2eb6c486fa4f4395a0c89a1d9f367, type: 3}
+  Type1: "\uAC15\uCCA0"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC6B0\uACA9\uB2E4\uC9D0"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 459d05b9100bd40cda84660c03abcfdd, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 448
+  Attack: 394
+  Defense: 260
+  SAttack: 284
+  SDefense: 260
+  Speed: 174
+  MoveName:
+  - "\uC9D3\uBC1D\uAE30"
+  - "\uCCA0\uBCBD"
+  - "\uC544\uC774\uC5B8\uD5E4\uB4DC"
+  - "10\uB9CC\uB9C8\uB825"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uAC15\uCCA0"
+  - "\uAC15\uCCA0"
+  - "\uB545"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 4100000000000000500000005f000000
+  MoveAccuracy: 6400000064000000640000005f000000
+  CurrentMovePP: 140000000f0000000f0000000a000000
+  FullMovePP: 140000000f0000000f0000000a000000

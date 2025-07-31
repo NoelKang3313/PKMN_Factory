@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Basculegion
+  m_EditorClassIdentifier: 
+  Name: "\uB300\uC4F0\uC5EC\uB108"
+  PokedexNumber: 902
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 6c82ea17fb20346a0b27a935cb86110c, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 15eab24e5cfc14561ae65ed9fecfaaa3, type: 3}
+  Icon_Regular: {fileID: -735478320, guid: 5a04868347d5c407bafaca987b57c48f, type: 3}
+  Type1: "\uBB3C"
+  Type2: "\uACE0\uC2A4\uD2B8"
+  Nature: 
+  Abilitys:
+  - "\uC4F1\uC4F1"
+  - "\uC801\uC751\uB825"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: c5b7e8cef58b94cb09f18a920154f82e, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 444
+  Attack: 355
+  Defense: 251
+  SAttack: 284
+  SDefense: 273
+  Speed: 280
+  MoveName:
+  - "\uC544\uCFE0\uC544\uC81C\uD2B8"
+  - "\uAE68\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  - "\uC100\uB3C4\uBCFC"
+  - "\uC6E8\uC774\uBE0C\uD0DC\uD074"
+  MoveType:
+  - "\uBB3C"
+  - "\uC545"
+  - "\uACE0\uC2A4\uD2B8"
+  - "\uBB3C"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  MovePower: 2800000050000000500000004b000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 140000000a0000000a0000000a000000
+  FullMovePP: 140000000a0000000a0000000a000000

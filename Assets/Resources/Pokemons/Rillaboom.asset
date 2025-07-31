@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Rillaboom
+  m_EditorClassIdentifier: 
+  Name: "\uACE0\uB9B4\uD0C0"
+  PokedexNumber: 812
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: b651897771fbc47c69a435944b9ab09c, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 3b607165f8df048f3925f884f433b65b, type: 3}
+  Icon_Regular: {fileID: 449737189, guid: 4f2e2a8560b8e47c9b0dbc5c8b18ab3f, type: 3}
+  Type1: "\uD480"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC2EC\uB85D"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 5fc6a547408784a608befaa78213e6b0, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 404
+  Attack: 383
+  Defense: 306
+  SAttack: 240
+  SDefense: 262
+  Speed: 295
+  MoveName:
+  - "\uB4DC\uB7FC\uC5B4\uD0DD"
+  - "\uC2EB\uC740\uC18C\uB9AC"
+  - "\uC6B0\uB4DC\uD574\uBA38"
+  - "\uD3ED\uC74C\uD30C"
+  MoveType:
+  - "\uD480"
+  - "\uB178\uB9D0"
+  - "\uD480"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 5000000000000000780000008c000000
+  MoveAccuracy: 64000000550000006400000064000000
+  CurrentMovePP: 0a000000280000000f0000000a000000
+  FullMovePP: 0a000000280000000f0000000a000000

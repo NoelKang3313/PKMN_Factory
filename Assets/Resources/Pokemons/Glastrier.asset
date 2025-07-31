@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Glastrier
+  m_EditorClassIdentifier: 
+  Name: "\uBE14\uB9AC\uC790\uD3EC\uC2A4"
+  PokedexNumber: 896
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: e68046fd8440b448e988e17a7e12aaa5, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 764a9e6a4586541179985e3a87389aba, type: 3}
+  Icon_Regular: {fileID: 1424637017, guid: f3e6a802d06644929b1fcfa8ca3ee7b7, type: 3}
+  Type1: "\uC5BC\uC74C"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uBC31\uC758\uC6B8\uC74C"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: d2336d29a538f43c09d9e4f4e95b9d81, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 404
+  Attack: 427
+  Defense: 394
+  SAttack: 251
+  SDefense: 350
+  Speed: 174
+  MoveName:
+  - "\uB450\uBC88\uCC28\uAE30"
+  - "\uB208\uC0AC\uD0DC"
+  - "\uACE0\uB4DC\uB984\uB5A8\uAD6C\uAE30"
+  - "\uCE7C\uCDA4"
+  MoveType:
+  - "\uACA9\uD22C"
+  - "\uC5BC\uC74C"
+  - "\uC5BC\uC74C"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  MovePower: 1e0000003c0000005500000000000000
+  MoveAccuracy: 64000000640000005a00000064000000
+  CurrentMovePP: 1e0000000a0000000a00000014000000
+  FullMovePP: 1e0000000a0000000a00000014000000

@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Stonjourner
+  m_EditorClassIdentifier: 
+  Name: "\uB3CC\uD5E8\uC9C4"
+  PokedexNumber: 874
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 72c0eef8b1f904470bfce0ab774f543c, type: 3}
+  Regular_Back: {fileID: 21300000, guid: c38a06a0dd66c4519971d01b6327f04e, type: 3}
+  Icon_Regular: {fileID: 1092101370, guid: f3f9e87c5ec814b1e9a15e83160b74bb, type: 3}
+  Type1: "\uBC14\uC704"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD30C\uC6CC\uC2A4\uD3FF"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 9e600603d0bb041fa8dd3d8c729f6ea3, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 404
+  Attack: 383
+  Defense: 405
+  SAttack: 152
+  SDefense: 152
+  Speed: 262
+  MoveName:
+  - "\uC9D3\uBC1D\uAE30"
+  - "\uC2A4\uD154\uC2A4\uB85D"
+  - "\uC2A4\uD1A4\uC0E4\uC6CC"
+  - "\uC2A4\uD1A4\uC5D0\uC9C0"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uBC14\uC704"
+  - "\uBC14\uC704"
+  - "\uBC14\uC704"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 41000000000000004b00000064000000
+  MoveAccuracy: 64000000640000005a00000050000000
+  CurrentMovePP: 14000000140000000a00000005000000
+  FullMovePP: 14000000140000000a00000005000000

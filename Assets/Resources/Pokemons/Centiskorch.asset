@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Centiskorch
+  m_EditorClassIdentifier: 
+  Name: "\uB2E4\uD0DC\uC6B0\uC9C0\uB124"
+  PokedexNumber: 851
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 3103a1107b1904a769f33625d7dc1458, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 39c0255fbdcae4ffba07f106f86b20b1, type: 3}
+  Icon_Regular: {fileID: 2064051818, guid: cff1a881625ae47f09feb7b043673ab6, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: "\uBC8C\uB808"
+  Nature: 
+  Abilitys:
+  - "\uD0C0\uC624\uB974\uB294\uBD88\uAF43"
+  - "\uD558\uC580\uC5F0\uAE30"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 75b7a826f75914b95b14fa322bb7f386, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 404
+  Attack: 361
+  Defense: 251
+  SAttack: 306
+  SDefense: 306
+  Speed: 251
+  MoveName:
+  - "\uAE40\uBC25\uB9D0\uC774"
+  - "\uD654\uC5FC\uC790\uB3D9\uCC28"
+  - "\uBD88\uAF43\uCC44\uCC0D"
+  - "\uB364\uBCBC\uB4E4\uAE30"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uBD88\uAF43"
+  - "\uBD88\uAF43"
+  - "\uBC8C\uB808"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 0f0000003c0000005000000050000000
+  MoveAccuracy: 5a000000640000006400000064000000
+  CurrentMovePP: 14000000190000000f0000000f000000
+  FullMovePP: 14000000190000000f0000000f000000
