@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: IronMoth
+  m_EditorClassIdentifier: 
+  Name: "\uBB34\uC1E0\uB3C5\uB098\uBC29"
+  PokedexNumber: 994
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 579c270f6ed39410c9ad8bfd5ca7c215, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 1aa2e8087344443e9a49cbe6a425ac05, type: 3}
+  Icon_Regular: {fileID: 58226213, guid: b57410493c0344c2485abb0a86c162e2, type: 3}
+  Type1: "\uBD88\uAF43"
+  Type2: "\uB3C5"
+  Nature: 
+  Abilitys:
+  - "\uCFFC\uD06C\uCC28\uC9C0"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 8571f51d8ef134e1db375f33300fb835, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 364
+  Attack: 262
+  Defense: 240
+  SAttack: 416
+  SDefense: 350
+  Speed: 350
+  MoveName:
+  - "\uBC8C\uB808\uC758\uC800\uD56D"
+  - "\uD68C\uC624\uB9AC\uBD88\uAF43"
+  - "\uC624\uBB3C\uC6E8\uC774\uBE0C"
+  - "\uBD88\uAF43\uCDA4"
+  MoveType:
+  - "\uBC8C\uB808"
+  - "\uBD88\uAF43"
+  - "\uB3C5"
+  - "\uBD88\uAF43"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 32000000230000005f00000050000000
+  MoveAccuracy: 64000000550000006400000064000000
+  CurrentMovePP: 140000000f0000000a0000000a000000
+  FullMovePP: 140000000f0000000a0000000a000000

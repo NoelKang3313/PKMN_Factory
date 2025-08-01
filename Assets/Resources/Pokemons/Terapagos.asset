@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Terapagos
+  m_EditorClassIdentifier: 
+  Name: "\uD14C\uB77C\uD30C\uACE0\uC2A4"
+  PokedexNumber: 1024
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 4a5bc8d55997649ff8487927ce049949, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 9b9ad1a2747964645bdcde82c94e7d18, type: 3}
+  Icon_Regular: {fileID: -1590885781, guid: ae5509767fa6d4a658bf57dc3ae6351d, type: 3}
+  Type1: "\uB178\uB9D0"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uD14C\uB77C\uCCB4\uC778\uC9C0"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: da21cfd5589444c98ac187fcd5c646f7, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 16d213e2e45c448379e0a9326ed011b0, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: b916d881806ad44da85fbd00472b8c88, type: 3}
+  NewForm2: {fileID: 21300000, guid: e7ad24421ad7449adb33b794bafad653, type: 3}
+  NewForm2_Back: {fileID: 21300000, guid: 0eef4c185334f42478feabada9a81e7d, type: 3}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 2046957034, guid: 11525fe829fe341b0b6057c22efaf2d6, type: 3}
+  NewForm_Icon2: {fileID: -1287609438, guid: 7b2c7b48f16894a6d84f03bb746cd864, type: 3}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: "\uD14C\uB77C\uC178"
+  NewAbility2: "\uC81C\uB85C\uD3EC\uBC0D"
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 8300000, guid: da21cfd5589444c98ac187fcd5c646f7, type: 3}
+  NewPokemonCry2: {fileID: 8300000, guid: da21cfd5589444c98ac187fcd5c646f7, type: 3}
+  NewPokemonCry3: {fileID: 0}
+  HP: 384
+  Attack: 251
+  Defense: 295
+  SAttack: 251
+  SDefense: 295
+  Speed: 240
+  MoveName:
+  - "\uC6D0\uC2DC\uC758\uD798"
+  - "\uB300\uC9C0\uC758\uD798"
+  - "\uD5E4\uBE44\uBD04\uBC84"
+  - "\uD14C\uB77C\uD074\uB7EC\uC2A4\uD130"
+  MoveType:
+  - "\uBC14\uC704"
+  - "\uB545"
+  - "\uAC15\uCCA0"
+  - "\uB178\uB9D0"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 3c0000005a0000000000000078000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 050000000a0000000a00000005000000
+  FullMovePP: 050000000a0000000a00000005000000

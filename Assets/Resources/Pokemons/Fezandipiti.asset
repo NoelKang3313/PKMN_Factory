@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Fezandipiti
+  m_EditorClassIdentifier: 
+  Name: "\uAE30\uB85C\uCE58"
+  PokedexNumber: 1016
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 6fc1c921cdd5d451283725b2b7837e79, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 22cd2fe1e9ad64a109931e47ac09ed5f, type: 3}
+  Icon_Regular: {fileID: 203255227, guid: 4e59127fe847240479d6330ed9672320, type: 3}
+  Type1: "\uB3C5"
+  Type2: "\uD398\uC5B4\uB9AC"
+  Nature: 
+  Abilitys:
+  - "\uB3C5\uC0AC\uC2AC"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 2116de55dba9a40d99135420ab582034, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 380
+  Attack: 309
+  Defense: 289
+  SAttack: 262
+  SDefense: 383
+  Speed: 326
+  MoveName:
+  - "\uB450\uBC88\uCC28\uAE30"
+  - "\uB0A0\uAC1C\uCE58\uAE30"
+  - "\uD06C\uB85C\uC2A4\uD3EC\uC774\uC98C"
+  - "\uBB38\uD3EC\uC2A4"
+  MoveType:
+  - "\uACA9\uD22C"
+  - "\uBE44\uD589"
+  - "\uB3C5"
+  - "\uD398\uC5B4\uB9AC"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 1e0000003c000000460000005f000000
+  MoveAccuracy: 64000000640000006400000064000000
+  CurrentMovePP: 1e00000023000000140000000f000000
+  FullMovePP: 1e00000023000000140000000f000000

@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Ogerpon
+  m_EditorClassIdentifier: 
+  Name: "\uC624\uAC70\uD3F0"
+  PokedexNumber: 1017
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: d6a8a532b601f4643a932ab71561f5c1, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 19b352c08aaa443db864f69cd8004fe6, type: 3}
+  Icon_Regular: {fileID: 1197100313, guid: 0500ee9ea3904486eaea51b5c36749bf, type: 3}
+  Type1: "\uD480"
+  Type2: 
+  Nature: 
+  Abilitys:
+  - "\uC624\uAE30"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 030cf387467e6418ca30dc480295e304, type: 3}
+  hasDifferentForm: 1
+  NewForm1: {fileID: 21300000, guid: 56950296b6e0d480cb0e2877073d157b, type: 3}
+  NewForm1_Back: {fileID: 21300000, guid: adc7ebdcdaa4d4e02856e39f84c3b450, type: 3}
+  NewForm2: {fileID: 21300000, guid: ebd22ffa7aee748b3b4e9ce7c0b23411, type: 3}
+  NewForm2_Back: {fileID: 21300000, guid: d51898ed726e0427c87dfaede9bfc610, type: 3}
+  NewForm3: {fileID: 21300000, guid: 1213b5c9012dc4bbd8b68432a6cc0898, type: 3}
+  NewForm3_Back: {fileID: 21300000, guid: cdb4e586bc0b94a51a8ad3ef062ee512, type: 3}
+  NewForm_Icon1: {fileID: 1188556376, guid: ae893e4926b58463c9784dd35be104f4, type: 3}
+  NewForm_Icon2: {fileID: 944723563, guid: 3cc3a5c972b0e44b9a99ba3c262b0b7c, type: 3}
+  NewForm_Icon3: {fileID: 483412205, guid: 1e696caad66234f229e53a8e10cbfa59, type: 3}
+  NewAbility1: "\uC800\uC218"
+  NewAbility2: "\uD2C0\uAE68\uAE30"
+  NewAbility3: "\uC639\uACE8\uCC38"
+  NewPokemonCry1: {fileID: 8300000, guid: 030cf387467e6418ca30dc480295e304, type: 3}
+  NewPokemonCry2: {fileID: 8300000, guid: 030cf387467e6418ca30dc480295e304, type: 3}
+  NewPokemonCry3: {fileID: 8300000, guid: 030cf387467e6418ca30dc480295e304, type: 3}
+  HP: 364
+  Attack: 372
+  Defense: 293
+  SAttack: 240
+  SDefense: 320
+  Speed: 350
+  MoveName:
+  - "\uD798\uAECF\uCE58\uAE30"
+  - "\uB85C\uD0A5"
+  - "\uB369\uAD74\uBC29\uB9DD\uC774"
+  - "\uC9C0\uC625\uCC0C\uB974\uAE30"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uACA9\uD22C"
+  - "\uD480"
+  - "\uC545"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 50000000410000006400000050000000
+  MoveAccuracy: 4b000000640000006400000064000000
+  CurrentMovePP: 14000000140000000a0000000f000000
+  FullMovePP: 14000000140000000a0000000f000000

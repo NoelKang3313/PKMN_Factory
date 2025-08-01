@@ -76,6 +76,7 @@ public class FactoryUIManager : MonoBehaviour
     public TextMeshProUGUI PokemonSpecialDefense;
     public TextMeshProUGUI PokemonSpeed;
     public TextMeshProUGUI PokemonAbility;
+    public TextMeshProUGUI PokemonAbilityInfoText;
 
     [Header("Pokemon Moves")]
     public TextMeshProUGUI[] PokemonMove = new TextMeshProUGUI[4];

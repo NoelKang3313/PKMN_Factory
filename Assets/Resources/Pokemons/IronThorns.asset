@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: IronThorns
+  m_EditorClassIdentifier: 
+  Name: "\uBB34\uC1E0\uAC00\uC2DC"
+  PokedexNumber: 995
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 65214214bbd584ae9a9a25ec70701c47, type: 3}
+  Regular_Back: {fileID: 21300000, guid: b7064029880724b20bc9c1869ce3ad2e, type: 3}
+  Icon_Regular: {fileID: -1435007994, guid: 59b51f2011fc546dc9fc3c9885be2cda, type: 3}
+  Type1: "\uBC14\uC704"
+  Type2: "\uC804\uAE30"
+  Nature: 
+  Abilitys:
+  - "\uCFFC\uD06C\uCC28\uC9C0"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: e3c395f14dca64e13a941de48251194f, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 404
+  Attack: 403
+  Defense: 350
+  SAttack: 262
+  SDefense: 293
+  Speed: 267
+  MoveName:
+  - "\uC77C\uB809\uD2B8\uB9AD\uD544\uB4DC"
+  - "\uC2A4\uD1A4\uC0E4\uC6CC"
+  - "\uC640\uC77C\uB4DC\uBCFC\uD2B8"
+  - "\uC9C0\uC9C4"
+  MoveType:
+  - "\uC804\uAE30"
+  - "\uBC14\uC704"
+  - "\uC804\uAE30"
+  - "\uB545"
+  MoveCategory:
+  - "\uBCC0\uD654"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  MovePower: 000000004b0000005a00000064000000
+  MoveAccuracy: 640000005a0000006400000064000000
+  CurrentMovePP: 0a0000000a0000000f0000000a000000
+  FullMovePP: 0a0000000a0000000f0000000a000000

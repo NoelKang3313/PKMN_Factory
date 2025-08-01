@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: Archaludon
+  m_EditorClassIdentifier: 
+  Name: "\uBE0C\uB9AC\uB450\uB77C\uC2A4"
+  PokedexNumber: 1018
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: e2e4c3640e1284798bda30e5e5dfbd86, type: 3}
+  Regular_Back: {fileID: 21300000, guid: e5abcf0fdcb344cec8da3838f399cfe2, type: 3}
+  Icon_Regular: {fileID: 1163076372, guid: aacd60b4cb86d4be085e9ef8644ce5cf, type: 3}
+  Type1: "\uAC15\uCCA0"
+  Type2: "\uB4DC\uB798\uACE4"
+  Nature: 
+  Abilitys:
+  - "\uC9C0\uAD6C\uB825"
+  - "\uC639\uACE8\uCC38"
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: 963559092d38447bbb443104453b34c7, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 384
+  Attack: 339
+  Defense: 394
+  SAttack: 383
+  SDefense: 251
+  Speed: 295
+  MoveName:
+  - "\uBA54\uD0C8\uD074\uB85C"
+  - "\uB4DC\uB798\uACE4\uD14C\uC77C"
+  - "\uB4DC\uB798\uACE4\uD074\uB85C"
+  - "\uB7EC\uC2A4\uD130\uCE90\uB17C"
+  MoveType:
+  - "\uAC15\uCCA0"
+  - "\uB4DC\uB798\uACE4"
+  - "\uB4DC\uB798\uACE4"
+  - "\uAC15\uCCA0"
+  MoveCategory:
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  MovePower: 320000003c0000005000000050000000
+  MoveAccuracy: 5f0000005a0000006400000064000000
+  CurrentMovePP: 230000000a0000000f0000000a000000
+  FullMovePP: 230000000a0000000f0000000a000000

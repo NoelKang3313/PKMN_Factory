@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7e17838d41d486981f743d394439ea, type: 3}
+  m_Name: IronJugulis
+  m_EditorClassIdentifier: 
+  Name: "\uBB34\uC1E0\uBA38\uB9AC"
+  PokedexNumber: 993
+  Gender: 
+  Genderless: 0
+  Regular: {fileID: 21300000, guid: 2ca4e025d20284c59814440ef9a1b0a8, type: 3}
+  Regular_Back: {fileID: 21300000, guid: 719ecf28643534373adac030d39bcea9, type: 3}
+  Icon_Regular: {fileID: -411822690, guid: a085ac75c6103483383025114316950f, type: 3}
+  Type1: "\uC545"
+  Type2: "\uBE44\uD589"
+  Nature: 
+  Abilitys:
+  - "\uCFFC\uD06C\uCC28\uC9C0"
+  - 
+  Ability: 
+  PokemonCry: {fileID: 8300000, guid: f18e8056885ec43828ca203fc50b69cf, type: 3}
+  hasDifferentForm: 0
+  NewForm1: {fileID: 0}
+  NewForm1_Back: {fileID: 0}
+  NewForm2: {fileID: 0}
+  NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
+  NewForm_Icon1: {fileID: 0}
+  NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
+  NewAbility1: 
+  NewAbility2: 
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
+  HP: 392
+  Attack: 284
+  Defense: 298
+  SAttack: 377
+  SDefense: 284
+  Speed: 346
+  MoveName:
+  - "\uD2B8\uB77C\uC774\uC5B4\uD0DD"
+  - "\uAE68\uBB3C\uC5B4\uBD80\uC218\uAE30"
+  - "\uC5D0\uC5B4\uC2AC\uB798\uC2DC"
+  - "\uC545\uC758\uD30C\uB3D9"
+  MoveType:
+  - "\uB178\uB9D0"
+  - "\uC545"
+  - "\uBE44\uD589"
+  - "\uC545"
+  MoveCategory:
+  - "\uD2B9\uC218"
+  - "\uBB3C\uB9AC"
+  - "\uD2B9\uC218"
+  - "\uD2B9\uC218"
+  MovePower: 50000000500000004b00000050000000
+  MoveAccuracy: 64000000640000005f00000064000000
+  CurrentMovePP: 0a0000000f0000000f0000000f000000
+  FullMovePP: 0a0000000f0000000f0000000f000000
