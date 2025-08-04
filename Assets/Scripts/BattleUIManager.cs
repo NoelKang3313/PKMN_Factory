@@ -9,6 +9,7 @@ public class BattleUIManager : MonoBehaviour
     public GameObject MovePanel;
 
     public Image NPCImage;
+    public TextMeshProUGUI TextboxText;
 
     [Header("Fight/Bag/Pokemon")]
     public Button[] SelectionButtons = new Button[3];
@@ -231,6 +232,8 @@ public class BattleUIManager : MonoBehaviour
         {
             Sprite Brigette = Resources.Load<Sprite>("NPCs/Brigette");
             NPCImage.sprite= Brigette;
+
+            TextboxText.text = "무엇을 도와드릴까요?";
         }
     }
 

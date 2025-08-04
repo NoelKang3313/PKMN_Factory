@@ -214,8 +214,6 @@ public class FactoryUIManager : MonoBehaviour
             FadeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
             PokemonInfoAnimator.enabled = true;
-
-            ResetButtonEnable();
         }
 
         if (PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).IsName("Factory Info OFF") &&
