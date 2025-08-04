@@ -23,7 +23,7 @@ MonoBehaviour:
   Type2: "\uBB3C"
   Nature: 
   Abilitys:
-  - 
+  - "\uC704\uAE30\uD68C\uD53C"
   - 
   Ability: 
   PokemonCry: {fileID: 8300000, guid: 34a8173b73cd54b778a5d5c5748d434c, type: 3}

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,6 +36,8 @@ public class FactoryUIManager : MonoBehaviour
     [Header("Selection Over Buttons")]
     public GameObject SelectionOverButtons;
     public Button ConfirmButton;
+    [SerializeField]
+    private bool selectionComplete; // 포켓몬 최종선택
     public Button CancelButton;
 
     [Header("Factory Animators")]
@@ -42,7 +45,7 @@ public class FactoryUIManager : MonoBehaviour
     private Animator PokemonInfoAnimator;
     public Sprite PokemonInfoSprite;
     public Sprite SelectedPokemonInfoSprite;    
-    private bool isSelectionOver;
+    private bool isSelectionOver;   // 포켓몬 3마리 선택되었을 때
 
     public Image[] SelectedPokemonImages = new Image[3];    // 선택한 포켓몬 이미지
 
@@ -111,6 +114,8 @@ public class FactoryUIManager : MonoBehaviour
     public Sprite[] PokemonTypeSprites = new Sprite[18];
     private Dictionary<string, Sprite> PokemonTypes;
 
+    private Dictionary<string, string> PokemonAbilitys;
+
     void Awake()
     {
         TextboxText.text = "1번째 포켓몬을 선택하세요.";
@@ -169,42 +174,7 @@ public class FactoryUIManager : MonoBehaviour
 
     void Update()
     {
-        if(FadeAnimator.GetCurrentAnimatorStateInfo(0).IsName("Fade In") &&
-            FadeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-        {
-            PokemonInfoAnimator.enabled = true;
-        }
-
-        if (PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).IsName("Factory Info OFF") &&
-            PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-        {
-            if(isSelectionOver)
-            {
-                PokemonInfo.GetComponent<RectTransform>().sizeDelta = new Vector2(1600, 0);
-                PokemonInfo.GetComponent<Image>().sprite = SelectedPokemonInfoSprite;
-            }
-            else
-            {
-                PokemonInfo.GetComponent<RectTransform>().sizeDelta = new Vector2(1000, 0);
-                PokemonInfo.GetComponent<Image>().sprite = PokemonInfoSprite;
-            }
-            
-
-            PokemonInfoAnimator.SetBool("isActive", false);
-        }
-
-        if (PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).IsName("Factory Info ON") &&
-            PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-        {
-            if(isSelectionOver)
-            {
-                for (int i = 0; i < SelectedPokemonImages.Length; i++)
-                {
-                    SetImageColor(SelectedPokemonImages[i], 1f);
-                    SelectedPokemonImages[i].sprite = GameManager.instance.MyPokemons[i].Regular;
-                }
-            }
-        }
+        PokemonInfoAnimation();
 
         if (isPokemonSummaryOpen && Input.touchCount > 0)
         {
@@ -235,6 +205,72 @@ public class FactoryUIManager : MonoBehaviour
         }
 
         CheckMyPokemons();
+    }
+
+    void PokemonInfoAnimation()
+    {
+        if (FadeAnimator.GetCurrentAnimatorStateInfo(0).IsName("Fade In") &&
+            FadeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        {
+            PokemonInfoAnimator.enabled = true;
+
+            ResetButtonEnable();
+        }
+
+        if (PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).IsName("Factory Info OFF") &&
+            PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        {
+            if (isSelectionOver)
+            {
+                PokemonInfo.GetComponent<RectTransform>().sizeDelta = new Vector2(1600, 0);
+                PokemonInfo.GetComponent<Image>().sprite = SelectedPokemonInfoSprite;
+
+                ButtonPanel.SetActive(true);
+                SelectionButtons.SetActive(false);
+                SelectionOverButtons.SetActive(true);
+            }
+            else
+            {
+                PokemonInfo.GetComponent<RectTransform>().sizeDelta = new Vector2(1000, 0);
+                PokemonInfo.GetComponent<Image>().sprite = PokemonInfoSprite;
+            }
+
+            PokemonInfoAnimator.SetBool("isActive", false);
+
+            if(selectionComplete)
+            {
+                FadeAnimator.Play("Fade Out");
+            }
+        }
+
+        if (selectionComplete)
+        {
+            PokemonInfoAnimator.SetBool("isActive", true);
+
+            ButtonPanel.SetActive(false);
+            SelectionButtons.SetActive(false);
+            SelectionOverButtons.SetActive(false);
+        }
+
+        if (PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).IsName("Factory Info ON") &&
+            PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        {
+            if (isSelectionOver)
+            {
+                for (int i = 0; i < SelectedPokemonImages.Length; i++)
+                {
+                    if(!selectionComplete)
+                    {
+                        SetImageColor(SelectedPokemonImages[i], 1f);
+                        SelectedPokemonImages[i].sprite = GameManager.instance.MyPokemons[i].Regular;
+                    }
+                    else
+                    {
+                        SetImageColor(SelectedPokemonImages[i], 0f);
+                    }
+                }
+            }
+        }
     }
 
     // 터치를 사용한 스와이핑
@@ -386,6 +422,7 @@ public class FactoryUIManager : MonoBehaviour
         PokemonSpecialDefense.text = GameManager.instance.RandomPokemon[pokeballNumber].SDefense.ToString();
         PokemonSpeed.text = GameManager.instance.RandomPokemon[pokeballNumber].Speed.ToString();
         PokemonAbility.text = GameManager.instance.RandomPokemon[pokeballNumber].Ability;
+        PokemonAbilityInfoText.text = GameManager.instance.AbilityDescription[pokeballNumber];
 
         for (int i = 0; i < 4; i++)
         {
@@ -492,7 +529,34 @@ public class FactoryUIManager : MonoBehaviour
     // 최종 선택 확정 버튼
     void ConfirmButtonClicked()
     {
-        
+        for(int i = 0; i < GameManager.instance.MyPokemons.Count; i++)
+        {
+            for(int j = 0; j < GameManager.instance.RandomPokemon.Count; j++)
+            {
+                if(GameManager.instance.MyPokemons[i].Name == GameManager.instance.RandomPokemon[j].Name)
+                {
+                    GameManager.instance.RandomPokemon.Remove(GameManager.instance.MyPokemons[i]);
+
+                    break;
+                }
+            }
+        }
+
+        for(int i = 0; i < GameManager.instance.RandomPokemon.Count; i++)
+        {
+            GameManager.instance.PokemonLists.Add(GameManager.instance.RandomPokemon[i]);
+        }
+
+        GameManager.instance.RandomPokemon.RemoveRange(0, GameManager.instance.RandomPokemon.Count);
+
+        for(int i = 0; i < GameManager.instance.RandomPokemonSelected.Length; i++)
+        {
+            GameManager.instance.RandomPokemonSelected[i] = false;
+        }
+
+        selectionComplete = true;
+
+        SelectionOverButtons.SetActive(false);
     }
 
     // 최종 선택 취소 버튼
@@ -566,7 +630,7 @@ public class FactoryUIManager : MonoBehaviour
     // 포켓몬 갯수 텍스트 업데이트
     void UpdateTextboxText()
     {
-        if(GameManager.instance.FirstSelection)
+        if(GameManager.instance.FactoryPokemonSelection)
         {
             if (selectedPokemonNumber < 3)
             {
@@ -608,13 +672,11 @@ public class FactoryUIManager : MonoBehaviour
     // 선택가능한 포켓몬(보유 포켓몬) 특정 마리 수 도달 시 실행
     void CheckMyPokemons()
     {
-        if(GameManager.instance.FirstSelection)
+        if(GameManager.instance.FactoryPokemonSelection)
         {
             if (selectedPokemonNumber == 3)
             {
-                ButtonPanel.SetActive(true);
                 SelectionButtons.SetActive(false);
-                SelectionOverButtons.SetActive(true);
 
                 LockButtonEnable();
 

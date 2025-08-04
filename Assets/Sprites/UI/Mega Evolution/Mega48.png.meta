@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 050ebaaf28fe9401a8e036d87cb29c41
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4287432336999371148
+    second: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_0
+  - first:
+      213: 4061805248953493151
+    second: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_1
+  - first:
+      213: 3434721928751877493
+    second: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_2
+  - first:
+      213: -6687441731070666898
+    second: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_3
+  - first:
+      213: -2777974411377975056
+    second: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_4
+  - first:
+      213: 8592732472773531518
+    second: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_5
+  - first:
+      213: 6122072168650258789
+    second: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_6
+  - first:
+      213: 745645821555240785
+    second: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 254
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e21aa510bff74c0800000000000000
+      internalID: -4287432336999371148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 314
+        width: 174
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f96a0b28a5e6e5830800000000000000
+      internalID: 4061805248953493151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 234
+        width: 161
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d008175659aaf20800000000000000
+      internalID: 3434721928751877493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 201
+        width: 187
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e67d86b5d2f6133a0800000000000000
+      internalID: -6687441731070666898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 51
+        width: 181
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f0e0bebdf6a279d0800000000000000
+      internalID: -2777974411377975056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 0
+        width: 164
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7751a168a48f3770800000000000000
+      internalID: 8592732472773531518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 68
+        width: 162
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56934b58338f5f450800000000000000
+      internalID: 6122072168650258789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 0
+        width: 121
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15fed029ce0195a00800000000000000
+      internalID: 745645821555240785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_0: -4287432336999371148
+      Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_1: 4061805248953493151
+      Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_2: 3434721928751877493
+      Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_3: -6687441731070666898
+      Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_4: -2777974411377975056
+      Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_5: 8592732472773531518
+      Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_6: 6122072168650258789
+      Pokemon_Mega_Evolution_VFX_+_Sound_Effect_frame_103-removebg-preview_7: 745645821555240785
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

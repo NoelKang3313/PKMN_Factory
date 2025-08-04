@@ -1304,7 +1304,6 @@ GameObject:
   m_Component:
   - component: {fileID: 217342542}
   - component: {fileID: 217342541}
-  - component: {fileID: 217342543}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -1476,18 +1475,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &217342543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 217342540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40fde81105f9241dd82e792d188fb0a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &270495906
 GameObject:
   m_ObjectHideFlags: 0
@@ -4082,7 +4069,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &564378978
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6761,7 +6748,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 40, y: 450}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &856546693
 MonoBehaviour:
@@ -11120,7 +11107,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 303e9ac7560bb4f4aac0fc9f65be99bb, type: 2}
   - {fileID: 11400000, guid: 234336f751e15490fb8e69633a60a02d, type: 2}
   - {fileID: 11400000, guid: 21b0668f240f84324a41e0c6a247b959, type: 2}
-  pokemonLists: []
+  PokemonLists: []
   RandomPokemon:
   - {fileID: 0}
   - {fileID: 0}
@@ -11129,8 +11116,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   RandomPokemonSelected: 000000000000
+  AbilityDescription:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   PokemonSelection: 0
-  FirstSelection: 0
+  FactoryPokemonSelection: 0
   BattleStart: 0
 --- !u!1 &1579193435
 GameObject:
@@ -14512,7 +14506,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -630, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1897983791
 MonoBehaviour:

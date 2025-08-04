@@ -24,7 +24,7 @@ MonoBehaviour:
   Nature: 
   Abilitys:
   - "\uC639\uACE8\uCC38"
-  - "\uB300\uBA38\uB9AC"
+  - "\uB3CC\uBA38\uB9AC"
   Ability: 
   PokemonCry: {fileID: 8300000, guid: 566fdaa0529a74abe8acd289d325a310, type: 3}
   hasDifferentForm: 1
@@ -32,12 +32,17 @@ MonoBehaviour:
   NewForm1_Back: {fileID: 21300000, guid: f8b198c4f15374bc7a398c736887829f, type: 3}
   NewForm2: {fileID: 0}
   NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
   NewForm_Icon1: {fileID: 1829109063, guid: e3c3e485798164727a79d0830b96081d, type: 3}
   NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
   NewAbility1: "\uD544\uD130"
   NewAbility2: 
+  NewAbility3: 
   NewPokemonCry1: {fileID: 8300000, guid: f303b202edd794bce8cc78577852cee0, type: 3}
   NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
   HP: 344
   Attack: 350
   Defense: 504

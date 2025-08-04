@@ -24,7 +24,7 @@ MonoBehaviour:
   Nature: 
   Abilitys:
   - "\uBC30\uB9AC\uC5B4\uD504\uB9AC"
-  - "\uAE38\uC9C0\uC790\uAC78\uC74C"
+  - "\uAC08\uC9C0\uC790\uAC78\uC74C"
   Ability: 
   PokemonCry: {fileID: 8300000, guid: 29c11c94ef5774d65b19d3b0f163d78e, type: 3}
   hasDifferentForm: 0

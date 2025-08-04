@@ -10,16 +10,17 @@ public class GameManager : MonoBehaviour
 
     private List<ScriptableObject> pokemonScriptableObject = new List<ScriptableObject>();    // 포켓몬 ScriptableObjects
 
-    [SerializeField]
-    private List<Pokemon> pokemonLists = new List<Pokemon>();   // 총 포켓몬
+    public List<Pokemon> PokemonLists = new List<Pokemon>();   // 총 포켓몬
 
-    public Pokemon[] RandomPokemon = new Pokemon[6];    // 랜덤 포켓몬 6마리 저장
+    public List<Pokemon> RandomPokemon = new List<Pokemon>();// 랜덤 포켓몬 6마리 지정
     public bool[] RandomPokemonSelected = new bool[6];  // 포켓몬 대여 선택되었음을 확인
 
     private string[] pokemonNatures;    // 포켓몬 성격
+    private List<Dictionary<string, object>> pokemonAbility;    // 포켓몬 특성 저장
+    public string[] AbilityDescription = new string[6]; // 포켓몬 특성 설명
 
     public bool PokemonSelection;   // 포켓몬 대여 구간 진입
-    public bool FirstSelection; // 포켓몬 첫번째 대여 (처음에는 3마리 선택, 이후에 추가)
+    public bool FactoryPokemonSelection; // 포켓몬 첫번째 대여 (처음에는 3마리 선택, 이후에 추가)
     public bool BattleStart;    // 포켓몬 배틀 시작
 
     void Awake()
@@ -43,7 +44,7 @@ public class GameManager : MonoBehaviour
 
         foreach (Pokemon pokemons in pokemonScriptableObject)
         {
-            pokemonLists.Add(pokemons);
+            PokemonLists.Add(pokemons);
         }
 
         pokemonNatures = new string[25]
@@ -54,6 +55,8 @@ public class GameManager : MonoBehaviour
             "차분", "얌전", "신중", "변덕", "건방",
             "겁쟁이", "성급", "명랑", "천진난만", "성실"
         };
+
+        pokemonAbility = CSVReader.Read("Ability");
     }
 
     void Start()
@@ -61,11 +64,11 @@ public class GameManager : MonoBehaviour
         //CurrentPokemon = MyPokemons[0];
 
         PokemonSelection = true;
-        FirstSelection = true;
+        FactoryPokemonSelection = true;
 
-        //BattleStart = true;
+        BattleStart = true;
 
-        PokemonRandom();
+        //PokemonRandom();
     }
 
     // 팩토리 포켓몬 랜덤 선택 및 성격 결정
@@ -73,11 +76,11 @@ public class GameManager : MonoBehaviour
     {
         for(int i = 0; i < 6; i++)
         {
-            int random = Random.Range(0, pokemonLists.Count);
+            int random = Random.Range(0, PokemonLists.Count);
 
             int natureRandom = Random.Range(0, pokemonNatures.Length);
 
-            RandomPokemon[i] = pokemonLists[random];
+            RandomPokemon.Add(PokemonLists[random]);
             RandomPokemon[i].Nature = pokemonNatures[natureRandom];
 
             if (RandomPokemon[i].Abilitys[1] == "")
@@ -93,8 +96,10 @@ public class GameManager : MonoBehaviour
 
             SetPokemonGender(i);
 
-            pokemonLists.RemoveAt(random);
+            PokemonLists.RemoveAt(random);
         }
+
+        SetPokemonAbilityDescription();
     }
 
     // 성별 결정
@@ -115,6 +120,21 @@ public class GameManager : MonoBehaviour
             else
             {
                 RandomPokemon[number].Gender = "Female";
+            }
+        }
+    }
+
+    // CSV파일을 통해 포켓몬 특성을 가져와 특성 설명 문자열 불러오기
+    void SetPokemonAbilityDescription()
+    {
+        for (int i = 0; i < RandomPokemon.Count; i++)
+        {
+            for (int j = 0; j < pokemonAbility.Count; j++)
+            {
+                if (RandomPokemon[i].Ability == pokemonAbility[j]["Ability"].ToString())
+                {
+                    AbilityDescription[i] = pokemonAbility[j]["Description"].ToString();
+                }
             }
         }
     }
