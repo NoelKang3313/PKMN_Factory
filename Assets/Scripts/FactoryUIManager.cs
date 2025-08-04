@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class FactoryUIManager : MonoBehaviour
@@ -270,6 +271,14 @@ public class FactoryUIManager : MonoBehaviour
                     }
                 }
             }
+        }
+
+        if(FadeAnimator.GetCurrentAnimatorStateInfo(0).IsName("Fade Out") &&
+            FadeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        {
+            GameManager.instance.Maintenance = true;
+
+            SceneManager.LoadScene("Battle Scene");
         }
     }
 

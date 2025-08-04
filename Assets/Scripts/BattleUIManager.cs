@@ -8,6 +8,8 @@ public class BattleUIManager : MonoBehaviour
     public GameObject SelectionPanel;
     public GameObject MovePanel;
 
+    public Image NPCImage;
+
     [Header("Fight/Bag/Pokemon")]
     public Button[] SelectionButtons = new Button[3];
     public GameObject BattlePanel;
@@ -224,6 +226,12 @@ public class BattleUIManager : MonoBehaviour
                     }
             }
         }
+
+        if(GameManager.instance.Maintenance)
+        {
+            Sprite Brigette = Resources.Load<Sprite>("NPCs/Brigette");
+            NPCImage.sprite= Brigette;
+        }
     }
 
     // 터치를 사용한 스와이핑
@@ -288,6 +296,14 @@ public class BattleUIManager : MonoBehaviour
                         }
                 }
             }
+        }
+    }
+
+    void MainenanceBeforeBattle()
+    {
+        if(GameManager.instance.Maintenance)
+        {
+
         }
     }
 

@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     public bool PokemonSelection;   // 포켓몬 대여 구간 진입
     public bool FactoryPokemonSelection; // 포켓몬 첫번째 대여 (처음에는 3마리 선택, 이후에 추가)
+    public bool Maintenance;    // 포켓몬 배틀 전 유지/정비/샵
     public bool BattleStart;    // 포켓몬 배틀 시작
 
     void Awake()
@@ -66,9 +67,9 @@ public class GameManager : MonoBehaviour
         PokemonSelection = true;
         FactoryPokemonSelection = true;
 
-        BattleStart = true;
+        //BattleStart = true;
 
-        //PokemonRandom();
+        PokemonRandom();
     }
 
     // 팩토리 포켓몬 랜덤 선택 및 성격 결정
