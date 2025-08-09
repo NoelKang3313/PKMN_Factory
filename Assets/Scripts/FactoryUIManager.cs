@@ -52,48 +52,56 @@ public class FactoryUIManager : MonoBehaviour
 
     [Header("Pokemon Summary")]
     public GameObject PokemonSummaryPanel;
-    public AudioSource PokemonCryAudioSource;
     private bool isPokemonSummaryOpen;
-    public GameObject[] PokemonSummaries = new GameObject[3];
-    public GameObject PokemonMoveInfo;
     private int pokemonSummaryIndex = 0;
-    public Image PokemonSummaryImage;
+    public Image PokemonPanelImage;
+    public GameObject[] Summaries = new GameObject[4];
+    public Sprite[] SummaryImages = new Sprite[4];
+    public AudioSource PokemonCryAudioSource;
+    public GameObject AllContainObjects;
     public TextMeshProUGUI PokemonSummaryName;
+    public Image PokemonSummaryImage;
     public Image PokemonSummaryGenderImage;
+    public TextMeshProUGUI PokemonHoldItemName;
+    public Image HoldItemImage;
     public Button SummaryReturnButton;
 
-    [Header("Pokemon Info")]
-    public TextMeshProUGUI PokemonNumber;
+    [Header("Pokemon Status")]
+    public TextMeshProUGUI PokedexNumber;
     public TextMeshProUGUI PokemonInfoName;
-    public TextMeshProUGUI OwnerName;
+    public TextMeshProUGUI OT;
     public TextMeshProUGUI ID;
     public TextMeshProUGUI PokemonNature;
-    public TextMeshProUGUI PokemonHoldItemName;
     public Image PokemonType1;
     public Image PokemonType2;
 
-    [Header("Pokemon Skills")]
-    public TextMeshProUGUI PokemonHP;
+    [Header("Pokemon Stats")]
+    public TextMeshProUGUI PokemonCurrentHP;
+    public TextMeshProUGUI PokemonFullHP;
     public TextMeshProUGUI PokemonAttack;
     public TextMeshProUGUI PokemonDefense;
     public TextMeshProUGUI PokemonSpecialAttack;
     public TextMeshProUGUI PokemonSpecialDefense;
     public TextMeshProUGUI PokemonSpeed;
     public TextMeshProUGUI PokemonAbility;
-    public TextMeshProUGUI PokemonAbilityInfoText;
+    public TextMeshProUGUI PokemonAbilityDescription;
 
     [Header("Pokemon Moves")]
-    public TextMeshProUGUI[] PokemonMove = new TextMeshProUGUI[4];
-    public TextMeshProUGUI[] PokemonMovePP = new TextMeshProUGUI[4];
+    public TextMeshProUGUI[] PokemonMoveName = new TextMeshProUGUI[4];
+    public TextMeshProUGUI[] PokemonMoveCurrentPP = new TextMeshProUGUI[4];
+    public TextMeshProUGUI[] PokemonMoveFullPP = new TextMeshProUGUI[4];
     private string[] PokemonMoveType = new string[4];
     public Image[] PokemonMoveTypeImage = new Image[4];
     private int[] PokemonMovePower = new int[4];
     private int[] PokemonMoveAccuracy = new int[4];
     private string[] PokemonMoveCategory = new string[4];
+    public Button[] SummaryMoveButtons = new Button[4];
 
-    public Button[] MoveInfoButtons = new Button[4];
-
-    [Header("Pokemon Move Info")]
+    [Header("Pokemon Move Infos")]
+    private bool isMoveInfoOpen;
+    public TextMeshProUGUI[] PokemonMoveInfoName = new TextMeshProUGUI[4];
+    public TextMeshProUGUI[] PokemonMoveInfoCurrentPP = new TextMeshProUGUI[4];
+    public TextMeshProUGUI[] PokemonMoveInfoFullPP = new TextMeshProUGUI[4];
     public TextMeshProUGUI MovePowerText;
     public TextMeshProUGUI MoveAccuracyText;
     public Sprite PhysicalCategory;
@@ -103,6 +111,50 @@ public class FactoryUIManager : MonoBehaviour
     public Image MoveInfoPokemonIcon;
     public Image MoveInfoPokemonType1;
     public Image MoveInfoPokemonType2;
+    public Button[] MoveInfoButtons = new Button[4];
+    public Image[] PokemonMoveInfoTypeImage = new Image[4];
+
+    //[Header("Pokemon Info")]
+    //public TextMeshProUGUI PokemonNumber;
+    //public TextMeshProUGUI PokemonInfoName;
+    //public TextMeshProUGUI OwnerName;
+    //public TextMeshProUGUI ID;
+    //public TextMeshProUGUI PokemonNature;
+    //public TextMeshProUGUI PokemonHoldItemName;
+    //public Image PokemonType1;
+    //public Image PokemonType2;
+
+    //[Header("Pokemon Skills")]
+    //public TextMeshProUGUI PokemonHP;
+    //public TextMeshProUGUI PokemonAttack;
+    //public TextMeshProUGUI PokemonDefense;
+    //public TextMeshProUGUI PokemonSpecialAttack;
+    //public TextMeshProUGUI PokemonSpecialDefense;
+    //public TextMeshProUGUI PokemonSpeed;
+    //public TextMeshProUGUI PokemonAbility;
+    //public TextMeshProUGUI PokemonAbilityInfoText;
+
+    //[Header("Pokemon Moves")]
+    //public TextMeshProUGUI[] PokemonMove = new TextMeshProUGUI[4];
+    //public TextMeshProUGUI[] PokemonMovePP = new TextMeshProUGUI[4];
+    //private string[] PokemonMoveType = new string[4];
+    //public Image[] PokemonMoveTypeImage = new Image[4];
+    //private int[] PokemonMovePower = new int[4];
+    //private int[] PokemonMoveAccuracy = new int[4];
+    //private string[] PokemonMoveCategory = new string[4];
+
+    //public Button[] MoveInfoButtons = new Button[4];
+
+    //[Header("Pokemon Move Info")]
+    //public TextMeshProUGUI MovePowerText;
+    //public TextMeshProUGUI MoveAccuracyText;
+    //public Sprite PhysicalCategory;
+    //public Sprite SpecialCategory;
+    //public Sprite StatusCategory;
+    //public Image MoveInfoCategory;
+    //public Image MoveInfoPokemonIcon;
+    //public Image MoveInfoPokemonType1;
+    //public Image MoveInfoPokemonType2;
 
     // Touch Swipe
     private Vector3 fingerDownPos;
@@ -114,8 +166,6 @@ public class FactoryUIManager : MonoBehaviour
     [Header("Type Images")]
     public Sprite[] PokemonTypeSprites = new Sprite[18];
     private Dictionary<string, Sprite> PokemonTypes;
-
-    private Dictionary<string, string> PokemonAbilitys;
 
     void Awake()
     {
@@ -165,7 +215,21 @@ public class FactoryUIManager : MonoBehaviour
 
         SummaryReturnButton.onClick.AddListener(SummaryReturnButtonClicked);
 
-        for(int i = 0; i < MoveInfoButtons.Length; i++)
+        for (int i = 0; i < MoveInfoButtons.Length; i++)
+        {
+            int number = i;
+
+            MoveInfoButtons[i].onClick.AddListener(() => MoveInfoButtonClicked(number));
+        }
+
+        for (int i = 0; i < SummaryMoveButtons.Length; i++)
+        {
+            int number = i;
+
+            SummaryMoveButtons[i].onClick.AddListener(() => SummaryMoveButtonClicked(number));
+        }
+
+        for (int i = 0; i < MoveInfoButtons.Length; i++)
         {
             int number = i;
 
@@ -297,17 +361,10 @@ public class FactoryUIManager : MonoBehaviour
                 switch (pokemonSummaryIndex)
                 {
                     case 0:
-                        {
-                            PokemonSummaries[pokemonSummaryIndex].SetActive(false);
-                            ++pokemonSummaryIndex;
-                            PokemonSummaries[pokemonSummaryIndex].SetActive(true);
-                            break;
-                        }
                     case 1:
                         {
-                            PokemonSummaries[pokemonSummaryIndex].SetActive(false);
                             ++pokemonSummaryIndex;
-                            PokemonSummaries[pokemonSummaryIndex].SetActive(true);
+                            PokemonPanelImage.sprite = SummaryImages[pokemonSummaryIndex];
 
                             break;
                         }
@@ -321,26 +378,51 @@ public class FactoryUIManager : MonoBehaviour
                 switch (pokemonSummaryIndex)
                 {
                     case 1:
-                        {
-                            PokemonSummaries[pokemonSummaryIndex].SetActive(false);
-                            --pokemonSummaryIndex;
-                            PokemonSummaries[pokemonSummaryIndex].SetActive(true);
-                            break;
-                        }
                     case 2:
+                        if(isMoveInfoOpen)
                         {
-                            PokemonSummaries[pokemonSummaryIndex].SetActive(false);
+                            isMoveInfoOpen = false;
+
+                            AllContainObjects.SetActive(true);
+
                             --pokemonSummaryIndex;
-                            PokemonSummaries[pokemonSummaryIndex].SetActive(true);
+                            PokemonPanelImage.sprite = SummaryImages[pokemonSummaryIndex];
 
-                            if (PokemonMoveInfo.activeSelf)
-                            {
-                                PokemonMoveInfo.SetActive(false);
-                            }
-
-                            break;
+                            Summaries[2].SetActive(true);
+                            Summaries[3].SetActive(false);
                         }
+                        else
+                        {
+                            --pokemonSummaryIndex;
+                            PokemonPanelImage.sprite = SummaryImages[pokemonSummaryIndex];
+                        }
+
+                        break;
                 }
+            }
+
+            switch (pokemonSummaryIndex)
+            {
+                case 0:
+                    Summaries[0].SetActive(true);
+                    Summaries[1].SetActive(false);
+                    Summaries[2].SetActive(false);
+
+                    break;
+
+                case 1:
+                    Summaries[0].SetActive(false);
+                    Summaries[1].SetActive(true);
+                    Summaries[2].SetActive(false);
+
+                    break;
+
+                case 2:
+                    Summaries[0].SetActive(false);
+                    Summaries[1].SetActive(false);
+                    Summaries[2].SetActive(true);
+
+                    break;
             }
         }
     }
@@ -413,38 +495,38 @@ public class FactoryUIManager : MonoBehaviour
             SetPokemonGender(pokeballNumber);
         }
 
-        PokemonNumber.text = GameManager.instance.RandomPokemon[pokeballNumber].PokedexNumber.ToString();
+        PokedexNumber.text = GameManager.instance.RandomPokemon[pokeballNumber].PokedexNumber.ToString();
         PokemonInfoName.text = GameManager.instance.RandomPokemon[pokeballNumber].Name;
-        OwnerName.text = "배틀팩토리";
+        OT.text = "배틀팩토리";
         ID.text = "00001";
         PokemonNature.text = GameManager.instance.RandomPokemon[pokeballNumber].Nature;
         PokemonHoldItemName.text = "없음";
 
         SetPokemonType(pokeballNumber);
 
-        PokemonHP.text = GameManager.instance.RandomPokemon[pokeballNumber].HP.ToString() + "/" + GameManager.instance.RandomPokemon[pokeballNumber].HP.ToString();
+        PokemonCurrentHP.text = GameManager.instance.RandomPokemon[pokeballNumber].HP.ToString();
+        PokemonFullHP.text = "/" + GameManager.instance.RandomPokemon[pokeballNumber].HP.ToString();
         PokemonAttack.text = GameManager.instance.RandomPokemon[pokeballNumber].Attack.ToString();
         PokemonDefense.text = GameManager.instance.RandomPokemon[pokeballNumber].Defense.ToString();
         PokemonSpecialAttack.text = GameManager.instance.RandomPokemon[pokeballNumber].SAttack.ToString();
         PokemonSpecialDefense.text = GameManager.instance.RandomPokemon[pokeballNumber].SDefense.ToString();
         PokemonSpeed.text = GameManager.instance.RandomPokemon[pokeballNumber].Speed.ToString();
         PokemonAbility.text = GameManager.instance.RandomPokemon[pokeballNumber].Ability;
-        PokemonAbilityInfoText.text = GameManager.instance.AbilityDescription[pokeballNumber];
+        PokemonAbilityDescription.text = GameManager.instance.AbilityDescription[pokeballNumber];
 
         for (int i = 0; i < 4; i++)
         {
-            PokemonMove[i].text = GameManager.instance.RandomPokemon[pokeballNumber].MoveName[i];
-            PokemonMovePP[i].text = GameManager.instance.RandomPokemon[pokeballNumber].FullMovePP[i].ToString() + "/" + GameManager.instance.RandomPokemon[pokeballNumber].FullMovePP[i].ToString();
+            PokemonMoveName[i].text = GameManager.instance.RandomPokemon[pokeballNumber].MoveName[i];
+            PokemonMoveCurrentPP[i].text = GameManager.instance.RandomPokemon[pokeballNumber].FullMovePP[i].ToString();
+            PokemonMoveFullPP[i].text = "/" + GameManager.instance.RandomPokemon[pokeballNumber].FullMovePP[i];
+            PokemonMoveInfoName[i].text = GameManager.instance.RandomPokemon[pokeballNumber].MoveName[i];
+            PokemonMoveInfoCurrentPP[i].text = GameManager.instance.RandomPokemon[pokeballNumber].FullMovePP[i].ToString();
+            PokemonMoveInfoFullPP[i].text = "/" + GameManager.instance.RandomPokemon[pokeballNumber].FullMovePP[i];
             PokemonMovePower[i] = GameManager.instance.RandomPokemon[pokeballNumber].MovePower[i];
             PokemonMoveAccuracy[i] = GameManager.instance.RandomPokemon[pokeballNumber].MoveAccuracy[i];
             PokemonMoveCategory[i] = GameManager.instance.RandomPokemon[pokeballNumber].MoveCategory[i];
 
             PokemonMoveType[i] = GameManager.instance.RandomPokemon[pokeballNumber].MoveType[i];
-        }
-
-        if (PokemonMoveInfo.activeSelf)
-        {
-            PokemonMoveInfo.SetActive(false);
         }
 
         MoveInfoPokemonIcon.sprite = GameManager.instance.RandomPokemon[pokeballNumber].Icon_Regular;
@@ -600,23 +682,61 @@ public class FactoryUIManager : MonoBehaviour
 
         PokemonSummaryPanel.SetActive(false);
 
-        ResetPokemonSummaryIndex();
+        AllContainObjects.SetActive(true);
 
-        PokemonSummaries[pokemonSummaryIndex].SetActive(true);
+        isMoveInfoOpen = false;
+
+        pokemonSummaryIndex = 0;
+        PokemonPanelImage.sprite = SummaryImages[0];
+
+        for (int i = 0; i < Summaries.Length; i++)
+        {
+            Summaries[i].SetActive(false);
+        }
+
+        ResetPokemonSummary();
 
         SetImageColor(PokeballButtons[pokeballNumber].image, 1f);
 
         ButtonPanel.SetActive(true);
     }
 
-    // 포켓몬 상세보기 기술 버튼
+    // 포켓몬 기술 버튼
+    void SummaryMoveButtonClicked(int number)
+    {
+        AllContainObjects.SetActive(false);
+
+        PokemonPanelImage.sprite = SummaryImages[3];
+
+        isMoveInfoOpen = true;
+
+        Summaries[0].SetActive(false);
+        Summaries[1].SetActive(false);
+        Summaries[2].SetActive(false);
+        Summaries[3].SetActive(true);
+
+        SetMoveInfo(number);
+    }
+
+    // 포켓몬 기술 정보 버튼
     void MoveInfoButtonClicked(int number)
     {
-        PokemonMoveInfo.SetActive(true);
+        SetMoveInfo(number);
+    }
 
-        for (int i = 0; i < MoveInfoButtons.Length; i++)
+    void SetMoveInfo(int number)
+    {
+        for (int i = 0; i < SummaryMoveButtons.Length; i++)
         {
-            MovePowerText.text = PokemonMovePower[number].ToString();
+            if (PokemonMovePower[number] == 0)
+            {
+                MovePowerText.text = "---";
+            }
+            else
+            {
+                MovePowerText.text = PokemonMovePower[number].ToString();
+            }
+
             MoveAccuracyText.text = PokemonMoveAccuracy[number].ToString();
 
             if (PokemonMoveCategory[number] == "물리")
@@ -631,6 +751,39 @@ public class FactoryUIManager : MonoBehaviour
             {
                 MoveInfoCategory.sprite = StatusCategory;
             }
+        }
+    }
+
+    // 포켓몬 설명에 있는 모든 설정값 초기화
+    void ResetPokemonSummary()
+    {
+        PokedexNumber.text = null;
+        PokemonInfoName.text = null;
+        OT.text = null;
+        ID.text = null;
+        PokemonNature.text = null;
+        PokemonHoldItemName.text = null;
+
+        PokemonType1.sprite = null;
+        PokemonType2.sprite = null;
+
+        PokemonCurrentHP.text = null;
+        PokemonFullHP.text = null;
+        PokemonAttack.text = null;
+        PokemonDefense.text = null;
+        PokemonSpecialAttack.text = null;
+        PokemonSpecialDefense.text = null;
+        PokemonSpeed.text = null;
+        PokemonAbility.text = null;
+
+        for (int i = 0; i < 4; i++)
+        {
+            PokemonMoveName[i].text = null;
+            PokemonMoveCurrentPP[i].text = null;
+            PokemonMoveFullPP[i].text = null;
+            PokemonMoveInfoName[i].text = null;
+            PokemonMoveInfoCurrentPP[i].text = null;
+            PokemonMoveInfoFullPP[i].text = null;
         }
     }
 
@@ -736,9 +889,6 @@ public class FactoryUIManager : MonoBehaviour
 
         if (GameManager.instance.RandomPokemon[number].Type2 == "")
         {
-            PokemonType1.gameObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(240, 200);
-            MoveInfoPokemonType1.gameObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(290, 380);
-
             PokemonType2.sprite = null;
             MoveInfoPokemonType2.sprite = null;
             PokemonType2.gameObject.SetActive(false);
@@ -746,9 +896,6 @@ public class FactoryUIManager : MonoBehaviour
         }
         else
         {
-            PokemonType1.gameObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(130, 200);
-            MoveInfoPokemonType1.gameObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(30, 380);
-
             PokemonType2.gameObject.SetActive(true);
             MoveInfoPokemonType2.gameObject.SetActive(true);
 
@@ -770,24 +917,7 @@ public class FactoryUIManager : MonoBehaviour
             if (PokemonTypes.TryGetValue(MoveType, out Sprite sprite))
             {
                 PokemonMoveTypeImage[i].sprite = sprite;
-            }
-        }
-    }
-
-    // 포켓몬 설명 초기화
-    void ResetPokemonSummaryIndex()
-    {
-        pokemonSummaryIndex = 0;
-
-        for (int i = 0; i < PokemonSummaries.Length; i++)
-        {
-            if (i == 0)
-            {
-                PokemonSummaries[i].SetActive(true);
-            }
-            else
-            {
-                PokemonSummaries[i].SetActive(false);
+                PokemonMoveInfoTypeImage[i].sprite = sprite;
             }
         }
     }

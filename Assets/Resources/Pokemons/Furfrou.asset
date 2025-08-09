@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: "\uD2B8\uB9AC\uBBF8\uC559"
   PokedexNumber: 676
-  Gender: 
+  Gender: Female
   Genderless: 0
   Regular: {fileID: 21300000, guid: fc7a51be160c245639fad32d0aa8147d, type: 3}
   Regular_Back: {fileID: 21300000, guid: 2f1dfa120148e49f39040e9d13ca9fab, type: 3}
   Icon_Regular: {fileID: -584106647, guid: d2c069c11dacf4c6283ce60973ffca9e, type: 3}
   Type1: "\uB178\uB9D0"
   Type2: 
-  Nature: 
+  Nature: "\uC58C\uC804"
   Abilitys:
   - "\uD37C\uCF54\uD2B8"
   - 
-  Ability: 
+  Ability: "\uD37C\uCF54\uD2B8"
   PokemonCry: {fileID: 8300000, guid: 5047d2d9bded1402f8021d64aa41d097, type: 3}
   hasDifferentForm: 0
   NewForm1: {fileID: 0}
@@ -58,7 +58,7 @@ MonoBehaviour:
   - "\uD398\uC5B4\uB9AC"
   - "\uB178\uB9D0"
   - "\uC545"
-  - "\uC544 "
+  - "\uC545"
   MoveCategory:
   - "\uBCC0\uD654"
   - "\uBB3C\uB9AC"

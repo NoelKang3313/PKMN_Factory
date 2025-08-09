@@ -5,21 +5,21 @@ using TMPro;
 
 public class BattleUIManager : MonoBehaviour
 {
-    public GameObject SelectionPanel;
-    public GameObject MovePanel;
+    public GameObject SelectionPanel;   // 싸우다, 가방, 포켓몬 버튼 묶음
+    public GameObject MovePanel;    // 기술 버튼 (기술 버튼 4개, 메가진화 버튼, 취소 버튼) 묶음
 
-    public Image NPCImage;
-    public TextMeshProUGUI TextboxText;
+    public Image NPCImage;  // NPC 이미지
+    public TextMeshProUGUI TextboxText; //  텍스트박스 텍스트
 
-    public Button[] MaintenanceButtons = new Button[5];
+    public Button[] MaintenanceButtons = new Button[5]; // 포켓몬, 가방, 상점, 포켓몬 교체, 배틀 시작 버튼
 
     [Header("Fight/Bag/Pokemon")]
-    public Button[] SelectionButtons = new Button[3];
-    public GameObject BattlePanel;
-    public GameObject BagPanel;
-    public GameObject PartyPokemonPanel;
+    public Button[] SelectionButtons = new Button[3];   // 싸우다, 가방, 포켓몬 버튼
+    public GameObject BattlePanel;  // 배틀
+    public GameObject BagPanel; // 가방 버튼 선택
+    public GameObject PartyPokemonPanel;    // 포켓몬 버튼 선택
 
-    public Image MyPokemonImage;
+    public Image MyPokemonImage;    // 내 포켓몬 배틀 이미지
 
     public Button[] MoveButtons = new Button[4];
     public TextMeshProUGUI[] MoveTexts = new TextMeshProUGUI[4];
@@ -91,6 +91,7 @@ public class BattleUIManager : MonoBehaviour
     public Button[] SummaryMoveButtons = new Button[4];
 
     [Header("Pokemon Move Info")]
+    private bool isMoveInfoOpen;
     public TextMeshProUGUI[] PokemonMoveInfoName = new TextMeshProUGUI[4];
     public TextMeshProUGUI[] PokemonMoveInfoCurrentPP = new TextMeshProUGUI[4];
     public TextMeshProUGUI[] PokemonMoveInfoFullPP = new TextMeshProUGUI[4];
@@ -112,7 +113,6 @@ public class BattleUIManager : MonoBehaviour
     private bool isSwiping;
     private float swipeX;
     private float swipeThreshold = 50.0f;
-    private bool canSwipe;
 
     [Header("Type Buttons")]
     public Sprite[] TypeButtonSprites = new Sprite[18];
@@ -268,7 +268,7 @@ public class BattleUIManager : MonoBehaviour
 
         swipeX = (fingerDownPos.x - fingerUpPos.x);
 
-        if(isSwiping && swipeDistanceX > swipeThreshold && canSwipe)
+        if(isSwiping && swipeDistanceX > swipeThreshold)
         {
             // 오른쪽 스와이프
             if(swipeX > 0)
@@ -290,8 +290,23 @@ public class BattleUIManager : MonoBehaviour
                 {
                     case 1:
                     case 2:
-                        --pokemonSummaryIndex;
-                        PokemonPanelImage.sprite = SummaryImages[pokemonSummaryIndex];
+                        if (isMoveInfoOpen)
+                        {
+                            isMoveInfoOpen = false;
+
+                            AllContainObjects.SetActive(true);
+
+                            --pokemonSummaryIndex;
+                            PokemonPanelImage.sprite = SummaryImages[pokemonSummaryIndex];
+
+                            Summaries[2].SetActive(true);
+                            Summaries[3].SetActive(false);
+                        }
+                        else
+                        {
+                            --pokemonSummaryIndex;
+                            PokemonPanelImage.sprite = SummaryImages[pokemonSummaryIndex];
+                        }
 
                         break;
                 }
@@ -545,8 +560,6 @@ public class BattleUIManager : MonoBehaviour
     {
         if(!isItemCategoryOpen)
         {
-            canSwipe = true;
-
             AllContainObjects.SetActive(true);
 
             SetImageColor(PartyPokemonSprite, 1);
@@ -570,6 +583,24 @@ public class BattleUIManager : MonoBehaviour
             ID.text = "00001";
             PokemonNature.text = GameManager.instance.MyPokemons[number].Nature;
             PokemonHoldItemName.text = "없음";
+
+            if(GameManager.instance.MyPokemons[number].Genderless)
+            {
+                SetImageColor(PokemonGender, 0f);
+            }
+            else
+            {
+                SetImageColor(PokemonGender, 1f);
+
+                if(GameManager.instance.MyPokemons[number].Gender == "Male")
+                {
+                    PokemonGender.sprite = MaleSprite;
+                }
+                else
+                {
+                    PokemonGender.sprite = FemaleSprite;
+                }
+            }
 
             for (int i = 0; i < PokemonMoveType.Length; i++)
             {
@@ -667,8 +698,6 @@ public class BattleUIManager : MonoBehaviour
         PartyPokemonPanel.SetActive(false);
         BattlePanel.SetActive(true);
 
-        canSwipe = false;
-
         ResetPokemonSummary();
     }
 
@@ -719,7 +748,7 @@ public class BattleUIManager : MonoBehaviour
     // 포켓몬 기술 버튼
     void SummaryMoveButtonClicked(int number)
     {
-        canSwipe = false;
+        isMoveInfoOpen = true;
 
         AllContainObjects.SetActive(false);
 
