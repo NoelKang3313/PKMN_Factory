@@ -16,9 +16,14 @@ MonoBehaviour:
   PokedexNumber: 892
   Gender: 
   Genderless: 0
+  hasGenderDifference: 0
+  isLegendary: 1
   Regular: {fileID: 21300000, guid: 8920f18c23aab4ce685eb9e030165c23, type: 3}
   Regular_Back: {fileID: 21300000, guid: c00349d1b52024853b0e1115b7a9c130, type: 3}
   Icon_Regular: {fileID: -559216638, guid: 02c18c263056941bb89206322b65ff11, type: 3}
+  Regular_F: {fileID: 0}
+  Regular_Back_F: {fileID: 0}
+  Icon_Regular_F: {fileID: 0}
   Type1: "\uACA9\uD22C"
   Type2: "\uBB3C"
   Nature: 

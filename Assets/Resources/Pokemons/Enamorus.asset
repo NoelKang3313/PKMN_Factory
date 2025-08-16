@@ -16,9 +16,14 @@ MonoBehaviour:
   PokedexNumber: 905
   Gender: 
   Genderless: 0
+  hasGenderDifference: 0
+  isLegendary: 1
   Regular: {fileID: 21300000, guid: 24386737c65364e9cb7837cb78eca5f1, type: 3}
   Regular_Back: {fileID: 21300000, guid: 5fc6938c0f6454c68ae9641696c2b255, type: 3}
   Icon_Regular: {fileID: 1246089935, guid: 202a7d3dc696a4c339b7c85e0635d20c, type: 3}
+  Regular_F: {fileID: 0}
+  Regular_Back_F: {fileID: 0}
+  Icon_Regular_F: {fileID: 0}
   Type1: "\uD398\uC5B4\uB9AC"
   Type2: "\uBE44\uD589"
   Nature: 

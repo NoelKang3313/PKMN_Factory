@@ -16,9 +16,13 @@ MonoBehaviour:
   PokedexNumber: 902
   Gender: 
   Genderless: 0
+  hasGenderDifference: 1
   Regular: {fileID: 21300000, guid: 6c82ea17fb20346a0b27a935cb86110c, type: 3}
   Regular_Back: {fileID: 21300000, guid: 15eab24e5cfc14561ae65ed9fecfaaa3, type: 3}
   Icon_Regular: {fileID: -735478320, guid: 5a04868347d5c407bafaca987b57c48f, type: 3}
+  Regular_F: {fileID: 21300000, guid: b9e3d9f1a0b294843af22169eaf6be4d, type: 3}
+  Regular_Back_F: {fileID: 21300000, guid: 3bb288c40056c440bac63cfdf58bb9b6, type: 3}
+  Icon_Regular_F: {fileID: 1113163868, guid: d03244c7527974c70aba84403e3d1776, type: 3}
   Type1: "\uBB3C"
   Type2: "\uACE0\uC2A4\uD2B8"
   Nature: 

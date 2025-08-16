@@ -16,9 +16,14 @@ MonoBehaviour:
   PokedexNumber: 150
   Gender: 
   Genderless: 1
+  hasGenderDifference: 0
+  isLegendary: 1
   Regular: {fileID: 21300000, guid: 82d7622ba0d3649f5a9a0abbd74a776e, type: 3}
   Regular_Back: {fileID: 21300000, guid: 0b41a12218330435387f54e64ad3bd99, type: 3}
   Icon_Regular: {fileID: 485620086, guid: 0a3c895c8d31941efa143a8607f2163f, type: 3}
+  Regular_F: {fileID: 0}
+  Regular_Back_F: {fileID: 0}
+  Icon_Regular_F: {fileID: 0}
   Type1: "\uC5D0\uC2A4\uD37C"
   Type2: 
   Nature: 
@@ -32,12 +37,17 @@ MonoBehaviour:
   NewForm1_Back: {fileID: 21300000, guid: 8a06f8b89e63e4edb95827a9d1cccc30, type: 3}
   NewForm2: {fileID: 21300000, guid: c0dcd6ab1a2ca469aade261f0162b59b, type: 3}
   NewForm2_Back: {fileID: 21300000, guid: 334bd4d538d6a4f4f97074c43da6f644, type: 3}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
   NewForm_Icon1: {fileID: -174457082, guid: 598f2915d74944e61872f5fc056668ca, type: 3}
   NewForm_Icon2: {fileID: -179913119, guid: 294dcfb410474405fb20ab3ac2933f7e, type: 3}
+  NewForm_Icon3: {fileID: 0}
   NewAbility1: "\uBD88\uAD74\uC758\uB9C8\uC74C"
   NewAbility2: "\uBD88\uBA74"
+  NewAbility3: 
   NewPokemonCry1: {fileID: 8300000, guid: dad08277dc2154bfaa0cbf47bab34f49, type: 3}
   NewPokemonCry2: {fileID: 8300000, guid: dd83ff4eb41bc4496941422ba223fbe9, type: 3}
+  NewPokemonCry3: {fileID: 0}
   HP: 416
   Attack: 350
   Defense: 306

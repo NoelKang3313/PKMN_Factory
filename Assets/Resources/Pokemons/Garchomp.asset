@@ -16,9 +16,13 @@ MonoBehaviour:
   PokedexNumber: 445
   Gender: 
   Genderless: 0
+  hasGenderDifference: 1
   Regular: {fileID: 21300000, guid: 4905b293638ca43ce8bb243ab5e507dd, type: 3}
   Regular_Back: {fileID: 21300000, guid: 2c6fcbd25ce62456cab50daf6153ecfe, type: 3}
   Icon_Regular: {fileID: -1205464517, guid: e970f612c916940d39f2c66bda90a83c, type: 3}
+  Regular_F: {fileID: 21300000, guid: 317862358abb34e36a61567944ba5af1, type: 3}
+  Regular_Back_F: {fileID: 21300000, guid: 53aeb4225746445ad89158d7310518d7, type: 3}
+  Icon_Regular_F: {fileID: 0}
   Type1: "\uB4DC\uB798\uACE4"
   Type2: "\uB545"
   Nature: 

@@ -16,9 +16,13 @@ MonoBehaviour:
   PokedexNumber: 419
   Gender: 
   Genderless: 0
+  hasGenderDifference: 1
   Regular: {fileID: 21300000, guid: 8d25d363caccb48df8818942e06cbf86, type: 3}
   Regular_Back: {fileID: 21300000, guid: f1dbc394ef6d74ce3a4e64971b3e67c2, type: 3}
   Icon_Regular: {fileID: -219411557, guid: 7be5a244b3e5349efae8e1714453e4d7, type: 3}
+  Regular_F: {fileID: 21300000, guid: 8d25d363caccb48df8818942e06cbf86, type: 3}
+  Regular_Back_F: {fileID: 21300000, guid: f0502dace5ca3483789e45898fac3159, type: 3}
+  Icon_Regular_F: {fileID: 0}
   Type1: "\uBB3C"
   Type2: 
   Nature: 

@@ -58,6 +58,7 @@ public class BattleUIManager : MonoBehaviour
     public Sprite MaleSprite;
     public Sprite FemaleSprite;
     public GameObject AllContainObjects;
+    private int pokemonNumber;
 
     [Header("Pokemon Status")]
     public TextMeshProUGUI PokedexNumber;
@@ -78,6 +79,7 @@ public class BattleUIManager : MonoBehaviour
     public TextMeshProUGUI PokemonSpecialDefense;
     public TextMeshProUGUI PokemonSpeed;
     public TextMeshProUGUI PokemonAbility;
+    public TextMeshProUGUI PokemonAbilityDescription;
 
     [Header("Pokemon Moves")]
     public TextMeshProUGUI[] PokemonMoveName = new TextMeshProUGUI[4];
@@ -106,6 +108,7 @@ public class BattleUIManager : MonoBehaviour
     public Image MoveInfoPokemonType2;
     public Button[] MoveInfoButtons = new Button[4];
     public Image[] PokemonMoveInfoTypeImage = new Image[4];
+    public TextMeshProUGUI MoveDescription;
 
     // Touch Swipe
     private Vector3 fingerDownPos;
@@ -113,6 +116,7 @@ public class BattleUIManager : MonoBehaviour
     private bool isSwiping;
     private float swipeX;
     private float swipeThreshold = 50.0f;
+    private bool canSwipe;
 
     [Header("Type Buttons")]
     public Sprite[] TypeButtonSprites = new Sprite[18];
@@ -171,6 +175,8 @@ public class BattleUIManager : MonoBehaviour
 
     void Start()
     {
+        CheckMyPokemons();
+
         MyPokemonImage.sprite = GameManager.instance.MyPokemons[0].Regular_Back;
 
         for(int i = 0; i < MaintenanceButtons.Length; i++)
@@ -268,7 +274,7 @@ public class BattleUIManager : MonoBehaviour
 
         swipeX = (fingerDownPos.x - fingerUpPos.x);
 
-        if(isSwiping && swipeDistanceX > swipeThreshold)
+        if(isSwiping && swipeDistanceX > swipeThreshold && canSwipe)
         {
             // 오른쪽 스와이프
             if(swipeX > 0)
@@ -348,8 +354,6 @@ public class BattleUIManager : MonoBehaviour
 
                     SetImageColor(PartyPokemonSprite, 0);
 
-                    CheckMyPokemons();
-
                     break;
                 }
 
@@ -400,11 +404,6 @@ public class BattleUIManager : MonoBehaviour
             case 2:
                 //GameManager.instance.currentPokemon = GameManager.instance.MyPokemons[1]; // 기술 이름 변경확인용
                 PartyPokemonPanel.SetActive(true);
-
-                if(MyPartyPokemonButtons.Count == 0)
-                {
-                    CheckMyPokemons();
-                }
 
                 break;
         }
@@ -560,6 +559,10 @@ public class BattleUIManager : MonoBehaviour
     {
         if(!isItemCategoryOpen)
         {
+            canSwipe = true;
+
+            pokemonNumber = number;
+
             AllContainObjects.SetActive(true);
 
             SetImageColor(PartyPokemonSprite, 1);
@@ -617,6 +620,7 @@ public class BattleUIManager : MonoBehaviour
             PokemonSpecialDefense.text = GameManager.instance.MyPokemons[number].SDefense.ToString();
             PokemonSpeed.text = GameManager.instance.MyPokemons[number].Speed.ToString();
             PokemonAbility.text = GameManager.instance.MyPokemons[number].Ability;
+            PokemonAbilityDescription.text = GameManager.instance.SetPokemonAbility(number, GameManager.instance.MyPokemons);
 
             for (int i = 0; i < 4; i++)
             {
@@ -699,6 +703,8 @@ public class BattleUIManager : MonoBehaviour
         BattlePanel.SetActive(true);
 
         ResetPokemonSummary();
+
+        canSwipe = false;
     }
 
     // 포켓몬 설명에 있는 모든 설정값 초기화
@@ -762,6 +768,19 @@ public class BattleUIManager : MonoBehaviour
         SetMoveInfo(number);
     }
 
+    void SearchMove(int number)
+    {
+        for (int i = 0; i < GameManager.instance.PokemonMove.Count; i++)
+        {
+            if (GameManager.instance.MyPokemons[pokemonNumber].MoveName[number] == GameManager.instance.PokemonMove[i]["MoveName"].ToString())
+            {
+                MoveDescription.text = GameManager.instance.PokemonMove[i]["Description"].ToString();
+
+                break;
+            }
+        }
+    }
+
     // 포켓몬 기술 정보 버튼
     void MoveInfoButtonClicked(int number)
     {
@@ -770,32 +789,31 @@ public class BattleUIManager : MonoBehaviour
 
     void SetMoveInfo(int number)
     {
-        for (int i = 0; i < SummaryMoveButtons.Length; i++)
+        if (PokemonMovePower[number] == 0)
         {
-            if(PokemonMovePower[number] == 0)
-            {
-                MovePowerText.text = "---";
-            }
-            else
-            {
-                MovePowerText.text = PokemonMovePower[number].ToString();
-            }
-
-            MoveAccuracyText.text = PokemonMoveAccuracy[number].ToString();
-
-            if (PokemonMoveCategory[number] == "물리")
-            {
-                MoveInfoCategory.sprite = PhysicalCategory;
-            }
-            else if (PokemonMoveCategory[number] == "특수")
-            {
-                MoveInfoCategory.sprite = SpecialCategory;
-            }
-            else
-            {
-                MoveInfoCategory.sprite = StatusCategory;
-            }
+            MovePowerText.text = "---";
         }
+        else
+        {
+            MovePowerText.text = PokemonMovePower[number].ToString();
+        }
+
+        MoveAccuracyText.text = PokemonMoveAccuracy[number].ToString();
+
+        if (PokemonMoveCategory[number] == "물리")
+        {
+            MoveInfoCategory.sprite = PhysicalCategory;
+        }
+        else if (PokemonMoveCategory[number] == "특수")
+        {
+            MoveInfoCategory.sprite = SpecialCategory;
+        }
+        else
+        {
+            MoveInfoCategory.sprite = StatusCategory;
+        }
+
+        SearchMove(number);
     }
 
     // 이미지 알파값 설정

@@ -15,10 +15,14 @@ MonoBehaviour:
   Name: "\uD3EC\uD2B8\uB370\uC2A4"
   PokedexNumber: 855
   Gender: 
-  Genderless: 0
+  Genderless: 1
+  hasGenderDifference: 0
   Regular: {fileID: 21300000, guid: 9673309c87966490abb2c9acfec1f5c2, type: 3}
   Regular_Back: {fileID: 21300000, guid: f2aefec2f6a5241e8a4bdb7d22803128, type: 3}
   Icon_Regular: {fileID: 629077384, guid: 44060084f7e9d43ab8b963dd8f74146f, type: 3}
+  Regular_F: {fileID: 0}
+  Regular_Back_F: {fileID: 0}
+  Icon_Regular_F: {fileID: 0}
   Type1: "\uACE0\uC2A4\uD2B8"
   Type2: 
   Nature: 

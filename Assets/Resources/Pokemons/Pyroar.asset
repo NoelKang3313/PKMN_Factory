@@ -16,9 +16,13 @@ MonoBehaviour:
   PokedexNumber: 668
   Gender: 
   Genderless: 0
+  hasGenderDifference: 1
   Regular: {fileID: 21300000, guid: 1ba634897a3684316985f2d4c9f85e03, type: 3}
   Regular_Back: {fileID: 21300000, guid: 835fed6b900644ae1879b0537c1dcba6, type: 3}
   Icon_Regular: {fileID: -371143309, guid: ffe05a3b8c37a4e27886590e15c4fbe7, type: 3}
+  Regular_F: {fileID: 21300000, guid: 3689170fb032c4d878b1c3b2ab3a069a, type: 3}
+  Regular_Back_F: {fileID: 21300000, guid: a8e457ec1624a46908ac4b500844528c, type: 3}
+  Icon_Regular_F: {fileID: 1688969111, guid: 60487e4428eb947c09e38c24f02998d8, type: 3}
   Type1: 
   Type2: 
   Nature: 

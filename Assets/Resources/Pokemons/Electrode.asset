@@ -15,10 +15,14 @@ MonoBehaviour:
   Name: "\uBD90\uBCFC"
   PokedexNumber: 101
   Gender: 
-  Genderless: 0
+  Genderless: 1
+  hasGenderDifference: 0
   Regular: {fileID: 21300000, guid: 789799e35defe414d8d5d45a54911546, type: 3}
   Regular_Back: {fileID: 21300000, guid: 09fb770872d0449c19dc443d5f315882, type: 3}
   Icon_Regular: {fileID: -548567100, guid: 4ab79ba0c39d4471c9bd0f9585a0e70e, type: 3}
+  Regular_F: {fileID: 0}
+  Regular_Back_F: {fileID: 0}
+  Icon_Regular_F: {fileID: 0}
   Type1: "\uC804\uAE30"
   Type2: 
   Nature: 
@@ -32,11 +36,17 @@ MonoBehaviour:
   NewForm1_Back: {fileID: 0}
   NewForm2: {fileID: 0}
   NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
   NewForm_Icon1: {fileID: 0}
   NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
   NewAbility1: 
   NewAbility2: 
-  NewPokemonCry: {fileID: 0}
+  NewAbility3: 
+  NewPokemonCry1: {fileID: 0}
+  NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
   HP: 324
   Attack: 218
   Defense: 262

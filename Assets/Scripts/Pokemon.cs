@@ -7,10 +7,15 @@ public class Pokemon : ScriptableObject
     public string Name;
     public int PokedexNumber;
     public string Gender;
-    public bool Genderless;    
+    public bool Genderless;
+    public bool hasGenderDifference;
+    public bool isLegendary;
     public Sprite Regular;
     public Sprite Regular_Back;    
     public Sprite Icon_Regular;
+    public Sprite Regular_F;
+    public Sprite Regular_Back_F;
+    public Sprite Icon_Regular_F;
     public string Type1;
     public string Type2;
     public string Nature;

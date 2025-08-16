@@ -15,10 +15,15 @@ MonoBehaviour:
   Name: "\uC774\uBCA8\uD0C0\uB974"
   PokedexNumber: 717
   Gender: 
-  Genderless: 0
+  Genderless: 1
+  hasGenderDifference: 0
+  isLegendary: 1
   Regular: {fileID: 21300000, guid: 30014703351414c92870a141cbac7496, type: 3}
   Regular_Back: {fileID: 21300000, guid: 36750cd3fe93a44b4bd9c007d7ff84b5, type: 3}
   Icon_Regular: {fileID: 1591394559, guid: ab661f99424214353bb429f8e2b278a6, type: 3}
+  Regular_F: {fileID: 0}
+  Regular_Back_F: {fileID: 0}
+  Icon_Regular_F: {fileID: 0}
   Type1: "\uC545"
   Type2: "\uBE44\uD589"
   Nature: 

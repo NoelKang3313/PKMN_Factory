@@ -16,9 +16,13 @@ MonoBehaviour:
   PokedexNumber: 521
   Gender: 
   Genderless: 0
+  hasGenderDifference: 1
   Regular: {fileID: 21300000, guid: 51819d8f026a84ae5a76102cfd138b10, type: 3}
   Regular_Back: {fileID: 21300000, guid: a1499a78a5a854568af1d68218f943ae, type: 3}
   Icon_Regular: {fileID: 655565, guid: 45f26800321ff48e683a33533f7266fe, type: 3}
+  Regular_F: {fileID: 21300000, guid: 6677e186a6c6b420283ddb66db5e0f8a, type: 3}
+  Regular_Back_F: {fileID: 21300000, guid: d5da6e923321a4ad1af0cbeef3408761, type: 3}
+  Icon_Regular_F: {fileID: -1740761791, guid: 355c8cf58050b4135adc9ac81d162e29, type: 3}
   Type1: "\uB178\uB9D0"
   Type2: "\uBE44\uD589"
   Nature: 

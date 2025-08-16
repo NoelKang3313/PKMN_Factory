@@ -16,9 +16,13 @@ MonoBehaviour:
   PokedexNumber: 350
   Gender: 
   Genderless: 0
+  hasGenderDifference: 1
   Regular: {fileID: 21300000, guid: 969b5388a38f1471283f1b2ee616ce52, type: 3}
   Regular_Back: {fileID: 21300000, guid: d112f75acc535434ebe4f4f9eb96fa7d, type: 3}
   Icon_Regular: {fileID: 1420028982, guid: 49eaeaa975be24d1c98c7b5eedab2cab, type: 3}
+  Regular_F: {fileID: 21300000, guid: 3b24c8af014124058a34c53faf4f085e, type: 3}
+  Regular_Back_F: {fileID: 21300000, guid: db5fe41b61e48465392fe25579806fac, type: 3}
+  Icon_Regular_F: {fileID: 0}
   Type1: "\uBB3C"
   Type2: 
   Nature: 
@@ -32,12 +36,17 @@ MonoBehaviour:
   NewForm1_Back: {fileID: 0}
   NewForm2: {fileID: 0}
   NewForm2_Back: {fileID: 0}
+  NewForm3: {fileID: 0}
+  NewForm3_Back: {fileID: 0}
   NewForm_Icon1: {fileID: 0}
   NewForm_Icon2: {fileID: 0}
+  NewForm_Icon3: {fileID: 0}
   NewAbility1: 
   NewAbility2: 
+  NewAbility3: 
   NewPokemonCry1: {fileID: 0}
   NewPokemonCry2: {fileID: 0}
+  NewPokemonCry3: {fileID: 0}
   HP: 394
   Attack: 240
   Defense: 282

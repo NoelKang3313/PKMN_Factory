@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public bool isFirstSelection = true;
+
     public static GameManager instance;
 
     public Pokemon CurrentPokemon;   // 현재 나와서 싸우고 있는 포켓몬    
@@ -10,14 +12,13 @@ public class GameManager : MonoBehaviour
 
     private List<ScriptableObject> pokemonScriptableObject = new List<ScriptableObject>();    // 포켓몬 ScriptableObjects
 
-    public List<Pokemon> PokemonLists = new List<Pokemon>();   // 총 포켓몬
+    public List<Pokemon> PokemonLists = new List<Pokemon>();   // 총 포켓몬 (전설 제외)
+    public List<Pokemon> LegendaryPokemonLists = new List<Pokemon>();   // 전설 포켓몬
 
-    public List<Pokemon> RandomPokemon = new List<Pokemon>();// 랜덤 포켓몬 6마리 지정
-    public bool[] RandomPokemonSelected = new bool[6];  // 포켓몬 대여 선택되었음을 확인
+    public string[] pokemonNatures;    // 포켓몬 성격
+    public List<Dictionary<string, object>> pokemonAbility;    // 포켓몬 특성 저장
 
-    private string[] pokemonNatures;    // 포켓몬 성격
-    private List<Dictionary<string, object>> pokemonAbility;    // 포켓몬 특성 저장
-    public string[] AbilityDescription = new string[6]; // 포켓몬 특성 설명
+    public List<Dictionary<string, object>> PokemonMove;   // 포켓몬 기술 저장
 
     public bool PokemonSelection;   // 포켓몬 대여 구간 진입
     public bool FactoryPokemonSelection; // 포켓몬 첫번째 대여 (처음에는 3마리 선택, 이후에 추가)
@@ -45,7 +46,14 @@ public class GameManager : MonoBehaviour
 
         foreach (Pokemon pokemons in pokemonScriptableObject)
         {
-            PokemonLists.Add(pokemons);
+            if(pokemons.isLegendary)
+            {
+                LegendaryPokemonLists.Add(pokemons);
+            }
+            else
+            {
+                PokemonLists.Add(pokemons);
+            }
         }
 
         pokemonNatures = new string[25]
@@ -58,6 +66,7 @@ public class GameManager : MonoBehaviour
         };
 
         pokemonAbility = CSVReader.Read("Ability");
+        PokemonMove = CSVReader.Read("Pokemon Moves");
     }
 
     void Start()
@@ -69,74 +78,20 @@ public class GameManager : MonoBehaviour
 
         //BattleStart = true;
 
-        PokemonRandom();
-    }
-
-    // 팩토리 포켓몬 랜덤 선택 및 성격 결정
-    void PokemonRandom()
-    {
-        for(int i = 0; i < 6; i++)
-        {
-            int random = Random.Range(0, PokemonLists.Count);
-
-            int natureRandom = Random.Range(0, pokemonNatures.Length);
-
-            RandomPokemon.Add(PokemonLists[random]);
-            RandomPokemon[i].Nature = pokemonNatures[natureRandom];
-
-            if (RandomPokemon[i].Abilitys[1] == "")
-            {
-                RandomPokemon[i].Ability = RandomPokemon[i].Abilitys[0];
-            }
-            else
-            {
-                int abilityRandom = Random.Range(0, RandomPokemon[i].Abilitys.Length);
-
-                RandomPokemon[i].Ability = RandomPokemon[i].Abilitys[abilityRandom];
-            }
-
-            SetPokemonGender(i);
-
-            PokemonLists.RemoveAt(random);
-        }
-
-        SetPokemonAbilityDescription();
-    }
-
-    // 성별 결정
-    void SetPokemonGender(int number)
-    {
-        int genderRandom = Random.Range(1, 101);
-
-        if (RandomPokemon[number].Genderless)
-        {
-            return;
-        }
-        else
-        {
-            if (genderRandom <= 50)
-            {
-                RandomPokemon[number].Gender = "Male";
-            }
-            else
-            {
-                RandomPokemon[number].Gender = "Female";
-            }
-        }
+        //Debug.Log(pokemonMove[427]["MoveName"]);
     }
 
     // CSV파일을 통해 포켓몬 특성을 가져와 특성 설명 문자열 불러오기
-    void SetPokemonAbilityDescription()
+    public string SetPokemonAbility(int number, List<Pokemon> pokemon)
     {
-        for (int i = 0; i < RandomPokemon.Count; i++)
+        for(int i = 0; i < pokemonAbility.Count; i++)
         {
-            for (int j = 0; j < pokemonAbility.Count; j++)
+            if(pokemon[number].Ability == pokemonAbility[i]["Ability"].ToString())
             {
-                if (RandomPokemon[i].Ability == pokemonAbility[j]["Ability"].ToString())
-                {
-                    AbilityDescription[i] = pokemonAbility[j]["Description"].ToString();
-                }
+                return pokemonAbility[i]["Description"].ToString();
             }
         }
+
+        return null;
     }
 }

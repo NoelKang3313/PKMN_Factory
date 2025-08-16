@@ -16,9 +16,14 @@ MonoBehaviour:
   PokedexNumber: 488
   Gender: 
   Genderless: 0
+  hasGenderDifference: 0
+  isLegendary: 1
   Regular: {fileID: 21300000, guid: 774893b4ee391481c894809c1f3a1495, type: 3}
   Regular_Back: {fileID: 21300000, guid: e0a198fb98d66474cad8c69e842fbbe3, type: 3}
   Icon_Regular: {fileID: -2050107046, guid: 08070c6b151354afb9e3456785da03cf, type: 3}
+  Regular_F: {fileID: 0}
+  Regular_Back_F: {fileID: 0}
+  Icon_Regular_F: {fileID: 0}
   Type1: "\uC5D0\uC2A4\uD37C"
   Type2: 
   Nature: 
