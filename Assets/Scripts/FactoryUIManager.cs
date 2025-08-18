@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using Unity.VisualScripting;
 
 public class FactoryUIManager : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class FactoryUIManager : MonoBehaviour
     private bool[] RandomPokemonSelected = new bool[6]; // 랜덤 포켓몬 중 대여 확인
 
     public Animator FadeAnimator;
+    private AudioSource ButtonAudioSource;
+    public GameObject PokeballButtonPreventPanel;
 
     public GameObject[] Pokeballs = new GameObject[6];  // 몬스터볼 게임오브젝트
     public Button[] PokeballButtons = new Button[6];    // 몬스터볼 버튼
@@ -134,6 +137,8 @@ public class FactoryUIManager : MonoBehaviour
 
     void Awake()
     {
+        ButtonAudioSource = GetComponent<AudioSource>();
+
         TextboxText.text = "1번째 포켓몬을 선택하세요.";
 
         PokemonInfoAnimator = PokemonInfo.GetComponent<Animator>();
@@ -206,7 +211,7 @@ public class FactoryUIManager : MonoBehaviour
 
     void Update()
     {
-        PokemonInfoAnimation();
+        PokemonFactoryAnimation();
 
         if (isPokemonSummaryOpen && Input.touchCount > 0)
         {
@@ -343,12 +348,25 @@ public class FactoryUIManager : MonoBehaviour
     }
 
     // 애니메이션 설정
-    void PokemonInfoAnimation()
+    void PokemonFactoryAnimation()
     {
         if (FadeAnimator.GetCurrentAnimatorStateInfo(0).IsName("Fade In") &&
             FadeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
             PokemonInfoAnimator.enabled = true;
+        }
+
+        if (PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).IsName("Factory Info ON") &&
+            PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        {
+            PokeballButtonPreventPanel.SetActive(false);
+
+            if(isSelectionOver)
+            {
+                ButtonPanel.SetActive(true);
+                SelectionButtons.SetActive(false);
+                SelectionOverButtons.SetActive(true);
+            }
         }
 
         if (PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).IsName("Factory Info OFF") &&
@@ -358,10 +376,6 @@ public class FactoryUIManager : MonoBehaviour
             {
                 PokemonInfo.GetComponent<RectTransform>().sizeDelta = new Vector2(1600, 0);
                 PokemonInfo.GetComponent<Image>().sprite = SelectedPokemonInfoSprite;
-
-                ButtonPanel.SetActive(true);
-                SelectionButtons.SetActive(false);
-                SelectionOverButtons.SetActive(true);
             }
             else
             {
@@ -398,7 +412,22 @@ public class FactoryUIManager : MonoBehaviour
                     if(!selectionComplete)
                     {
                         SetImageColor(SelectedPokemonImages[i], 1f);
-                        SelectedPokemonImages[i].sprite = GameManager.instance.MyPokemons[i].Regular;
+
+                        if (GameManager.instance.MyPokemons[i].hasGenderDifference)
+                        {
+                            if (GameManager.instance.MyPokemons[i].Gender == "Male")
+                            {
+                                SelectedPokemonImages[i].sprite = GameManager.instance.MyPokemons[i].Regular;
+                            }
+                            else
+                            {
+                                SelectedPokemonImages[i].sprite = GameManager.instance.MyPokemons[i].Regular_F;
+                            }
+                        }
+                        else
+                        {
+                            SelectedPokemonImages[i].sprite = GameManager.instance.MyPokemons[i].Regular;
+                        }
                     }
                     else
                     {
@@ -413,8 +442,6 @@ public class FactoryUIManager : MonoBehaviour
         if(FadeAnimator.GetCurrentAnimatorStateInfo(0).IsName("Fade Out") &&
             FadeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
-            GameManager.instance.Maintenance = true;
-
             SceneManager.LoadScene("Battle Scene");
         }
     }
@@ -505,6 +532,10 @@ public class FactoryUIManager : MonoBehaviour
     // 몬스터볼 버튼
     void PokeballButtonClicked(int number)
     {
+        LockButtonEnable();
+
+        ButtonAudioSource.Play();
+
         if(RandomPokemon[number].hasGenderDifference)
         {
             if(RandomPokemon[number].Gender == "Male")
@@ -541,8 +572,6 @@ public class FactoryUIManager : MonoBehaviour
             SetImageColor(PokeballButtons[number].image, 1f);
         }
 
-        LockButtonEnable();
-
         if(RandomPokemonSelected[number])
         {
             RentButton.GetComponent<Image>().sprite = RedButton;
@@ -558,6 +587,8 @@ public class FactoryUIManager : MonoBehaviour
     // 상세보기 버튼
     void SummaryButtonClicked()
     {
+        ButtonAudioSource.Play();
+
         isPokemonSummaryOpen = true;
 
         PokemonSummaryPanel.SetActive(true);
@@ -646,7 +677,9 @@ public class FactoryUIManager : MonoBehaviour
     // 대여 버튼
     void RentButtonClicked()
     {
-        if(!RandomPokemonSelected[pokeballNumber])
+        ButtonAudioSource.Play();
+
+        if (!RandomPokemonSelected[pokeballNumber])
         {
             selectedPokemonNumber++;
 
@@ -707,6 +740,8 @@ public class FactoryUIManager : MonoBehaviour
     // 취소 버튼
     void ReturnButtonClicked()
     {
+        ButtonAudioSource.Play();
+
         PokemonImage.sprite = null;
         PokemonName.text = null;
 
@@ -725,7 +760,9 @@ public class FactoryUIManager : MonoBehaviour
     // 최종 선택 확정 버튼
     void ConfirmButtonClicked()
     {
-        for(int i = 0; i < GameManager.instance.MyPokemons.Count; i++)
+        ButtonAudioSource.Play();
+
+        for (int i = 0; i < GameManager.instance.MyPokemons.Count; i++)
         {
             for(int j = 0; j < RandomPokemon.Count; j++)
             {
@@ -758,6 +795,8 @@ public class FactoryUIManager : MonoBehaviour
     // 최종 선택 취소 버튼
     void CancelButtonClicked()
     {
+        ButtonAudioSource.Play();
+
         ButtonPanel.SetActive(false);
         SelectionButtons.SetActive(false);
         SelectionOverButtons.SetActive(false);
@@ -785,6 +824,8 @@ public class FactoryUIManager : MonoBehaviour
     // 상세보기 나가기 버튼
     void SummaryReturnButtonClicked()
     {
+        ButtonAudioSource.Play();
+
         isPokemonSummaryOpen = false;
 
         PokemonSummaryPanel.SetActive(false);
@@ -818,6 +859,8 @@ public class FactoryUIManager : MonoBehaviour
     // 포켓몬 기술 버튼
     void SummaryMoveButtonClicked(int number)
     {
+        ButtonAudioSource.Play();
+
         AllContainObjects.SetActive(false);
 
         PokemonPanelImage.sprite = SummaryImages[3];
@@ -848,6 +891,8 @@ public class FactoryUIManager : MonoBehaviour
     // 포켓몬 기술 정보 버튼
     void MoveInfoButtonClicked(int number)
     {
+        ButtonAudioSource.Play();
+
         SetMoveInfo(number);
     }
 

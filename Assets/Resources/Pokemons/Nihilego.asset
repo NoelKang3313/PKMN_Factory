@@ -17,6 +17,7 @@ MonoBehaviour:
   Gender: 
   Genderless: 1
   hasGenderDifference: 0
+  isLegendary: 1
   Regular: {fileID: 21300000, guid: 8a33a1238f36c4d68b606e88a934ff2f, type: 3}
   Regular_Back: {fileID: 21300000, guid: c9c3b88ea6ff04abb9918246631618b8, type: 3}
   Icon_Regular: {fileID: 121873472, guid: 4b1adae553a5b40079d28553b78fb9ab, type: 3}

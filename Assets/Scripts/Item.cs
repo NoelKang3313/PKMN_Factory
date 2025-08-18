@@ -8,4 +8,5 @@ public class Item : ScriptableObject
     public string ItemType;
     public int ItemAmount;
     public string ItemDescription;
+    public int ItemPrice;
 }
