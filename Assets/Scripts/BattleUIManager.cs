@@ -5,6 +5,7 @@ using TMPro;
 
 public class BattleUIManager : MonoBehaviour
 {
+    private AudioSource UIAudioSource;
     public Animator FadeAnimator;
 
     public GameObject SelectionPanel;   // 싸우다, 가방, 포켓몬 버튼 묶음
@@ -155,6 +156,8 @@ public class BattleUIManager : MonoBehaviour
 
     void Awake()
     {
+        UIAudioSource = GetComponent<AudioSource>();
+
         PokemonTypes = new Dictionary<string, Sprite>
         {
             { "벌레", PokemonTypeSprites[0] },
@@ -325,6 +328,8 @@ public class BattleUIManager : MonoBehaviour
 
         if(isSwiping && swipeDistanceX > swipeThreshold && canSwipe)
         {
+            UIAudioSource.Play();
+
             // 오른쪽 스와이프
             if(swipeX > 0)
             {
@@ -403,10 +408,18 @@ public class BattleUIManager : MonoBehaviour
             PlayerImage.enabled = true;
             NPCImage.enabled = true;
         }
+
+        if (!NPCImage.GetComponent<Animator>().GetBool("isAppear") &&
+            NPCImage.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        {
+            GameManager.instance.BattleStart = true;
+        }
     }
 
     void MaintenanceButtonClicked(int number)
     {
+        UIAudioSource.Play();
+
         switch(number)
         {
             case 0:
@@ -457,8 +470,6 @@ public class BattleUIManager : MonoBehaviour
 
             case 4:
                 {
-                    GameManager.instance.BattleStart = true;
-
                     NPCImage.GetComponent<Animator>().SetBool("isAppear", false);
 
                     MaintenancePanel.SetActive(false);
@@ -507,6 +518,8 @@ public class BattleUIManager : MonoBehaviour
 
     void BagCategoryButtonClicked(int number)
     {
+        UIAudioSource.Play();
+
         SetBagUI(number);
 
         BagScrollRect.content = BagItemContents[number].GetComponent<RectTransform>();
@@ -514,6 +527,8 @@ public class BattleUIManager : MonoBehaviour
 
     void BagReturnButtonClicked()
     {
+        UIAudioSource.Play();
+
         BagPanel.SetActive(false);
     }
 
@@ -546,12 +561,16 @@ public class BattleUIManager : MonoBehaviour
 
     void ItemCategoryButtonClicked(int number)
     {
+        UIAudioSource.Play();
+
         SetShopUI(number);
         ShopScrollRect.content = ShopItemCategoryContents[number].GetComponent<RectTransform>();
     }
 
     void ItemPurchaseButtonClicked()
     {
+        UIAudioSource.Play();
+
         Debug.Log("Item Purchase!");
 
         SetImageColor(ShopItemImage, 0f);
@@ -563,6 +582,8 @@ public class BattleUIManager : MonoBehaviour
 
     void ItemCancelButtonClicked()
     {
+        UIAudioSource.Play();
+
         PurchaseCancelButton.SetActive(false);
 
         SetImageColor(ShopItemImage, 0f);
@@ -574,6 +595,8 @@ public class BattleUIManager : MonoBehaviour
 
     void ShopReturnButtonClicked()
     {
+        UIAudioSource.Play();
+
         ShopPanel.SetActive(false);
 
         SetImageColor(ShopItemImage, 0f);
@@ -584,6 +607,8 @@ public class BattleUIManager : MonoBehaviour
 
     void BerryButtonClicked(int number)
     {
+        UIAudioSource.Play();
+
         SetImageColor(ShopItemImage, 1f);
 
         ShopItemImage.sprite = BerryInfos[number].ItemSprite;
@@ -599,7 +624,9 @@ public class BattleUIManager : MonoBehaviour
     // 배틀 시, Fight/Bag/Pokemon 버튼
     void SelectionButtonClicked(int number)
     {
-        switch(number)
+        UIAudioSource.Play();
+
+        switch (number)
         {
             case 0:
                 SelectionPanel.SetActive(false);
@@ -626,6 +653,8 @@ public class BattleUIManager : MonoBehaviour
     // 포켓몬 기술 버튼 사용
     void MoveButtonClicked(int number)
     {
+        UIAudioSource.Play();
+
         GameManager.instance.CurrentPokemon.CurrentMovePP[number]--;
 
         if(GameManager.instance.CurrentPokemon.CurrentMovePP[number] < 0)
@@ -643,6 +672,8 @@ public class BattleUIManager : MonoBehaviour
     // 포켓몬 기술창 취소버튼
     void CancelButtonClicked()
     {
+        UIAudioSource.Play();
+
         SelectionPanel.SetActive(true);
         MovePanel.SetActive(false);
     }
@@ -650,7 +681,7 @@ public class BattleUIManager : MonoBehaviour
     // 포켓몬 기술 타입 버튼 변경
     void ChangeMoveButtonTypes()
     {
-        for(int i = 0; i < MoveButtons.Length; i++)
+        for (int i = 0; i < MoveButtons.Length; i++)
         {
             string MoveType = GameManager.instance.CurrentPokemon.MoveType[i];
 
@@ -721,6 +752,8 @@ public class BattleUIManager : MonoBehaviour
     // 가지고 있는 포켓몬 버튼
     void MyPokemonButtonClicked(int number)
     {
+        UIAudioSource.Play();
+
         canSwipe = true;
 
         pokemonNumber = number;
@@ -856,6 +889,8 @@ public class BattleUIManager : MonoBehaviour
     // 포켓몬 창에서 배틀 창으로 돌아갈 때
     void PokemonReturnButtonClicked()
     {
+        UIAudioSource.Play();
+
         PartyPokemonPanel.SetActive(false);
 
         ResetPokemonSummary();
@@ -910,6 +945,8 @@ public class BattleUIManager : MonoBehaviour
     // 포켓몬 기술 버튼
     void SummaryMoveButtonClicked(int number)
     {
+        UIAudioSource.Play();
+
         isMoveInfoOpen = true;
 
         AllContainObjects.SetActive(false);
@@ -940,6 +977,8 @@ public class BattleUIManager : MonoBehaviour
     // 포켓몬 기술 정보 버튼
     void MoveInfoButtonClicked(int number)
     {
+        UIAudioSource.Play();
+
         SetMoveInfo(number);
     }
 

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Drayden
+  m_EditorClassIdentifier: 
+  Name: "\uC0AC\uAC04"
+  Sprite: {fileID: 21300000, guid: 5b3d6b63ef1fb469399eacdab52c16de, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: d9f728064962b43b0bb403361f88494f, type: 2}
+  - {fileID: 11400000, guid: fb054e4aafcdb4b62818edd934f0414d, type: 2}
+  - {fileID: 11400000, guid: 36906ad1c72344687a40939aa402f4c9, type: 2}

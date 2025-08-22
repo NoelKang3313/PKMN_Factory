@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Skyla
+  m_EditorClassIdentifier: 
+  Name: "\uD48D\uB780"
+  Sprite: {fileID: 21300000, guid: fa914866b18c644c4a22fd9efec37889, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 9564cc5bf8ceb48298d06ee08f665913, type: 2}
+  - {fileID: 11400000, guid: cb4d1a21d5df047c5960e89e1fe0cc69, type: 2}
+  - {fileID: 11400000, guid: c9be2d1733cb0438a8e76f95bb4e9d02, type: 2}

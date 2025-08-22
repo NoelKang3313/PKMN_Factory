@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Grimsley
+  m_EditorClassIdentifier: 
+  Name: "\uBE14\uB798\uB9AC"
+  Sprite: {fileID: 21300000, guid: 25cd2e78558b44cada3980b652decc6d, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 3df8bfd4cadd54eb19a51c583a2269fd, type: 2}
+  - {fileID: 11400000, guid: b5652858a0d4648ec8591ba337f8c4c0, type: 2}
+  - {fileID: 11400000, guid: 0e707e765379e46dd856d2a3b98ea9d5, type: 2}

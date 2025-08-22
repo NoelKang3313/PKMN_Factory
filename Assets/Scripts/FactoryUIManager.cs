@@ -14,7 +14,7 @@ public class FactoryUIManager : MonoBehaviour
     private bool[] RandomPokemonSelected = new bool[6]; // 랜덤 포켓몬 중 대여 확인
 
     public Animator FadeAnimator;
-    private AudioSource ButtonAudioSource;
+    private AudioSource UIAudioSource;
     public GameObject PokeballButtonPreventPanel;
 
     public GameObject[] Pokeballs = new GameObject[6];  // 몬스터볼 게임오브젝트
@@ -137,7 +137,7 @@ public class FactoryUIManager : MonoBehaviour
 
     void Awake()
     {
-        ButtonAudioSource = GetComponent<AudioSource>();
+        UIAudioSource = GetComponent<AudioSource>();
 
         TextboxText.text = "1번째 포켓몬을 선택하세요.";
 
@@ -455,6 +455,8 @@ public class FactoryUIManager : MonoBehaviour
 
         if (isSwiping && swipeDistanceX > swipeThreshold)
         {
+            UIAudioSource.Play();
+
             // 오른쪽으로 이동
             if (swipeX > 0)
             {
@@ -534,7 +536,7 @@ public class FactoryUIManager : MonoBehaviour
     {
         LockButtonEnable();
 
-        ButtonAudioSource.Play();
+        UIAudioSource.Play();
 
         if(RandomPokemon[number].hasGenderDifference)
         {
@@ -587,7 +589,7 @@ public class FactoryUIManager : MonoBehaviour
     // 상세보기 버튼
     void SummaryButtonClicked()
     {
-        ButtonAudioSource.Play();
+        UIAudioSource.Play();
 
         isPokemonSummaryOpen = true;
 
@@ -677,7 +679,7 @@ public class FactoryUIManager : MonoBehaviour
     // 대여 버튼
     void RentButtonClicked()
     {
-        ButtonAudioSource.Play();
+        UIAudioSource.Play();
 
         if (!RandomPokemonSelected[pokeballNumber])
         {
@@ -740,7 +742,7 @@ public class FactoryUIManager : MonoBehaviour
     // 취소 버튼
     void ReturnButtonClicked()
     {
-        ButtonAudioSource.Play();
+        UIAudioSource.Play();
 
         PokemonImage.sprite = null;
         PokemonName.text = null;
@@ -760,7 +762,7 @@ public class FactoryUIManager : MonoBehaviour
     // 최종 선택 확정 버튼
     void ConfirmButtonClicked()
     {
-        ButtonAudioSource.Play();
+        UIAudioSource.Play();
 
         for (int i = 0; i < GameManager.instance.MyPokemons.Count; i++)
         {
@@ -795,7 +797,7 @@ public class FactoryUIManager : MonoBehaviour
     // 최종 선택 취소 버튼
     void CancelButtonClicked()
     {
-        ButtonAudioSource.Play();
+        UIAudioSource.Play();
 
         ButtonPanel.SetActive(false);
         SelectionButtons.SetActive(false);
@@ -824,7 +826,7 @@ public class FactoryUIManager : MonoBehaviour
     // 상세보기 나가기 버튼
     void SummaryReturnButtonClicked()
     {
-        ButtonAudioSource.Play();
+        UIAudioSource.Play();
 
         isPokemonSummaryOpen = false;
 
@@ -859,7 +861,7 @@ public class FactoryUIManager : MonoBehaviour
     // 포켓몬 기술 버튼
     void SummaryMoveButtonClicked(int number)
     {
-        ButtonAudioSource.Play();
+        UIAudioSource.Play();
 
         AllContainObjects.SetActive(false);
 
@@ -891,7 +893,7 @@ public class FactoryUIManager : MonoBehaviour
     // 포켓몬 기술 정보 버튼
     void MoveInfoButtonClicked(int number)
     {
-        ButtonAudioSource.Play();
+        UIAudioSource.Play();
 
         SetMoveInfo(number);
     }

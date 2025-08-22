@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Glacia
+  m_EditorClassIdentifier: 
+  Name: "\uBBF8\uD61C"
+  Sprite: {fileID: 21300000, guid: 539ca65768ae645ae9c6e2d7f0b39d0e, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: b70d40e641950435299d902cface64af, type: 2}
+  - {fileID: 11400000, guid: c9c0f82755ab3495ebc99b853fee427f, type: 2}
+  - {fileID: 11400000, guid: 1c496203064154dc0852516decad4029, type: 2}

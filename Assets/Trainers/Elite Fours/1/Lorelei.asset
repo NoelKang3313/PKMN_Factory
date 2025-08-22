@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Lorelei
+  m_EditorClassIdentifier: 
+  Name: "\uCE78\uB098"
+  Sprite: {fileID: 21300000, guid: e692cdbbc5e7344e5b06608391aa4870, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 969703b5add7546959ad02b8a517c40c, type: 2}
+  - {fileID: 11400000, guid: b44379c4980f64708a8f7643948b7c6b, type: 2}
+  - {fileID: 11400000, guid: 6f3231f589427433da867bc91d33208d, type: 2}

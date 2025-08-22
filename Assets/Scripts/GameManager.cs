@@ -25,6 +25,12 @@ public class GameManager : MonoBehaviour
     public bool isFirstBattle = true;
     public bool BattleStart;    // 포켓몬 배틀 시작
 
+    public AudioSource BGMAudioSource;
+    public AudioClip CurrentClip;
+    public AudioClip FactoryClip;
+    public AudioClip TrainerBattleClip;
+    //public bool isPlay;
+
     void Awake()
     {
         if(instance == null)
@@ -67,6 +73,9 @@ public class GameManager : MonoBehaviour
 
         pokemonAbility = CSVReader.Read("Ability");
         PokemonMove = CSVReader.Read("Pokemon Moves");
+
+        //isPlay = true;
+        CurrentClip = FactoryClip;
     }
 
     void Start()
@@ -81,6 +90,14 @@ public class GameManager : MonoBehaviour
         //Debug.Log(pokemonMove[427]["MoveName"]);
     }
 
+    void Update()
+    {
+        if (BattleStart)
+        {
+            CheckAudioSource(TrainerBattleClip);
+        }
+    }
+
     // CSV파일을 통해 포켓몬 특성을 가져와 특성 설명 문자열 불러오기
     public string SetPokemonAbility(int number, List<Pokemon> pokemon)
     {
@@ -93,5 +110,15 @@ public class GameManager : MonoBehaviour
         }
 
         return null;
+    }
+
+    public void CheckAudioSource(AudioClip nextClip)
+    {
+        if(CurrentClip != nextClip)
+        {
+            BGMAudioSource.clip = nextClip;
+            BGMAudioSource.PlayDelayed(1.0f);
+            CurrentClip = nextClip;
+        }
     }
 }

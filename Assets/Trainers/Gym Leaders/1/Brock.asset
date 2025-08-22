@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Brock
+  m_EditorClassIdentifier: 
+  Name: "\uC6C5"
+  Sprite: {fileID: 4631186360205826100, guid: 9de612f828c1548e3b06f7d418cd8ad0, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 35cc9bc7b21e445e08989ba6efbec5b9, type: 2}
+  - {fileID: 11400000, guid: 00403f32af1aa44dda6fa77d95de2476, type: 2}
+  - {fileID: 11400000, guid: 1b96a0c5eadfb4386a3b9fa50a47b918, type: 2}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Brycen
+  m_EditorClassIdentifier: 
+  Name: "\uB2F4\uC8FD"
+  Sprite: {fileID: 21300000, guid: c243efbb10af94dbfabaaf1da1e303ba, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 04fa058c5286c427ab8a1c03014a7833, type: 2}
+  - {fileID: 11400000, guid: effd9b02e028740738e8559e60fe194f, type: 2}
+  - {fileID: 11400000, guid: 8199a427950af4a8c87232d0a5b3b13a, type: 2}

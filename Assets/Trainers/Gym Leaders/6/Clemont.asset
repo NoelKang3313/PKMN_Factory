@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Clemont
+  m_EditorClassIdentifier: 
+  Name: "\uC2DC\uD2B8\uB860"
+  Sprite: {fileID: 21300000, guid: 3857ce987157f40348fd207c7bfd08a9, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 61a0730ee444c49e1a58311e4726c0fc, type: 2}
+  - {fileID: 11400000, guid: 6eef4b5893b344733904c1d19cc89f08, type: 2}
+  - {fileID: 11400000, guid: aad667dd43c1a473cb02597b60115503, type: 2}
