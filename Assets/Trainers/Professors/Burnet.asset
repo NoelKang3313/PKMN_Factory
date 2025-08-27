@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Burnet
+  m_EditorClassIdentifier: 
+  Name: "\uBC84\uB137\uBC15\uC0AC"
+  Sprite: {fileID: 21300000, guid: 9e22182bbbc9448d78ebc0689c5242a2, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 4f90008b0b4c74c91940344ba7a0911b, type: 2}
+  - {fileID: 11400000, guid: b697aab2fe80b49d2bf3618474ae6ce7, type: 2}
+  - {fileID: 11400000, guid: cb214868eef4e441a8c166a8a56054f4, type: 2}

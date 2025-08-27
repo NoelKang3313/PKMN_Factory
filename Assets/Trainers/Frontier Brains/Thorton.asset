@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Thorton
+  m_EditorClassIdentifier: 
+  Name: "\uC218\uCCA0"
+  Sprite: {fileID: 21300000, guid: 8a0977625b2994a249b63b97603ae35f, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 8ec65bf019b314bce9b400b49a117024, type: 2}
+  - {fileID: 11400000, guid: 86f7a1b11f80f4c9dbdd2397e7b5a78b, type: 2}
+  - {fileID: 11400000, guid: 6cebb7e92e0344b74b304f97077cbde3, type: 2}

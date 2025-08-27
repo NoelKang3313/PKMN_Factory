@@ -9,4 +9,9 @@ public class Item : ScriptableObject
     public int ItemAmount;
     public string ItemDescription;
     public int ItemPrice;
+
+    private void OnEnable()
+    {
+        ItemAmount = 0;
+    }
 }

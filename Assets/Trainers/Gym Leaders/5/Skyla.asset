@@ -15,6 +15,6 @@ MonoBehaviour:
   Name: "\uD48D\uB780"
   Sprite: {fileID: 21300000, guid: fa914866b18c644c4a22fd9efec37889, type: 3}
   Pokemon:
-  - {fileID: 11400000, guid: 9564cc5bf8ceb48298d06ee08f665913, type: 2}
-  - {fileID: 11400000, guid: cb4d1a21d5df047c5960e89e1fe0cc69, type: 2}
+  - {fileID: 11400000, guid: 7d697eea2c2ad43e2b5afbee3e439b69, type: 2}
+  - {fileID: 11400000, guid: d820e63832b9f4d75a7ab7123a6428eb, type: 2}
   - {fileID: 11400000, guid: c9be2d1733cb0438a8e76f95bb4e9d02, type: 2}

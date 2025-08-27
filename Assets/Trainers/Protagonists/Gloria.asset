@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Gloria
+  m_EditorClassIdentifier: 
+  Name: "\uC6B0\uB9AC"
+  Sprite: {fileID: 21300000, guid: bb0b352ebabdb4cfeb1f06b056fee3ba, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 58fb6c0e65d3245fbbaf283475ad8639, type: 2}
+  - {fileID: 11400000, guid: 6c3f25567b2104f3ebc11fad2627feed, type: 2}
+  - {fileID: 11400000, guid: cae11b3345aba47d5a81d332dc888987, type: 2}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Giacomo
+  m_EditorClassIdentifier: 
+  Name: "\uD53C\uB098"
+  Sprite: {fileID: 21300000, guid: be04a5e4f76234337ba539e40a550ab8, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 824e71ee961a0457d89eee52bdfd0415, type: 2}
+  - {fileID: 11400000, guid: 615632b801a804641a818ede92f79dcd, type: 2}
+  - {fileID: 11400000, guid: 0e707e765379e46dd856d2a3b98ea9d5, type: 2}

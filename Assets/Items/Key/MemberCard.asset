@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b653fac90802e4e3284a51d0e4599ffd, type: 3}
+  m_Name: MemberCard
+  m_EditorClassIdentifier: 
+  ItemName: "\uBA64\uBC84\uC2A4\uCE74\uB4DC"
+  ItemSprite: {fileID: 21300000, guid: 6e4f588823eca4bd7aced7406c9ad51b, type: 3}
+  ItemType: "\uC911\uC694"
+  ItemAmount: 0
+  ItemDescription: "\uC6B4\uD558\uC2DC\uD2F0\uC758 \uC5EC\uAD00\uC5D0 \uB4E4\uC5B4\uAC08
+    \uC218 \uC788\uB294 \uCE74\uB4DC. \uC5B4\uCC0C\uB41C \uC77C\uC778\uC9C0 50\uB144
+    \uC815\uB3C4 \uC804\uC758 \uB0A0\uC9DC\uAC00 \uC0C8\uACA8\uC838 \uC788\uB2E4."
+  ItemPrice: 7000

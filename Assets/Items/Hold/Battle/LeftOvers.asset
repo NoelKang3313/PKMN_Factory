@@ -18,3 +18,4 @@ MonoBehaviour:
   ItemAmount: 0
   ItemDescription: "\uC9C0\uB2C8\uAC8C \uD558\uBA74 \uD3EC\uCF13\uBAAC\uC758 HP\uAC00
     \uBC30\uD2C0\uC744 \uD558\uB294 \uB3D9\uC548 \uC870\uAE08\uC529 \uD68C\uBCF5\uB41C\uB2E4."
+  ItemPrice: 3000

@@ -29,7 +29,14 @@ public class GameManager : MonoBehaviour
     public AudioClip CurrentClip;
     public AudioClip FactoryClip;
     public AudioClip TrainerBattleClip;
-    //public bool isPlay;
+
+    public int Money = 5000;
+
+    // 상점 아이템 리스트
+    public List<Item> HoldItems = new List<Item>();
+    public List<Item> HealItems = new List<Item>();
+    public List<Item> Berries = new List<Item>();
+    public List<Item> KeyItems = new List<Item>();
 
     void Awake()
     {

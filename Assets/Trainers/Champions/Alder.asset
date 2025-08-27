@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Alder
+  m_EditorClassIdentifier: 
+  Name: "\uB178\uAC04\uC8FC"
+  Sprite: {fileID: 21300000, guid: 81ed7792c29a44b64a877b9415e1c2c8, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 3f896ad645f8c4a0eac0b7e2e12ee0d4, type: 2}
+  - {fileID: 11400000, guid: 3e2fd0496abda4eeda4f3a8c59498b70, type: 2}
+  - {fileID: 11400000, guid: dbf7ce271a02149ffac0e171c8f61783, type: 2}

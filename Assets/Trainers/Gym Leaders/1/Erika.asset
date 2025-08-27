@@ -15,6 +15,6 @@ MonoBehaviour:
   Name: "\uBBFC\uD654"
   Sprite: {fileID: 21300000, guid: 18774ba3d240c434a972209e5dd8a5a4, type: 3}
   Pokemon:
+  - {fileID: 11400000, guid: 6c5a272d833c342e8ab9eab768ee3891, type: 2}
   - {fileID: 11400000, guid: 75f6ecbb63a694ae685eafe70d629817, type: 2}
-  - {fileID: 11400000, guid: 3a29747d7e3fe485e80efd549fb8c400, type: 2}
   - {fileID: 11400000, guid: 4551ecc55457747cba9346ee7b49fdd6, type: 2}

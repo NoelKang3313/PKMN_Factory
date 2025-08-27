@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Marnie
+  m_EditorClassIdentifier: 
+  Name: "\uB9C8\uB9AC"
+  Sprite: {fileID: 21300000, guid: 3fed4fa77c2fa4f088e3d9fb9b3f9187, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 3df8bfd4cadd54eb19a51c583a2269fd, type: 2}
+  - {fileID: 11400000, guid: ea2775ed5992f401ca5c5e24fa863da7, type: 2}
+  - {fileID: 11400000, guid: 2a70389f6fa0e43fe87456bb546c9028, type: 2}

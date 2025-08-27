@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using TMPro;
-using Unity.VisualScripting;
 
 public class FactoryUIManager : MonoBehaviour
 {
@@ -62,6 +62,7 @@ public class FactoryUIManager : MonoBehaviour
     [Header("Pokemon Summary")]
     public GameObject PokemonSummaryPanel;
     private bool isPokemonSummaryOpen;
+    [SerializeField]
     private int pokemonSummaryIndex = 0;
     public Image PokemonPanelImage;
     public GameObject[] Summaries = new GameObject[4];
@@ -171,12 +172,7 @@ public class FactoryUIManager : MonoBehaviour
     {
         SetRandomPokemon();
 
-        for (int i = 0; i < PokeballButtons.Length; i++)
-        {
-            int number = i;
-
-            PokeballButtons[i].onClick.AddListener(() => PokeballButtonClicked(number));
-        }
+        SetButtons(PokeballButtons, PokeballButtonClicked);
 
         SummaryButton.onClick.AddListener(SummaryButtonClicked);
         RentButton.onClick.AddListener(RentButtonClicked);
@@ -187,26 +183,9 @@ public class FactoryUIManager : MonoBehaviour
 
         SummaryReturnButton.onClick.AddListener(SummaryReturnButtonClicked);
 
-        for (int i = 0; i < MoveInfoButtons.Length; i++)
-        {
-            int number = i;
-
-            MoveInfoButtons[i].onClick.AddListener(() => MoveInfoButtonClicked(number));
-        }
-
-        for (int i = 0; i < SummaryMoveButtons.Length; i++)
-        {
-            int number = i;
-
-            SummaryMoveButtons[i].onClick.AddListener(() => SummaryMoveButtonClicked(number));
-        }
-
-        for (int i = 0; i < MoveInfoButtons.Length; i++)
-        {
-            int number = i;
-
-            MoveInfoButtons[i].onClick.AddListener(() => MoveInfoButtonClicked(number));
-        }
+        SetButtons(MoveInfoButtons, MoveInfoButtonClicked);
+        SetButtons(SummaryMoveButtons, SummaryMoveButtonClicked);
+        SetButtons(MoveInfoButtons, MoveInfoButtonClicked);
     }
 
     void Update()
@@ -522,9 +501,16 @@ public class FactoryUIManager : MonoBehaviour
                     break;
 
                 case 2:
-                    Summaries[0].SetActive(false);
-                    Summaries[1].SetActive(false);
-                    Summaries[2].SetActive(true);
+                    if(isMoveInfoOpen)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Summaries[0].SetActive(false);
+                        Summaries[1].SetActive(false);
+                        Summaries[2].SetActive(true);
+                    }
 
                     break;
             }
@@ -1092,6 +1078,17 @@ public class FactoryUIManager : MonoBehaviour
                 PokemonMoveTypeImage[i].sprite = sprite;
                 PokemonMoveInfoTypeImage[i].sprite = sprite;
             }
+        }
+    }
+
+    // 버튼 람다식 설정
+    void SetButtons(Button[] buttons, UnityAction<int> buttonName)
+    {
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            int number = i;
+
+            buttons[i].onClick.AddListener(() => buttonName(number));
         }
     }
 }

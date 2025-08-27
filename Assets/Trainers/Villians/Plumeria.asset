@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Plumeria
+  m_EditorClassIdentifier: 
+  Name: "\uD50C\uB8E8\uBA54\uB9AC"
+  Sprite: {fileID: 21300000, guid: f942901cf937c4cd69b431b2d74ec078, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 439fbebdebe0b40b38cb6d23f4992ef7, type: 2}
+  - {fileID: 11400000, guid: 08f4ed8a375a04cf9bd2041ce59f4dfe, type: 2}
+  - {fileID: 11400000, guid: b0ffec0a202a547d08e067bae49e30f3, type: 2}

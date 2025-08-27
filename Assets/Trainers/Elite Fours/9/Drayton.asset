@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
   m_Name: Drayton
   m_EditorClassIdentifier: 
-  Name: 
+  Name: "\uC81C\uBE48"
   Sprite: {fileID: 21300000, guid: 04b3e0d29826140d8b823a53e7f6b6f2, type: 3}
   Pokemon:
   - {fileID: 11400000, guid: 95ff4f8af0ac94ed786d4b5228f84f29, type: 2}

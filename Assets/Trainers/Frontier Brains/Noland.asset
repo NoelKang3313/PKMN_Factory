@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Noland
+  m_EditorClassIdentifier: 
+  Name: "\uB2E4\uD22C\uB77C"
+  Sprite: {fileID: 21300000, guid: 9892d7bc056e944948198096a4c9dae3, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 94a8025f93d614ab19ebdbab28d19822, type: 2}
+  - {fileID: 11400000, guid: 459d9a1c527524653b51a7917d5c3b8a, type: 2}
+  - {fileID: 11400000, guid: b740a87fd71344ef481bff275da3be51, type: 2}

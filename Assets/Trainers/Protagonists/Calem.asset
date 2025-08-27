@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Calem
+  m_EditorClassIdentifier: 
+  Name: "\uCE7C\uB984"
+  Sprite: {fileID: 21300000, guid: b123640f919ba44dca07e1d811648f9d, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 7102d780bbf03488081acd798fd3a2b0, type: 2}
+  - {fileID: 11400000, guid: 751d1e03a1be243229f9bf404064721d, type: 2}
+  - {fileID: 11400000, guid: 641f83f2adab141e6ac2967fba1c525e, type: 2}

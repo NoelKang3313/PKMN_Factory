@@ -16,5 +16,5 @@ MonoBehaviour:
   Sprite: {fileID: 21300000, guid: f07b7e1915a964a319b4e3946890fa93, type: 3}
   Pokemon:
   - {fileID: 11400000, guid: 35cc9bc7b21e445e08989ba6efbec5b9, type: 2}
-  - {fileID: 11400000, guid: 1e54a70b3011c45f98b09a9f797cf028, type: 2}
+  - {fileID: 11400000, guid: 00403f32af1aa44dda6fa77d95de2476, type: 2}
   - {fileID: 11400000, guid: f8cf0888ebe884135a8d69c2a1f35737, type: 2}

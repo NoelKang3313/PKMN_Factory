@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 using TMPro;
 
 public class BattleUIManager : MonoBehaviour
@@ -44,8 +45,15 @@ public class BattleUIManager : MonoBehaviour
     public GameObject[] BagItemContents = new GameObject[4];
     public Animator[] BagCategoryButtonAnimator = new Animator[4];
     public Button BagReturnButton;
+    public Button BagItemButton;
+
+    [SerializeField] private List<Button> bagHoldItemButtons = new List<Button>();
+    [SerializeField] private List<Button> bagHealItemButtons = new List<Button>();
+    [SerializeField] private List<Button> bagBerryButtons = new List<Button>();
+    [SerializeField] private List<Button> bagKeyItemButtons = new List<Button>(); 
 
     [Header("Shop")]
+    public TextMeshProUGUI MoneyText;
     public Button[] ItemCategoryButtons = new Button[4];
     public GameObject[] ShopItemCategoryContents = new GameObject[4];
     public ScrollRect ShopScrollRect;
@@ -62,11 +70,40 @@ public class BattleUIManager : MonoBehaviour
     [SerializeField]
     private Item shopSelectedItem;
 
+    [Header("Hold")]
+    public Button[] HoldButtons = new Button[8];
+    public GameObject HoldItemScrollview;
+    public GameObject[] HoldItemContents = new GameObject[8];
+    public Button[] HoldItemButtons = new Button[11];
+    public Item[] HoldItemInfos = new Item[11];
+    public Button[] BattleItemButtons = new Button[11];
+    public Item[] BattleItemInfos = new Item[11];
+    public Button[] TypeBoostButtons = new Button[18];
+    public Item[] TypeBoostInfos = new Item[18];
+    public Button[] PlateButtons = new Button[19];
+    public Item[] PlateInfos = new Item[19];
+    public Button[] DriveButtons = new Button[4];
+    public Item[] DriveInfos = new Item[4];
+    public Button[] MegaStoneButtons = new Button[46];
+    public Item[] MegaStoneInfos = new Item[46];
+    public Button[] MemoryButtons = new Button[17];
+    public Item[] MemoryInfos = new Item[17];
+    public Button[] MaskButtons = new Button[4];
+    public Item[] MaskInfos = new Item[4];
+
+    [Header("Heal")]
+    public Button[] HealButtons = new Button[11];
+    public Item[] HealInfos = new Item[11];
+
     [Header("Berries")]
     public Button[] BerryButtons = new Button[10];
     public Item[] BerryInfos = new Item[10];
 
-    [Header("Pokemon Panel")]
+    [Header("Key")]
+    public Button[] KeyButtons = new Button[29];
+    public Item[] KeyInfos = new Item[29];
+
+    [Header("Party Pokemon Panel")]
     private bool isPokemonSummaryOpen = true;
     private int pokemonSummaryIndex = 0;
     public Image PokemonPanelImage;
@@ -211,70 +248,48 @@ public class BattleUIManager : MonoBehaviour
 
         MyPokemonImage.sprite = GameManager.instance.MyPokemons[0].Regular_Back;
 
-        for(int i = 0; i < MaintenanceButtons.Length; i++)
-        {
-            int number = i;
-
-            MaintenanceButtons[i].onClick.AddListener(() => MaintenanceButtonClicked(number));
-        }
-
-        for(int i = 0; i < SelectionButtons.Length; i++)
-        {
-            int number = i;
-
-            SelectionButtons[i].onClick.AddListener(() => SelectionButtonClicked(number));
-        }
-
-        for(int i = 0; i < BagCategoryButtons.Length; i++)
-        {
-            int number = i;
-
-            BagCategoryButtons[i].onClick.AddListener(() => BagCategoryButtonClicked(number));
-        }
+        SetButtons(MaintenanceButtons, MaintenanceButtonClicked);
+        SetButtons(SelectionButtons, SelectionButtonClicked);
+        SetButtons(BagCategoryButtons, BagCategoryButtonClicked);
 
         BagReturnButton.onClick.AddListener(BagReturnButtonClicked);
 
-        for(int i = 0; i < MoveButtons.Length; i++)
-        {
-            int number = i;
-
-            MoveButtons[i].onClick.AddListener(() => MoveButtonClicked(number));
-        }
+        SetButtons(MoveButtons, MoveButtonClicked);
 
         CancelButton.onClick.AddListener(CancelButtonClicked);
 
         CancelPartyPokemonButton.onClick.AddListener(PokemonReturnButtonClicked);
 
-        for(int i = 0; i < SummaryMoveButtons.Length; i++)
-        {
-            int number = i;
-
-            SummaryMoveButtons[i].onClick.AddListener(() => SummaryMoveButtonClicked(number));
-        }
-
-        for(int i = 0; i < MoveInfoButtons.Length; i++)
-        {
-            int number = i;
-
-            MoveInfoButtons[i].onClick.AddListener(() => MoveInfoButtonClicked(number));
-        }
-
-        for(int i = 0; i < ItemCategoryButtons.Length; i++)
-        {
-            int number = i;
-
-            ItemCategoryButtons[i].onClick.AddListener(() => ItemCategoryButtonClicked(number));
-        }
+        SetButtons(SummaryMoveButtons, SummaryMoveButtonClicked);
+        SetButtons(MoveInfoButtons, MoveInfoButtonClicked);
+        SetButtons(ItemCategoryButtons, ItemCategoryButtonClicked);
 
         ItemPurchaseButton.onClick.AddListener(ItemPurchaseButtonClicked);
         ItemCancelButton.onClick.AddListener(ItemCancelButtonClicked);
         ShopReturnButton.onClick.AddListener(ShopReturnButtonClicked);
 
-        for(int i = 0; i < BerryButtons.Length; i++)
+        SetButtons(HoldButtons, HoldButtonClicked);
+        SetButtons(HoldItemButtons, HoldItemButtonClicked);
+        SetButtons(BattleItemButtons, BattleItemButtonClicked);
+        SetButtons(TypeBoostButtons, TypeBoostButtonClicked);
+        SetButtons(PlateButtons, PlateButtonClicked);
+        SetButtons(DriveButtons, DriveButtonClicked);
+        SetButtons(MegaStoneButtons, MegaStoneButtonClicked);
+        SetButtons(MemoryButtons, MemoryButtonClicked);
+        SetButtons(MaskButtons, MaskButtonClicked);
+        SetButtons(HealButtons, HealButtonClicked);
+        SetButtons(BerryButtons, BerryButtonClicked);
+        SetButtons(KeyButtons, KeyButtonClicked);
+    }
+
+    // 버튼 람다식 설정
+    void SetButtons(Button[] buttons, UnityAction<int> buttonName)
+    {
+        for(int i = 0; i < buttons.Length; i++)
         {
             int number = i;
 
-            BerryButtons[i].onClick.AddListener(() => BerryButtonClicked(number));
+            buttons[i].onClick.AddListener(() => buttonName(number));
         }
     }
 
@@ -389,9 +404,16 @@ public class BattleUIManager : MonoBehaviour
                     break;
 
                 case 2:
-                    Summaries[0].SetActive(false);
-                    Summaries[1].SetActive(false);
-                    Summaries[2].SetActive(true);
+                    if(isMoveInfoOpen)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Summaries[0].SetActive(false);
+                        Summaries[1].SetActive(false);
+                        Summaries[2].SetActive(true);
+                    }
 
                     break;
             }
@@ -447,6 +469,8 @@ public class BattleUIManager : MonoBehaviour
             case 2:
                 {
                     ShopPanel.SetActive(true);
+
+                    MoneyText.text = GameManager.instance.Money.ToString("N0") + "원";
 
                     ResetShopUI();
 
@@ -563,34 +587,94 @@ public class BattleUIManager : MonoBehaviour
     {
         UIAudioSource.Play();
 
+        ResetShopItemInfo();
+
         SetShopUI(number);
         ShopScrollRect.content = ShopItemCategoryContents[number].GetComponent<RectTransform>();
+
+        if(number == 1 || number == 2 || number == 3)
+        {
+            for(int i = 0; i < HoldItemContents.Length; i++)
+            {
+                HoldItemContents[i].SetActive(false);
+            }
+
+            HoldItemScrollview.gameObject.SetActive(false);
+        }
+
+        ShopItemCategoryContents[number].GetComponent<RectTransform>().anchoredPosition =
+                        new Vector2(ShopItemCategoryContents[number].GetComponent<RectTransform>().anchoredPosition.x, 0);
     }
 
     void ItemPurchaseButtonClicked()
     {
         UIAudioSource.Play();
 
-        Debug.Log("Item Purchase!");
+        if(GameManager.instance.Money > shopSelectedItem.ItemPrice)
+        {
+            GameManager.instance.Money -= shopSelectedItem.ItemPrice;
 
-        SetImageColor(ShopItemImage, 0f);
-        PurchaseCancelButton.SetActive(false);
-        ShopItemDescription.text = "";
-        ShopItemPriceText.gameObject.SetActive(false);
-        ShopItemPrice.text = "";
+            MoneyText.text = GameManager.instance.Money.ToString("N0") + "원";
+
+            if(shopSelectedItem.ItemType == "도구")
+            {
+                GameManager.instance.HoldItems.Add(shopSelectedItem);
+                shopSelectedItem.ItemAmount++;
+                CheckItemList(GameManager.instance.HoldItems);
+            }
+            else if(shopSelectedItem.ItemType == "회복")
+            {
+                GameManager.instance.HealItems.Add(shopSelectedItem);
+                shopSelectedItem.ItemAmount++;
+                CheckItemList(GameManager.instance.HealItems);
+            }
+            else if (shopSelectedItem.ItemType == "열매")
+            {
+                GameManager.instance.Berries.Add(shopSelectedItem);
+                shopSelectedItem.ItemAmount++;
+                CheckItemList(GameManager.instance.Berries);
+            }
+            else if (shopSelectedItem.ItemType == "중요")
+            {
+                GameManager.instance.KeyItems.Add(shopSelectedItem);
+                shopSelectedItem.ItemAmount++;
+                CheckItemList(GameManager.instance.KeyItems);
+            }
+        }
+
+        ResetShopItemInfo();
+    }
+
+    void CheckItemList(List<Item> itemList)
+    {
+        for (int i = 0; i < itemList.Count; i++)
+        {
+            for (int j = i + 1; j < itemList.Count; j++)
+            {
+                if (itemList[i] == itemList[j])
+                {
+                    itemList.RemoveAt(j);
+                }
+            }
+        }
     }
 
     void ItemCancelButtonClicked()
     {
         UIAudioSource.Play();
 
-        PurchaseCancelButton.SetActive(false);
+        ResetShopItemInfo();
+    }
 
+    void ResetShopItemInfo()
+    {
         SetImageColor(ShopItemImage, 0f);
         PurchaseCancelButton.SetActive(false);
         ShopItemDescription.text = "";
         ShopItemPriceText.gameObject.SetActive(false);
         ShopItemPrice.text = "";
+
+        shopSelectedItem = null;
     }
 
     void ShopReturnButtonClicked()
@@ -605,20 +689,98 @@ public class BattleUIManager : MonoBehaviour
         ShopItemPrice.text = "";
     }
 
-    void BerryButtonClicked(int number)
+    void HoldButtonClicked(int number)
+    {
+        UIAudioSource.Play();
+
+        HoldItemScrollview.gameObject.SetActive(true);
+        HoldItemScrollview.GetComponent<ScrollRect>().content = HoldItemContents[number].GetComponent<RectTransform>();
+
+        for(int i = 0; i < HoldItemContents.Length; i++)
+        {
+            if(i == number)
+            {
+                HoldItemContents[i].SetActive(true);
+            }
+            else
+            {
+                HoldItemContents[i].SetActive(false);
+            }
+        }
+
+        HoldItemContents[number].GetComponent<RectTransform>().anchoredPosition =
+            new Vector2(HoldItemContents[number].GetComponent<RectTransform>().anchoredPosition.x, 0);
+    }
+
+    // 상점 버튼 설정
+    void SetShopButton(int number, Item[] info)
     {
         UIAudioSource.Play();
 
         SetImageColor(ShopItemImage, 1f);
 
-        ShopItemImage.sprite = BerryInfos[number].ItemSprite;
-        ShopItemDescription.text = BerryInfos[number].ItemDescription;
+        ShopItemImage.sprite = info[number].ItemSprite;
+        ShopItemDescription.text = info[number].ItemDescription;
         ShopItemPriceText.gameObject.SetActive(true);
-        ShopItemPrice.text = BerryInfos[number].ItemPrice.ToString() + "원";
+        ShopItemPriceText.text = info[number].ItemPrice.ToString("N0") + "원";
+        shopSelectedItem = info[number];
 
         PurchaseCancelButton.SetActive(true);
+    }
 
-        shopSelectedItem = BerryInfos[number];
+    void HoldItemButtonClicked(int number)
+    {
+        SetShopButton(number, HoldItemInfos);
+    }
+
+    void BattleItemButtonClicked(int number)
+    {
+        SetShopButton(number, BattleItemInfos);
+    }
+
+    void TypeBoostButtonClicked(int number)
+    {
+        SetShopButton(number, TypeBoostInfos);
+    }
+
+    void PlateButtonClicked(int number)
+    {
+        SetShopButton(number, PlateInfos);
+    }
+
+    void DriveButtonClicked(int number)
+    {
+        SetShopButton(number, DriveInfos);
+    }
+
+    void MegaStoneButtonClicked(int number)
+    {
+        SetShopButton(number, MegaStoneInfos);
+    }
+
+    void MemoryButtonClicked(int number)
+    {
+        SetShopButton(number, MemoryInfos);
+    }
+
+    void MaskButtonClicked(int number)
+    {
+        SetShopButton(number, MaskInfos);
+    }
+
+    void HealButtonClicked(int number)
+    {
+        SetShopButton(number, HealInfos);
+    }
+
+    void BerryButtonClicked(int number)
+    {
+        SetShopButton(number, BerryInfos);
+    }
+
+    void KeyButtonClicked(int number)
+    {
+        SetShopButton(number, KeyInfos);
     }
 
     // 배틀 시, Fight/Bag/Pokemon 버튼

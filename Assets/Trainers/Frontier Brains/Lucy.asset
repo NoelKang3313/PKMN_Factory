@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Lucy
+  m_EditorClassIdentifier: 
+  Name: "\uB2E4\uC2AC"
+  Sprite: {fileID: 21300000, guid: 826b451c57e3143e8b36ce865e3082c8, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: cdb0b390ec7ee47968ebe076a38a2277, type: 2}
+  - {fileID: 11400000, guid: 1b96a0c5eadfb4386a3b9fa50a47b918, type: 2}
+  - {fileID: 11400000, guid: 9958ff349afa54291a8d3e09eab65cb9, type: 2}

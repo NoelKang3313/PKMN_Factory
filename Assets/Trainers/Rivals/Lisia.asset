@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b4b206d3ef4196b7d8fbc99734adb, type: 3}
+  m_Name: Lisia
+  m_EditorClassIdentifier: 
+  Name: "\uB8E8\uD2F0\uC544"
+  Sprite: {fileID: 21300000, guid: d0d6b81e3c44245c4b2dab85619b1563, type: 3}
+  Pokemon:
+  - {fileID: 11400000, guid: 78732a316ebc846a98d1b9df62ecbfd0, type: 2}
+  - {fileID: 11400000, guid: 96c7db679d38542029b15137197bf9b0, type: 2}
+  - {fileID: 11400000, guid: cf59ad2fd64b8452991512e709d2e87f, type: 2}

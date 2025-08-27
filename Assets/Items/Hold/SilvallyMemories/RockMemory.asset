@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b653fac90802e4e3284a51d0e4599ffd, type: 3}
   m_Name: RockMemory
   m_EditorClassIdentifier: 
-  ItemName: 
-  ItemSprite: {fileID: 0}
-  ItemType: 
+  ItemName: "\uB85D\uBA54\uBAA8\uB9AC"
+  ItemSprite: {fileID: 21300000, guid: 6fb0d41de2d3a45039ab11a16cb09c89, type: 3}
+  ItemType: "\uB3C4\uAD6C"
   ItemAmount: 0
-  ItemDescription: 
+  ItemDescription: "\uBC14\uC704\uD0C0\uC785\uC758 \uB370\uC774\uD130\uAC00 \uB4E4\uC5B4\uC788\uB294
+    \uBA54\uBAA8\uB9AC. \uD2B9\uC815 \uD3EC\uCF13\uBAAC\uC774 \uC9C0\uB2C8\uBA74
+    \uD0C0\uC785\uC774 \uBC14\uB010\uB2E4."
+  ItemPrice: 5000
