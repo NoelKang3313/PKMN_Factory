@@ -2158,81 +2158,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84338713}
   m_CullTransparentMesh: 1
---- !u!1 &87304487
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 87304488}
-  - component: {fileID: 87304490}
-  - component: {fileID: 87304489}
-  m_Layer: 5
-  m_Name: Pokemon Viewer TextBox Panel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &87304488
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87304487}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1822107904}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 480, y: 170}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &87304489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87304487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 56d47d5edb0754b9e937513e946d4a54, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &87304490
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87304487}
-  m_CullTransparentMesh: 1
 --- !u!1 &92046913
 GameObject:
   m_ObjectHideFlags: 0
@@ -5879,6 +5804,25 @@ MonoBehaviour:
   - {fileID: 1881362270}
   BagReturnButton: {fileID: 1299585710}
   BagItemButton: {fileID: 3097492471023090651, guid: 640309ec017cc4c6d892ec42f4954270, type: 3}
+  BagMyPokemonButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  BagPokemonButtons: {fileID: 513207379}
+  MyBagPokemonButtons: []
+  BagHoldItemButtons: []
+  BagHealItemButtons: []
+  BagBerryButtons: []
+  BagKeyItemButtons: []
+  BagInfoPanel: {fileID: 308800042}
+  ItemInfo: {fileID: 819554556}
+  ItemInfoImage: {fileID: 594548496}
+  ItemInfoName: {fileID: 1440878732}
+  ItemInfoAmount: {fileID: 1389054689}
+  ItemInfoDescription: {fileID: 2020820985}
+  BagItemUseButton: {fileID: 936817805}
+  BagItemCancelButton: {fileID: 257879597}
+  BagPokemonPanelCancelButton: {fileID: 1998882485}
   MoneyText: {fileID: 402512013}
   ItemCategoryButtons:
   - {fileID: 1494042771}
@@ -9778,7 +9722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &308800043
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11481,81 +11425,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341163378}
-  m_CullTransparentMesh: 1
---- !u!1 &350825824
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 350825825}
-  - component: {fileID: 350825827}
-  - component: {fileID: 350825826}
-  m_Layer: 5
-  m_Name: Pokemon Panel TextBox
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &350825825
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350825824}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1859262054}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 480, y: 170}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &350825826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350825824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 56d47d5edb0754b9e937513e946d4a54, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &350825827
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350825824}
   m_CullTransparentMesh: 1
 --- !u!1 &352331246
 GameObject:
@@ -13738,7 +13607,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &397617569
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17774,7 +17643,7 @@ GameObject:
   - component: {fileID: 513207380}
   - component: {fileID: 513207381}
   m_Layer: 5
-  m_Name: Pokemon Buttons
+  m_Name: Bag Pokemon Buttons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17787,18 +17656,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513207379}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1822107904}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 45, y: -65}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -80}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &513207381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17808,7 +17677,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 513207379}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
@@ -17816,13 +17685,15 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
-  m_StartCorner: 0
-  m_StartAxis: 0
-  m_CellSize: {x: 600, y: 200}
-  m_Spacing: {x: 70, y: 70}
-  m_Constraint: 1
-  m_ConstraintCount: 2
+  m_ChildAlignment: 4
+  m_Spacing: 70
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &515925816
 GameObject:
   m_ObjectHideFlags: 0
@@ -20393,7 +20264,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fd45e105a97ad49599f497f2268ddbf7, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -45636,7 +45507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: X1
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4e864860e878b41c9b709d17b42d570e, type: 2}
   m_sharedMaterial: {fileID: -894609763416446089, guid: 4e864860e878b41c9b709d17b42d570e, type: 2}
@@ -47630,7 +47501,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uD68C\uBCF5\uC57D"
+  m_text: ---
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4e864860e878b41c9b709d17b42d570e, type: 2}
   m_sharedMaterial: {fileID: -894609763416446089, guid: 4e864860e878b41c9b709d17b42d570e, type: 2}
@@ -62041,7 +61912,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 513207380}
-  - {fileID: 87304488}
   - {fileID: 1998882484}
   m_Father: {fileID: 397617569}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -63217,7 +63087,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1602578793}
-  - {fileID: 350825825}
   - {fileID: 2067567501}
   m_Father: {fileID: 1911380161}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
