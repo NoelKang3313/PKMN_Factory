@@ -38,6 +38,10 @@ public class GameManager : MonoBehaviour
     public List<Item> Berries = new List<Item>();
     public List<Item> KeyItems = new List<Item>();
 
+    // 트레이너
+    public List<Trainer> NPC = new List<Trainer>();
+    public List<Trainer> SpecialTrainers = new List<Trainer>();
+
     void Awake()
     {
         if(instance == null)
@@ -67,6 +71,20 @@ public class GameManager : MonoBehaviour
             {
                 PokemonLists.Add(pokemons);
             }
+        }
+
+        Trainer[] NPCAssets = Resources.LoadAll<Trainer>("NPCs");
+
+        foreach(var npc in NPCAssets)
+        {
+            NPC.Add(npc);
+        }
+
+        Trainer[] trainerAssets = Resources.LoadAll<Trainer>("Special Trainers");
+
+        foreach(var ta in trainerAssets)
+        {
+            SpecialTrainers.Add(ta);
         }
 
         pokemonNatures = new string[25]

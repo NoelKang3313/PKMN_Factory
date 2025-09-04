@@ -3107,7 +3107,6 @@ GameObject:
   - component: {fileID: 526437792}
   - component: {fileID: 526437794}
   - component: {fileID: 526437793}
-  - component: {fileID: 526437795}
   m_Layer: 5
   m_Name: Fade Transition
   m_TagString: Untagged
@@ -3172,28 +3171,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526437791}
   m_CullTransparentMesh: 1
---- !u!95 &526437795
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526437791}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f350c1de694e640c890037bcbd95aa3e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &528766887
 GameObject:
   m_ObjectHideFlags: 0
@@ -10458,8 +10435,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RandomPokemon: []
   RandomPokemonSelected: 000000000000
-  FadeAnimator: {fileID: 526437795}
   PokeballButtonPreventPanel: {fileID: 1656977855}
+  FadeTransition: {fileID: 526437793}
   Pokeballs:
   - {fileID: 1710436311}
   - {fileID: 1210583088}
@@ -14540,6 +14517,12 @@ MonoBehaviour:
   FactoryClip: {fileID: 8300000, guid: a324c13c6491a46e7b554f07e60df929, type: 3}
   TrainerBattleClip: {fileID: 8300000, guid: f1df98e02b1b342a89e84e0cc71d342d, type: 3}
   Money: 5000
+  HoldItems: []
+  HealItems: []
+  Berries: []
+  KeyItems: []
+  NPC: []
+  SpecialTrainers: []
 --- !u!4 &1916513534
 Transform:
   m_ObjectHideFlags: 0
@@ -16248,7 +16231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9647059}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

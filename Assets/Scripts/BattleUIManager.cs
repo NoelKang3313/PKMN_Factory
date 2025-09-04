@@ -3,17 +3,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using TMPro;
+using System.Linq;
+using System.Collections;
 
 public class BattleUIManager : MonoBehaviour
 {
     private AudioSource UIAudioSource;
-    public Animator FadeAnimator;
+
+    public Image FadeTransition;
+    private float fadeDuration = 1.0f;
+    private Coroutine currentCoroutine;
 
     public GameObject SelectionPanel;   // 싸우다, 가방, 포켓몬 버튼 묶음
     public GameObject MovePanel;    // 기술 버튼 (기술 버튼 4개, 메가진화 버튼, 취소 버튼) 묶음
 
     public Image PlayerImage;   // Player 이미지
     public Image NPCImage;  // NPC 이미지
+    public Animator NPCAnimator;
     public TextMeshProUGUI TextboxText; //  텍스트박스 텍스트
 
     public GameObject MaintenancePanel;
@@ -47,10 +53,6 @@ public class BattleUIManager : MonoBehaviour
     public Button BagReturnButton;
     public Button BagItemButton;
 
-    public Button[] BagMyPokemonButtons = new Button[3];
-    public GameObject BagPokemonButtons;
-    public List<Button> MyBagPokemonButtons = new List<Button>();
-
     public List<Button> BagHoldItemButtons = new List<Button>();
     public List<Button> BagHealItemButtons = new List<Button>();
     public List<Button> BagBerryButtons = new List<Button>();
@@ -64,7 +66,10 @@ public class BattleUIManager : MonoBehaviour
     public TextMeshProUGUI ItemInfoDescription;
     public Button BagItemUseButton;
     public Button BagItemCancelButton;
-    public Button BagPokemonPanelCancelButton;
+
+    private bool isPartyPokemonButtonClicked;
+    private bool isBagButtonClicked;
+    public GameObject PartyPokemonViewerPanel;
 
     [Header("Shop")]
     public TextMeshProUGUI MoneyText;
@@ -119,7 +124,7 @@ public class BattleUIManager : MonoBehaviour
 
     [Header("Party Pokemon Panel")]
     private bool isPokemonSummaryOpen = true;
-    private int pokemonSummaryIndex = 0;
+    [SerializeField] private int pokemonSummaryIndex = 0;
     public Image PokemonPanelImage;
     public GameObject[] Summaries = new GameObject[4];
     public Sprite[] SummaryImages = new Sprite[4];
@@ -137,7 +142,17 @@ public class BattleUIManager : MonoBehaviour
     public Sprite MaleSprite;
     public Sprite FemaleSprite;
     public GameObject AllContainObjects;
-    private int pokemonNumber;
+
+    public GameObject PokemonSelectedPanel;
+    public Button[] PokemonSelectedButtons = new Button[4];
+    [SerializeField] private int selectedPokemonIndex;
+    private Button SelectedPokemonButton;
+    public Sprite PartyPokemonButtonSprite;
+    public Sprite SelectedPokemonButtonSprite;
+    [SerializeField] private bool isSwitchButtonClicked;
+
+    [SerializeField] private int switchIndexA;
+    [SerializeField] private int switchIndexB;
 
     [Header("Pokemon Status")]
     public TextMeshProUGUI PokedexNumber;
@@ -252,10 +267,14 @@ public class BattleUIManager : MonoBehaviour
             { "강철", TypeButtonSprites[16] },
             { "물", TypeButtonSprites[17] }
         };
+
+
     }
 
     void Start()
     {
+        FadeIn();
+        
         SetBattleMaintenance();
 
         InstantiateMyPokemons();
@@ -272,7 +291,7 @@ public class BattleUIManager : MonoBehaviour
 
         CancelButton.onClick.AddListener(CancelButtonClicked);
 
-        CancelPartyPokemonButton.onClick.AddListener(PokemonReturnButtonClicked);
+        CancelPartyPokemonButton.onClick.AddListener(PokemonCancelButtonClicked);
 
         SetButtons(SummaryMoveButtons, SummaryMoveButtonClicked);
         SetButtons(MoveInfoButtons, MoveInfoButtonClicked);
@@ -284,7 +303,6 @@ public class BattleUIManager : MonoBehaviour
 
         BagItemUseButton.onClick.AddListener(BagItemUseButtonClicked);
         BagItemCancelButton.onClick.AddListener(BagItemCancelButtonClicked);
-        BagPokemonPanelCancelButton.onClick.AddListener(BagPokemonPanelCancelButtonClicked);
 
         SetButtons(HoldButtons, HoldButtonClicked);
         SetButtons(HoldItemButtons, HoldItemButtonClicked);
@@ -298,12 +316,20 @@ public class BattleUIManager : MonoBehaviour
         SetButtons(HealButtons, HealButtonClicked);
         SetButtons(BerryButtons, BerryButtonClicked);
         SetButtons(KeyButtons, KeyButtonClicked);
+
+        SetButtons(PokemonSelectedButtons, PokemonSelectedButtonClicked);
+
+        for(int i = 0; i < MyPartyPokemonButtons.Count; i++)
+        {
+            Button btn = MyPartyPokemonButtons[i];
+            btn.onClick.AddListener(() => MyPartyPokemonButtonClicked(btn));
+        }
     }
 
     // 버튼 람다식 설정
     void SetButtons(Button[] buttons, UnityAction<int> buttonName)
     {
-        for(int i = 0; i < buttons.Length; i++)
+        for (int i = 0; i < buttons.Length; i++)
         {
             int number = i;
 
@@ -313,7 +339,7 @@ public class BattleUIManager : MonoBehaviour
 
     void SetListButtons(List<Button> buttons, UnityAction<int> buttonName)
     {
-        for(int i = 0; i < buttons.Count; i++)
+        for (int i = 0; i < buttons.Count; i++)
         {
             int number = i;
 
@@ -323,6 +349,8 @@ public class BattleUIManager : MonoBehaviour
 
     void Update()
     {
+        SetEffectsByFade();
+
         PokemonBattleAnimation();
 
         if (isPokemonSummaryOpen && Input.touchCount > 0)
@@ -369,17 +397,16 @@ public class BattleUIManager : MonoBehaviour
 
         swipeX = (fingerDownPos.x - fingerUpPos.x);
 
-        if(isSwiping && swipeDistanceX > swipeThreshold && canSwipe)
+        if (isSwiping && swipeDistanceX > swipeThreshold && canSwipe)
         {
-            UIAudioSource.Play();
-
             // 오른쪽 스와이프
-            if(swipeX > 0)
+            if (swipeX > 0)
             {
-                switch(pokemonSummaryIndex)
+                switch (pokemonSummaryIndex)
                 {
                     case 0:
                     case 1:
+                        UIAudioSource.Play();
                         ++pokemonSummaryIndex;
                         PokemonPanelImage.sprite = SummaryImages[pokemonSummaryIndex];
 
@@ -393,6 +420,8 @@ public class BattleUIManager : MonoBehaviour
                 {
                     case 1:
                     case 2:
+                        UIAudioSource.Play();
+
                         if (isMoveInfoOpen)
                         {
                             isMoveInfoOpen = false;
@@ -415,7 +444,7 @@ public class BattleUIManager : MonoBehaviour
                 }
             }
 
-            switch(pokemonSummaryIndex)
+            switch (pokemonSummaryIndex)
             {
                 case 0:
                     Summaries[0].SetActive(true);
@@ -432,7 +461,7 @@ public class BattleUIManager : MonoBehaviour
                     break;
 
                 case 2:
-                    if(isMoveInfoOpen)
+                    if (isMoveInfoOpen)
                     {
                         break;
                     }
@@ -448,22 +477,37 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
+    void SetEffectsByFade()
+    {
+        float alpha = FadeTransition.color.a;
+
+        if(Mathf.Approximately(alpha,0f) && !GameManager.instance.BattleStart)
+        {
+            FadeTransition.gameObject.SetActive(false);
+
+            NPCAnimator.SetBool("isAppear", true);
+        }
+    }
+
     // 배틀씬 애니메이션
     void PokemonBattleAnimation()
     {
-        if (FadeAnimator.GetCurrentAnimatorStateInfo(0).IsName("Fade In") &&
-            FadeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        if(NPCAnimator.GetCurrentAnimatorStateInfo(0).IsName("-NPC_Move") &&
+            NPCAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime>= 1.0f &&
+            GameManager.instance.BattleStart)
         {
-            FadeAnimator.gameObject.SetActive(false);
+            NPCAnimator.SetBool("isAppear", true);
 
-            PlayerImage.enabled = true;
-            NPCImage.enabled = true;
+            int NPCRandom = Random.Range(0, GameManager.instance.NPC.Count);
+            NPCImage.sprite = GameManager.instance.NPC[NPCRandom].Sprite;
+
+            GameManager.instance.CheckAudioSource(GameManager.instance.TrainerBattleClip);
         }
-
-        if (!NPCImage.GetComponent<Animator>().GetBool("isAppear") &&
-            NPCImage.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        else if(NPCAnimator.GetCurrentAnimatorStateInfo(0).IsName("NPC_Move") &&
+            NPCAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f &&
+            GameManager.instance.BattleStart && NPCAnimator.GetBool("isAppear"))
         {
-            GameManager.instance.BattleStart = true;
+            TextboxText.text = NPCImage.sprite.name;
         }
     }
 
@@ -471,22 +515,30 @@ public class BattleUIManager : MonoBehaviour
     {
         UIAudioSource.Play();
 
-        switch(number)
+        TextboxText.text = "무엇을 도와드릴까요?";
+
+        switch (number)
         {
             case 0:
                 {
+                    isPartyPokemonButtonClicked = true;
+                    isBagButtonClicked = false;
+
                     PartyPokemonPanel.SetActive(true);
+                    PartyPokemonViewerPanel.SetActive(true);
 
                     SetImageColor(PartyPokemonSprite, 0);
-
-                    TextboxText.text = "무엇을 도와드릴까요?";
 
                     break;
                 }
 
             case 1:
                 {
+                    isPartyPokemonButtonClicked = false;
+                    isBagButtonClicked = true;
+
                     BagPanel.SetActive(true);
+                    PartyPokemonViewerPanel.SetActive(false);
 
                     SetBagImage();
 
@@ -519,8 +571,7 @@ public class BattleUIManager : MonoBehaviour
                     }
                     else
                     {
-                        FadeAnimator.gameObject.SetActive(true);
-                        FadeAnimator.Play("Fade Out");
+                        FadeOut();
                     }
 
                     break;
@@ -528,7 +579,9 @@ public class BattleUIManager : MonoBehaviour
 
             case 4:
                 {
-                    NPCImage.GetComponent<Animator>().SetBool("isAppear", false);
+                    GameManager.instance.BattleStart = true;
+
+                    NPCAnimator.SetBool("isAppear", false);
 
                     MaintenancePanel.SetActive(false);
                     BattlePanel.SetActive(true);
@@ -583,21 +636,19 @@ public class BattleUIManager : MonoBehaviour
     void BagItemUseButtonClicked()
     {
         BagInfoPanel.SetActive(false);
+        PartyPokemonViewerPanel.SetActive(true);
     }
 
     void BagItemCancelButtonClicked()
     {
-        ItemInfo.SetActive(false);
-    }
-
-    void BagPokemonPanelCancelButtonClicked()
-    {
         BagInfoPanel.SetActive(true);
+        ItemInfo.SetActive(false);
+        PartyPokemonViewerPanel.SetActive(false);
     }
 
     void SetBagImage()
     {
-        for(int i = 0; i < BagUIImages.Length; i++)
+        for (int i = 0; i < BagUIImages.Length; i++)
         {
             BagUIImages[i].sprite = MaleBagUISprites[i];
         }
@@ -605,9 +656,9 @@ public class BattleUIManager : MonoBehaviour
 
     void SetBagUI(int index)
     {
-        for(int i = 0; i < 4; i++)
+        for (int i = 0; i < 4; i++)
         {
-            if(index == i)
+            if (index == i)
             {
                 BagItemContents[i].SetActive(true);
                 BagCategoryButtonAnimator[i].Play("Male");
@@ -622,7 +673,7 @@ public class BattleUIManager : MonoBehaviour
 
     void ResetBagUI()
     {
-        for(int i = 0; i < 4; i++)
+        for (int i = 0; i < 4; i++)
         {
             BagItemContents[i].SetActive(false);
             BagCategoryButtonAnimator[i].Play("Male Idle");
@@ -642,16 +693,18 @@ public class BattleUIManager : MonoBehaviour
     {
         UIAudioSource.Play();
 
+        BagInfoPanel.SetActive(true);
         ItemInfo.SetActive(false);
 
         BagPanel.SetActive(false);
+        PartyPokemonViewerPanel.SetActive(false);
     }
 
     void SetShopUI(int index)
     {
-        for(int i = 0; i < 4; i++)
+        for (int i = 0; i < 4; i++)
         {
-            if(index == i)
+            if (index == i)
             {
                 ShopItemCategoryContents[i].SetActive(true);
                 ItemCategoryButtons[i].GetComponent<Image>().sprite = ItemCategoryButtonSelectedSprite[i];
@@ -666,7 +719,7 @@ public class BattleUIManager : MonoBehaviour
 
     void ResetShopUI()
     {
-        for(int i = 0; i < 4; i++)
+        for (int i = 0; i < 4; i++)
         {
             ShopItemCategoryContents[i].SetActive(false);
             PurchaseCancelButton.SetActive(false);
@@ -683,9 +736,9 @@ public class BattleUIManager : MonoBehaviour
         SetShopUI(number);
         ShopScrollRect.content = ShopItemCategoryContents[number].GetComponent<RectTransform>();
 
-        if(number == 1 || number == 2 || number == 3)
+        if (number == 1 || number == 2 || number == 3)
         {
-            for(int i = 0; i < HoldItemContents.Length; i++)
+            for (int i = 0; i < HoldItemContents.Length; i++)
             {
                 HoldItemContents[i].SetActive(false);
             }
@@ -702,19 +755,19 @@ public class BattleUIManager : MonoBehaviour
     {
         UIAudioSource.Play();
 
-        if(GameManager.instance.Money >= shopSelectedItem.ItemPrice)
+        if (GameManager.instance.Money >= shopSelectedItem.ItemPrice)
         {
             GameManager.instance.Money -= shopSelectedItem.ItemPrice;
 
             MoneyText.text = GameManager.instance.Money.ToString("N0") + "원";
 
-            if(shopSelectedItem.ItemType == "도구")
+            if (shopSelectedItem.ItemType == "도구")
             {
                 GameManager.instance.HoldItems.Add(shopSelectedItem);
                 shopSelectedItem.ItemAmount++;
                 CheckItemLists(GameManager.instance.HoldItems, BagItemContents[0], shopSelectedItem, BagHoldItemButtons);
             }
-            else if(shopSelectedItem.ItemType == "회복")
+            else if (shopSelectedItem.ItemType == "회복")
             {
                 GameManager.instance.HealItems.Add(shopSelectedItem);
                 shopSelectedItem.ItemAmount++;
@@ -799,9 +852,9 @@ public class BattleUIManager : MonoBehaviour
         HoldItemScrollview.gameObject.SetActive(true);
         HoldItemScrollview.GetComponent<ScrollRect>().content = HoldItemContents[number].GetComponent<RectTransform>();
 
-        for(int i = 0; i < HoldItemContents.Length; i++)
+        for (int i = 0; i < HoldItemContents.Length; i++)
         {
-            if(i == number)
+            if (i == number)
             {
                 HoldItemContents[i].SetActive(true);
             }
@@ -914,7 +967,7 @@ public class BattleUIManager : MonoBehaviour
                 break;
         }
     }
-    
+
     // 포켓몬 기술 버튼 사용
     void MoveButtonClicked(int number)
     {
@@ -922,7 +975,7 @@ public class BattleUIManager : MonoBehaviour
 
         GameManager.instance.CurrentPokemon.CurrentMovePP[number]--;
 
-        if(GameManager.instance.CurrentPokemon.CurrentMovePP[number] < 0)
+        if (GameManager.instance.CurrentPokemon.CurrentMovePP[number] < 0)
         {
             GameManager.instance.CurrentPokemon.CurrentMovePP[number] = 0;
         }
@@ -950,7 +1003,7 @@ public class BattleUIManager : MonoBehaviour
         {
             string MoveType = GameManager.instance.CurrentPokemon.MoveType[i];
 
-            if(TypeButtons.TryGetValue(MoveType, out Sprite sprite))
+            if (TypeButtons.TryGetValue(MoveType, out Sprite sprite))
             {
                 MoveButtons[i].GetComponent<Image>().sprite = sprite;
             }
@@ -964,159 +1017,217 @@ public class BattleUIManager : MonoBehaviour
     // 가지고 있는 포켓몬 확인하여 버튼 생성
     void InstantiateMyPokemons()
     {
-        for (int i = 0; i < GameManager.instance.MyPokemons.Count; i++)
+        if (MyPartyPokemonButtons.Count == 0)
         {
-            Button partyPokemonButton = Instantiate(PartyPokemonButton);
-            Button bagPokemonButton = Instantiate(PartyPokemonButton);
-
-            partyPokemonButton.transform.SetParent(PartyPokemonButtons.transform);
-            bagPokemonButton.transform.SetParent(BagPokemonButtons.transform);
-
-            partyPokemonButton.transform.localScale = Vector3.one;
-            bagPokemonButton.transform.localScale = Vector3.one;
-
-            MyPartyPokemonButtons.Add(partyPokemonButton);
-            MyBagPokemonButtons.Add(bagPokemonButton);
-
-            partyPokemonButton.transform.GetChild(0).GetComponent<Image>().sprite = GameManager.instance.MyPokemons[i].Icon_Regular;
-            bagPokemonButton.transform.GetChild(0).GetComponent<Image>().sprite = GameManager.instance.MyPokemons[i].Icon_Regular;
-
-            partyPokemonButton.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = GameManager.instance.MyPokemons[i].Name;
-            bagPokemonButton.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = GameManager.instance.MyPokemons[i].Name;
-
-            partyPokemonButton.transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = GameManager.instance.MyPokemons[i].HP.ToString();
-            bagPokemonButton.transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = GameManager.instance.MyPokemons[i].HP.ToString();
-
-            partyPokemonButton.transform.GetChild(4).GetComponent<TextMeshProUGUI>().text = "/" + GameManager.instance.MyPokemons[i].HP;
-            bagPokemonButton.transform.GetChild(4).GetComponent<TextMeshProUGUI>().text = "/" + GameManager.instance.MyPokemons[i].HP;
-
-            if (GameManager.instance.MyPokemons[i].Genderless)
+            for (int i = 0; i < GameManager.instance.MyPokemons.Count; i++)
             {
-                SetImageColor(partyPokemonButton.transform.GetChild(5).GetComponent<Image>(), 0);
-                SetImageColor(bagPokemonButton.transform.GetChild(5).GetComponent<Image>(), 0);
-            }
-            else
-            {
-                SetImageColor(partyPokemonButton.transform.GetChild(5).GetComponent<Image>(), 1);
-                SetImageColor(bagPokemonButton.transform.GetChild(5).GetComponent<Image>(), 1);
+                Button partyPokemonButton = Instantiate(PartyPokemonButton);
 
-                if (GameManager.instance.MyPokemons[i].Gender == "Male")
+                partyPokemonButton.name = GameManager.instance.MyPokemons[i].Name;
+
+                partyPokemonButton.transform.SetParent(PartyPokemonButtons.transform);
+
+                partyPokemonButton.transform.localScale = Vector3.one;
+
+                MyPartyPokemonButtons.Add(partyPokemonButton);
+
+                partyPokemonButton.transform.GetChild(0).GetComponent<Image>().sprite = GameManager.instance.MyPokemons[i].Icon_Regular;
+
+                partyPokemonButton.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = GameManager.instance.MyPokemons[i].Name;
+
+                partyPokemonButton.transform.GetChild(3).GetComponent<TextMeshProUGUI>().text = GameManager.instance.MyPokemons[i].HP.ToString();
+
+                partyPokemonButton.transform.GetChild(4).GetComponent<TextMeshProUGUI>().text = "/" + GameManager.instance.MyPokemons[i].HP;
+
+                if (GameManager.instance.MyPokemons[i].Genderless)
                 {
-                    partyPokemonButton.transform.GetChild(5).GetComponent<Image>().sprite = MaleSprite;
-                    bagPokemonButton.transform.GetChild(5).GetComponent<Image>().sprite = MaleSprite;
+                    SetImageColor(partyPokemonButton.transform.GetChild(5).GetComponent<Image>(), 0);
                 }
                 else
                 {
-                    partyPokemonButton.transform.GetChild(5).GetComponent<Image>().sprite = FemaleSprite;
-                    bagPokemonButton.transform.GetChild(5).GetComponent<Image>().sprite = FemaleSprite;
-                }
-            }
+                    SetImageColor(partyPokemonButton.transform.GetChild(5).GetComponent<Image>(), 1);
 
-            SetImageColor(partyPokemonButton.transform.GetChild(6).GetComponent<Image>(), 0);
-            SetImageColor(bagPokemonButton.transform.GetChild(6).GetComponent<Image>(), 0);
+                    if (GameManager.instance.MyPokemons[i].Gender == "Male")
+                    {
+                        partyPokemonButton.transform.GetChild(5).GetComponent<Image>().sprite = MaleSprite;
+                    }
+                    else
+                    {
+                        partyPokemonButton.transform.GetChild(5).GetComponent<Image>().sprite = FemaleSprite;
+                    }
+                }
+
+                SetImageColor(partyPokemonButton.transform.GetChild(6).GetComponent<Image>(), 0);
+            }
         }
 
-        UpdateMyPokemonButtons();
+        //UpdateMyPokemonButtons();
     }
 
-    // 가지고 있는 포켓몬 변경이 있을 시
-    void UpdateMyPokemonButtons()
-    {
-        SetListButtons(MyPartyPokemonButtons, MyPokemonButtonClicked);
-        SetListButtons(MyBagPokemonButtons, MyBagPokemonButtonClicked);
-    }
+    //// 가지고 있는 포켓몬 변경이 있을 시
+    //void UpdateMyPokemonButtons()
+    //{
+    //    //SetListButtons(MyPartyPokemonButtons, MyPokemonButtonClicked);
+    //    SetListButtons(MyBagPokemonButtons, MyBagPokemonButtonClicked);
+    //}
 
-    void MyBagPokemonButtonClicked(int number)
-    {
-        Debug.Log(number);
-    }
-
-    // 가지고 있는 포켓몬 버튼
-    void MyPokemonButtonClicked(int number)
+    void PokemonSelectedButtonClicked(int number)
     {
         UIAudioSource.Play();
 
-        canSwipe = true;
-
-        pokemonNumber = number;
-
-        AllContainObjects.SetActive(true);
-
-        SetImageColor(PartyPokemonSprite, 1);
-
-        pokemonSummaryIndex = 0;
-        PokemonPanelImage.sprite = SummaryImages[0];
-
-        Summaries[0].SetActive(true);
-        Summaries[1].SetActive(false);
-        Summaries[2].SetActive(false);
-        Summaries[3].SetActive(false);
-
-        PokemonCryAudioSource.PlayOneShot(GameManager.instance.MyPokemons[number].PokemonCry);
-
-        PartyPokemonSprite.sprite = GameManager.instance.MyPokemons[number].Regular;
-        PokemonName.text = GameManager.instance.MyPokemons[number].Name;
-
-        PokedexNumber.text = GameManager.instance.MyPokemons[number].PokedexNumber.ToString();
-        PokemonInfoName.text = GameManager.instance.MyPokemons[number].Name;
-        OT.text = "배틀팩토리";
-        ID.text = "00001";
-        PokemonNature.text = GameManager.instance.MyPokemons[number].Nature;
-        PokemonHoldItemName.text = "없음";
-
-        if (GameManager.instance.MyPokemons[number].Genderless)
+        switch (number)
         {
-            SetImageColor(PokemonGender, 0f);
+            case 0:
+                {
+                    PokemonSelectedPanel.SetActive(false);
+
+                    canSwipe = true;
+
+                    isMoveInfoOpen = false;
+
+                    AllContainObjects.SetActive(true);
+
+                    SetImageColor(PartyPokemonSprite, 1);
+
+                    pokemonSummaryIndex = 0;
+                    PokemonPanelImage.sprite = SummaryImages[0];
+
+                    Summaries[0].SetActive(true);
+                    Summaries[1].SetActive(false);
+                    Summaries[2].SetActive(false);
+                    Summaries[3].SetActive(false);
+
+                    PokemonCryAudioSource.PlayOneShot(GameManager.instance.MyPokemons[selectedPokemonIndex].PokemonCry);
+
+                    PartyPokemonSprite.sprite = GameManager.instance.MyPokemons[selectedPokemonIndex].Regular;
+                    PokemonName.text = GameManager.instance.MyPokemons[selectedPokemonIndex].Name;
+
+                    PokedexNumber.text = GameManager.instance.MyPokemons[selectedPokemonIndex].PokedexNumber.ToString();
+                    PokemonInfoName.text = GameManager.instance.MyPokemons[selectedPokemonIndex].Name;
+                    OT.text = "배틀팩토리";
+                    ID.text = "00001";
+                    PokemonNature.text = GameManager.instance.MyPokemons[selectedPokemonIndex].Nature;
+                    PokemonHoldItemName.text = "없음";
+
+                    if (GameManager.instance.MyPokemons[selectedPokemonIndex].Genderless)
+                    {
+                        SetImageColor(PokemonGender, 0f);
+                    }
+                    else
+                    {
+                        SetImageColor(PokemonGender, 1f);
+
+                        if (GameManager.instance.MyPokemons[selectedPokemonIndex].Gender == "Male")
+                        {
+                            PokemonGender.sprite = MaleSprite;
+                        }
+                        else
+                        {
+                            PokemonGender.sprite = FemaleSprite;
+                        }
+                    }
+
+                    for (int i = 0; i < PokemonMoveType.Length; i++)
+                    {
+                        PokemonMoveType[i] = null;
+                    }
+
+                    SetPokemonType(selectedPokemonIndex);
+
+                    PokemonCurrentHP.text = GameManager.instance.MyPokemons[selectedPokemonIndex].HP.ToString();
+                    PokemonFullHP.text = "/" + GameManager.instance.MyPokemons[selectedPokemonIndex].HP.ToString();
+                    PokemonAttack.text = GameManager.instance.MyPokemons[selectedPokemonIndex].Attack.ToString();
+                    PokemonDefense.text = GameManager.instance.MyPokemons[selectedPokemonIndex].Defense.ToString();
+                    PokemonSpecialAttack.text = GameManager.instance.MyPokemons[selectedPokemonIndex].SAttack.ToString();
+                    PokemonSpecialDefense.text = GameManager.instance.MyPokemons[selectedPokemonIndex].SDefense.ToString();
+                    PokemonSpeed.text = GameManager.instance.MyPokemons[selectedPokemonIndex].Speed.ToString();
+                    PokemonAbility.text = GameManager.instance.MyPokemons[selectedPokemonIndex].Ability;
+                    PokemonAbilityDescription.text = GameManager.instance.SetPokemonAbility(selectedPokemonIndex, GameManager.instance.MyPokemons);
+
+                    for (int i = 0; i < 4; i++)
+                    {
+                        PokemonMoveName[i].text = GameManager.instance.MyPokemons[selectedPokemonIndex].MoveName[i];
+                        PokemonMoveCurrentPP[i].text = GameManager.instance.MyPokemons[selectedPokemonIndex].FullMovePP[i].ToString();
+                        PokemonMoveFullPP[i].text = "/" + GameManager.instance.MyPokemons[selectedPokemonIndex].FullMovePP[i];
+                        PokemonMoveInfoName[i].text = GameManager.instance.MyPokemons[selectedPokemonIndex].MoveName[i];
+                        PokemonMoveInfoCurrentPP[i].text = GameManager.instance.MyPokemons[selectedPokemonIndex].FullMovePP[i].ToString();
+                        PokemonMoveInfoFullPP[i].text = "/" + GameManager.instance.MyPokemons[selectedPokemonIndex].FullMovePP[i];
+                        PokemonMovePower[i] = GameManager.instance.MyPokemons[selectedPokemonIndex].MovePower[i];
+                        PokemonMoveAccuracy[i] = GameManager.instance.MyPokemons[selectedPokemonIndex].MoveAccuracy[i];
+                        PokemonMoveCategory[i] = GameManager.instance.MyPokemons[selectedPokemonIndex].MoveCategory[i];
+
+                        PokemonMoveType[i] = GameManager.instance.MyPokemons[selectedPokemonIndex].MoveType[i];
+                    }
+
+                    MoveInfoPokemonIcon.sprite = GameManager.instance.MyPokemons[selectedPokemonIndex].Icon_Regular;
+
+                    SetPokemonMoveType(selectedPokemonIndex);
+
+                    break;
+                }
+
+            case 1:
+                {
+                    switchIndexA = selectedPokemonIndex;
+
+                    SelectedPokemonButton = MyPartyPokemonButtons[selectedPokemonIndex];
+                    SelectedPokemonButton.GetComponent<Image>().sprite = SelectedPokemonButtonSprite;
+
+                    isSwitchButtonClicked = true;
+
+                    PokemonSelectedPanel.SetActive(false);
+
+                    break;
+                }
+
+            case 2:
+                {
+
+
+                    break;
+                }
+
+            case 3:
+                {
+                    PokemonSelectedPanel.SetActive(false);
+
+                    break;
+                }
         }
-        else
-        {
-            SetImageColor(PokemonGender, 1f);
+    }
 
-            if (GameManager.instance.MyPokemons[number].Gender == "Male")
+    void MyPartyPokemonButtonClicked(Button button)
+    {
+        if(isPartyPokemonButtonClicked && !isBagButtonClicked)
+        {
+            int currentIndex = button.transform.GetSiblingIndex();
+
+            if (!isSwitchButtonClicked)
             {
-                PokemonGender.sprite = MaleSprite;
+                selectedPokemonIndex = currentIndex; // 현재 위치 기준 index
+                UIAudioSource.Play();
+                PokemonSelectedPanel.SetActive(true);
             }
             else
             {
-                PokemonGender.sprite = FemaleSprite;
+                switchIndexB = currentIndex; // 현재 위치 기준 index
+
+                // 버튼 위치 바꾸기
+                SelectedPokemonButton.transform.SetSiblingIndex(switchIndexB);
+                button.transform.SetSiblingIndex(switchIndexA);
+
+                // 내부 데이터 갱신
+                SwitchMyPokemonPosition(switchIndexA, switchIndexB);
+
+                SelectedPokemonButton.GetComponent<Image>().sprite = PartyPokemonButtonSprite;
+
+                isSwitchButtonClicked = false;
             }
         }
-
-        for (int i = 0; i < PokemonMoveType.Length; i++)
+        else if(!isPartyPokemonButtonClicked && isBagButtonClicked)
         {
-            PokemonMoveType[i] = null;
+            Debug.Log("Bag Party Pokemon Button Clicked");
         }
-
-        SetPokemonType(number);
-
-        PokemonCurrentHP.text = GameManager.instance.MyPokemons[number].HP.ToString();
-        PokemonFullHP.text = "/" + GameManager.instance.MyPokemons[number].HP.ToString();
-        PokemonAttack.text = GameManager.instance.MyPokemons[number].Attack.ToString();
-        PokemonDefense.text = GameManager.instance.MyPokemons[number].Defense.ToString();
-        PokemonSpecialAttack.text = GameManager.instance.MyPokemons[number].SAttack.ToString();
-        PokemonSpecialDefense.text = GameManager.instance.MyPokemons[number].SDefense.ToString();
-        PokemonSpeed.text = GameManager.instance.MyPokemons[number].Speed.ToString();
-        PokemonAbility.text = GameManager.instance.MyPokemons[number].Ability;
-        PokemonAbilityDescription.text = GameManager.instance.SetPokemonAbility(number, GameManager.instance.MyPokemons);
-
-        for (int i = 0; i < 4; i++)
-        {
-            PokemonMoveName[i].text = GameManager.instance.MyPokemons[number].MoveName[i];
-            PokemonMoveCurrentPP[i].text = GameManager.instance.MyPokemons[number].FullMovePP[i].ToString();
-            PokemonMoveFullPP[i].text = "/" + GameManager.instance.MyPokemons[number].FullMovePP[i];
-            PokemonMoveInfoName[i].text = GameManager.instance.MyPokemons[number].MoveName[i];
-            PokemonMoveInfoCurrentPP[i].text = GameManager.instance.MyPokemons[number].FullMovePP[i].ToString();
-            PokemonMoveInfoFullPP[i].text = "/" + GameManager.instance.MyPokemons[number].FullMovePP[i];
-            PokemonMovePower[i] = GameManager.instance.MyPokemons[number].MovePower[i];
-            PokemonMoveAccuracy[i] = GameManager.instance.MyPokemons[number].MoveAccuracy[i];
-            PokemonMoveCategory[i] = GameManager.instance.MyPokemons[number].MoveCategory[i];
-
-            PokemonMoveType[i] = GameManager.instance.MyPokemons[number].MoveType[i];
-        }
-
-        MoveInfoPokemonIcon.sprite = GameManager.instance.MyPokemons[number].Icon_Regular;
-
-        SetPokemonMoveType(number);
     }
 
     // 포켓몬 타입 설정
@@ -1169,15 +1280,25 @@ public class BattleUIManager : MonoBehaviour
     }
 
     // 포켓몬 창에서 배틀 창으로 돌아갈 때
-    void PokemonReturnButtonClicked()
+    void PokemonCancelButtonClicked()
     {
         UIAudioSource.Play();
 
-        PartyPokemonPanel.SetActive(false);
+        if (isPartyPokemonButtonClicked && !isBagButtonClicked)
+        {
+            PartyPokemonPanel.SetActive(false);
+            PartyPokemonViewerPanel.SetActive(false);
 
-        ResetPokemonSummary();
+            ResetPokemonSummary();
 
-        canSwipe = false;
+            canSwipe = false;
+        }
+        else if(!isPartyPokemonButtonClicked && isBagButtonClicked)
+        {
+            BagInfoPanel.SetActive(true);
+            ItemInfo.SetActive(false);
+            PartyPokemonViewerPanel.SetActive(false);   
+        }
     }
 
     // 포켓몬 설명에 있는 모든 설정값 초기화
@@ -1247,7 +1368,7 @@ public class BattleUIManager : MonoBehaviour
     {
         for (int i = 0; i < GameManager.instance.PokemonMove.Count; i++)
         {
-            if (GameManager.instance.MyPokemons[pokemonNumber].MoveName[number] == GameManager.instance.PokemonMove[i]["MoveName"].ToString())
+            if (GameManager.instance.MyPokemons[selectedPokemonIndex].MoveName[number] == GameManager.instance.PokemonMove[i]["MoveName"].ToString())
             {
                 MoveDescription.text = GameManager.instance.PokemonMove[i]["Description"].ToString();
 
@@ -1299,5 +1420,54 @@ public class BattleUIManager : MonoBehaviour
         Color color = image.color;
         color.a = alpha;
         image.color = color;
+    }
+
+    void SwitchMyPokemonPosition(int indexA, int indexB)
+    {
+        Pokemon temp = GameManager.instance.MyPokemons[indexA];
+        GameManager.instance.MyPokemons[indexA] = GameManager.instance.MyPokemons[indexB];
+        GameManager.instance.MyPokemons[indexB] = temp;
+
+        Button btn = MyPartyPokemonButtons[indexA];
+        MyPartyPokemonButtons[indexA] = MyPartyPokemonButtons[indexB];
+        MyPartyPokemonButtons[indexB] = btn;
+    }
+
+    void FadeIn()
+    {
+        if (currentCoroutine != null)
+        {
+            StopCoroutine(currentCoroutine);
+        }
+
+        StartCoroutine(Fade(1f, 0f));
+    }
+
+    void FadeOut()
+    {
+        if (currentCoroutine != null)
+        {
+            StopCoroutine(currentCoroutine);
+        }
+
+        StartCoroutine(Fade(0f, 1f));
+    }
+
+    IEnumerator Fade(float start, float end)
+    {
+        float currentTime = 0f;
+        Color color = FadeTransition.color;
+
+        while (currentTime < fadeDuration)
+        {
+            currentTime += Time.deltaTime;
+            float t = currentTime / fadeDuration;
+            color.a = Mathf.Lerp(start, end, t);
+            FadeTransition.color = color;
+            yield return null;
+        }
+
+        color.a = end;
+        FadeTransition.color = color;
     }
 }

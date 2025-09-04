@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,9 +14,13 @@ public class FactoryUIManager : MonoBehaviour
     [SerializeField]
     private bool[] RandomPokemonSelected = new bool[6]; // 랜덤 포켓몬 중 대여 확인
 
-    public Animator FadeAnimator;
+    //public Animator FadeAnimator;
     private AudioSource UIAudioSource;
     public GameObject PokeballButtonPreventPanel;
+
+    public Image FadeTransition;
+    private float fadeDuration = 1.0f;
+    private Coroutine currentCoroutine;
 
     public GameObject[] Pokeballs = new GameObject[6];  // 몬스터볼 게임오브젝트
     public Button[] PokeballButtons = new Button[6];    // 몬스터볼 버튼
@@ -170,6 +175,8 @@ public class FactoryUIManager : MonoBehaviour
 
     void Start()
     {
+        FadeIn();
+
         SetRandomPokemon();
 
         SetButtons(PokeballButtons, PokeballButtonClicked);
@@ -190,6 +197,8 @@ public class FactoryUIManager : MonoBehaviour
 
     void Update()
     {
+        SetEffectsByFade();
+
         PokemonFactoryAnimation();
 
         if (isPokemonSummaryOpen && Input.touchCount > 0)
@@ -223,6 +232,20 @@ public class FactoryUIManager : MonoBehaviour
         CheckMyPokemons();
     }
 
+    void SetEffectsByFade()
+    {
+        float alpha = FadeTransition.color.a;
+
+        if (Mathf.Approximately(alpha, 0f))
+        {
+            PokemonInfoAnimator.enabled = true;
+        }
+        else if (Mathf.Approximately(alpha, 1f))
+        {
+            SceneManager.LoadScene("Battle Scene");
+        }
+    }
+
     // 대여 가능한 포켓몬 랜덤으로 설정
     void SetRandomPokemon()
     {
@@ -230,24 +253,10 @@ public class FactoryUIManager : MonoBehaviour
         {
             for(int i = 0; i < 6; i++)
             {
-                if(Random.value < 0.05f)
-                {
-                    Debug.Log("Legendary");
+                int pokemonRandom = Random.Range(0, GameManager.instance.PokemonLists.Count);
+                RandomPokemon.Add(GameManager.instance.PokemonLists[pokemonRandom]);
 
-                    int legendaryPokemonRandom = Random.Range(0, GameManager.instance.LegendaryPokemonLists.Count);
-                    RandomPokemon.Add(GameManager.instance.LegendaryPokemonLists[legendaryPokemonRandom]);
-
-                    GameManager.instance.LegendaryPokemonLists.RemoveAt(legendaryPokemonRandom);
-                }
-                else
-                {
-                    Debug.Log("Legendary X");
-
-                    int pokemonRandom = Random.Range(0, GameManager.instance.PokemonLists.Count);
-                    RandomPokemon.Add(GameManager.instance.PokemonLists[pokemonRandom]);
-
-                    GameManager.instance.PokemonLists.RemoveAt(pokemonRandom);
-                }
+                GameManager.instance.PokemonLists.RemoveAt(pokemonRandom);
 
                 int natureRandom = Random.Range(0, GameManager.instance.pokemonNatures.Length);
 
@@ -329,66 +338,22 @@ public class FactoryUIManager : MonoBehaviour
     // 애니메이션 설정
     void PokemonFactoryAnimation()
     {
-        if (FadeAnimator.GetCurrentAnimatorStateInfo(0).IsName("Fade In") &&
-            FadeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-        {
-            PokemonInfoAnimator.enabled = true;
-        }
-
         if (PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).IsName("Factory Info ON") &&
             PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
             PokeballButtonPreventPanel.SetActive(false);
 
-            if(isSelectionOver)
-            {
-                ButtonPanel.SetActive(true);
-                SelectionButtons.SetActive(false);
-                SelectionOverButtons.SetActive(true);
-            }
-        }
-
-        if (PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).IsName("Factory Info OFF") &&
-            PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-        {
-            if (isSelectionOver)
-            {
-                PokemonInfo.GetComponent<RectTransform>().sizeDelta = new Vector2(1600, 0);
-                PokemonInfo.GetComponent<Image>().sprite = SelectedPokemonInfoSprite;
-            }
-            else
-            {
-                PokemonInfo.GetComponent<RectTransform>().sizeDelta = new Vector2(1000, 0);
-                PokemonInfo.GetComponent<Image>().sprite = PokemonInfoSprite;
-            }
-
-            PokemonInfoAnimator.SetBool("isActive", false);
-
-            if(selectionComplete)
-            {
-                FadeAnimator.Play("Fade Out");
-            }
-        }
-
-        if (selectionComplete)
-        {
-            PokemonInfoAnimator.SetBool("isActive", true);
-
-            ButtonPanel.SetActive(false);
-            SelectionButtons.SetActive(false);
-            SelectionOverButtons.SetActive(false);
-        }
-
-        if (PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).IsName("Factory Info ON") &&
-            PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-        {
             TextboxImage.gameObject.SetActive(true);
 
             if (isSelectionOver)
             {
+                ButtonPanel.SetActive(true);
+                SelectionButtons.SetActive(false);
+                SelectionOverButtons.SetActive(true);
+
                 for (int i = 0; i < SelectedPokemonImages.Length; i++)
                 {
-                    if(!selectionComplete)
+                    if (!selectionComplete)
                     {
                         SetImageColor(SelectedPokemonImages[i], 1f);
 
@@ -416,12 +381,41 @@ public class FactoryUIManager : MonoBehaviour
                     }
                 }
             }
+
+            if (selectionComplete)
+            {
+                PokemonInfoAnimator.SetBool("isActive", true);
+
+                ButtonPanel.SetActive(false);
+                SelectionButtons.SetActive(false);
+                SelectionOverButtons.SetActive(false);
+            }
         }
 
-        if(FadeAnimator.GetCurrentAnimatorStateInfo(0).IsName("Fade Out") &&
-            FadeAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        if (PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).IsName("Factory Info OFF") &&
+            PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
-            SceneManager.LoadScene("Battle Scene");
+            if(!selectionComplete)
+            {
+                if (isSelectionOver)
+                {
+                    PokemonInfo.GetComponent<RectTransform>().sizeDelta = new Vector2(1600, 0);
+                    PokemonInfo.GetComponent<Image>().sprite = SelectedPokemonInfoSprite;
+
+                    PokemonInfoAnimator.SetBool("isActive", false);
+                }
+                else
+                {
+                    PokemonInfo.GetComponent<RectTransform>().sizeDelta = new Vector2(1000, 0);
+                    PokemonInfo.GetComponent<Image>().sprite = PokemonInfoSprite;
+
+                    PokemonInfoAnimator.SetBool("isActive", false);
+                }
+            }
+            else
+            {
+                FadeOut();
+            }
         }
     }
 
@@ -1090,5 +1084,43 @@ public class FactoryUIManager : MonoBehaviour
 
             buttons[i].onClick.AddListener(() => buttonName(number));
         }
+    }
+
+    void FadeIn()
+    {
+        if(currentCoroutine != null)
+        {
+            StopCoroutine(currentCoroutine);
+        }
+
+        StartCoroutine(Fade(1f, 0f));
+    }
+
+    void FadeOut()
+    {
+        if (currentCoroutine != null)
+        {
+            StopCoroutine(currentCoroutine);
+        }
+
+        StartCoroutine(Fade(0f, 1f));
+    }
+
+    IEnumerator Fade(float start, float end)
+    {
+        float currentTime = 0f;
+        Color color = FadeTransition.color;
+
+        while (currentTime < fadeDuration)
+        {
+            currentTime += Time.deltaTime;
+            float t = currentTime / fadeDuration;
+            color.a = Mathf.Lerp(start, end, t);
+            FadeTransition.color = color;
+            yield return null;
+        }
+
+        color.a = end;
+        FadeTransition.color = color;
     }
 }
