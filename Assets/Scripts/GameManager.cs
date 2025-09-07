@@ -41,6 +41,8 @@ public class GameManager : MonoBehaviour
     // 트레이너
     public List<Trainer> NPC = new List<Trainer>();
     public List<Trainer> SpecialTrainers = new List<Trainer>();
+    public Trainer ActiveTrainer;
+    public List<Dictionary<string, object>> TrainerName;
 
     void Awake()
     {
@@ -98,6 +100,7 @@ public class GameManager : MonoBehaviour
 
         pokemonAbility = CSVReader.Read("Ability");
         PokemonMove = CSVReader.Read("Pokemon Moves");
+        TrainerName = CSVReader.Read("Trainers");
 
         //isPlay = true;
         CurrentClip = FactoryClip;
@@ -121,6 +124,19 @@ public class GameManager : MonoBehaviour
         {
             CheckAudioSource(TrainerBattleClip);
         }
+    }
+
+    public string CheckTrainerName(Trainer trainer)
+    {
+        for(int i = 0; i < TrainerName.Count; i++)
+        {
+            if(trainer.name == TrainerName[i]["English Name"].ToString())
+            {
+                return TrainerName[i]["Korean Name"].ToString();
+            }
+        }
+
+        return null;
     }
 
     // CSV파일을 통해 포켓몬 특성을 가져와 특성 설명 문자열 불러오기
