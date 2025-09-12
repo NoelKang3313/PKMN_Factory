@@ -4,6 +4,8 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using TMPro;
 using System.Collections;
+using System;
+using Random = UnityEngine.Random;
 
 public class BattleUIManager : MonoBehaviour
 {
@@ -19,7 +21,7 @@ public class BattleUIManager : MonoBehaviour
 
     public Image PlayerImage;   // Player 이미지
     public Image NPCImage;  // NPC 이미지
-    public Animator NPCAnimator;
+    private bool isBrigetteEnter;
     public TextMeshProUGUI TextboxText; //  텍스트박스 텍스트
     [SerializeField] private bool isTrainerEnter;   // 배틀 시 트레이너 입장했는지 확인
 
@@ -34,6 +36,11 @@ public class BattleUIManager : MonoBehaviour
     private Image InstantiatedPokeball;
     private Animator InstantiatedPokeballAnimator;
     private bool isTrainerAppear;
+
+    private float trainerMoveSpeed = 500.0f;
+    private Vector2 trainerExitPosition = new Vector2(550f, 250f);
+    private Vector2 trainerEnterPosition = new Vector2(50f, 250f);
+    private Coroutine moveCoroutine;
 
     public Button[] MaintenanceButtons = new Button[5]; // 포켓몬, 가방, 상점, 포켓몬 교체, 배틀 시작 버튼
 
@@ -229,6 +236,9 @@ public class BattleUIManager : MonoBehaviour
     public Sprite[] PokemonTypeSprites = new Sprite[18];
     private Dictionary<string, Sprite> PokemonTypes;
 
+    // 텍스트 관련
+    [SerializeField] private bool isTypingFinished;
+
     void Awake()
     {
         UIAudioSource = GetComponent<AudioSource>();
@@ -276,15 +286,13 @@ public class BattleUIManager : MonoBehaviour
             { "강철", TypeButtonSprites[16] },
             { "물", TypeButtonSprites[17] }
         };
-
-
     }
 
     void Start()
     {
+        NPCImage.sprite = Resources.Load<Sprite>("NPCs/Brigette");
+
         FadeIn();
-        
-        SetBattleMaintenance();
 
         InstantiateMyPokemons();
 
@@ -362,7 +370,11 @@ public class BattleUIManager : MonoBehaviour
     {
         SetEffectsByFade();
 
-        PokemonBattleAnimation();
+        //PokemonBattleAnimation();
+
+        BattleStart();
+
+        SetActionsByText();
 
         if (isPokemonSummaryOpen && Input.touchCount > 0)
         {
@@ -391,16 +403,17 @@ public class BattleUIManager : MonoBehaviour
                     }
             }
         }
+
+        if (NPCImage.sprite.name == "Brigette" && !isBrigetteEnter
+            && NPCImage.GetComponent<RectTransform>().anchoredPosition == trainerEnterPosition)
+        {
+            isBrigetteEnter = true;
+
+            UpdateTextbox("무엇을 도와드릴까요?");
+        }
     }
 
-    void SetBattleMaintenance()
-    {
-        Sprite Brigette = Resources.Load<Sprite>("NPCs/Brigette");
-        NPCImage.sprite = Brigette;
-
-        TextboxText.text = "무엇을 도와드릴까요?";
-    }
-
+    // UI Manager
     // 터치를 사용한 스와이핑
     void CheckSwipe()
     {
@@ -488,6 +501,7 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
+    // UI Manager
     void SetEffectsByFade()
     {
         float alpha = FadeTransition.color.a;
@@ -496,61 +510,164 @@ public class BattleUIManager : MonoBehaviour
         {
             FadeTransition.gameObject.SetActive(false);
 
-            NPCAnimator.SetBool("isAppear", true);
+            SetTrainerCoroutine(trainerEnterPosition);
         }
     }
 
-    // 배틀씬 애니메이션
-    void PokemonBattleAnimation()
+    void SetActionsByText()
     {
-        if(NPCAnimator.GetCurrentAnimatorStateInfo(0).IsName("-NPC_Move") &&
-            NPCAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime>= 1.0f &&
-            GameManager.instance.BattleStart)
+        if(GameManager.instance.BattleStart)
         {
-            NPCAnimator.SetBool("isAppear", true);
-
-            int NPCRandom = Random.Range(0, GameManager.instance.NPC.Count);
-            NPCImage.sprite = GameManager.instance.NPC[NPCRandom].Sprite;
-            GameManager.instance.ActiveTrainer = GameManager.instance.NPC[NPCRandom];
-            isTrainerEnter = true;
-
-            PlayerPokeballUIAnimator.SetBool("isActive", true);
-            OpponentPokeballUIAnimator.SetBool("isActive", true);
-
-            GameManager.instance.CheckAudioSource(GameManager.instance.TrainerBattleClip);
-        }
-        else if(NPCAnimator.GetCurrentAnimatorStateInfo(0).IsName("NPC_Move") &&
-            NPCAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f &&
-            GameManager.instance.BattleStart && NPCAnimator.GetBool("isAppear"))
-        {
-            TextboxText.text = GameManager.instance.CheckTrainerName(GameManager.instance.ActiveTrainer).ToString()
-                + "가 승부를 걸어왔다!";
-
-            if (isTrainerEnter)
+            if(isTrainerEnter && isTypingFinished)
             {
+                TextboxButton.interactable = true;
+            }
+        }
+    }
+
+    IEnumerator MoveTrainer(Vector2 targetPosition)
+    {
+        while(NPCImage.rectTransform.anchoredPosition != targetPosition)
+        {
+            NPCImage.rectTransform.anchoredPosition =
+                Vector2.MoveTowards(NPCImage.rectTransform.anchoredPosition, targetPosition, trainerMoveSpeed * Time.deltaTime);
+
+            yield return null;
+        }
+    }
+
+    void BattleStart()
+    {
+        if(GameManager.instance.BattleStart && !isTrainerEnter)
+        {
+            if(NPCImage.GetComponent<RectTransform>().anchoredPosition == trainerExitPosition)
+            {
+                SetTrainerCoroutine(trainerEnterPosition);
+
+                int NPCRandom = Random.Range(0, GameManager.instance.NPC.Count);
+                NPCImage.sprite = GameManager.instance.NPC[NPCRandom].Sprite;
+                GameManager.instance.ActiveTrainer = GameManager.instance.NPC[NPCRandom];
+
+                GameManager.instance.CheckAudioSource(GameManager.instance.TrainerBattleClip);
+            }
+            else if(NPCImage.GetComponent<RectTransform>().anchoredPosition == trainerEnterPosition)
+            {
+                isTrainerEnter = true;
+
+                UpdateTextbox(GameManager.instance.CheckTrainerName(GameManager.instance.ActiveTrainer).ToString()
+    + "가 승부를 걸어왔다!");
+
                 for (int i = 0; i < 3; i++)
                 {
                     int pokemonRandom = Random.Range(0, GameManager.instance.PokemonLists.Count);
                     GameManager.instance.ActiveTrainer.Pokemon[i] = GameManager.instance.PokemonLists[pokemonRandom];
                 }
-
-                isTrainerEnter = false;
             }
-
-            TextboxButton.interactable = true;
-        }
-
-        if (InstantiatedPokeball != null && InstantiatedPokeballAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-        {
-            Destroy(InstantiatedPokeball);
         }
     }
 
+    IEnumerator Typing(string message)
+    {
+        for(int i = 0; i < message.Length; i++)
+        {
+            TextboxText.text += message[i];
+
+            yield return new WaitForSeconds(0.01f);
+        }
+
+        isTypingFinished = true;
+    }
+
+    void ResetTextboxText()
+    {
+        if (TextboxText.text != null)
+            TextboxText.text = "";
+    }
+
+    void UpdateTextbox(string message)
+    {
+        isTypingFinished = false;
+
+        ResetTextboxText();
+
+        StartCoroutine(Typing(message));
+    }
+
+    // UI Manager
+    void TextboxButtonClicked()
+    {
+        TextboxButton.interactable = false;
+
+        UpdateTextbox(GameManager.instance.CheckTrainerName(GameManager.instance.ActiveTrainer).ToString()
++ "는 " + GameManager.instance.ActiveTrainer.Pokemon[0].Name + "을(를) 내보냈다!");
+
+
+        //NPCAnimator.SetBool("isAppear", false);
+
+        //TextboxText.text = GameManager.instance.CheckTrainerName(GameManager.instance.ActiveTrainer).ToString()
+        //    + "가 " + GameManager.instance.ActiveTrainer.Pokemon[0].Name + "를 내보냈다!";
+
+        //PlayerPokeballUIAnimator.SetBool("isActive", false);
+        //OpponentPokeballUIAnimator.SetBool("isActive", false);
+
+        //InstantiatedPokeball = Instantiate(PokeballPrefab);
+        //InstantiatedPokeball.transform.SetParent(BattleMainPanel.transform);
+        //InstantiatedPokeball.GetComponent<RectTransform>().anchoredPosition = new Vector2(-30, 300);
+
+        //InstantiatedPokeballAnimator = InstantiatedPokeball.GetComponent<Animator>();
+    }
+
+    //// Animation Manager
+    //// 배틀씬 애니메이션
+    //void PokemonBattleAnimation()
+    //{
+    //    if(NPCAnimator.GetCurrentAnimatorStateInfo(0).IsName("-NPC_Move") &&
+    //        NPCAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime>= 1.0f &&
+    //        GameManager.instance.BattleStart)
+    //    {
+    //        NPCAnimator.SetBool("isAppear", true);
+
+    //        int NPCRandom = Random.Range(0, GameManager.instance.NPC.Count);
+    //        NPCImage.sprite = GameManager.instance.NPC[NPCRandom].Sprite;
+    //        GameManager.instance.ActiveTrainer = GameManager.instance.NPC[NPCRandom];
+    //        isTrainerEnter = true;
+
+    //        PlayerPokeballUIAnimator.SetBool("isActive", true);
+    //        OpponentPokeballUIAnimator.SetBool("isActive", true);
+
+    //        GameManager.instance.CheckAudioSource(GameManager.instance.TrainerBattleClip);
+    //    }
+    //    else if(NPCAnimator.GetCurrentAnimatorStateInfo(0).IsName("NPC_Move") &&
+    //        NPCAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f &&
+    //        GameManager.instance.BattleStart && NPCAnimator.GetBool("isAppear"))
+    //    {
+    //        TextboxText.text = GameManager.instance.CheckTrainerName(GameManager.instance.ActiveTrainer).ToString()
+    //            + "가 승부를 걸어왔다!";
+
+    //        if (isTrainerEnter)
+    //        {
+    //            for (int i = 0; i < 3; i++)
+    //            {
+    //                int pokemonRandom = Random.Range(0, GameManager.instance.PokemonLists.Count);
+    //                GameManager.instance.ActiveTrainer.Pokemon[i] = GameManager.instance.PokemonLists[pokemonRandom];
+    //            }
+
+    //            isTrainerEnter = false;
+    //        }
+
+    //        TextboxButton.interactable = true;
+    //    }
+
+    //    if (InstantiatedPokeball != null && InstantiatedPokeballAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+    //    {
+    //        Destroy(InstantiatedPokeball);
+    //    }
+    //}
+
+    // UI Manager
     void MaintenanceButtonClicked(int number)
     {
         UIAudioSource.Play();
-
-        TextboxText.text = "무엇을 도와드릴까요?";
 
         switch (number)
         {
@@ -602,7 +719,7 @@ public class BattleUIManager : MonoBehaviour
                 {
                     if (GameManager.instance.isFirstBattle)
                     {
-                        TextboxText.text = "방금 포켓몬을 선택하셨기에 현재는 포켓몬 교체가 불가합니다.";
+                        UpdateTextbox("방금 포켓몬을 선택하셨기에 현재는 포켓몬 교체가 불가합니다.");
                     }
                     else
                     {
@@ -616,35 +733,27 @@ public class BattleUIManager : MonoBehaviour
                 {
                     GameManager.instance.BattleStart = true;
 
-                    NPCAnimator.SetBool("isAppear", false);
-
                     MaintenancePanel.SetActive(false);
                     BattlePanel.SetActive(true);
 
                     TextboxText.text = "";
+
+                    SetTrainerCoroutine(trainerExitPosition);
 
                     break;
                 }
         }
     }
 
-    void TextboxButtonClicked()
+    void SetTrainerCoroutine(Vector2 targetPosition)
     {
-        NPCAnimator.SetBool("isAppear", false);
+        if (moveCoroutine != null)
+            StopCoroutine(moveCoroutine);
 
-        TextboxText.text = GameManager.instance.CheckTrainerName(GameManager.instance.ActiveTrainer).ToString()
-            + "가 " + GameManager.instance.ActiveTrainer.Pokemon[0].Name + "를 내보냈다!";
-
-        PlayerPokeballUIAnimator.SetBool("isActive", false);
-        OpponentPokeballUIAnimator.SetBool("isActive", false);
-
-        InstantiatedPokeball = Instantiate(PokeballPrefab);
-        InstantiatedPokeball.transform.SetParent(BattleMainPanel.transform);
-        InstantiatedPokeball.GetComponent<RectTransform>().anchoredPosition = new Vector2(-30, 300);
-
-        InstantiatedPokeballAnimator = InstantiatedPokeball.GetComponent<Animator>();
+        moveCoroutine = StartCoroutine(MoveTrainer(targetPosition));
     }
 
+    // UI Manager
     void BagHoldItemButtonClicked(int number)
     {
         ItemInfo.SetActive(true);
@@ -655,6 +764,7 @@ public class BattleUIManager : MonoBehaviour
         ItemInfoDescription.text = GameManager.instance.HoldItems[number].ItemDescription;
     }
 
+    // UI Manager
     void BagHealItemButtonClicked(int number)
     {
         ItemInfo.SetActive(true);
@@ -665,6 +775,7 @@ public class BattleUIManager : MonoBehaviour
         ItemInfoDescription.text = GameManager.instance.HealItems[number].ItemDescription;
     }
 
+    // UI Manager
     void BagBerryButtonClicked(int number)
     {
         ItemInfo.SetActive(true);
@@ -675,6 +786,7 @@ public class BattleUIManager : MonoBehaviour
         ItemInfoDescription.text = GameManager.instance.Berries[number].ItemDescription;
     }
 
+    // UI Manager
     void BagKeyItemButtonClicked(int number)
     {
         ItemInfo.SetActive(true);
@@ -685,12 +797,14 @@ public class BattleUIManager : MonoBehaviour
         ItemInfoDescription.text = GameManager.instance.KeyItems[number].ItemDescription;
     }
 
+    // UI Manager
     void BagItemUseButtonClicked()
     {
         BagInfoPanel.SetActive(false);
         PartyPokemonViewerPanel.SetActive(true);
     }
 
+    // UI Manager
     void BagItemCancelButtonClicked()
     {
         BagInfoPanel.SetActive(true);
@@ -698,6 +812,7 @@ public class BattleUIManager : MonoBehaviour
         PartyPokemonViewerPanel.SetActive(false);
     }
 
+    // UI Manager
     void SetBagImage()
     {
         for (int i = 0; i < BagUIImages.Length; i++)
@@ -706,6 +821,7 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
+    // UI Manager
     void SetBagUI(int index)
     {
         for (int i = 0; i < 4; i++)
@@ -723,6 +839,7 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
+    // UI Manager
     void ResetBagUI()
     {
         for (int i = 0; i < 4; i++)
@@ -732,6 +849,7 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
+    // UI Manager
     void BagCategoryButtonClicked(int number)
     {
         UIAudioSource.Play();
@@ -741,6 +859,7 @@ public class BattleUIManager : MonoBehaviour
         BagScrollRect.content = BagItemContents[number].GetComponent<RectTransform>();
     }
 
+    // UI Manager
     void BagReturnButtonClicked()
     {
         UIAudioSource.Play();
@@ -750,8 +869,11 @@ public class BattleUIManager : MonoBehaviour
 
         BagPanel.SetActive(false);
         PartyPokemonViewerPanel.SetActive(false);
+
+        UpdateTextbox("무엇을 도와드릴까요?");
     }
 
+    // UI Manager
     void SetShopUI(int index)
     {
         for (int i = 0; i < 4; i++)
@@ -769,6 +891,7 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
+    // UI Manager
     void ResetShopUI()
     {
         for (int i = 0; i < 4; i++)
@@ -779,6 +902,7 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
+    // UI Manager
     void ItemCategoryButtonClicked(int number)
     {
         UIAudioSource.Play();
@@ -802,6 +926,7 @@ public class BattleUIManager : MonoBehaviour
                         new Vector2(ShopItemCategoryContents[number].GetComponent<RectTransform>().anchoredPosition.x, 0);
     }
 
+    // UI Manager
     // 상점 아이템 구매 버튼
     void ItemPurchaseButtonClicked()
     {
@@ -864,6 +989,7 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
+    // UI Manager
     // 상점 아이템 구매취소 버튼
     void ItemCancelButtonClicked()
     {
@@ -872,6 +998,7 @@ public class BattleUIManager : MonoBehaviour
         ResetShopItemInfo();
     }
 
+    // UI Manager
     // 상점 UI 초기화
     void ResetShopItemInfo()
     {
@@ -884,6 +1011,7 @@ public class BattleUIManager : MonoBehaviour
         shopSelectedItem = null;
     }
 
+    // UI Manager
     // 상점 뒤로가기 버튼
     void ShopReturnButtonClicked()
     {
@@ -895,8 +1023,11 @@ public class BattleUIManager : MonoBehaviour
         ShopItemDescription.text = "";
         ShopItemPriceText.gameObject.SetActive(false);
         ShopItemPrice.text = "";
+
+        UpdateTextbox("무엇을 도와드릴까요?");
     }
 
+    // UI Manager
     void HoldButtonClicked(int number)
     {
         UIAudioSource.Play();
@@ -920,6 +1051,7 @@ public class BattleUIManager : MonoBehaviour
             new Vector2(HoldItemContents[number].GetComponent<RectTransform>().anchoredPosition.x, 0);
     }
 
+    // UI Manager
     // 상점 버튼 설정
     void SetShopButton(int number, Item[] info)
     {
@@ -936,61 +1068,73 @@ public class BattleUIManager : MonoBehaviour
         PurchaseCancelButton.SetActive(true);
     }
 
+    // UI Manager
     void HoldItemButtonClicked(int number)
     {
         SetShopButton(number, HoldItemInfos);
     }
 
+    // UI Manager
     void BattleItemButtonClicked(int number)
     {
         SetShopButton(number, BattleItemInfos);
     }
 
+    // UI Manager
     void TypeBoostButtonClicked(int number)
     {
         SetShopButton(number, TypeBoostInfos);
     }
 
+    // UI Manager
     void PlateButtonClicked(int number)
     {
         SetShopButton(number, PlateInfos);
     }
 
+    // UI Manager
     void DriveButtonClicked(int number)
     {
         SetShopButton(number, DriveInfos);
     }
 
+    // UI Manager
     void MegaStoneButtonClicked(int number)
     {
         SetShopButton(number, MegaStoneInfos);
     }
 
+    // UI Manager
     void MemoryButtonClicked(int number)
     {
         SetShopButton(number, MemoryInfos);
     }
 
+    // UI Manager
     void MaskButtonClicked(int number)
     {
         SetShopButton(number, MaskInfos);
     }
 
+    // UI Manager
     void HealButtonClicked(int number)
     {
         SetShopButton(number, HealInfos);
     }
 
+    // UI Manager
     void BerryButtonClicked(int number)
     {
         SetShopButton(number, BerryInfos);
     }
 
+    // UI Manager
     void KeyButtonClicked(int number)
     {
         SetShopButton(number, KeyInfos);
     }
 
+    // UI Manager
     // 배틀 시, Fight/Bag/Pokemon 버튼
     void SelectionButtonClicked(int number)
     {
@@ -1020,6 +1164,7 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
+    // UI Manager
     // 포켓몬 기술 버튼 사용
     void MoveButtonClicked(int number)
     {
@@ -1039,6 +1184,7 @@ public class BattleUIManager : MonoBehaviour
         //MovePanel.SetActive(false);
     }
 
+    // UI Manager
     // 포켓몬 기술창 취소버튼
     void CancelButtonClicked()
     {
@@ -1048,6 +1194,7 @@ public class BattleUIManager : MonoBehaviour
         MovePanel.SetActive(false);
     }
 
+    // UI Manager
     // 포켓몬 기술 타입 버튼 변경
     void ChangeMoveButtonTypes()
     {
@@ -1066,6 +1213,7 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
+    // UI Manager
     // 가지고 있는 포켓몬 확인하여 버튼 생성
     void InstantiateMyPokemons()
     {
@@ -1123,6 +1271,7 @@ public class BattleUIManager : MonoBehaviour
     //    SetListButtons(MyBagPokemonButtons, MyBagPokemonButtonClicked);
     //}
 
+    // UI Manager
     void PokemonSelectedButtonClicked(int number)
     {
         UIAudioSource.Play();
@@ -1248,6 +1397,7 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
+    // UI Manager
     void MyPartyPokemonButtonClicked(Button button)
     {
         if(isPartyPokemonButtonClicked && !isBagButtonClicked)
@@ -1282,6 +1432,7 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
+    // Pokemon Manager
     // 포켓몬 타입 설정
     void SetPokemonType(int number)
     {
@@ -1316,6 +1467,7 @@ public class BattleUIManager : MonoBehaviour
         
     }
 
+    // Pokemon Manager
     // 포켓몬 기술 타입 설정
     void SetPokemonMoveType(int number)
     {
@@ -1331,28 +1483,23 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
+    // UI Manager
     // 포켓몬 창에서 배틀 창으로 돌아갈 때
     void PokemonCancelButtonClicked()
     {
         UIAudioSource.Play();
 
-        if (isPartyPokemonButtonClicked && !isBagButtonClicked)
-        {
-            PartyPokemonPanel.SetActive(false);
-            PartyPokemonViewerPanel.SetActive(false);
+        PartyPokemonPanel.SetActive(false);
+        PartyPokemonViewerPanel.SetActive(false);
 
-            ResetPokemonSummary();
+        ResetPokemonSummary();
 
-            canSwipe = false;
-        }
-        else if(!isPartyPokemonButtonClicked && isBagButtonClicked)
-        {
-            BagInfoPanel.SetActive(true);
-            ItemInfo.SetActive(false);
-            PartyPokemonViewerPanel.SetActive(false);   
-        }
+        canSwipe = false;
+
+        UpdateTextbox("무엇을 도와드릴까요?");
     }
 
+    // UI Manager
     // 포켓몬 설명에 있는 모든 설정값 초기화
     void ResetPokemonSummary()
     {
@@ -1397,6 +1544,7 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
+    // UI Manager
     // 포켓몬 기술 버튼
     void SummaryMoveButtonClicked(int number)
     {
@@ -1416,6 +1564,7 @@ public class BattleUIManager : MonoBehaviour
         SetMoveInfo(number);
     }
 
+    // Pokemon Manager
     void SearchMove(int number)
     {
         for (int i = 0; i < GameManager.instance.PokemonMove.Count; i++)
@@ -1429,6 +1578,7 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
+    // UI Manager
     // 포켓몬 기술 정보 버튼
     void MoveInfoButtonClicked(int number)
     {
@@ -1437,6 +1587,7 @@ public class BattleUIManager : MonoBehaviour
         SetMoveInfo(number);
     }
 
+    // UI Manager
     void SetMoveInfo(int number)
     {
         if (PokemonMovePower[number] == 0)
@@ -1466,6 +1617,7 @@ public class BattleUIManager : MonoBehaviour
         SearchMove(number);
     }
 
+    // UI Manager
     // 이미지 알파값 설정
     void SetImageColor(Image image, float alpha)
     {
@@ -1485,6 +1637,7 @@ public class BattleUIManager : MonoBehaviour
         MyPartyPokemonButtons[indexB] = btn;
     }
 
+    // UI Manager
     void FadeIn()
     {
         if (currentCoroutine != null)
@@ -1495,6 +1648,7 @@ public class BattleUIManager : MonoBehaviour
         StartCoroutine(Fade(1f, 0f));
     }
 
+    // UI Manager
     void FadeOut()
     {
         if (currentCoroutine != null)
@@ -1505,6 +1659,7 @@ public class BattleUIManager : MonoBehaviour
         StartCoroutine(Fade(0f, 1f));
     }
 
+    // UI Manager
     IEnumerator Fade(float start, float end)
     {
         float currentTime = 0f;

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
@@ -9,6 +8,7 @@ using TMPro;
 public class FactoryUIManager : MonoBehaviour
 {
     private PokemonManager pokemonManager;
+    private FactoryAnimationManager animationManager;
 
     private AudioSource UIAudioSource;
     public GameObject PokeballButtonPreventPanel;
@@ -27,7 +27,6 @@ public class FactoryUIManager : MonoBehaviour
 
     public Image PokemonImage;  // 포켓몬 이미지
     public TextMeshProUGUI PokemonName; // 포켓몬 이름
-    public TextMeshProUGUI TextboxText; // 텍스트박스 텍스트
     public Image GenderImage;   // 성별 이미지
     public Sprite MaleImage;    // 남성 이미지
     public Sprite FemaleImage;  // 여성 이미지
@@ -52,7 +51,6 @@ public class FactoryUIManager : MonoBehaviour
 
     [Header("Factory Animators")]
     public GameObject PokemonInfo;
-    private Animator PokemonInfoAnimator;
     public Sprite PokemonInfoSprite;
     public Sprite SelectedPokemonInfoSprite;    
     private bool isSelectionOver;   // 포켓몬 3마리 선택되었을 때
@@ -132,22 +130,23 @@ public class FactoryUIManager : MonoBehaviour
     private float swipeX;
     private float swipeThreshold = 50.0f;
 
+    // 텍스트 관련
+    public TextMeshProUGUI TextboxText; // 텍스트박스 텍스트
+    [SerializeField] private bool isTypingFinished;
+    [SerializeField] private bool isFactoryStarted;
+
     void Awake()
     {
         UIAudioSource = GetComponent<AudioSource>();
         pokemonManager = GameObject.FindAnyObjectByType<PokemonManager>();
+        animationManager = GameObject.FindAnyObjectByType<FactoryAnimationManager>();
 
-        TextboxText.text = "1번째 포켓몬을 선택하세요.";
-
-        PokemonInfoAnimator = PokemonInfo.GetComponent<Animator>();
-        PokemonInfoAnimator.enabled = false;
+        isFactoryStarted = false;
     }
 
     void Start()
     {
         FadeIn();
-
-        //SetpokemonManager.RandomPokemon();
 
         SetButtons(PokeballButtons, PokeballButtonClicked);
 
@@ -209,7 +208,7 @@ public class FactoryUIManager : MonoBehaviour
 
         if (Mathf.Approximately(alpha, 0f))
         {
-            PokemonInfoAnimator.enabled = true;
+            animationManager.EnablePokemonInfoAnimator();
         }
         else if (Mathf.Approximately(alpha, 1f))
         {
@@ -221,12 +220,16 @@ public class FactoryUIManager : MonoBehaviour
     // 애니메이션 설정
     void PokemonFactoryAnimation()
     {
-        if (PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).IsName("Factory Info ON") &&
-            PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        if(animationManager.IsAnimationPlaying(animationManager.PokemonInfoAnimator, "Factory Info ON", 1.0f))
         {
             PokeballButtonPreventPanel.SetActive(false);
 
-            TextboxImage.gameObject.SetActive(true);
+            if(!isTypingFinished && !isFactoryStarted)
+            {
+                isFactoryStarted = true;
+
+                StartCoroutine(Typing((GameManager.instance.MyPokemons.Count + 1).ToString() + "번째 포켓몬을 선택하세요."));
+            }
 
             if (isSelectionOver)
             {
@@ -267,7 +270,7 @@ public class FactoryUIManager : MonoBehaviour
 
             if (selectionComplete)
             {
-                PokemonInfoAnimator.SetBool("isActive", true);
+                animationManager.SetPokemonInfoAnimator(true);
 
                 ButtonPanel.SetActive(false);
                 SelectionButtons.SetActive(false);
@@ -275,24 +278,23 @@ public class FactoryUIManager : MonoBehaviour
             }
         }
 
-        if (PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).IsName("Factory Info OFF") &&
-            PokemonInfoAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        if(animationManager.IsAnimationPlaying(animationManager.PokemonInfoAnimator, "Factory Info OFF", 1.0f))
         {
-            if(!selectionComplete)
+            if (!selectionComplete)
             {
                 if (isSelectionOver)
                 {
                     PokemonInfo.GetComponent<RectTransform>().sizeDelta = new Vector2(1600, 0);
                     PokemonInfo.GetComponent<Image>().sprite = SelectedPokemonInfoSprite;
 
-                    PokemonInfoAnimator.SetBool("isActive", false);
+                    animationManager.PokemonInfoAnimator.SetBool("isActive", false);
                 }
                 else
                 {
                     PokemonInfo.GetComponent<RectTransform>().sizeDelta = new Vector2(1000, 0);
                     PokemonInfo.GetComponent<Image>().sprite = PokemonInfoSprite;
 
-                    PokemonInfoAnimator.SetBool("isActive", false);
+                    animationManager.PokemonInfoAnimator.SetBool("isActive", false);
                 }
             }
             else
@@ -685,7 +687,7 @@ public class FactoryUIManager : MonoBehaviour
             SelectedPokemonImages[i].sprite = null;
         }
 
-        PokemonInfoAnimator.SetBool("isActive", true);
+        animationManager.SetPokemonInfoAnimator(true);
 
         isSelectionOver = false;
 
@@ -806,17 +808,36 @@ public class FactoryUIManager : MonoBehaviour
     // 포켓몬 갯수 텍스트 업데이트
     void UpdateTextboxText()
     {
-        if(GameManager.instance.FactoryPokemonSelection)
+        isTypingFinished = false;
+
+        if (selectedPokemonNumber < 3)
         {
-            if (selectedPokemonNumber < 3)
-            {
-                TextboxText.text = (GameManager.instance.MyPokemons.Count + 1).ToString() + "번째 포켓몬을 선택하세요.";
-            }
-            else
-            {
-                TextboxText.text = ("선택하신 " + GameManager.instance.MyPokemons.Count + "마리 포켓몬으로 가시겠습니까?");
-            }
+            ResetTextboxText();
+            StartCoroutine(Typing((GameManager.instance.MyPokemons.Count + 1).ToString() + "번째 포켓몬을 선택하세요."));
         }
+        else
+        {
+            ResetTextboxText();
+            StartCoroutine(Typing("선택하신 " + GameManager.instance.MyPokemons.Count + "마리 포켓몬으로 가시겠습니까?"));
+        }
+    }
+
+    void ResetTextboxText()
+    {
+        if (TextboxText.text != null)
+            TextboxText.text = "";
+    }
+
+    IEnumerator Typing(string message)
+    {
+        for (int i = 0; i < message.Length; i++)
+        {
+            TextboxText.text += message[i];
+
+            yield return new WaitForSeconds(0.01f);
+        }
+
+        isTypingFinished = true;
     }
 
     // UI Manager
@@ -864,7 +885,7 @@ public class FactoryUIManager : MonoBehaviour
                 {
                     isSelectionOver = true;
 
-                    PokemonInfoAnimator.SetBool("isActive", true);
+                    animationManager.SetPokemonInfoAnimator(true);
                 }
             }
         }
@@ -997,38 +1018,4 @@ public class FactoryUIManager : MonoBehaviour
         color.a = end;
         FadeTransition.color = color;
     }
-
-    //// UI Manager
-    //// 포켓몬 설명에 있는 모든 설정값 초기화
-    //void ResetPokemonSummary()
-    //{
-    //    PokedexNumber.text = null;
-    //    PokemonInfoName.text = null;
-    //    OT.text = null;
-    //    ID.text = null;
-    //    PokemonNature.text = null;
-    //    PokemonHoldItemName.text = null;
-
-    //    PokemonType1.sprite = null;
-    //    PokemonType2.sprite = null;
-
-    //    PokemonCurrentHP.text = null;
-    //    PokemonFullHP.text = null;
-    //    PokemonAttack.text = null;
-    //    PokemonDefense.text = null;
-    //    PokemonSpecialAttack.text = null;
-    //    PokemonSpecialDefense.text = null;
-    //    PokemonSpeed.text = null;
-    //    PokemonAbility.text = null;
-
-    //    for (int i = 0; i < 4; i++)
-    //    {
-    //        PokemonMoveName[i].text = null;
-    //        PokemonMoveCurrentPP[i].text = null;
-    //        PokemonMoveFullPP[i].text = null;
-    //        PokemonMoveInfoName[i].text = null;
-    //        PokemonMoveInfoCurrentPP[i].text = null;
-    //        PokemonMoveInfoFullPP[i].text = null;
-    //    }
-    //}
 }
