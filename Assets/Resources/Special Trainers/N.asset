@@ -15,6 +15,7 @@ MonoBehaviour:
   Name: N
   Sprite: {fileID: 21300000, guid: b07cc259f699e476f8e0d3ea4fa7b804, type: 3}
   Pokemon:
-  - {fileID: 11400000, guid: 252925f8d996647c3a2e9557a3421c16, type: 2}
-  - {fileID: 11400000, guid: 4b0ebeea751d74d109804754e7176923, type: 2}
-  - {fileID: 11400000, guid: 76df02db6a79a4056afce66724c11c16, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  IsSpecialTrainer: 1

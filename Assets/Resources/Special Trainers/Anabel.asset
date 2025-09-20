@@ -15,6 +15,7 @@ MonoBehaviour:
   Name: "\uB9AC\uB77C"
   Sprite: {fileID: 21300000, guid: 512efb8d0c43a41439614650d6ce2cb6, type: 3}
   Pokemon:
-  - {fileID: 11400000, guid: 3d69dfad5b5df4e8fba1ae91b449bab2, type: 2}
-  - {fileID: 11400000, guid: d86679c5f86fe4985a74afc6697800bd, type: 2}
-  - {fileID: 11400000, guid: 6cebb7e92e0344b74b304f97077cbde3, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  IsSpecialTrainer: 1

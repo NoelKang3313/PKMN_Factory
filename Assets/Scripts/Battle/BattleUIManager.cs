@@ -596,11 +596,23 @@ public class BattleUIManager : MonoBehaviour
     // UI Manager
     void TextboxButtonClicked()
     {
-        TextboxButton.interactable = false;
+        if(TextboxText.text == GameManager.instance.CheckTrainerName(GameManager.instance.ActiveTrainer).ToString()
+    + "가 승부를 걸어왔다!")
+        {
+            TextboxButton.interactable = false;
 
-        UpdateTextbox(GameManager.instance.CheckTrainerName(GameManager.instance.ActiveTrainer).ToString()
-+ "는 " + GameManager.instance.ActiveTrainer.Pokemon[0].Name + "을(를) 내보냈다!");
+            UpdateTextbox(GameManager.instance.CheckTrainerName(GameManager.instance.ActiveTrainer).ToString()
+    + "는 " + GameManager.instance.ActiveTrainer.Pokemon[0].Name + "을(를) 내보냈다!");
+        }
+        else if(TextboxText.text == GameManager.instance.CheckTrainerName(GameManager.instance.ActiveTrainer).ToString()
+    + "는 " + GameManager.instance.ActiveTrainer.Pokemon[0].Name + "을(를) 내보냈다!")
+        {
+            TextboxButton.interactable = false;
 
+            //ResetTextboxText();
+
+            SetTrainerCoroutine(trainerExitPosition);
+        }
 
         //NPCAnimator.SetBool("isAppear", false);
 
