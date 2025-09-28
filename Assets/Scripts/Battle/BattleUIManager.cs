@@ -6,6 +6,7 @@ using TMPro;
 using System.Collections;
 using System;
 using Random = UnityEngine.Random;
+using DG.Tweening;
 
 public class BattleUIManager : MonoBehaviour
 {
@@ -510,7 +511,9 @@ public class BattleUIManager : MonoBehaviour
         {
             FadeTransition.gameObject.SetActive(false);
 
-            SetTrainerCoroutine(trainerEnterPosition);
+            //SetTrainerCoroutine(trainerEnterPosition);
+
+            NPCImage.rectTransform.DOAnchorPos(trainerEnterPosition, 1f);
         }
     }
 
@@ -525,16 +528,16 @@ public class BattleUIManager : MonoBehaviour
         }
     }
 
-    IEnumerator MoveTrainer(Vector2 targetPosition)
-    {
-        while(NPCImage.rectTransform.anchoredPosition != targetPosition)
-        {
-            NPCImage.rectTransform.anchoredPosition =
-                Vector2.MoveTowards(NPCImage.rectTransform.anchoredPosition, targetPosition, trainerMoveSpeed * Time.deltaTime);
+    //IEnumerator MoveTrainer(Vector2 targetPosition)
+    //{
+    //    while(NPCImage.rectTransform.anchoredPosition != targetPosition)
+    //    {
+    //        NPCImage.rectTransform.anchoredPosition =
+    //            Vector2.MoveTowards(NPCImage.rectTransform.anchoredPosition, targetPosition, trainerMoveSpeed * Time.deltaTime);
 
-            yield return null;
-        }
-    }
+    //        yield return null;
+    //    }
+    //}
 
     void BattleStart()
     {
@@ -542,7 +545,9 @@ public class BattleUIManager : MonoBehaviour
         {
             if(NPCImage.GetComponent<RectTransform>().anchoredPosition == trainerExitPosition)
             {
-                SetTrainerCoroutine(trainerEnterPosition);
+                //SetTrainerCoroutine(trainerEnterPosition);
+
+                NPCImage.rectTransform.DOAnchorPos(trainerEnterPosition, 1f);
 
                 int NPCRandom = Random.Range(0, GameManager.instance.NPC.Count);
                 NPCImage.sprite = GameManager.instance.NPC[NPCRandom].Sprite;
@@ -611,7 +616,9 @@ public class BattleUIManager : MonoBehaviour
 
             //ResetTextboxText();
 
-            SetTrainerCoroutine(trainerExitPosition);
+            //SetTrainerCoroutine(trainerExitPosition);
+
+            NPCImage.rectTransform.DOAnchorPos(trainerExitPosition, 1f);
         }
 
         //NPCAnimator.SetBool("isAppear", false);
@@ -750,20 +757,20 @@ public class BattleUIManager : MonoBehaviour
 
                     TextboxText.text = "";
 
-                    SetTrainerCoroutine(trainerExitPosition);
+                    NPCImage.rectTransform.DOAnchorPos(trainerExitPosition, 1f);
 
                     break;
                 }
         }
     }
 
-    void SetTrainerCoroutine(Vector2 targetPosition)
-    {
-        if (moveCoroutine != null)
-            StopCoroutine(moveCoroutine);
+    //void SetTrainerCoroutine(Vector2 targetPosition)
+    //{
+    //    if (moveCoroutine != null)
+    //        StopCoroutine(moveCoroutine);
 
-        moveCoroutine = StartCoroutine(MoveTrainer(targetPosition));
-    }
+    //    moveCoroutine = StartCoroutine(MoveTrainer(targetPosition));
+    //}
 
     // UI Manager
     void BagHoldItemButtonClicked(int number)
